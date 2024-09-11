@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Apply a red background color to the menu in mobile view */
+@media (max-width: 767px) {
+    .menu-class {
+      background-color: red;
+    }
+  }
