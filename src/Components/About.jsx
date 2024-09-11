@@ -1,6 +1,8 @@
 const About = () => {
   return (
-    <div>heyy teachers</div>
+    <div>heyy 
+      teachers
+      a</div>
   )
 }
 
