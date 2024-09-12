@@ -1,8 +1,10 @@
+import Navbar from "./Navbar";
 const About = () => {
   return (
-    <div>heyy 
+  <div>
+          <Navbar />heyy 
       teachers
-      a</div>
+    </div>
   )
 }
 
