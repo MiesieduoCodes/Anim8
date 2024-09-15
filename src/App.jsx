@@ -8,7 +8,7 @@ const App = () => {
   const audioTracks = [
     {
       title: "Rosario Vampire Theme Song",
-      src: "/src/Assets/Songs/02 Earfquake.mp3",
+      src: "",
       background: "../src/Assets/wallpapersden.com_call-of-duty-dark-nikto_1920x1080.jpg",
     },
     {

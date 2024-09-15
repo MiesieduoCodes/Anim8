@@ -26,7 +26,13 @@ const NavLinks = () => {
             { name: "DreamWorks", link: "/dreamworks" },
             { name: "Disney", link: "/disney" },
             { name: "Netflix", link: "/netflix" },
-            { name: "Marvel & DC", link: "/marvel" },
+            {
+              name: "Marvel & DC",
+              sublink: [
+                { name: "Marvel", link: "/marvel" },
+                { name: "DC", link: "/dc" },
+              ],
+            },
           ],
         },
       ],
@@ -58,7 +64,7 @@ const NavLinks = () => {
           ],
         },
       ],
-    }
+    },
   ];
 
   return (
@@ -79,9 +85,26 @@ const NavLinks = () => {
                         <h1 className="text-lg font-semibold">{mysublinks.Head}</h1>
                         {mysublinks.sublink.map((slink, slinkIndex) => (
                           <li key={slinkIndex} className="text-sm text-gray-600 my-2.5">
-                            <Link to={slink.link} className="hover:text-blue-600">
-                              {slink.name}
-                            </Link>
+                            {slink.sublink ? ( // Check if there are sublinks
+                              <div>
+                                <Link to={slink.link} className="hover:text-blue-600">
+                                  {slink.name}
+                                </Link>
+                                <ul className="ml-4">
+                                  {slink.sublink.map((subItem, subItemIndex) => (
+                                    <li key={subItemIndex} className="text-sm text-gray-600 my-2.5">
+                                      <Link to={subItem.link} className="hover:text-blue-600">
+                                        {subItem.name}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ) : (
+                              <Link to={slink.link} className="hover:text-blue-600">
+                                {slink.name}
+                              </Link>
+                            )}
                           </li>
                         ))}
                       </div>

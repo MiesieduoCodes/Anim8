@@ -95,7 +95,7 @@ const Disney = () => {
               </button>
             </div>
           </div>
-        ))}
+        ))};
       </div>
     </div>
   );
