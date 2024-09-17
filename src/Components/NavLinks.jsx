@@ -30,7 +30,7 @@ const NavLinks = () => {
               name: "Marvel & DC",
               sublink: [
                 { name: "Marvel", link: "/marvel" },
-                { name: "DC", link: "/dc" },
+                { name: "DC", link: "/dc"},
               ],
             },
           ],
@@ -77,7 +77,7 @@ const NavLinks = () => {
               <div>
                 <div className="absolute top-20 hidden group-hover:block hover:block">
                   <div className="py-3">
-                    <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
+                    <div className="w-4 h-4  left-3 absolute mt-1 bg-blue-400 z-[-50] rotate-45"></div>
                   </div>
                   <div className="bg-white p-5">
                     {link.sublinks.map((mysublinks, subIndex) => (

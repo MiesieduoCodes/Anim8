@@ -12,6 +12,7 @@ import Disney from "./Components/Disney";
 import Netflix from "./Components/Netflix";
 import Marvel from "./Components/Marvel";
 import Get from "./Components/GetTheApp";
+import DC from "./Components/DC";
 import Talk from "./Components/TalkToUs";
 import Toons from "./Components/ToonedIn";
 import Trivias from "./Components/Trivias";
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/marvel",
     element: <Marvel />, // Example additional route
+  },
+  {
+    path: "/dc",
+    element: <DC />, // Example additional route
   },
   {
     path: "/get",
