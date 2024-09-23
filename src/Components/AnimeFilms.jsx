@@ -1,11 +1,16 @@
+
 import RinYoshidaImage from '../Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg';
 import Navbar from './Navbar'; // Adjust the import path as needed
 
 const AnimeFilms = () => {
+
+
   const cards = [
     {
       title: "Detective Conan",
-      rating: 7.6, // Updated rating
+      rating: 7.6,
+
+      // Updated rating
     },
     {
       title: "One Piece",
@@ -37,6 +42,7 @@ const AnimeFilms = () => {
     },
   ];
 
+
   return (
     <div>
       {/* Navbar */}
@@ -46,7 +52,7 @@ const AnimeFilms = () => {
       <div className="relative bg-cover bg-center h-80 md:h-96 lg:h-120" style={{ backgroundImage: `url(${RinYoshidaImage})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-6">
           <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold text-center">
-            Discover the Marvel Universe
+            Discover the Anime-Verse
           </h1>
           <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-4">
             Explore our collection of animated adventures featuring your favorite heroes.

@@ -82,7 +82,11 @@ const router = createBrowserRouter([
   {
     path: "/talk",
     element: <Talk />, // Example additional route
-  }
+  },
+  // {
+  //   path: "/detective",
+  //   element: <DetectiveConan />, // Example additional route
+  // }
 ]);
 
 // Render the application
