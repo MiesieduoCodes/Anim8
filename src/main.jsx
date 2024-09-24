@@ -19,7 +19,8 @@ import Trivias from "./Components/Trivias";
 import Trailers from "./Components/Trailers"
 import AnimeF from "./Components/AnimeFilms";
 import AnimeS from "./Components/AnimeSeries";
-import WhatsGood from "./Components/Whatsup";// Import additional components for routes
+import WhatsGood from "./Components/Whatsup";
+import DetectiveConan from "./Components/DetectiveConan";// Import additional components for routes
 
 // Create the router configuration
 const router = createBrowserRouter([
@@ -83,10 +84,10 @@ const router = createBrowserRouter([
     path: "/talk",
     element: <Talk />, // Example additional route
   },
-  // {
-  //   path: "/detective",
-  //   element: <DetectiveConan />, // Example additional route
-  // }
+  {
+    path: "/detective",
+    element: <DetectiveConan />, // Example additional route
+  }
 ]);
 
 // Render the application

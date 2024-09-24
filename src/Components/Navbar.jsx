@@ -6,6 +6,20 @@ import { useState, useEffect } from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  // Example content to search through
+  const content = [
+    "Detective Conan",
+    "One Piece",
+    "Sword Art Online",
+    "Bleach",
+    "Ghost in the Shell",
+    "Fullmetal Alchemist",
+    "Psycho-Pass",
+    // Add more items as needed
+  ];
 
   const handleScroll = () => {
     setScrolled(window.scrollY > 0);
@@ -17,6 +31,21 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleSearch = (e) => {
+    const term = e.target.value.toLowerCase();
+    setSearchTerm(term);
+    
+    // Update search results based on the search term
+    if (term) {
+      const results = content.filter(item => 
+        item.toLowerCase().includes(term)
+      );
+      setSearchResults(results);
+    } else {
+      setSearchResults([]);
+    }
+  };
 
   return (
     <nav
@@ -48,6 +77,30 @@ const Navbar = () => {
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             {open ? <RiCloseFill /> : <RiMenu4Fill />}
           </div>
+        </div>
+
+        {/* Search Input */}
+        <div className="relative md:flex hidden items-center">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleSearch}
+            className="border rounded-lg p-2"
+          />
+          {searchTerm && searchResults.length > 0 && (
+            <div className="absolute z-20 bg-white shadow-lg rounded-lg mt-1 w-full">
+              {searchResults.map((result, index) => (
+                <Link
+                  key={index}
+                  to={`/${result.toLowerCase().replace(/\s+/g, '-')}`} // Adjust the path as necessary
+                  className="block px-4 py-2 hover:bg-gray-200"
+                >
+                  {result}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Desktop Navigation Links */}

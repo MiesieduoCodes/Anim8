@@ -1,16 +1,12 @@
 
 import Navbar from "./Navbar";
-const OnePiece = () => {
+const Bleach = () => {
   const movies = [
+    "Bleach: Memories of Nobody (2006)",
+    "Bleach: The DiamondDust Rebellion (2007)",
+    "Bleach: Fade to Black (2008)",
+    "Bleach: Hell Verse (2010)",
 
-    "One Piece: Strong World (2010)",
-    "One Piece: Straw Hat Chase (2011)",
-    "One Piece: Film Z (2012)",
-    "One Piece: Gold (2016)",
-    "One Piece: Stampede (2019)",
-    "One Piece: Red (2022)",
-    
-    
   ];
 
   const story = "Detective Conan follows the adventures of Shinichi Kudo, a teenage detective who is transformed into a child after being poisoned. Under the alias Conan Edogawa, he solves various cases while searching for the organization responsible for his condition.";
@@ -32,4 +28,4 @@ const OnePiece = () => {
   );
 };
 
-export default OnePiece;
+export default Bleach;
