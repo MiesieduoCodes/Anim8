@@ -17,12 +17,12 @@ const AnimeFilms = () => {
     {
       title: "Sword Art Online",
       rating: 7.5,
-      path: "/sword-art-online", // Path for linking
+      path: "/sword", // Path for linking
     },
     {
       title: "Lupin III",
       rating: 7.8,
-      path: "/lupin-iii", // Path for linking
+      path: "/lupin", // Path for linking
     },
     {
       title: "Bleach",
@@ -32,17 +32,17 @@ const AnimeFilms = () => {
     {
       title: "Ghost in the Shell",
       rating: 8.6,
-      path: "/ghost-in-the-shell", // Path for linking
+      path: "/ghost", // Path for linking
     },
     {
       title: "Fullmetal Alchemist",
       rating: 9.0,
-      path: "/fullmetal-alchemist", // Path for linking
+      path: "/fullmetal", // Path for linking
     },
     {
       title: "Psycho-Pass",
       rating: 8.3,
-      path: "/psycho-pass", // Path for linking
+      path: "/psycho", // Path for linking
     },
   ];
 

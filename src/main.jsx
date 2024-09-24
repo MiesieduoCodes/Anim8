@@ -20,7 +20,14 @@ import Trailers from "./Components/Trailers"
 import AnimeF from "./Components/AnimeFilms";
 import AnimeS from "./Components/AnimeSeries";
 import WhatsGood from "./Components/Whatsup";
-import DetectiveConan from "./Components/DetectiveConan";// Import additional components for routes
+import DetectiveConan from "./Components/DetectiveConan";
+import OnePiece from "./Components/OnePiece";
+import Sword from "./Components/Sword";
+import Lupin from "./Components/Lupin";
+import Bleach from "./Components/Bleach";
+import Ghost from "./Components/GhostInAShell";
+import Psycho from "./Components/Psycho";
+import FullMetal from "./Components/FullmetalAlchemist";  // Import additional components for routes
 
 // Create the router configuration
 const router = createBrowserRouter([
@@ -87,6 +94,34 @@ const router = createBrowserRouter([
   {
     path: "/detective",
     element: <DetectiveConan />, // Example additional route
+  },
+  {
+    path: "/one-piece",
+    element: <OnePiece />, // Example additional route
+  },
+  {
+    path: "/sword",
+    element: <Sword />, // Example additional route
+  },
+  {
+    path: "/lupin",
+    element: <Lupin />, // Example additional route
+  },
+  {
+    path: "/bleach",
+    element: <Bleach />, // Example additional route
+  },
+  {
+    path: "/ghost",
+    element: <Ghost />, // Example additional route
+  },
+  {
+    path: "/psycho",
+    element: <Psycho />, // Example additional route
+  },
+  {
+    path: "/fullmetal",
+    element: <FullMetal />, // Example additional route
   }
 ]);
 

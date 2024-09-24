@@ -1,22 +1,16 @@
-
 import Navbar from "./Navbar";
-const OnePiece = () => {
-  const movies = [
-
-    "One Piece: Strong World (2010)",
-    "One Piece: Straw Hat Chase (2011)",
-    "One Piece: Film Z (2012)",
-    "One Piece: Gold (2016)",
-    "One Piece: Stampede (2019)",
-    "One Piece: Red (2022)",
+const FullMetalAlchemist = () => {
+    const movies = [
+        "Ghost in the Shell (1995)",
+        "Ghost in the Shell 2: Innocence (2004)",
+        "Ghost in the Shell: Stand Alone Complex - Solid State Society (2006)",
+        "Ghost in the Shell: Arise (2013)",
+        "Ghost in the Shell: The New Movie (2015)",
+        "Ghost in the Shell (2017)",
+      ];
     
-    
-  ];
-
-  const story = "Detective Conan follows the adventures of Shinichi Kudo, a teenage detective who is transformed into a child after being poisoned. Under the alias Conan Edogawa, he solves various cases while searching for the organization responsible for his condition.";
-
+      const story = "Detective Conan follows the adventures of Shinichi Kudo, a teenage detective who is transformed into a child after being poisoned. Under the alias Conan Edogawa, he solves various cases while searching for the organization responsible for his condition.";
   return (
-
     <div className="relative bg-cover bg-center h-auto">
       <Navbar />
       <div className="max-w-6xl mx-auto p-4">
@@ -33,7 +27,7 @@ const OnePiece = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OnePiece;
+export default FullMetalAlchemist
