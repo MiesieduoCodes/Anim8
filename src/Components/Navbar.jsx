@@ -18,6 +18,7 @@ const Navbar = () => {
     "Ghost in the Shell",
     "Fullmetal Alchemist",
     "Psycho-Pass",
+    
     // Add more items as needed
   ];
 

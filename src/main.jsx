@@ -27,7 +27,7 @@ import Lupin from "./Components/Lupin";
 import Bleach from "./Components/Bleach";
 import Ghost from "./Components/GhostInAShell";
 import Psycho from "./Components/Psycho";
-import FullMetal from "./Components/FullmetalAlchemist";  // Import additional components for routes
+import FullMetal from "./Components/FullMetalAlchemist";  // Import additional components for routes
 
 // Create the router configuration
 const router = createBrowserRouter([
