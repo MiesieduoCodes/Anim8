@@ -1,4 +1,3 @@
-import RinYoshidaImage from '../Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg';
 import Navbar from './Navbar'; // Adjust the import path as needed
 import { Link } from 'react-router-dom'; // Import Link
 
@@ -44,6 +43,57 @@ const AnimeFilms = () => {
       rating: 8.3,
       path: "/psycho", // Path for linking
     },
+    {
+      title: "Pokemon",
+      rating: 8.0,
+      path: "/pokemon", // Path for linking
+    },
+    // New additions
+    {
+      title: "Weathering with You",
+      rating: 8.0,
+      path: "/weathering", // Path for linking
+    },
+    {
+      title: "Dragon Quest: Your Story",
+      rating: 7.8,
+      path: "/dragon-quest", // Path for linking
+    },
+    {
+      title: "Human Lost",
+      rating: 7.6,
+      path: "/human-lost", // Path for linking
+    },
+    {
+      title: "Hello World",
+      rating: 7.5,
+      path: "/hello-world", // Path for linking
+    },
+    {
+      title: "The Legend of the Galactic Heroes: Die Neue These",
+      rating: 7.4,
+      path: "/galactic-heroes", // Path for linking
+    },
+    {
+      title: "Ride Your Wave",
+      rating: 7.2,
+      path: "/ride-your-wave", // Path for linking
+    },
+    {
+      title: "Children of the Sea",
+      rating: 7.1,
+      path: "/children-of-the-sea", // Path for linking
+    },
+    {
+      title: "The Wonderland",
+      rating: 7.0,
+      path: "/wonderland", // Path for linking
+    },
+    {
+      title: "City Hunter: Shinjuku Private Eyes",
+      rating: 6.8,
+      path: "/city-hunter", // Path for linking
+    },
   ];
 
   return (
@@ -52,7 +102,7 @@ const AnimeFilms = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative bg-cover bg-center h-80 md:h-96 lg:h-120" style={{ backgroundImage: `url(${RinYoshidaImage})` }}>
+      <div className="relative bg-cover bg-center h-[100vh] md:h-96 lg:h-120" style={{ backgroundImage: `url("https://wallpapercave.com/wp/wp5203578.jpg")` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-6">
           <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold text-center">
             Discover the Anime-Verse

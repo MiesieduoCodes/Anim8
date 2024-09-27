@@ -18,6 +18,7 @@ const Navbar = () => {
     "Ghost in the Shell",
     "Fullmetal Alchemist",
     "Psycho-Pass",
+    "The Garden Of Sinners",
     
     // Add more items as needed
   ];
@@ -90,12 +91,12 @@ const Navbar = () => {
             className="border rounded-lg p-2"
           />
           {searchTerm && searchResults.length > 0 && (
-            <div className="absolute z-20 bg-white shadow-lg rounded-lg mt-1 w-full">
+            <div className="absolute z-20 mt-72 bg-white text-black shadow-lg rounded-lg w-full">
               {searchResults.map((result, index) => (
                 <Link
                   key={index}
                   to={`/${result.toLowerCase().replace(/\s+/g, '-')}`} // Adjust the path as necessary
-                  className="block px-4 py-2 hover:bg-gray-200"
+                  className="block px-4 py-2 hover:bg-gray-500"
                 >
                   {result}
                 </Link>

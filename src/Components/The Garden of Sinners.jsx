@@ -2,36 +2,19 @@ import Navbar from "./Navbar";
 import RinYoshidaImage from '../Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg';
 import { MdSkipNext } from "react-icons/md";
 
-const DetectiveConan = () => {
+const Garden = () => {
   const movies = [
-    "The Time-Bombed Skyscraper (1997)",
-    "The Fourteenth Target (1998)",
-    "The Last Wizard of the Century (1999)",
-    "Captured in Her Eyes (2000)",
-    "Countdown to Heaven (2001)",
-    "The Phantom of Baker Street (2002)",
-    "Crossroad in the Ancient Capital (2003)",
-    "Magician of the Silver Sky (2004)",
-    "Strategy Above the Depths (2005)",
-    "The Private Eyes' Requiem (2006)",
-    "Jolly Roger in the Deep Azure (2007)",
-    "Full Score of Fear (2008)",
-    "The Raven Chaser (2009)",
-    "The Lost Ship in the Sky (2010)",
-    "Quarter of Silence (2011)",
-    "Eleventh Striker (2012)",
-    "Private Eye in the Distant Sea (2013)",
-    "Dimensional Sniper ",
-    "Sunflowers of Inferno",
-    "The Darkest Nightmare ",
-    "Crimson Love Letter ",
-    "Zero the Enforcer ",
-    "The Fist of Blue Sapphire",
-    "The Scarlet Bullet",
-    "The Bride of Halloween ",
+    "Overlooking View (2007)",
+    "A Study in Murder - Part 1 (2007)",
+    "Remaining Sense of Pain (2008)",
+    "The Hollow Shrine (2008)",
+    "Paradox Spiral (2008)",
+    "Fairy Tale (2008)",
+    "...and nothing heart. (2009)",
+    "Epilogue (2011)",
   ];
 
-  const story = "Detective Conan follows the adventures of Shinichi Kudo, a teenage detective who is transformed into a child after being poisoned. Under the alias Conan Edogawa, he solves various cases while searching for the organization responsible for his condition.";
+  const story = "Garden of Sinners follows Shiki Ryougi, a girl with the ability to see the 'death' of objects and people. She gets involved in various supernatural events, exploring themes of identity, existence, and the consequences of her actions.";
 
   return (
     <div>
@@ -62,4 +45,4 @@ const DetectiveConan = () => {
   );
 };
 
-export default DetectiveConan;
+export default Garden;

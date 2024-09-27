@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion"; 
 import Navbar from "../src/Components/Navbar"; // Adjust the import path as needed
-import Google from "../src/Assets/images-removebg-preview.png";
+import { Link } from 'react-router-dom'; // Adjust the import path as needed
 import { useState, useRef, useEffect, useCallback } from "react"; 
 import { MdSkipNext } from "react-icons/md";
 
@@ -125,22 +125,45 @@ const App = () => {
         </div>
       </div>
       
-      <footer>
-        <div className="z-50 p-5 md:w-auto w-full flex justify-between items-center">
-          <div>
-            <h1 className="md:cursor-pointer text-3xl h-9">
-              Anim<span className="text-red-500">8</span>
-            </h1>
-            <h2> by Goofy_Did_This</h2>
+
+
+      <footer className="bg-gray-800 text-white py-8">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="mb-6 md:mb-0">
+            <h2 className="text-xl font-bold mb-2">Get the App</h2>
+            <p className="text-gray-400">Download our app for the best experience.</p>
+            <div className="mt-4">
+              <a href="#" className="text-yellow-500 hover:underline">Download on the App Store</a>
+              <br />
+              <a href="#" className="text-yellow-500 hover:underline">Get it on Google Play</a>
+            </div>
           </div>
-          <div>
-            <img width="200px" src={Google} alt="" />
-          </div>
-          <div>
-            <h1>© JWICEBOXBIZ, All Rights Reserved.</h1>
+
+          <div className="mb-6 md:mb-0">
+            <h2 className="text-xl font-bold mb-2">More</h2>
+            <ul>
+              <li>
+                <Link to="/about" className="text-gray-400 hover:underline">About Us</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 hover:underline">Contact</Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-gray-400 hover:underline">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-gray-400 hover:underline">Terms of Service</Link>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+      
+      <div className="mt-8 text-center text-gray-400">
+        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+      </div>
+    </footer>
     </div>
   );
 };

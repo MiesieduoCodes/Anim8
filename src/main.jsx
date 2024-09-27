@@ -1,9 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter,RouterProvider,} from "react-router-dom";
 import "./index.css";
 import App from "./App"; // Import your main site component
 import Pixar from './Components/Pixar';
@@ -27,7 +24,9 @@ import Lupin from "./Components/Lupin";
 import Bleach from "./Components/Bleach";
 import Ghost from "./Components/GhostInAShell";
 import Psycho from "./Components/Psycho";
-import FullMetal from "./Components/FullMetalAlchemist";  // Import additional components for routes
+import FullMetal from "./Components/FullMetalAlchemist";
+import Garden from "./Components/The Garden of Sinners";
+import Pokemon from "./Components/Pokemon";  // Import additional components for routes
 
 // Create the router configuration
 const router = createBrowserRouter([
@@ -122,6 +121,18 @@ const router = createBrowserRouter([
   {
     path: "/fullmetal",
     element: <FullMetal />, // Example additional route
+  },
+  {
+    path: "/fullmetal",
+    element: <FullMetal />, // Example additional route
+  },
+  {
+    path: "/garden",
+    element: <Garden />, // Example additional route
+  },
+  {
+    path: "/pokemon",
+    element: <Pokemon />,
   }
 ]);
 
