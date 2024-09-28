@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom'; 
+
 const AnimeFilms = () => {
   const cards = [
     {
@@ -47,67 +48,9 @@ const AnimeFilms = () => {
       rating: 8.0,
       path: "/pokemon",
     },
-    // New additions
-    {
-      title: "Weathering with You",
-      rating: 8.0,
-      path: "/weathering",
-    },
-    {
-      title: "Dragon Quest: Your Story",
-      rating: 7.8,
-      path: "/dragon-quest",
-    },
-    {
-      title: "Human Lost",
-      rating: 7.6,
-      path: "/human-lost",
-    },
-    {
-      title: "Hello World",
-      rating: 7.5,
-      path: "/hello-world",
-    },
-    {
-      title: "The Legend of the Galactic Heroes: Die Neue These",
-      rating: 7.4,
-      path: "/galactic-heroes",
-    },
-    {
-      title: "Ride Your Wave",
-      rating: 7.2,
-      path: "/ride-your-wave",
-    },
-    {
-      title: "Children of the Sea",
-      rating: 7.1,
-      path: "/children-of-the-sea",
-    },
-    {
-      title: "The Wonderland",
-      rating: 7.0,
-      path: "/wonderland",
-    },
-    {
-      title: "City Hunter: Shinjuku Private Eyes",
-      rating: 6.8,
-      path: "/city-hunter",
-    },
+    // New additions removed from cards
   ];
-  {
-    title: "Hack//G.U. Trilogy",
-    items: [
-      { title: ".hack//G.U. Trilogy: Rebirth", rating: 7.4 },
-      { title: ".hack//G.U. Trilogy: Resurrection", rating: 7.5 },
-      { title: ".hack//G.U. Trilogy: Redemption", rating: 7.6 },
-      { title: "Akira", rating: 8.1 },
-      { title: "The Boy and the Beast", rating: 8.0 },
-      { title: "A Silent Voice", rating: 8.1 },
-      { title: "Death Note: Light Up the New World", rating: 7.5 },
-      { title: "Afro Samurai", rating: 8.0 },
-      { title: "Afro Samurai: Resurrection", rating: 7.4 },
-    ],
-  },
+
   const animeCollections = [
     {
       title: "Anime Collection",
@@ -120,19 +63,47 @@ const AnimeFilms = () => {
         { title: "The Garden of Words", rating: 8.1 },
         { title: "Wolf Children", rating: 8.1 },
         { title: "Jujutsu Kaisen 0: The Movie", rating: 8.1 },
-        { title: "Colorful", rating: 8.1 },
-        { title: "The Secret World of Arrietty", rating: 8.1 },
-        { title: "Time of Eve", rating: 8.0 },
-        { title: "You Are Umasou", rating: 8.0 },
-        { title: "Trigun: Badlands Rumble (Standalone)", rating: 7.9 },
-        { title: "Genius Party Beyond", rating: 7.8 },
-        { title: "Hortensia Saga", rating: 7.7 },
-        { title: "Loups=Garous", rating: 7.6 },
-        { title: "Mai Mai Miracle", rating: 7.6 },
-        { title: "Oblivion Island", rating: 7.5 },
+        // New films added to the collection
+        { title: "Sailor Moon Eternal: The Movie", rating: 8.23 },
+        { title: "Starless Night", rating: 7.92 },
+        { title: "Belle", rating: 7.86 },
+        { title: "Earwig and the Witch", rating: 6.8 },
+        { title: "Bright: Samurai Soul", rating: 6.6 },
+        { title: "Mobile Suit Gundam: Hathaway", rating: 7.6 },
+        { title: "My Hero Academia: World Heroes' Mission", rating: 7.5 },
+        { title: "Weathering with You", rating: 8.0 },
+        { title: "Dragon Quest: Your Story", rating: 7.8 },
+        { title: "Human Lost", rating: 7.6 },
+        { title: "Hello World", rating: 7.5 },
+        { title: "The Legend of the Galactic Heroes: Die Neue These", rating: 7.4 },
+        { title: "Ride Your Wave", rating: 7.2 },
+        { title: "Children of the Sea", rating: 7.1 },
+        { title: "The Wonderland", rating: 7.0 },
+        { title: "City Hunter: Shinjuku Private Eyes", rating: 6.8 },
+        { title: "Mirai", rating: 8.1 },
+        { title: "Maquia: When the Promised Flower Blooms", rating: 8.0 },
+        { title: "Liz and the Blue Bird", rating: 7.9 },
+        { title: "Penguin Highway", rating: 7.8 },
+        { title: "Flavors of Youth", rating: 7.7 },
+        { title: "Godzilla: City on the Edge of Battle", rating: 7.0 },
+        { title: "Modest Heroes", rating: 6.9 },
+        { title: "Promare", rating: 7.0 },
       ],
     },
-
+    {
+      title: "Hack//G.U. Trilogy",
+      items: [
+        { title: ".hack//G.U. Trilogy: Rebirth", rating: 7.4 },
+        { title: ".hack//G.U. Trilogy: Resurrection", rating: 7.5 },
+        { title: ".hack//G.U. Trilogy: Redemption", rating: 7.6 },
+        { title: "Akira", rating: 8.1 },
+        { title: "The Boy and the Beast", rating: 8.0 },
+        { title: "A Silent Voice", rating: 8.1 },
+        { title: "Death Note: Light Up the New World", rating: 7.5 },
+        { title: "Afro Samurai", rating: 8.0 },
+        { title: "Afro Samurai: Resurrection", rating: 7.4 },
+      ],
+    },
   ];
 
   return (
