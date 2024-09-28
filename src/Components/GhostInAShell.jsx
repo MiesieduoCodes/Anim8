@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'; // Adjust the import path as needed
 
 const GhostInAShell = () => {
   const movies = [
+    
     "Ghost in the Shell (1995)",
     "Ghost in the Shell 2: Innocence (2004)",
     "Ghost in the Shell: Stand Alone Complex - Solid State Society (2006)",
