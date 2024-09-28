@@ -94,7 +94,20 @@ const AnimeFilms = () => {
       path: "/city-hunter",
     },
   ];
-
+  {
+    title: "Hack//G.U. Trilogy",
+    items: [
+      { title: ".hack//G.U. Trilogy: Rebirth", rating: 7.4 },
+      { title: ".hack//G.U. Trilogy: Resurrection", rating: 7.5 },
+      { title: ".hack//G.U. Trilogy: Redemption", rating: 7.6 },
+      { title: "Akira", rating: 8.1 },
+      { title: "The Boy and the Beast", rating: 8.0 },
+      { title: "A Silent Voice", rating: 8.1 },
+      { title: "Death Note: Light Up the New World", rating: 7.5 },
+      { title: "Afro Samurai", rating: 8.0 },
+      { title: "Afro Samurai: Resurrection", rating: 7.4 },
+    ],
+  },
   const animeCollections = [
     {
       title: "Anime Collection",
@@ -119,20 +132,7 @@ const AnimeFilms = () => {
         { title: "Oblivion Island", rating: 7.5 },
       ],
     },
-    {
-      title: "Hack//G.U. Trilogy",
-      items: [
-        { title: ".hack//G.U. Trilogy: Rebirth", rating: 7.4 },
-        { title: ".hack//G.U. Trilogy: Resurrection", rating: 7.5 },
-        { title: ".hack//G.U. Trilogy: Redemption", rating: 7.6 },
-        { title: "Akira", rating: 8.1 },
-        { title: "The Boy and the Beast", rating: 8.0 },
-        { title: "A Silent Voice", rating: 8.1 },
-        { title: "Death Note: Light Up the New World", rating: 7.5 },
-        { title: "Afro Samurai", rating: 8.0 },
-        { title: "Afro Samurai: Resurrection", rating: 7.4 },
-      ],
-    },
+
   ];
 
   return (
