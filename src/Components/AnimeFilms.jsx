@@ -48,7 +48,6 @@ const AnimeFilms = () => {
       rating: 8.0,
       path: "/pokemon",
     },
-    // New additions removed from cards
   ];
 
   const animeCollections = [
@@ -63,7 +62,6 @@ const AnimeFilms = () => {
         { title: "The Garden of Words", rating: 8.1 },
         { title: "Wolf Children", rating: 8.1 },
         { title: "Jujutsu Kaisen 0: The Movie", rating: 8.1 },
-        // New films added to the collection
         { title: "Sailor Moon Eternal: The Movie", rating: 8.23 },
         { title: "Starless Night", rating: 7.92 },
         { title: "Belle", rating: 7.86 },
@@ -123,11 +121,11 @@ const AnimeFilms = () => {
         </div>
       </div>
 
+      {/* Background Layer */}
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+
       {/* Existing Cards Section */}
       <div className="relative">
-        {/* Background Layer */}
-        <div className="absolute top-0 z-[-2] h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-
         {/* Cards Section */}
         <div className="grid grid-cols-1 bg-black sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10 relative z-10">
           {cards.map((card, index) => (
