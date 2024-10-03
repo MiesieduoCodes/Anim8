@@ -137,10 +137,14 @@ const AnimeFilms = () => {
                   className="bg-orange-500 h-full rounded-full"
                   style={{ width: `${card.rating * 10}%` }}
                 ></div>
+                
               </div>
+
             </Link>
           ))}
+          
         </div>
+
       </div>
 
       {/* Anime Collection Section */}
@@ -157,10 +161,14 @@ const AnimeFilms = () => {
                     className="bg-orange-500 h-full rounded-full"
                     style={{ width: `${item.rating * 10}%` }}
                   ></div>
+                  
                 </div>
+
               </div>
             ))}
+            
           </div>
+          
         </div>
       ))}
 
@@ -198,7 +206,7 @@ const AnimeFilms = () => {
         </div>
         
         <div className="mt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()}Anim8. All rights reserved.</p>
         </div>
       </footer>
     </div>

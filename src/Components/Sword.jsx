@@ -34,10 +34,19 @@ const Sword = () => {
           {movies.map((movie, index) => (
             <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
               <p className="text-lg">{movie}</p>
+              <button
+                  className="bg-blue-500 text-white font-bold py-1 px-2 rounded hover:bg-green-700 transition-colors duration-300 mt-2"
+                  onClick={() => alert(`Downloading ${movie}`)}
+                >
+                  Download
+                </button>
             </div>
           ))}
+          
         </div>
-      </div>     
+        
+      </div>   
+        
       <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
@@ -72,7 +81,7 @@ const Sword = () => {
       </div>
       
       <div className="mt-8 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()}Anim8. All rights reserved.</p>
       </div>
     </footer>
     </div>

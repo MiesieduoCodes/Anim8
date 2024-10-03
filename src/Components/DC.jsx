@@ -277,7 +277,7 @@ const DCMovies = () => {
       </div>
       
       <div className="mt-8 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()}Anim8. All rights reserved.</p>
       </div>
     </footer>
     </div>
