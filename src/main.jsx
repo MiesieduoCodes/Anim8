@@ -4,6 +4,7 @@ import { createBrowserRouter,RouterProvider,} from "react-router-dom";
 import "./index.css";
 import App from "./App"; // Import your main site component
 import Pixar from './Components/Pixar';
+import About from "./Components/About";
 import DreamWorks from "./Components/DreamWorks";
 import Disney from "./Components/Disney";
 import Netflix from "./Components/Netflix";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />, // Main component
+  },
+  {
+    path: "/about",
+    element: <About />, // Main component
   },
   {
     path: "/trivias",

@@ -123,7 +123,7 @@ const Navbar = () => {
         {/* Mobile Navigation Links */}
         <ul
           className={`md:hidden bg-white absolute inset-0 z-10 w-full h-full bottom-0 py-24 pl-4 duration-500 transition-transform ${
-            open ? "left-0" : "left-[-100%]"
+            open ? "left-0" : "left-[100%]"
           }`}
         >
           <li>

@@ -9,8 +9,8 @@ const NavLinks = () => {
         {
           Head: "Hey Ani",
           sublink: [
-            { name: "About", link: "/" },
-            { name: "FAQs", link: "/" },
+            { name: "About", link: "/about" },
+            { name: "FAQs", link: "/faqs" },
           ],
         },
       ],
