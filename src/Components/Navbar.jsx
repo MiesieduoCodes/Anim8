@@ -71,7 +71,7 @@ const Navbar = () => {
             }
       }
     >
-      <div className="flex items-center font-medium justify-around">
+      <div className="flex items-center font-medium justify-between px-4 md:px-8">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <h1 className="md:cursor-pointer text-3xl h-9">
             Anim<span className="text-red-500">8</span>
@@ -82,16 +82,16 @@ const Navbar = () => {
         </div>
 
         {/* Search Input */}
-        <div className="relative md:flex hidden items-center">
+        <div className="relative hidden md:flex items-center flex-grow">
           <input
             type="text"
             placeholder="Search..."
             value={searchTerm}
             onChange={handleSearch}
-            className="border rounded-lg p-2"
+            className="border rounded-lg p-2 w-full max-w-xs"
           />
           {searchTerm && searchResults.length > 0 && (
-            <div className="absolute z-20 mt-72 bg-white text-black shadow-lg rounded-lg w-full">
+            <div className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2">
               {searchResults.map((result, index) => (
                 <Link
                   key={index}
@@ -106,7 +106,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className="md:flex hidden inset-0 z-10 items-center gap-8">
+        <ul className="hidden md:flex items-center gap-8">
           <li>
             <Link to="/" className="py-7 px-3 inline-block">
               Home
@@ -122,8 +122,8 @@ const Navbar = () => {
 
         {/* Mobile Navigation Links */}
         <ul
-          className={`md:hidden bg-white absolute inset-0 z-10 w-full h-full bottom-0 py-24 pl-4 duration-500 transition-transform ${
-            open ? "left-0" : "left-[100%]"
+          className={`md:hidden bg-white absolute top-0 left-0 z-10 w-full h-screen py-24 pl-4 transition-transform duration-500 ${
+            open ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <li>
@@ -132,6 +132,11 @@ const Navbar = () => {
             </Link>
           </li>
           <NavLinks />
+          <li>
+            <Link to="/talk" className="py-7 px-3 inline-block">
+              Talk To Anim8
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
