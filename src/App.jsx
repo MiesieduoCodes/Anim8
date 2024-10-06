@@ -16,26 +16,7 @@ const App = () => {
       src: "./Assets/Songs/02 Earfquake.mp3",
       background: "../src/Assets/activision-call-of-duty-modern-warfare-2-call-of-duty-warzone-cod-vanguard-playstation-hd-wallpaper-preview.jpg",
     },
-    {
-      title: "Fire Force Closing Theme Song",
-      src: "./Assets/Songs/07 - Water.mp3",
-      background: "../src/Assets/call-of-duty-mobile-season-6-game-4k-3840x2160_1704132637.jpg",
-    },
-    {
-      title: "Naruto Ending Theme Song",
-      src: "./Assets/Songs/09 - Hands On.mp3",
-      background: "../src/Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg"
-    },
-    {
-      title: "Scissor Seven Opening Theme Song",
-      src: "/src/Assets/Songs/Dadbod Instrumental - Logic.mp3",
-      background: "../src/Assets/340716-Call-of-Duty-Mobile-COD-CODM-Video-Game-Call-of-Duty-Season-11.jpg",
-    },
-    {
-      title: "Yame - Becane",
-      src: "/src/Assets/Songs/Logic_-_Self_Medication_feat_Seth_MacFarlane_Redman_Statik_Selektah__FlexyOkay.com (1).mp3",
-      background: "../src/Assets/call-of-duty-mobile-season-6-game-4k-3840x2160_1704132637.jpg",
-    },
+    // Add more tracks as necessary
   ];
 
   const [currentTrack, setCurrentTrack] = useState(0);
@@ -97,56 +78,68 @@ const App = () => {
           />
         </AnimatePresence>
 
-        <div className="relative flex inset-0 z-10 items-center justify-center h-full bg-black bg-opacity-50">
-          <main className="flex justify-between gap-32 items-center">
-            <section>
+        <div className="relative flex inset-0 z-10 items-center justify-center h-full bg-black bg-opacity-50 px-4">
+          <main className="flex flex-col md:flex-row justify-between gap-16 items-center">
+            <section className="text-center md:text-left">
               <motion.h1
                 whileInView={{ opacity: 1, x: 1 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5 }}
-                className="text-3xl text-center text-white font-bold"
+                className="text-3xl md:text-5xl text-white font-bold"
               >
                 Welcome to Anim8
               </motion.h1>
-              <p className="text-center text-white">
-                Your One-Stop site for Top-Rated <br /> Anime Content
+              <p className="text-white text-sm md:text-lg mt-4">
+                Your One-Stop site for Top-Rated Anime Content
               </p>
               <div className="mt-8">
-                <h2 className="text-white text-xl mb-4">
+                <h2 className="text-white text-lg md:text-xl mb-4">
                   Currently Playing: <span className="text-red-500">{audioTracks[currentTrack].title}</span>
                 </h2>
-                <div className="flex justify-center gap-4 mt-4">
+                <div className="flex justify-center md:justify-start gap-4 mt-4">
                   <button
                     onClick={randomizeTrack}
-                    className="bg-green-500 text-white px-4 py-2 rounded"
+                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-300"
                   >
-                    <MdSkipNext />
+                    <MdSkipNext size={24} />
                   </button>
                 </div>
               </div>
               <audio ref={audioRef} />
             </section>
 
-            <section>
+            <section className="w-full max-w-sm md:max-w-md">
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
                   alert(`Logging in...`);
                 }}
-                className="flex items-center justify-center bg-black bg-opacity-70 p-6 rounded-lg flex-col gap-4"
+                className="bg-black bg-opacity-70 p-6 rounded-lg flex flex-col gap-4"
               >
-                <h1 className="text-3xl text-center text-white font-bold">Get Started With Anim8</h1>
-                <input className="w-[350px]" type="email" placeholder="Email Address" required />
-                <input className="w-[350px]" type="password" placeholder="Password" required />
+                <h1 className="text-2xl md:text-3xl text-white font-bold text-center">Get Started With Anim8</h1>
+                <input
+                  className="w-full p-2 rounded border text-black"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                />
+                <input
+                  className="w-full p-2 rounded border text-black"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
                 <button
                   className="mt-3 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
                   type="submit"
                 >
                   Get Started
                 </button>
-                <div className="text-2xl flex-col flex text-center text-white font-bold">
+                <div className="text-center text-white font-bold mt-4">
                   <p>New To Anim8?</p>
-                  <Link to="/">Create An Account</Link>
+                  <Link to="/" className="hover:underline text-yellow-400">
+                    Create An Account
+                  </Link>
                 </div>
               </form>
             </section>
@@ -156,8 +149,8 @@ const App = () => {
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="mb-6 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between gap-8">
+            <div>
               <h2 className="text-xl font-bold mb-2">Get the App</h2>
               <p className="text-gray-400">Download our app for the best experience.</p>
               <div className="mt-4">
@@ -167,7 +160,7 @@ const App = () => {
               </div>
             </div>
 
-            <div className="mb-6 md:mb-0">
+            <div>
               <h2 className="text-xl font-bold mb-2">More</h2>
               <ul>
                 <li>
