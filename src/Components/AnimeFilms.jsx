@@ -105,7 +105,7 @@ const AnimeFilms = () => {
   ];
 
   return (
-    <div>
+    <div  className="main-content pt-20">
       {/* Navbar */}
       <Navbar />
 

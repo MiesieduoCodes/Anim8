@@ -62,7 +62,7 @@ const App = () => {
   }, [handleTrackEnd]);
 
   return (
-    <div>
+    <div  className="main-content pt-20">
       <Navbar />
 
       <div className="relative z-0 h-screen">
