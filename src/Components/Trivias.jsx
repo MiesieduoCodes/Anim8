@@ -26,7 +26,7 @@ const Trivias = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div  className="main-content pt-20">
         <div className="flex flex-col items-center">
           <div className="loader"></div>
           <p className="mt-4 text-xl">Loading Trivias...</p>
@@ -36,7 +36,7 @@ const Trivias = () => {
   }
 
   return (
-    <div className="container mx-auto p-6">
+    <div  className="main-content pt-20">
       <Navbar />
       <h1 className="text-4xl font-bold text-center mb-6">Movie Trivias</h1>
       <div className="grid gap-6 md:grid-cols-3">
