@@ -147,7 +147,7 @@ const App = () => {
         </div>
       </div>
 
-      <footer className="bg-gray-800 text-white py-8">
+     <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between gap-8">
             <div>
@@ -183,6 +183,7 @@ const App = () => {
         <div className="mt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Anim8. All rights reserved.</p>
         </div>
+        
       </footer>
     </div>
   );

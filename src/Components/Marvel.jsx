@@ -1,140 +1,60 @@
-
+import { useEffect, useState } from 'react';
+import Navbar from './Navbar';
+import { Link } from 'react-router-dom'; 
 import RinYoshidaImage from '../Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg';
-import Navbar from './Navbar'; // Adjust the import path as needed
 
 const Marvel = () => {
-  const cards = [
-    {
-      title: "Ultimate Avengers (2006)",
-      rating: 6.8,
-      story: "The Avengers must unite to stop a powerful foe threatening the Earth.",
-    },
-    {
-      title: "Ultimate Avengers 2 (2006)",
-      rating: 6.6,
-      story: "The Avengers face a new threat as they confront a powerful villain.",
-    },
-    {
-      title: "The Invincible Iron Man (2007)",
-      rating: 6.4,
-      story: "Tony Stark becomes the armored superhero Iron Man to save the world.",
-    },
-    {
-      title: "Doctor Strange: The Sorcerer Supreme (2007)",
-      rating: 6.8,
-      story: "The story of how Dr. Stephen Strange becomes the Sorcerer Supreme.",
-    },
-    {
-      title: "Next Avengers: Heroes of Tomorrow (2008)",
-      rating: 6.4,
-      story: "The children of the Avengers must step up to save the world.",
-    },
-    {
-      title: "Hulk Vs. (2009)",
-      rating: 6.7,
-      story: "The Hulk faces off against Thor and Wolverine in epic battles.",
-    },
-    {
-      title: "Planet Hulk (2010)",
-      rating: 6.8,
-      story: "The Hulk is exiled to a distant planet where he becomes a gladiator.",
-    },
-    {
-      title: "Thor: Tales of Asgard (2011)",
-      rating: 6.4,
-      story: "Thor embarks on a journey to prove himself worthy of the throne.",
-    },
-    {
-      title: "Iron Man: Rise of Technovore (2013)",
-      rating: 6.2,
-      story: "Iron Man faces off against a new villain, Ezekiel Stane.",
-    },
-    {
-      title: "Avengers Confidential: Black Widow & Punisher (2014)",
-      rating: 6.1,
-      story: "Black Widow and Punisher team up to take down a deadly organization.",
-    },
-    {
-      title: "Iron Man & Captain America: Heroes United (2014)",
-      rating: 6.1,
-      story: "Iron Man and Captain America team up to stop a common enemy.",
-    },
-    {
-      title: "Big Hero 6 (2014)",
-      rating: 7.8,
-      story: "A young robotics prodigy forms a superhero team to combat a villain.",
-    },
-    {
-      title: "Avengers: Confidential: Black Widow & Punisher - Extended Cut (2015)",
-      rating: 6.1,
-      story: "An extended version of the original film featuring more action.",
-    },
-    {
-      title: "Marvel Super Hero Adventures: Frost Fight! (2015)",
-      rating: 6.1,
-      story: "The heroes must work together to save the day during a winter crisis.",
-    },
-    {
-      title: "Hulk: Where Monsters Dwell (2016)",
-      rating: 6.1,
-      story: "Hulk and his friends fight against monsters in a strange dimension.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Guardians of the Galaxy: The Thanos Threat (2017)",
-      rating: 6.1,
-      story: "The Guardians of the Galaxy must stop Thanos from obtaining the Infinity Stones.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Avengers: Infinity War - Part 1 (2018)",
-      rating: 6.1,
-      story: "The Avengers unite to face the threat of Thanos.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Avengers: Infinity War - Part 2 (2018)",
-      rating: 6.1,
-      story: "The epic conclusion of the battle against Thanos.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Black Panther: Trouble in Wakanda - Part 1 (2018)",
-      rating: 6.1,
-      story: "Black Panther faces new challenges in protecting Wakanda.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Black Panther: Trouble in Wakanda - Part 2 (2018)",
-      rating: 6.1,
-      story: "The adventure continues as Black Panther defends his homeland.",
-    },
-    {
-      title: "Marvel Rising: Secret Warriors (2018)",
-      rating: 6.5,
-      story: "A group of young heroes must come together to save the day.",
-    },
-    {
-      title: "Spider-Man: Into the Spider-Verse (2018)",
-      rating: 8.1,
-      story: "Teenager Miles Morales becomes Spider-Man and meets other Spider-People.",
-    },
-    {
-      title: "Marvel Super Hero Adventures: Avengers - Game Over (2020)",
-      rating: 6.1,
-      story: "The Avengers face off against a new villain in an action-packed adventure.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Spider-Man: Vexed by Venom (2019)",
-      rating: 6.1,
-      story: "Spider-Man battles Venom in a thrilling Lego adventure.",
-    },
-    {
-      title: "Lego Marvel Super Heroes - Avengers: Out of Time (2020)",
-      rating: 6.1,
-      story: "The Avengers must work together to fix the timeline.",
-    },
-    {
-      title: "Spider-Man: Across the Spider-Verse (2022)",
-      rating: 8.1,
-      story: "Miles Morales continues his journey through the multiverse.",
-    },
-  ];
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    const fetchMovies = async () => {
+      const movieTitles = [
+        "Ultimate Avengers",
+        "Ultimate Avengers 2",
+        "The Invincible Iron Man",
+        "Doctor Strange: The Sorcerer Supreme",
+        "Next Avengers: Heroes of Tomorrow",
+        "Hulk Vs.",
+        "Planet Hulk",
+        "Thor: Tales of Asgard",
+        "Iron Man: Rise of Technovore",
+        "Avengers Confidential: Black Widow & Punisher",
+        "Iron Man & Captain America: Heroes United",
+        "Big Hero 6",
+        "Avengers: Confidential: Black Widow & Punisher - Extended Cut",
+        "Marvel Super Hero Adventures: Frost Fight!",
+        "Hulk: Where Monsters Dwell",
+        "Lego Marvel Super Heroes - Guardians of the Galaxy: The Thanos Threat",
+        "Lego Marvel Super Heroes - Avengers: Infinity War - Part 1",
+        "Lego Marvel Super Heroes - Avengers: Infinity War - Part 2",
+        "Lego Marvel Super Heroes - Black Panther: Trouble in Wakanda - Part 1",
+        "Lego Marvel Super Heroes - Black Panther: Trouble in Wakanda - Part 2",
+        "Marvel Rising: Secret Warriors",
+        "Spider-Man: Into the Spider-Verse",
+        "Marvel Super Hero Adventures: Avengers - Game Over",
+        "Lego Marvel Super Heroes - Spider-Man: Vexed by Venom",
+        "Lego Marvel Super Heroes - Avengers: Out of Time",
+        "Spider-Man: Across the Spider-Verse"
+      ];
+
+      const movieData = await Promise.all(
+        movieTitles.map(async (title) => {
+          const response = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=e19e9342`);
+          const data = await response.json();
+          return {
+            title: data.Title,
+            rating: data.imdbRating,
+            story: data.Plot,
+            backgroundImage: data.Poster || RinYoshidaImage, // Fallback image
+          };
+        })
+      );
+
+      setCards(movieData);
+    };
+
+    fetchMovies();
+  }, []);
 
   return (
     <div>
@@ -155,32 +75,69 @@ const Marvel = () => {
 
       {/* Cards Section */}
       <div className="relative">
-  {/* Background Layer */}
-  <div className="absolute top-0 z-[-2] h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+        {/* Background Layer */}
+        <div className="absolute top-0 z-[-2] h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
-  {/* Cards Section */}
-  <div className="grid grid-cols-1 bg-black sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10 relative z-10">
-    {cards.map((card, index) => (
-      <div key={index} className="bg-white p-5 rounded-lg shadow-lg">
-        <h2 className="text-lg font-bold">{card.title}</h2>
-        <p className="text-gray-600">Rating: {card.rating}</p>
-        <p className="text-gray-500 mt-2">{card.story}</p>
-        <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
-          <div
-            className="bg-purple-800 h-full rounded-full"
-            style={{ width: `${card.rating * 10}%` }}
-          ></div>
+        {/* Cards Section */}
+        <div className="grid grid-cols-1 bg-black sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10 relative z-10">
+          {cards.map((card, index) => (
+            <div key={index} className="bg-white p-5 rounded-lg shadow-lg">
+              <h2 className="text-lg font-bold">{card.title}</h2>
+              <p className="text-gray-600">Rating: {card.rating}</p>
+              <p className="text-gray-500 mt-2">{card.story}</p>
+              <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+                <div
+                  className="bg-purple-800 h-full rounded-full"
+                  style={{ width: `${card.rating * 10}%` }}
+                ></div>
+              </div>
+              <button
+                className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
+                onClick={() => alert(`Downloading ${card.title}`)}
+              >
+                Download
+              </button>
+            </div>
+          ))}
         </div>
-        <button
-          className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
-          onClick={() => alert(`Downloading ${card.title}`)}
-        >
-          Download
-        </button>
       </div>
-    ))}
-  </div>
-</div>
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between gap-8">
+            <div>
+              <h2 className="text-xl font-bold mb-2">Get the App</h2>
+              <p className="text-gray-400">Download our app for the best experience.</p>
+              <div className="mt-4">
+                <a href="#" className="text-yellow-500 hover:underline">Download on the App Store</a>
+                <br />
+                <a href="#" className="text-yellow-500 hover:underline">Get it on Google Play</a>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold mb-2">More</h2>
+              <ul>
+                <li>
+                  <Link to="/about" className="text-gray-400 hover:underline">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-gray-400 hover:underline">Contact</Link>
+                </li>
+                <li>
+                  <Link to="/privacy" className="text-gray-400 hover:underline">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/terms" className="text-gray-400 hover:underline">Terms of Service</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Anim8. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
