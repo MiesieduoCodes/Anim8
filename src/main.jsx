@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App"; // Import your main site component
 import Pixar from './Components/Pixar';
 import About from "./Components/About";
-import DreamWorks from "./Components/DreamWorks";
+import DreamWorks from "./Components/";
 import Disney from "./Components/Disney";
 import Netflix from "./Components/Netflix";
 import Marvel from "./Components/Marvel";
@@ -27,7 +27,8 @@ import Ghost from "./Components/GhostInAShell";
 import Psycho from "./Components/Psycho";
 import FullMetal from "./Components/FullMetalAlchemist";
 import Garden from "./Components/The Garden of Sinners";
-import Pokemon from "./Components/Pokemon";  // Import additional components for routes
+import Pokemon from "./Components/Pokemon"; 
+// import Login from "../src/login"; // Import additional components for routes
 
 // Create the router configuration
 const router = createBrowserRouter([
@@ -138,7 +139,12 @@ const router = createBrowserRouter([
   {
     path: "/pokemon",
     element: <Pokemon />,
-  }
+  },
+  // {
+  //   path: "/login",
+  //   element: <Login />,
+  // },
+  
 ]);
 
 // Render the application

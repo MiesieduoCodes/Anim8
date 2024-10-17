@@ -45,7 +45,7 @@ const NavLinks = () => {
           Head: "Anim8 Buddy",
           sublink: [
             { name: "Trailers", link: "/trailers" },
-            { name: "Trivias", link: "/trivias" },
+            { name: "Trivias", link: "/login" },
             { name: "Tooned In", link: "/toonedin" },
             { name: "Whatsup?", link: "/whatsgood" },
           ],
