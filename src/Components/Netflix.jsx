@@ -1,52 +1,136 @@
 import { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-const Netflix = () => {
 
+const Netflix = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    const fetchMovies = async () => {
-      const movieTitles = [
-        "Klaus",
-        "The Willoughbys",
-        "Over the Moon",
-        "Soul",
-        "The Mitchells vs. the Machines ",
-       "Wish Dragon ",
-        "Extinct ",
-        "Vivo ",
-        "My Little Pony: A New Generation ",
-        "The Sea Beast",
-        "Puss in Boots: The Last Wish",
-        "Apollo 10½: A Space Age Childhood",
-        "Nimona",
-        "The Magician's Elephant",
-        "The Amazing Maurice",
-        "The Boss Baby: Family Business",
-        "Naya’s Dream",
-        "Raya and the Last Dragon",
-        "Luck",
-        "Back to the Outback "
-      ];
+    // Netflix animated movies data
+    const netflixMovies = [
+      {
+        title: "Klaus",
+        rating: "8.2",
+        backgroundImage: "/path/to/klaus-poster.jpg", // Replace with actual image path
+        story: "A selfish postman and a reclusive toymaker form an unlikely friendship, delivering joy to a cold, dark town.",
+      },
+      {
+        title: "The Willoughbys",
+        rating: "6.4",
+        backgroundImage: "/path/to/willoughbys-poster.jpg", // Replace with actual image path
+        story: "Convinced they'd be better off raising themselves, the Willoughby children hatch a plan to send their selfish parents on vacation.",
+      },
+      {
+        title: "Over the Moon",
+        rating: "6.3",
+        backgroundImage: "/path/to/over-the-moon-poster.jpg", // Replace with actual image path
+        story: "In this animated musical, a girl builds a rocket ship and blasts off, hoping to meet a mythical moon goddess.",
+      },
+      {
+        title: "Soul",
+        rating: "8.0",
+        backgroundImage: "/path/to/soul-poster.jpg", // Replace with actual image path
+        story: "A middle-school band teacher's life takes a new direction when his soul is separated from his body after a near-death experience.",
+      },
+      {
+        title: "The Mitchells vs. the Machines",
+        rating: "7.7",
+        backgroundImage: "/path/to/mitchells-poster.jpg", // Replace with actual image path
+        story: "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse.",
+      },
+      {
+        title: "Wish Dragon",
+        rating: "7.2",
+        backgroundImage: "/path/to/wish-dragon-poster.jpg", // Replace with actual image path
+        story: "A young man and a wish-granting dragon embark on an adventure to show the boy the beauty of life and human connection.",
+      },
+      {
+        title: "Extinct",
+        rating: "5.4",
+        backgroundImage: "/path/to/extinct-poster.jpg", // Replace with actual image path
+        story: "Two Flummels, small, donut-shaped animals, accidentally time-travel to the future and learn that their species has become extinct.",
+      },
+      {
+        title: "Vivo",
+        rating: "6.7",
+        backgroundImage: "/path/to/vivo-poster.jpg", // Replace with actual image path
+        story: "Vivo, a music-loving kinkajou, embarks on the journey of a lifetime to deliver a song to a beloved performer.",
+      },
+      {
+        title: "My Little Pony: A New Generation",
+        rating: "6.8",
+        backgroundImage: "/path/to/my-little-pony-poster.jpg", // Replace with actual image path
+        story: "Equestria's divided pony races must come together to restore harmony in this new animated adventure.",
+      },
+      {
+        title: "The Sea Beast",
+        rating: "7.1",
+        backgroundImage: "/path/to/sea-beast-poster.jpg", // Replace with actual image path
+        story: "A young girl stows away on the ship of a legendary sea monster hunter, embarking on a grand adventure.",
+      },
+      {
+        title: "Puss in Boots: The Last Wish",
+        rating: "7.8",
+        backgroundImage: "/path/to/puss-in-boots-poster.jpg", // Replace with actual image path
+        story: "Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives.",
+      },
+      {
+        title: "Apollo 10½: A Space Age Childhood",
+        rating: "7.3",
+        backgroundImage: "/path/to/apollo-poster.jpg", // Replace with actual image path
+        story: "A man narrates stories of his life as a 10-year-old boy in 1969 Houston, weaving together tales of nostalgia and space adventure.",
+      },
+      {
+        title: "Nimona",
+        rating: "7.4",
+        backgroundImage: "/path/to/nimona-poster.jpg", // Replace with actual image path
+        story: "A shapeshifting teen joins forces with a knight to fight an oppressive regime.",
+      },
+      {
+        title: "The Magician's Elephant",
+        rating: "6.8",
+        backgroundImage: "/path/to/magicians-elephant-poster.jpg", // Replace with actual image path
+        story: "An orphan boy is told by a fortune teller that an elephant will lead him to his long-lost sister.",
+      },
+      {
+        title: "The Amazing Maurice",
+        rating: "6.3",
+        backgroundImage: "/path/to/amazing-maurice-poster.jpg", // Replace with actual image path
+        story: "Maurice, a streetwise cat, leads a band of rats to create a money-making scheme by pretending to solve a town’s rat problem.",
+      },
+      {
+        title: "The Boss Baby: Family Business",
+        rating: "5.9",
+        backgroundImage: "/path/to/boss-baby-poster.jpg", // Replace with actual image path
+        story: "The Templeton brothers have become adults and drifted apart, but a new boss baby brings them together.",
+      },
+      {
+        title: "Naya’s Dream",
+        rating: "6.1",
+        backgroundImage: "/path/to/nayas-dream-poster.jpg", // Replace with actual image path
+        story: "A magical dreamworld opens up for a young girl trying to protect her home and family.",
+      },
+      {
+        title: "Raya and the Last Dragon",
+        rating: "7.3",
+        backgroundImage: "/path/to/raya-dragon-poster.jpg", // Replace with actual image path
+        story: "A young warrior sets out to find the last dragon and save her people from an ancient evil.",
+      },
+      {
+        title: "Luck",
+        rating: "6.3",
+        backgroundImage: "/path/to/luck-poster.jpg", // Replace with actual image path
+        story: "An unlucky girl discovers the world's luckiest place and teams up with magical creatures to turn her fortune around.",
+      },
+      {
+        title: "Back to the Outback",
+        rating: "6.5",
+        backgroundImage: "/path/to/back-to-outback-poster.jpg", // Replace with actual image path
+        story: "Tired of being locked in a reptile house, a group of Australia's deadliest creatures plot their escape to the Outback.",
+      },
+    ];
 
-      const movieData = await Promise.all(
-        movieTitles.map(async (title) => {
-          const response = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=e19e9342`);
-          const data = await response.json();
-          return {
-            title: data.Title,
-            rating: data.imdbRating,
-            backgroundImage: data.Poster || 'fallback_image_url', // Fallback if no image
-            story: data.Plot,
-          };
-        })
-      );
-
-      setCards(movieData);
-    };
-
-    fetchMovies();
+    setCards(netflixMovies);
   }, []);
 
   return (
@@ -56,13 +140,17 @@ const Netflix = () => {
       <div className="relative h-full w-full bg-slate-950">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
-        <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('/src/Assets/ToonImages/Pixar/wallpaperflare.com_wallpaper (2).jpg')` }}>
+        <div
+          className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
+          style={{ backgroundImage: `url('/src/Assets/ToonImages/Pixar/wallpaperflare.com_wallpaper (2).jpg')` }}
+        >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
             <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              Discover the Magic of Disney
+              Discover the Magic of Pixar
             </h1>
             <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              Explore our collection of animated classics that have captured <br /> hearts across the globe.
+              Explore our collection of animated classics that have captured <br />
+              hearts across the globe.
             </p>
           </div>
         </div>
@@ -76,15 +164,16 @@ const Netflix = () => {
                 backgroundImage: `url(${card.backgroundImage})`,
               }}
             >
+              {/* Overlay for text */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
                 <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
                   {card.title}
                 </h2>
-                <p className="text-white text-lg border-none text-center mb-2">{card.story}</p>
+                <p className="text-white text-lg text-center mb-2">{card.story}</p>
                 <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
                   <div
                     className="bg-purple-800 h-full rounded-full"
-                    style={{ width: `${card.rating ? card.rating * 10 : 0}%` }}
+                    style={{ width: `${card.rating * 10}%` }}
                   ></div>
                 </div>
                 <p className="text-white text-lg">{card.rating}</p>
