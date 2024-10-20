@@ -6,53 +6,88 @@ const Marvel = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    const fetchMovies = async () => {
-      const movieTitles = [
-        "Ultimate Avengers",
-        "Ultimate Avengers 2",
-        "The Invincible Iron Man",
-        "Doctor Strange: The Sorcerer Supreme",
-        "Next Avengers: Heroes of Tomorrow",
-        "Hulk Vs.",
-        "Planet Hulk",
-        "Thor: Tales of Asgard",
-        "Iron Man: Rise of Technovore",
-        "Avengers Confidential: Black Widow & Punisher",
-        "Iron Man & Captain America: Heroes United",
-        "Big Hero 6",
-        "Avengers: Confidential: Black Widow & Punisher - Extended Cut",
-        "Marvel Super Hero Adventures: Frost Fight!",
-        "Hulk: Where Monsters Dwell",
-        "Lego Marvel Super Heroes - Guardians of the Galaxy: The Thanos Threat",
-        "Lego Marvel Super Heroes - Avengers: Infinity War - Part 1",
-        "Lego Marvel Super Heroes - Avengers: Infinity War - Part 2",
-        "Lego Marvel Super Heroes - Black Panther: Trouble in Wakanda - Part 1",
-        "Lego Marvel Super Heroes - Black Panther: Trouble in Wakanda - Part 2",
-        "Marvel Rising: Secret Warriors",
-        "Spider-Man: Into the Spider-Verse",
-        "Marvel Super Hero Adventures: Avengers - Game Over",
-        "Lego Marvel Super Heroes - Spider-Man: Vexed by Venom",
-        "Lego Marvel Super Heroes - Avengers: Out of Time",
-        "Spider-Man: Across the Spider-Verse"
-      ];
+    const marvelMovies = [
+      {
+        title: "Ultimate Avengers",
+        rating: "7.1",
+        backgroundImage: "/path/to/ultimate-avengers-poster.jpg", // Replace with actual image path
+        story: "The Avengers, Earth's mightiest heroes, assemble to fight against a powerful enemy threatening the world.",
+      },
+      {
+        title: "Ultimate Avengers 2",
+        rating: "6.7",
+        backgroundImage: "/path/to/ultimate-avengers-2-poster.jpg",
+        story: "The Avengers return to face an even greater threat as they battle the powerful, advanced beings known as the 'Chitauri'.",
+      },
+      {
+        title: "The Invincible Iron Man",
+        rating: "6.7",
+        backgroundImage: "/path/to/invincible-iron-man-poster.jpg",
+        story: "Tony Stark must embrace his destiny as Iron Man while combating the evil forces led by the Mandarin.",
+      },
+      {
+        title: "Doctor Strange: The Sorcerer Supreme",
+        rating: "7.4",
+        backgroundImage: "/path/to/doctor-strange-poster.jpg",
+        story: "After a car accident robs him of his surgical skills, Stephen Strange seeks out a healer who teaches him the mystical arts.",
+      },
+      {
+        title: "Next Avengers: Heroes of Tomorrow",
+        rating: "6.2",
+        backgroundImage: "/path/to/next-avengers-poster.jpg",
+        story: "The next generation of Avengers must band together to defeat the villainous Ultron and save the future.",
+      },
+      {
+        title: "Hulk Vs.",
+        rating: "7.0",
+        backgroundImage: "/path/to/hulk-vs-poster.jpg",
+        story: "The Hulk faces off against Wolverine and Thor in two separate battles that test his strength and resilience.",
+      },
+      {
+        title: "Planet Hulk",
+        rating: "7.5",
+        backgroundImage: "/path/to/planet-hulk-poster.jpg",
+        story: "Banished to a distant planet, the Hulk must fight to survive and become a champion among gladiators.",
+      },
+      {
+        title: "Thor: Tales of Asgard",
+        rating: "6.4",
+        backgroundImage: "/path/to/thor-tales-of-asgard-poster.jpg",
+        story: "Young Thor embarks on a quest to retrieve a powerful artifact and learns valuable lessons about heroism.",
+      },
+      {
+        title: "Iron Man: Rise of Technovore",
+        rating: "6.5",
+        backgroundImage: "/path/to/iron-man-rise-of-technovore-poster.jpg",
+        story: "Tony Stark must confront a new enemy in the form of a tech-based villain who threatens to take over the world.",
+      },
+      {
+        title: "Avengers Confidential: Black Widow & Punisher",
+        rating: "6.8",
+        backgroundImage: "/path/to/avengers-confidential-poster.jpg",
+        story: "Black Widow teams up with the Punisher to stop an organization from using a dangerous weapon.",
+      },
+      {
+        title: "Big Hero 6",
+        rating: "7.8",
+        backgroundImage: "/path/to/big-hero-6-poster.jpg",
+        story: "Hiro, a young robotics prodigy, teams up with a group of friends and a lovable healthcare robot to save their city.",
+      },
+      {
+        title: "Spider-Man: Into the Spider-Verse",
+        rating: "8.4",
+        backgroundImage: "/path/to/spider-man-into-the-spider-verse-poster.jpg",
+        story: "Teenager Miles Morales becomes Spider-Man and teams up with other Spider-People from different dimensions to save the multiverse.",
+      },
+      {
+        title: "Spider-Man: Across the Spider-Verse",
+        rating: "N/A",
+        backgroundImage: "/path/to/spider-man-across-the-spider-verse-poster.jpg",
+        story: "Miles Morales embarks on an epic adventure across the multiverse, teaming up with new allies and facing greater threats.",
+      },
+    ];
 
-      const movieData = await Promise.all(
-        movieTitles.map(async (title) => {
-          const response = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=e19e9342`);
-          const data = await response.json();
-          return {
-            title: data.Title,
-            rating: data.imdbRating,
-            backgroundImage: data.Poster || 'fallback_image_url', // Fallback if no image
-            story: data.Plot,
-          };
-        })
-      );
-
-      setCards(movieData);
-    };
-
-    fetchMovies();
+    setCards(marvelMovies);
   }, []);
 
   return (
@@ -62,13 +97,17 @@ const Marvel = () => {
       <div className="relative h-full w-full bg-slate-950">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
-        <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('/src/Assets/ToonImages/Pixar/wallpaperflare.com_wallpaper (2).jpg')` }}>
+        <div
+          className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
+          style={{ backgroundImage: `url('/src/Assets/ToonImages/Marvel/marvel-background.jpg')` }} // Replace with actual image path
+        >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
             <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              Discover the Magic of Disney
+              Discover the Marvel Universe
             </h1>
             <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              Explore our collection of animated classics that have captured <br /> hearts across the globe.
+              Explore our collection of animated classics that have captured <br />
+              hearts across the globe.
             </p>
           </div>
         </div>
@@ -86,11 +125,11 @@ const Marvel = () => {
                 <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
                   {card.title}
                 </h2>
-                <p className="text-white text-lg border-none text-center mb-2">{card.story}</p>
-                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+                <p className="text-white text-lg text-center mb-2">{card.story}</p>
+                <div className="w-full bg-gray-300 rounded-full h-4 overflow-hidden mb-2">
                   <div
                     className="bg-purple-800 h-full rounded-full"
-                    style={{ width: `${card.rating ? card.rating * 10 : 0}%` }}
+                    style={{ width: `${card.rating !== 'N/A' ? card.rating * 10 : 0}%` }}
                   ></div>
                 </div>
                 <p className="text-white text-lg">{card.rating}</p>
