@@ -1,108 +1,272 @@
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
-const Disney = () => {
+const Pixar = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    // Disney animated movies data
-    const disneyMovies = [
+    // Predefined data for Pixar movies
+    const movieData = [
       {
-        title: "Lilo & Stitch",
-        rating: "7.3",
-        backgroundImage: "/path/to/lilo-stitch-poster.jpg", // Replace with actual image path
-        story: "A young girl adopts a unique pet who turns out to be a notorious extra-terrestrial fugitive.",
-      },
-      {
-        title: "Treasure Planet",
-        rating: "7.2",
-        backgroundImage: "/path/to/treasure-planet-poster.jpg", // Replace with actual image path
-        story: "A Disney animated version of 'Treasure Island.' The only difference is that the island is a planet.",
-      },
-      {
-        title: "Brother Bear",
-        rating: "6.8",
-        backgroundImage: "/path/to/brother-bear-poster.jpg", // Replace with actual image path
-        story: "A young Inuit hunter seeks vengeance on a bear, only to be magically changed into a bear himself.",
-      },
-      {
-        title: "Chicken Little",
-        rating: "5.7",
-        backgroundImage: "/path/to/chicken-little-poster.jpg", // Replace with actual image path
-        story: "After ruining his reputation with the town, a courageous chicken must come to the rescue of his fellow citizens when aliens start an invasion.",
-      },
-      {
-        title: "The Princess and the Frog",
-        rating: "7.1",
-        backgroundImage: "/path/to/princess-frog-poster.jpg", // Replace with actual image path
-        story: "A waitress, desperate to fulfill her dreams as a restaurant owner, is set on a journey to turn a frog prince back into a human being.",
-      },
-      {
-        title: "Tangled",
-        rating: "7.7",
-        backgroundImage: "/path/to/tangled-poster.jpg", // Replace with actual image path
-        story: "The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time.",
-      },
-      {
-        title: "Frozen",
-        rating: "7.4",
-        backgroundImage: "/path/to/frozen-poster.jpg", // Replace with actual image path
-        story: "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
-      },
-      {
-        title: "Wreck-It Ralph",
-        rating: "7.7",
-        backgroundImage: "/path/to/wreck-it-ralph-poster.jpg", // Replace with actual image path
-        story: "A video game villain wants to be a hero and sets out to fulfill his dream, but his quest brings havoc to the whole arcade where he lives.",
-      },
-      {
-        title: "Big Hero 6",
-        rating: "7.8",
-        backgroundImage: "/path/to/big-hero-6-poster.jpg", // Replace with actual image path
-        story: "A special bond develops between a plus-sized inflatable robot and a prodigy, who team up with a group of friends to form a band of high-tech heroes.",
-      },
-      {
-        title: "Zootopia",
-        rating: "8.0",
-        backgroundImage: "/path/to/zootopia-poster.jpg", // Replace with actual image path
-        story: "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
-      },
-      {
-        title: "Moana",
+        title: "Guardians of the Galaxy Vol. 2",
         rating: "7.6",
-        backgroundImage: "/path/to/moana-poster.jpg", // Replace with actual image path
-        story: "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the ocean's call to seek out the Demigod to set things right.",
+        backgroundImage: "/path/to/guardians-poster.jpg", // Replace with actual image path
+        story: "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.",
       },
       {
-        title: "Raya and the Last Dragon",
-        rating: "7.3",
-        backgroundImage: "/path/to/raya-dragon-poster.jpg", // Replace with actual image path
-        story: "In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.",
+        title: "Toy Story",
+        rating: "8.3",
+        backgroundImage: "/path/to/toy-story-poster.jpg", // Replace with actual image path
+        story: "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's room.",
       },
-      // Add more movies as needed...
+      {
+        title: "A Bug's Life",
+        rating: "7.2",
+        backgroundImage: "/path/to/bugs-life-poster.jpg", // Replace with actual image path
+        story: "A misfit ant, looking for 'warriors' to save his colony from greedy grasshoppers, recruits a group of bugs that turn out to be an inept circus troupe.",
+      },
+      {
+        title: "Toy Story 2",
+        rating: "7.9",
+        backgroundImage: "/path/to/toy-story-2-poster.jpg", // Replace with actual image path
+        story: "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save him.",
+      },
+      {
+        title: "Monsters, Inc.",
+        rating: "8.1",
+        backgroundImage: "/path/to/monsters-inc-poster.jpg", // Replace with actual image path
+        story: "In order to power the city, monsters have to scare children so they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.",
+      },
+      {
+        title: "Finding Nemo",
+        rating: "8.1",
+        backgroundImage: "/path/to/finding-nemo-poster.jpg", // Replace with actual image path
+        story: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+      },
+      {
+        title: "The Incredibles",
+        rating: "8.0",
+        backgroundImage: "/path/to/incredibles-poster.jpg", // Replace with actual image path
+        story: "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
+      },
+      {
+        title: "Cars",
+        rating: "7.2",
+        backgroundImage: "/path/to/cars-poster.jpg", // Replace with actual image path
+        story: "A hotshot race car named Lightning McQueen gets waylaid in Radiator Springs, where he finds the true meaning of friendship and family.",
+      },
+      {
+        title: "Ratatouille",
+        rating: "8.0",
+        backgroundImage: "/path/to/ratatouille-poster.jpg", // Replace with actual image path
+        story: "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
+      },
+      {
+        title: "WALL-E",
+        rating: "8.4",
+        backgroundImage: "/path/to/wall-e-poster.jpg", // Replace with actual image path
+        story: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+      },
+      {
+        title: "Up",
+        rating: "8.3",
+        backgroundImage: "/path/to/up-poster.jpg", // Replace with actual image path
+        story: "78-year-old Carl sets out to fulfill his dream of seeing the wilds of South America by tying thousands of balloons to his home.",
+      },
+      {
+        title: "Toy Story 3",
+        rating: "8.3",
+        backgroundImage: "/path/to/toy-story-3-poster.jpg", // Replace with actual image path
+        story: "The toys are mistakenly delivered to a daycare center instead of the attic before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned.",
+      },
+      {
+        title: "Cars 2",
+        rating: "6.2",
+        backgroundImage: "/path/to/cars-2-poster.jpg", // Replace with actual image path
+        story: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix, but the road to the championship becomes rocky as Mater gets caught up in espionage.",
+      },
+      {
+        title: "Brave",
+        rating: "7.1",
+        backgroundImage: "/path/to/brave-poster.jpg", // Replace with actual image path
+        story: "Determined to make her own path in life, Princess Merida defies a custom that brings chaos to her kingdom.",
+      },
+      {
+        title: "Monsters University",
+        rating: "7.2",
+        backgroundImage: "/path/to/monsters-university-poster.jpg", // Replace with actual image path
+        story: "A look at the relationship between Mike Wazowski and James P. 'Sulley' Sullivan during their days at Monsters University, when they weren't necessarily the best of friends.",
+      },
+      {
+        title: "Inside Out",
+        rating: "8.1",
+        backgroundImage: "/path/to/inside-out-poster.jpg", // Replace with actual image path
+        story: "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions – Joy, Fear, Anger, Disgust and Sadness – conflict on how best to navigate a new city, house, and school.",
+      },
+      {
+        title: "The Good Dinosaur",
+        rating: "6.7",
+        backgroundImage: "/path/to/good-dinosaur-poster.jpg", // Replace with actual image path
+        story: "In a world where dinosaurs and humans live side by side, an Apatosaurus named Arlo makes an unlikely human friend.",
+      },
+      {
+        title: "Finding Dory",
+        rating: "7.3",
+        backgroundImage: "/path/to/finding-dory-poster.jpg", // Replace with actual image path
+        story: "The friendly but forgetful blue tang fish, Dory, begins a search for her long-lost parents, and everyone learns a few things about the real meaning of family along the way.",
+      },
+      {
+        title: "Cars 3",
+        rating: "6.7",
+        backgroundImage: "/path/to/cars-3-poster.jpg", // Replace with actual image path
+        story: "Lightning McQueen sets out to prove to a new generation of racers that he's still the best race car in the world.",
+      },
+      {
+        title: "Coco",
+        rating: "8.4",
+        backgroundImage: "/path/to/coco-poster.jpg", // Replace with actual image path
+        story: "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+      },
+      {
+        title: "Incredibles 2",
+        rating: "7.6",
+        backgroundImage: "/path/to/incredibles-2-poster.jpg", // Replace with actual image path
+        story: "The Incredibles family takes on a new mission, which involves a change in family roles: Bob Parr (Mr. Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.",
+      },
+      {
+        title: "Toy Story 4",
+        rating: "7.7",
+        backgroundImage: "/path/to/toy-story-4-poster.jpg", // Replace with actual image path
+        story: "When a new toy called Forky joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
+      },
+      {
+        title: "Onward",
+        rating: "7.4",
+        backgroundImage: "/path/to/onward-poster.jpg", // Replace with actual image path
+        story: "Two elven brothers embark on a quest to bring their father back for one day.",
+      },
+      {
+        title: "Soul",
+        rating: "8.1",
+        backgroundImage: "/path/to/soul-poster.jpg", // Replace with actual image path
+        story: "A musician, whose passion for music is in decline, finds himself in a strange land between Earth and the afterlife.",
+      },
+      {
+        title: "Luca",
+        rating: "7.4",
+        backgroundImage: "/path/to/luca-poster.jpg", // Replace with actual image path
+        story: "On the Italian Riviera, an unlikely but strong friendship grows between a human being and a sea monster disguised as a human.",
+      },
+      {
+        title: "Turning Red",
+        rating: "7.0",
+        backgroundImage: "/path/to/turning-red-poster.jpg", // Replace with actual image path
+        story: "A 13-year-old girl named Mei Lee transforms into a giant red panda whenever she gets too excited.",
+      },
+      {
+        title: "Lightyear",
+        rating: "6.1",
+        backgroundImage: "/path/to/lightyear-poster.jpg", // Replace with actual image path
+        story: "While spending years attempting to return home, marooned Space Ranger Buzz Lightyear encounters an army of ruthless robots commanded by Zurg, who is attempting to steal his fuel source.",
+      },
+      // Add more movies as needed
     ];
 
-    setCards(disneyMovies);
+    setCards(movieData);
   }, []);
 
   return (
-    <div className="disney-component">
+    <div className="main-content pt-20">
       <Navbar />
-      <h1>Disney Movies</h1>
-      <div className="movies-grid">
-        {cards.map((card, index) => (
-          <div key={index} className="movie-card" style={{ backgroundImage: `url(${card.backgroundImage})` }}>
-            <div className="movie-info">
-              <h2>{card.title}</h2>
-              <p>Rating: {card.rating}</p>
-              <p>{card.story}</p>
+
+      <div className="relative h-full w-full bg-slate-950">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
+
+        <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('/src/Assets/ToonImages/Pixar/wallpaperflare.com_wallpaper (2).jpg')` }}>
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+              Discover the Magic of Pixar
+            </h1>
+            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
+              Explore our collection of animated classics that have captured <br />hearts across the globe.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="relative w-full p-36 h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-90"
+              style={{
+                backgroundImage: `url(${card.backgroundImage})`,
+              }}
+            >
+              {/* Overlay for text */}
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-white text-lg text-center mb-2">{card.story}</p>
+                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+                  <div
+                    className="bg-purple-800 h-full rounded-full"
+                    style={{ width: `${card.rating * 10}%` }}
+                  ></div>
+                </div>
+                <p className="text-white text-lg">{card.rating}</p>
+                <button
+                  className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
+                  onClick={() => alert(`Downloading ${card.title}`)}
+                >
+                  Download
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between gap-8">
+            <div>
+              <h2 className="text-xl font-bold mb-2">Get the App</h2>
+              <p className="text-gray-400">Download our app for the best experience.</p>
+              <div className="mt-4">
+                <a href="#" className="text-yellow-500 hover:underline">Download on the App Store</a>
+                <br />
+                <a href="#" className="text-yellow-500 hover:underline">Get it on Google Play</a>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold mb-2">More</h2>
+              <ul>
+                <li>
+                  <Link to="/about" className="text-gray-400 hover:underline">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-gray-400 hover:underline">Contact</Link>
+                </li>
+                <li>
+                  <Link to="/privacy" className="text-gray-400 hover:underline">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/terms" className="text-gray-400 hover:underline">Terms of Service</Link>
+                </li>
+              </ul>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+
+        <div className="mt-8 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Anim8. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
 
-export default Disney;
+export default Pixar;
