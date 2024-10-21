@@ -9,27 +9,21 @@ const Pixar = () => {
     // Predefined data for Pixar movies
     const movieData = [
       {
-        title: "Guardians of the Galaxy Vol. 2",
-        rating: "7.6",
-        backgroundImage: "/path/to/guardians-poster.jpg", // Replace with actual image path
-        story: "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.",
-      },
-      {
         title: "Toy Story",
         rating: "8.3",
-        backgroundImage: "/path/to/toy-story-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/407/622/339/toy-story-barbie-bullseye-toy-story-buzz-lightyear-wallpaper-preview.jpg", // Replace with actual image path
         story: "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's room.",
       },
       {
         title: "A Bug's Life",
         rating: "7.2",
-        backgroundImage: "/path/to/bugs-life-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://images.bauerhosting.com/legacy/empire-tmdb/films/9487/images/gOvW00ZMoEiyRwXVkHPfBictPAl.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=768&q=80", // Replace with actual image path
         story: "A misfit ant, looking for 'warriors' to save his colony from greedy grasshoppers, recruits a group of bugs that turn out to be an inept circus troupe.",
       },
       {
         title: "Toy Story 2",
         rating: "7.9",
-        backgroundImage: "/path/to/toy-story-2-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/160/504/941/toy-story-toy-story-2-buzz-lightyear-woody-toy-story-wallpaper-preview.jpg", // Replace with actual image path
         story: "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save him.",
       },
       {
