@@ -1,21 +1,21 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../src/Components/Navbar";
-import { Link } from 'react-router-dom'; 
+import { Link } from "react-router-dom"; 
 import { useState, useRef, useEffect, useCallback } from "react"; 
 import { MdSkipNext, MdQueueMusic } from "react-icons/md";
-import { AiOutlineHeart } from 'react-icons/ai'; // For favorites
+import { AiOutlineHeart } from "react-icons/ai"; // For favorites
 
 const App = () => {
   const audioTracks = [
     {
       title: "Rosario Vampire Theme Song",
-      src: "/Assets/Songs/03 I Think.mp3",
-      background: "/src/Assets/wallpapersden.com_call-of-duty-dark-nikto_1920x1080.jpg",
+      src: `/Assets/Songs/03 I Think.mp3`,
+      background: `/Assets/wallpapersden.com_call-of-duty-dark-nikto_1920x1080.jpg`,
     },
     {
       title: "Bleach Season One Theme Song",
-      src: "/Assets/Songs/02 Earfquake.mp3",
-      background: "/src/Assets/activision-call-of-duty-modern-warfare-2-call-of-duty-warzone-cod-vanguard-playstation-hd-wallpaper-preview.jpg",
+      src: `/Assets/Songs/02 Earfquake.mp3`,
+      background: `/Assets/activision-call-of-duty-modern-warfare-2-call-of-duty-warzone-cod-vanguard-playstation-hd-wallpaper-preview.jpg`,
     },
   ];
 
@@ -57,9 +57,9 @@ const App = () => {
   useEffect(() => {
     const audioElement = audioRef.current;
     if (audioElement) {
-      audioElement.addEventListener('ended', handleTrackEnd);
+      audioElement.addEventListener("ended", handleTrackEnd);
       return () => {
-        audioElement.removeEventListener('ended', handleTrackEnd);
+        audioElement.removeEventListener("ended", handleTrackEnd);
       };
     }
   }, [handleTrackEnd]);
@@ -77,9 +77,8 @@ const App = () => {
       const scrubber = scrubberRef.current;
       const duration = audioRef.current.duration || 0;
       const currentTime = audioRef.current.currentTime || 0;
-      const width = scrubber.offsetWidth;
       const percentage = (currentTime / duration) * 100;
-      scrubber.style.setProperty('--progress', `${percentage}%`);
+      scrubber.style.setProperty("--progress", `${percentage}%`);
     };
 
     const intervalId = setInterval(updateScrubber, 1000);
@@ -99,7 +98,7 @@ const App = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="absolute inset-0 z-10 h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${audioTracks[currentTrack].background})` }}
+            style={{ backgroundImage: `url(${audioTracks[currentTrack].background})` }}
           />
         </AnimatePresence>
 
@@ -161,7 +160,7 @@ const App = () => {
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  alert(`Logging in...`);
+                  alert("Logging in...");
                 }}
                 className="bg-black bg-opacity-70 p-6 rounded-lg flex flex-col gap-4"
               >
@@ -195,6 +194,7 @@ const App = () => {
           </main>
         </div>
       </div>
+
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between gap-8">
@@ -202,8 +202,7 @@ const App = () => {
               <h2 className="text-xl font-bold mb-2">Get the App</h2>
               <p className="text-gray-400">Download our app for the best experience.</p>
               <div className="mt-4">
-                <a href="#" className="text-yellow-500 hover:underline">Download on the App Store</a>
-                <br />
+                <a href="#" className="text-yellow-500 hover:underline">Download on the App Store</a><br />
                 <a href="#" className="text-yellow-500 hover:underline">Get it on Google Play</a>
               </div>
             </div>
@@ -211,18 +210,10 @@ const App = () => {
             <div>
               <h2 className="text-xl font-bold mb-2">More</h2>
               <ul>
-                <li>
-                  <Link to="/about" className="text-gray-400 hover:underline">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="text-gray-400 hover:underline">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/privacy" className="text-gray-400 hover:underline">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link to="/terms" className="text-gray-400 hover:underline">Terms of Service</Link>
-                </li>
+                <li><Link to="/about" className="text-gray-400 hover:underline">About Us</Link></li>
+                <li><Link to="/contact" className="text-gray-400 hover:underline">Contact</Link></li>
+                <li><Link to="/privacy" className="text-gray-400 hover:underline">Privacy Policy</Link></li>
+                <li><Link to="/terms" className="text-gray-400 hover:underline">Terms of Service</Link></li>
               </ul>
             </div>
           </div>
