@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import RinYoshidaImage from '../Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg';
 import { MdSkipNext } from "react-icons/md";
-
+import { Link } from 'react-router-dom';
 const Garden = () => {
   const movies = [
     "Overlooking View (2007)",
