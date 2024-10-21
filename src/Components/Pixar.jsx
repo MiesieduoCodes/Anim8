@@ -155,7 +155,7 @@ const Pixar = () => {
       {
         title: "Turning Red",
         rating: "7.0",
-        backgroundImage: "/path/to/turning-red-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://wallpapercave.com/wp/wp13496045.jpg", // Replace with actual image path
         story: "A 13-year-old girl named Mei Lee transforms into a giant red panda whenever she gets too excited.",
       },
       {
