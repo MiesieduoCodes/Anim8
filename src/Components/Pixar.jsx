@@ -29,49 +29,49 @@ const Pixar = () => {
       {
         title: "Monsters, Inc.",
         rating: "8.1",
-        backgroundImage: "/path/to/monsters-inc-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/803/629/189/cartoon-gate-friends-statues-wallpaper-preview.jpg", // Replace with actual image path
         story: "In order to power the city, monsters have to scare children so they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.",
       },
       {
         title: "Finding Nemo",
         rating: "8.1",
-        backgroundImage: "/path/to/finding-nemo-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/700/141/259/finding-nemo-disney-movies-fish-wallpaper-preview.jpg", // Replace with actual image path
         story: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
       },
       {
         title: "The Incredibles",
         rating: "8.0",
-        backgroundImage: "/path/to/incredibles-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/770/993/260/movie-the-incredibles-dash-parr-elastigirl-wallpaper-preview.jpg", // Replace with actual image path
         story: "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
       },
       {
         title: "Cars",
         rating: "7.2",
-        backgroundImage: "/path/to/cars-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/759/811/822/disney-lightning-mcqueen-mcqueen-cars-movie-wallpaper-preview.jpg", // Replace with actual image path
         story: "A hotshot race car named Lightning McQueen gets waylaid in Radiator Springs, where he finds the true meaning of friendship and family.",
       },
       {
         title: "Ratatouille",
         rating: "8.0",
-        backgroundImage: "/path/to/ratatouille-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/988/734/385/paris-pixar-disney-company-movies-ratatouille-entertainment-movies-hd-art-wallpaper-preview.jpg", // Replace with actual image path
         story: "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
       },
       {
         title: "WALL-E",
         rating: "8.4",
-        backgroundImage: "/path/to/wall-e-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/766/754/564/wall-e-pixar-animation-studios-disney-movies-wallpaper-preview.jpg", // Replace with actual image path
         story: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
       },
       {
         title: "Up",
         rating: "8.3",
-        backgroundImage: "/path/to/up-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/673/107/786/up-movie-pixar-animation-studios-movies-sky-wallpaper-preview.jpg", // Replace with actual image path
         story: "78-year-old Carl sets out to fulfill his dream of seeing the wilds of South America by tying thousands of balloons to his home.",
       },
       {
         title: "Toy Story 3",
         rating: "8.3",
-        backgroundImage: "/path/to/toy-story-3-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/387/50/364/toy-story-3-box-toy-wallpaper-preview.jpg", // Replace with actual image path
         story: "The toys are mistakenly delivered to a daycare center instead of the attic before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned.",
       },
       {
