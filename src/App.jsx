@@ -1,44 +1,102 @@
-import { motion, AnimatePresence } from "framer-motion"; 
+import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../src/Components/Navbar";
 import { Link } from 'react-router-dom'; 
 import { useState, useRef, useEffect, useCallback } from "react"; 
-import { MdSkipNext } from "react-icons/md";
+import { MdSkipNext, MdQueueMusic } from "react-icons/md";
+import { AiOutlineHeart } from 'react-icons/ai'; // For favorites
 
 const App = () => {
   const audioTracks = [
     {
       title: "Rosario Vampire Theme Song",
-      src: "./Assets/Songs/03 I Think.mp3",
-      background: "../src/Assets/wallpapersden.com_call-of-duty-dark-nikto_1920x1080.jpg",
+      src: "/Assets/Songs/03 I Think.mp3",
+      background: "/src/Assets/wallpapersden.com_call-of-duty-dark-nikto_1920x1080.jpg",
     },
     {
       title: "Bleach Season One Theme Song",
-      src: "./Assets/Songs/02 Earfquake.mp3",
-      background: "../src/Assets/activision-call-of-duty-modern-warfare-2-call-of-duty-warzone-cod-vanguard-playstation-hd-wallpaper-preview.jpg",
+      src: "/Assets/Songs/02 Earfquake.mp3",
+      background: "/src/Assets/wallpapersden.com_call-of-duty-modern-warfare-2-call-of-duty-warzone-cod-vanguard-playstation-hd-wallpaper-preview.jpg",
     },
-    // Add more tracks as necessary
   ];
 
   const [currentTrack, setCurrentTrack] = useState(0);
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [showQueue, setShowQueue] = useState(false);
   const audioRef = useRef(null);
+  const canvasRef = useRef(null);
+  const audioContextRef = useRef(null);
+  const analyserRef = useRef(null);
 
-  const playAudio = async () => {
-    try {
-      await audioRef.current.play();
-    } catch (error) {
-      console.error("Error playing audio:", error);
-    }
-  };
+  useEffect(() => {
+    // Initialize audio context
+    audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+    const source = audioContextRef.current.createBufferSource();
+    analyserRef.current = audioContextRef.current.createAnalyser();
+    audioRef.current.src = audioTracks[currentTrack].src;
 
-  const changeTrack = async (index) => {
+    // Load the audio track and set it up
+    fetch(audioTracks[currentTrack].src)
+      .then(response => response.arrayBuffer())
+      .then(data => audioContextRef.current.decodeAudioData(data))
+      .then(buffer => {
+        source.buffer = buffer;
+        source.connect(analyserRef.current);
+        analyserRef.current.connect(audioContextRef.current.destination);
+        source.start(0);
+      })
+      .catch(error => console.error('Error with fetching audio:', error));
+
+    // Clean up on unmount
+    return () => {
+      if (source) {
+        source.stop();
+      }
+      audioContextRef.current.close();
+    };
+  }, [currentTrack]);
+
+  useEffect(() => {
+    const drawWaveform = () => {
+      const canvas = canvasRef.current;
+      const context = canvas.getContext('2d');
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      const bufferLength = analyserRef.current.frequencyBinCount;
+      const dataArray = new Uint8Array(bufferLength);
+      analyserRef.current.getByteTimeDomainData(dataArray);
+
+      const width = canvas.width;
+      const height = canvas.height;
+      const sliceWidth = (width * 1.0) / bufferLength;
+      let x = 0;
+
+      context.lineWidth = 2;
+      context.strokeStyle = 'blue';
+      context.beginPath();
+
+      for (let i = 0; i < bufferLength; i++) {
+        const v = dataArray[i] / 128.0; // Normalize to 0-1
+        const y = (v * height) / 2;
+
+        if (i === 0) {
+          context.moveTo(x, y);
+        } else {
+          context.lineTo(x, y);
+        }
+        x += sliceWidth;
+      }
+
+      context.lineTo(width, height / 2);
+      context.stroke();
+
+      requestAnimationFrame(drawWaveform);
+    };
+
+    drawWaveform();
+  }, [currentTrack]);
+
+  const changeTrack = (index) => {
     setCurrentTrack(index);
-    audioRef.current.src = audioTracks[index].src; // Set the new source
-    try {
-      await audioRef.current.load(); // Load the new audio track
-      await playAudio(); // Play the audio after it has loaded
-    } catch (error) {
-      console.error("Error changing track:", error);
-    }
   };
 
   const randomizeTrack = () => {
@@ -50,9 +108,10 @@ const App = () => {
     randomizeTrack();
   }, []);
 
+  const toggleFavorite = () => setIsFavorite(!isFavorite);
+
   useEffect(() => {
     const audioElement = audioRef.current;
-
     if (audioElement) {
       audioElement.addEventListener('ended', handleTrackEnd);
       return () => {
@@ -61,8 +120,10 @@ const App = () => {
     }
   }, [handleTrackEnd]);
 
+  const toggleQueue = () => setShowQueue(!showQueue);
+
   return (
-    <div  className="main-content pt-20">
+    <div className="main-content pt-20">
       <Navbar />
 
       <div className="relative z-0 h-screen">
@@ -92,20 +153,44 @@ const App = () => {
               <p className="text-white text-sm md:text-lg mt-4">
                 Your One-Stop site for Top-Rated Anime Content
               </p>
+
               <div className="mt-8">
                 <h2 className="text-white text-lg md:text-xl mb-4">
                   Currently Playing: <span className="text-red-500">{audioTracks[currentTrack].title}</span>
                 </h2>
+
+                {/* Waveform canvas */}
+                <canvas
+                  ref={canvasRef}
+                  width={400} // Adjust width as needed
+                  height={100} // Adjust height for better visibility
+                  className="w-full mb-4"
+                />
+
+                {/* Music control buttons */}
                 <div className="flex justify-center md:justify-start gap-4 mt-4">
                   <button
-                    onClick={randomizeTrack}
+                    onClick={() => changeTrack(currentTrack === audioTracks.length - 1 ? 0 : currentTrack + 1)}
                     className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-300"
                   >
                     <MdSkipNext size={24} />
                   </button>
+                  <button
+                    onClick={toggleFavorite}
+                    className={`px-4 py-2 rounded ${isFavorite ? 'bg-red-500' : 'bg-gray-500'} hover:bg-red-700 transition-colors duration-300`}
+                  >
+                    <AiOutlineHeart size={24} />
+                  </button>
+                  <button
+                    onClick={toggleQueue}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300"
+                  >
+                    <MdQueueMusic size={24} />
+                  </button>
                 </div>
+
+                <audio ref={audioRef} />
               </div>
-              <audio ref={audioRef} />
             </section>
 
             <section className="w-full max-w-sm md:max-w-md">
@@ -142,55 +227,25 @@ const App = () => {
                   </Link>
                 </div>
               </form>
+
+              {showQueue && (
+                <div className="mt-4 bg-black bg-opacity-70 p-4 rounded-lg">
+                  <h2 className="text-white text-lg">Queue:</h2>
+                  <ul className="text-white">
+                    {audioTracks.map((track, index) => (
+                      <li key={index} className={`py-1 ${index === currentTrack ? 'font-bold' : ''}`}>
+                        {track.title}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </section>
           </main>
         </div>
       </div>
-
-     <footer className="bg-gray-800 text-white py-8">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between gap-8">
-            <div>
-              <h2 className="text-xl font-bold mb-2">Get the App</h2>
-              <p className="text-gray-400">Download our app for the best experience.</p>
-              <div className="mt-4">
-                <a href="#" className="text-yellow-500 hover:underline">Download on the App Store</a>
-                <br />
-                <a href="#" className="text-yellow-500 hover:underline">Get it on Google Play</a>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-bold mb-2">More</h2>
-              <ul>
-                <li>
-                  <Link to="/about" className="text-gray-400 hover:underline">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="text-gray-400 hover:underline">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/privacy" className="text-gray-400 hover:underline">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link to="/terms" className="text-gray-400 hover:underline">Terms of Service</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Anim8. All rights reserved.</p>
-        </div>
-        
-      </footer>
     </div>
   );
 };
 
 export default App;
-
-
-
-

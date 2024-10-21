@@ -22,7 +22,36 @@ const trailersData = [
     videoUrl: 'trailer3.mp4',
     synopsis: 'Epic fantasy tale...',
   },
-  // Add more movies as needed
+  {
+    id: 3,
+    title: 'Movie 3',
+    videoUrl: 'trailer3.mp4',
+    synopsis: 'Epic fantasy tale...',
+  },  
+  {
+    id: 3,
+    title: 'Movie 3',
+    videoUrl: 'trailer3.mp4',
+    synopsis: 'Epic fantasy tale...',
+  },  
+  {
+    id: 3,
+    title: 'Movie 3',
+    videoUrl: 'trailer3.mp4',
+    synopsis: 'Epic fantasy tale...',
+  },
+  {
+    id: 3,
+    title: 'Movie 3',
+    videoUrl: 'trailer3.mp4',
+    synopsis: 'Epic fantasy tale...',
+  },
+  {
+    id: 3,
+    title: 'Movie 3',
+    videoUrl: 'trailer3.mp4',
+    synopsis: 'Epic fantasy tale...',
+  },
 ];
 
 const ReelsPage = () => {
