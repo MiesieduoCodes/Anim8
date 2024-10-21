@@ -149,7 +149,7 @@ const Pixar = () => {
       {
         title: "Luca",
         rating: "7.4",
-        backgroundImage: "/path/to/luca-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://picfiles.alphacoders.com/422/thumb-1920-422532.jpg", // Replace with actual image path
         story: "On the Italian Riviera, an unlikely but strong friendship grows between a human being and a sea monster disguised as a human.",
       },
       {
@@ -161,7 +161,7 @@ const Pixar = () => {
       {
         title: "Lightyear",
         rating: "6.1",
-        backgroundImage: "/path/to/lightyear-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://images5.alphacoders.com/126/thumb-1920-1267703.jpg", // Replace with actual image path
         story: "While spending years attempting to return home, marooned Space Ranger Buzz Lightyear encounters an army of ruthless robots commanded by Zurg, who is attempting to steal his fuel source.",
       },
       // Add more movies as needed
