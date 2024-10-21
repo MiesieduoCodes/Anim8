@@ -77,73 +77,73 @@ const Pixar = () => {
       {
         title: "Cars 2",
         rating: "6.2",
-        backgroundImage: "/path/to/cars-2-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/529/30/493/cartoon-pixar-cars-2-cars-2-wallpaper-preview.jpg", // Replace with actual image path
         story: "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix, but the road to the championship becomes rocky as Mater gets caught up in espionage.",
       },
       {
         title: "Brave",
         rating: "7.1",
-        backgroundImage: "/path/to/brave-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/162/491/699/4k-brave-princess-merida-disney-princess-wallpaper-preview.jpg", // Replace with actual image path
         story: "Determined to make her own path in life, Princess Merida defies a custom that brings chaos to her kingdom.",
       },
       {
         title: "Monsters University",
         rating: "7.2",
-        backgroundImage: "/path/to/monsters-university-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/276/933/303/monsters-university-disney-wallpaper-preview.jpg", // Replace with actual image path
         story: "A look at the relationship between Mike Wazowski and James P. 'Sulley' Sullivan during their days at Monsters University, when they weren't necessarily the best of friends.",
       },
       {
         title: "Inside Out",
         rating: "8.1",
-        backgroundImage: "/path/to/inside-out-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/554/758/458/movie-inside-out-anger-inside-out-disgust-inside-out-wallpaper-preview.jpg", // Replace with actual image path
         story: "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions – Joy, Fear, Anger, Disgust and Sadness – conflict on how best to navigate a new city, house, and school.",
       },
       {
         title: "The Good Dinosaur",
         rating: "6.7",
-        backgroundImage: "/path/to/good-dinosaur-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/1018/439/828/movies-hollywood-movies-wallpaper-preview.jpg", // Replace with actual image path
         story: "In a world where dinosaurs and humans live side by side, an Apatosaurus named Arlo makes an unlikely human friend.",
       },
       {
         title: "Finding Dory",
         rating: "7.3",
-        backgroundImage: "/path/to/finding-dory-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/822/890/520/movie-finding-dory-dory-finding-nemo-wallpaper-preview.jpg", // Replace with actual image path
         story: "The friendly but forgetful blue tang fish, Dory, begins a search for her long-lost parents, and everyone learns a few things about the real meaning of family along the way.",
       },
       {
         title: "Cars 3",
         rating: "6.7",
-        backgroundImage: "/path/to/cars-3-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/939/452/923/lightning-mcqueen-4k-poster-cars-3-wallpaper-preview.jpg", // Replace with actual image path
         story: "Lightning McQueen sets out to prove to a new generation of racers that he's still the best race car in the world.",
       },
       {
         title: "Coco",
         rating: "8.4",
-        backgroundImage: "/path/to/coco-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/165/365/163/pixar-animation-2017-miguel-rivera-wallpaper-preview.jpg", // Replace with actual image path
         story: "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
       },
       {
         title: "Incredibles 2",
         rating: "7.6",
-        backgroundImage: "/path/to/incredibles-2-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/722/1011/788/movie-incredibles-2-bob-parr-dash-parr-wallpaper-preview.jpg", // Replace with actual image path
         story: "The Incredibles family takes on a new mission, which involves a change in family roles: Bob Parr (Mr. Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.",
       },
       {
         title: "Toy Story 4",
         rating: "7.7",
-        backgroundImage: "/path/to/toy-story-4-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/927/177/132/movie-toy-story-4-buzz-lightyear-forky-toy-story-jessie-toy-story-hd-wallpaper-preview.jpg", // Replace with actual image path
         story: "When a new toy called Forky joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
       },
       {
         title: "Onward",
         rating: "7.4",
-        backgroundImage: "/path/to/onward-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/162/169/131/movie-onward-onward-movie-pixar-hd-wallpaper-preview.jpg", // Replace with actual image path
         story: "Two elven brothers embark on a quest to bring their father back for one day.",
       },
       {
         title: "Soul",
         rating: "8.1",
-        backgroundImage: "/path/to/soul-poster.jpg", // Replace with actual image path
+        backgroundImage: "https://wallpapercave.com/wp/wp8207832.jpg", // Replace with actual image path
         story: "A musician, whose passion for music is in decline, finds himself in a strange land between Earth and the afterlife.",
       },
       {
