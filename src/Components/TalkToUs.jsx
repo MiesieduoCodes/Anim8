@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from "./Footer";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -8,9 +7,7 @@ import { SiThreads } from "react-icons/si";
 import FloatingMusicButton from '../FloatingMusicButton';
 import emailjs from 'emailjs-com';
 
-
 const ContactLoginPage = () => {
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -110,23 +107,24 @@ const ContactLoginPage = () => {
           <section className="flex w-full md:w-1/2 flex-col justify-center items-center gap-6 p-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-lg transform transition hover:shadow-2xl">
             <h2 className="text-2xl text-white font-semibold mb-4">Follow Us</h2>
             <div className="flex gap-6">
-              <Link to="https://www.instagram.com/anim8official?igsh=MWxuenc2ODFhMz1ZA==">
+              <a href="https://www.instagram.com/anim8official?igsh=MWxuenc2ODFhMz1ZA==" target="_blank" rel="noopener noreferrer">
                 <FaInstagramSquare className="text-5xl text-white hover:text-pink-400 transition duration-300 transform hover:scale-110" />
-              </Link>
-              <Link to="/about">
+              </a>
+              <a href="https://www.youtube.com/anim8" target="_blank" rel="noopener noreferrer">
                 <PiYoutubeLogo className="text-5xl text-white hover:text-red-400 transition duration-300 transform hover:scale-110" />
-              </Link>
-              <Link to="https://www.threads.net/@anim8official">
+              </a>
+              <a href="https://www.threads.net/@anim8official" target="_blank" rel="noopener noreferrer">
                 <SiThreads className="text-5xl text-white hover:text-gray-300 transition duration-300 transform hover:scale-110" />
-              </Link>
+              </a>
             </div>
           </section>
         </div>
       </div>
 
       <Footer />
-      <FloatingMusicButton/>
-            
+      <FloatingMusicButton
+        // Assuming you pass props from a higher component to manage state here
+      />
     </div>
   );
 };

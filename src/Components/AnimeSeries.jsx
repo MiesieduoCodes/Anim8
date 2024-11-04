@@ -228,16 +228,7 @@ const AnimeSeries = () => {
     <div className="bg-gray-400 main-content pt-24 min-h-screen">
       <Navbar />
       <div className="container mx-auto my-10">
-      <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamworks_wallpaper_by_maxtop9002_dfzdlcd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWU0MjAwYjQtMWNhOC00ZWY3LTljY2ItMWI2NjM1OWViMjQ3XC9kZnpkbGNkLWMwZTQxODg3LTE4NWMtNGI2NS1hMjRmLWU4OGJhNjBlZThmNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MmZD7VVsp2Fx8uii0TWUCo0J7Q_JEMyMLnEGYo2twQM')` }}>
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              Discover the Magic of Dreamworks
-            </h1>
-            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              Explore our collection of animated <br /> classics that have captured hearts across the globe.
-            </p>
-          </div>
-        </div>
+        <h1 className="text-4xl font-bold mb-6">Anime Series</h1>
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">{genre}</h2>

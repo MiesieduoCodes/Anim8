@@ -34,13 +34,13 @@ const AppContent = () => {
       <div className="relative z-0 h-screen">
         <AnimatePresence mode="wait">
           <motion.div
-            key={tracks[currentTrackIndex].background}
+            key={tracks[currentTrackIndex]?.background} // Optional chaining to prevent errors
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="absolute inset-0 z-10 h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${tracks[currentTrackIndex].background})` }}
+            style={{ backgroundImage: `url(${tracks[currentTrackIndex]?.background})` }} // Optional chaining
           />
         </AnimatePresence>
 
@@ -61,7 +61,7 @@ const AppContent = () => {
 
               <div className="mt-8">
                 <h2 className="text-white text-lg md:text-xl mb-4">
-                  Currently Playing: <span className="text-red-500">{tracks[currentTrackIndex].title}</span>
+                  Currently Playing: <span className="text-red-500">{tracks[currentTrackIndex]?.title}</span> {/* Optional chaining */}
                 </h2>
 
                 <div className="flex justify-center md:justify-start gap-4 mt-4">
@@ -132,7 +132,7 @@ const AppContent = () => {
       />
 
       {/* Audio Element */}
-      <audio ref={audioRef} src={tracks[currentTrackIndex]?.url} loop />
+      <audio ref={audioRef} src={tracks[currentTrackIndex]?.url} loop /> {/* Optional chaining */}
     </div>
   );
 };
