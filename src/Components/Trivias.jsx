@@ -57,7 +57,6 @@ const Trivias = () => {
       "One of the tanks says 2015, referencing the film's release date.",
       "Hank is the third Pixar character with camouflage ability."
     ],
-    
     "Kung Fu Panda": [
       "The character Po was inspired by a panda that was raised in a zoo in China.",
       "Jackie Chan was originally approached to voice Po but declined the role.",
