@@ -1,0 +1,117 @@
+import { useState, useEffect } from 'react';
+import Navbar from './Navbar';
+import FloatingMusicButton from '../FloatingMusicButton';
+import Footer from "./Footer";
+
+const AnimeFilms = () => {
+  const [animeCollections, setAnimeCollections] = useState([]);
+
+  useEffect(() => {
+    // Initialize anime collections data
+    const collections = [
+      {
+        title: "Anime Collection",
+        items: [
+          { title: "Demon Slayer: Mugen Train", rating: 8.7, backgroundImage: "https://demonslayer-anime.com/mugentrain/assets/img/kv.jpg" },
+          { title: "Demon Slayer: Kimetsu no Yaiba – To the Swordsmith Village", rating: 8.4, backgroundImage: "https://resizing.flixster.com/1XAnGb3ZEmfK5VHDctS7RVnRraE=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16969948_i_h8_aa.jpg" },
+          { title: "Attack on Titans: Wings of Freedom", rating: 7.8, backgroundImage: "https://scontent.fabb1-1.fna.fbcdn.net/v/t39.30808-6/438087650_122173654136035154_3201272222409483156_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeG2Xz9d1y3668NI8wRNEND7cIjpcyG4VhxwiOlzIbhWHPhgtEIiTGqmD-0UBZ7m0vUs__c0JpToxrV73QdFTgkt&_nc_ohc=zEfPPGB8LgoQ7kNvgHJpDx1&_nc_zt=23&_nc_ht=scontent.fabb1-1.fna&_nc_gid=AgH7Ya3swbZncX9MJIRx5xj&oh=00_AYDDFlGcFscuiPFDpow1DgTtb5x1u9HhDWavFcuYLYVWYg&oe=6725934F" },
+          { title: "Your Name", rating: 8.4, backgroundImage: "https://wallpapercave.com/wp/wp3951268.jpg" },
+          { title: "Blood C: The Last Dark", rating: 7.5, backgroundImage: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/bloodclastdark.png" },
+          { title: "The Garden of Words", rating: 8.1, backgroundImage: "https://miro.medium.com/v2/resize:fit:1050/0*ZWEPy8NfPoXuQWR-." },
+          { title: "Wolf Children", rating: 8.1, backgroundImage: "https://wallpapercave.com/wp/wp3298817.jpg" },
+          { title: "Jujutsu Kaisen 0: The Movie", rating: 8.1, backgroundImage: "https://m.media-amazon.com/images/S/pv-target-images/83a15e35dec3984d13ea6eb76857106b3bf03470f6f8f571de2464a4cd3b21c2._SX1440_FMwebp_.jpg" },
+          { title: "Sailor Moon Eternal: The Movie", rating: 8.23, backgroundImage: "https://www.denofgeek.com/wp-content/uploads/2021/06/sailor-moon-eternal-movie.png?resize=768%2C432" },
+          { title: "Starless Night", rating: 7.92, backgroundImage: "https://wallpapercave.com/wp/wp7126401.jpg" },
+          { title: "Belle", rating: 7.86, backgroundImage: "https://cdn.myanimelist.net/images/anime/1081/115716.jpg" },
+          { title: "Earwig and the Witch", rating: 6.8, backgroundImage: "https://static01.nyt.com/images/2021/02/05/arts/earwig1/merlin_182979771_66420363-fa03-4b2e-a3c0-6672605dd9ae-jumbo.jpg?quality=75&auto=webp" },
+          { title: "Bright: Samurai Soul", rating: 6.6, backgroundImage: "https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/09/Bright-Samurai-Soul.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5" },
+          { title: "Mobile Suit Gundam: Hathaway", rating: 7.6, backgroundImage: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/344/2022/09/23061626/Mobile-Suit-Gundam-Cucuruz-Doans-Island-1536x864.jpeg" },
+          { title: "My Hero Academia: World Heroes' Mission", rating: 7.5, backgroundImage: "https://www.reddit.com/media?url=https%3A%2F%2Fexternal-preview.redd.it%2FTrNhcBLUWQIHwdyWY69NwCMZSVrypRePvnwsLuaZjww.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D6d12420ce720896ca65300c14c5819bb958f8fee" },
+          { title: "Weathering with You", rating: 8.0, backgroundImage: "https://images.squarespace-cdn.com/content/v1/5ccabcf60b77bdbb3acaf70a/1579260217183-CBLRYEE3Z6NPYE7178K0/weathering-with-you-japanese-anima.jpg?format=1500w" },
+          { title: "Dragon Quest: Your Story", rating: 7.8, backgroundImage: "https://imageio.forbes.com/specials-images/imageserve/5e53bc287a0098000734101c/Dragon-Quest-Your-Story/0x0.jpg?format=jpg&crop=1280,720,x0,y0,safe&width=1440" },
+          { title: "Human Lost", rating: 7.6, backgroundImage: "https://blog.alltheanime.com/wp-content/uploads/2019/07/storyenimage-850x667.png" },
+          { title: "Hello World", rating: 7.5, backgroundImage: "https://deconrecon.b-cdn.net/wp-content/uploads/2020/03/Hello-World-4-1024x709.jpg" },
+          { title: "The Legend of the Galactic Heroes: Die Neue These", rating: 7.4, backgroundImage: "https://wallpapercave.com/wp/wp7551454.jpg" },
+          { title: "Ride Your Wave", rating: 7.2, backgroundImage: "https://myanimereport.wordpress.com/wp-content/uploads/2020/06/kimito4.jpg" },
+          { title: "Children of the Sea", rating: 7.1, backgroundImage: "https://iffr.com/en/wp-content/uploads/sites/2/2024/05/116c4b34-6323-458b-bfac-0657289c2aa1-1296x729.jpg?image-crop-positioner-ts=1715884350" },
+          { title: "The Wonderland", rating: 7.0, backgroundImage: "https://wallpapercave.com/wp/wp6675668.jpg" },
+          { title: "City Hunter: Shinjuku Private Eyes", rating: 6.8, backgroundImage: "https://m.media-amazon.com/images/M/MV5BZjBlMWY1N2UtMmNiNi00NDEzLTgyNWQtMDU2ZmZiYjc1Zjc0XkEyXkFqcGc@._V1_.jpg" },
+          { title: "Mirai", rating: 8.1, backgroundImage: "https://sweetanimatedfilms.wordpress.com/wp-content/uploads/2018/01/mirai-no-mirai-kun-chan-falling-down-sky-clouds-e1513617108715.jpg?w=1180" },
+          { title: "Maquia: When the Promised Flower Blooms", rating: 8.0, backgroundImage: "https://wallpapercave.com/wp/wp6674045.jpg" },
+        ],
+      },
+    ];
+    
+    setAnimeCollections(collections);
+  }, []);
+
+  const handleDownload = (item) => {
+    const element = document.createElement("a");
+    const fileData = `Title: ${item.title}\nRating: ${item.rating}`;
+    const blob = new Blob([fileData], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    
+    element.href = url;
+    element.download = `${item.title}.txt`; // Filename for the downloaded file
+    document.body.appendChild(element); // Required for Firefox
+    element.click(); // Trigger the download
+    document.body.removeChild(element); // Clean up
+  };
+
+  return (
+    <>
+
+      <div className="main-content bg-slate-950 pt-24">
+              <Navbar />
+
+              <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+            Anime Related Text Here
+          </h1>
+          <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
+            Put your Anime Related Story Here So these Mfs Will Understand What they&apos;re <br />downloading before its scam.
+          </p>
+        </div>
+      </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+          {animeCollections[0]?.items.map((item, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+              style={{
+                backgroundImage: `url(${item.backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+              <div className="flex items-end h-full p-4 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                <div className="text-white text-center w-full">
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="text-sm">Rating: {item.rating}</p>
+                  <div className="w-full bg-gray-600 h-2 rounded">
+                    <div
+                      className="bg-yellow-500 h-full rounded"
+                      style={{ width: `${(item.rating / 10) * 100}%` }} // Rating as a percentage
+                    />
+                  </div>
+                  <button 
+                    onClick={() => handleDownload(item)} 
+                    className="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-700"
+                  >
+                    Download
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+            <Footer />
+            <FloatingMusicButton />
+    </>
+  );
+};
+
+export default AnimeFilms;
