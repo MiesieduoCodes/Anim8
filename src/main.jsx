@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AudioProvider } from "./AudioProvider";
 import "./index.css";
 
 // Main Components
@@ -23,7 +24,6 @@ import Marvel from "./Components/Marvel";
 import DC from "./Components/DC";
 import AnimeF from "./Components/AnimeFilms";
 import AnimeS from "./Components/AnimeSeries";
-//import AnimeCollection from "./Components/AnimeCollection";
 
 // Anime Shows and Movies
 import DetectiveConan from "./Components/DetectiveConan";
@@ -40,14 +40,14 @@ import Pokemon from "./Components/Pokemon";
 // Other Pages
 import SeasonsPage from "./Components/SeasonPage";
 import EpisodesPage from "./Components/Episodes";
-import SeasonDetails from "./Components/SeasonDetails"; 
-import GetApp from "./Components/GetTheApp";// Import your SeasonDetails component
+import SeasonDetails from "./Components/SeasonDetails";
+import GetApp from "./Components/GetTheApp";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/season", element: <SeasonsPage /> },
-  { path: "/episodes/:id/:seasonId", element: <EpisodesPage /> }, // Updated to handle both movie id and seasonId
-  { path: "/season/:id", element: <SeasonDetails /> }, // Add route for SeasonDetails
+  { path: "/episodes/:id/:seasonId", element: <EpisodesPage /> },
+  { path: "/season/:id", element: <SeasonDetails /> },
   { path: "/faqs", element: <FAQ /> },
   { path: "/about", element: <About /> },
   { path: "/trivias", element: <Trivias /> },
@@ -60,7 +60,6 @@ const router = createBrowserRouter([
   { path: "/dreamworks", element: <DreamWorks /> },
   { path: "/disney", element: <Disney /> },
   { path: "/netflix", element: <Netflix /> },
-  //{ path: "/anime-collection", element: <AnimeCollection /> },
   { path: "/marvel", element: <Marvel /> },
   { path: "/dc", element: <DC /> },
   { path: "/get", element: <Get /> },
@@ -81,6 +80,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AudioProvider>
+      <RouterProvider router={router} />
+    </AudioProvider>
   </React.StrictMode>
 );

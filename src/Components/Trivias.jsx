@@ -113,19 +113,22 @@ const Trivias = () => {
       "It explores Bruce Wayne's past and his motivations for becoming Batman.",
       "The film is often regarded as one of the best animated superhero films of all time."
     ],
-    "Marvel: Spider-Man: The Animated Series": [
-      "This series aired from 1994 to 1998 and introduced many iconic characters from the Spider-Man comics.",
-      "It was one of the first animated series to incorporate a serialized format, telling a continuous story.",
-      "The series is credited with reviving interest in superhero animated shows in the 1990s.",
-      "It featured voice actors like Christopher Daniel Barnes as Spider-Man and Ed Asner as J. Jonah Jameson.",
-      "The show influenced the character's portrayal in later media, including video games and movies."
-    ]
+  
   };
 
   return (
     <div className="main-content pt-24 bg-gray-100 min-h-screen">
       <Navbar />
-      <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">Movie Trivias</h1>
+      <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamworks_wallpaper_by_maxtop9002_dfzdlcd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWU0MjAwYjQtMWNhOC00ZWY3LTljY2ItMWI2NjM1OWViMjQ3XC9kZnpkbGNkLWMwZTQxODg3LTE4NWMtNGI2NS1hMjRmLWU4OGJhNjBlZThmNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MmZD7VVsp2Fx8uii0TWUCo0J7Q_JEMyMLnEGYo2twQM')` }}>
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+             Trivias Text Here
+            </h1>
+            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
+              DYKs For Animated Content
+            </p>
+          </div>
+        </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-4">
         {Object.entries(triviaData).map(([movie, trivias]) => (
           <div key={movie} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">

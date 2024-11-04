@@ -1,25 +1,15 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
 import FloatingMusicButton from "../FloatingMusicButton";
-import Footer from "./Footer" // Import the FloatingMusicButton
+import Footer from "./Footer";
+import { useAudio } from "../AudioProvider"; // Import useAudio from AudioProvider
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
-  // Music states
-  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
-  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const tracks = [
-    // Add your track sources here, e.g., { title: 'Track 1', url: 'path/to/track1.mp3' }
-  ];
+  const { isPlaying, togglePlay, currentTrack, changeTrack, audioTracks } = useAudio(); // Access music controls from AudioProvider
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const toggleMusic = () => {
-    setIsMusicPlaying((prev) => !prev);
-    // Add logic to play or pause music
   };
 
   const faqData = [
@@ -59,7 +49,6 @@ const Faq = () => {
           <div className="space-y-8">
             {faqData.map((faq, index) => (
               <div key={index} className="bg-gray-800 p-6 rounded-md">
-                {/* Question */}
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full text-left text-2xl font-semibold focus:outline-none"
@@ -92,7 +81,6 @@ const Faq = () => {
                   </div>
                 </button>
 
-                {/* Answer */}
                 <div
                   className={`transition-all duration-300 overflow-hidden ${
                     openIndex === index ? "max-h-full mt-4" : "max-h-0"
@@ -106,14 +94,13 @@ const Faq = () => {
         </div>
       </div>
 
-      {/* Footer */}
-     <Footer />
+      <Footer />
       <FloatingMusicButton
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={(index) => setCurrentTrackIndex(index)}
-        tracks={tracks}
+        isMusicPlaying={isPlaying}
+        toggleMusic={togglePlay}
+        currentTrackIndex={currentTrack}
+        changeTrack={changeTrack}
+        tracks={audioTracks}
       />
     </div>
   );

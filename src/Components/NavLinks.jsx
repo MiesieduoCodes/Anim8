@@ -45,7 +45,7 @@ const NavLinks = () => {
           sublink: [
             { name: "Trailers", link: "/trailers" },
             { name: "Trivias", link: "/trivias" },
-            { name: "Tooned In", link: "/toonedin" },
+            // { name: "Tooned In", link: "/toonedin" },
             { name: "Whatsup?", link: "/whatsgood" },
           ],
         },
