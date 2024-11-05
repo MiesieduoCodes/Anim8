@@ -2,14 +2,121 @@ const movieData = [
   {
     title: "Your Lie in April",
     backgroundImage: "https://c4.wallpaperflare.com/wallpaper/264/75/737/anime-sunset-piano-clouds-wallpaper-preview.jpg",
-    synopsis: "A pianist rediscovers his passion for music and love through a violinist he meets.",
+    synopsis: "A pianist, traumatized by the death of his mother, rediscovers his love for music and life after meeting a spirited violinist who changes his world.",
     seasons: [
       {
         seasonNumber: 1,
         episodes: [
-          { epiNum: 1 },
-          { epiNum: 2 },
-          { epiNum: 3 },
+          {
+            epiNum: 1,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536141.jpg",
+            synopsis: "Kousei Arima, a piano prodigy, loses his ability to hear the sound of the piano after his mother’s death, but his life changes when he meets a vibrant violinist named Kaori."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536142.jpg",
+            synopsis: "Kaori encourages Kousei to accompany her in a violin competition, forcing him to face his fears and rediscover his musical passion."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536143.jpg",
+            synopsis: "Kousei's past continues to haunt him as he struggles with his first performance after years, while Kaori's free-spirited style helps him find inspiration."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536144.jpg",
+            synopsis: "Kousei's friends rally to support him as he begins practicing piano again, navigating complex emotions he has buried."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536145.jpg",
+            synopsis: "During the piano competition, Kousei faces his deepest fears and memories of his mother, challenging him to move beyond his trauma."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536146.jpg",
+            synopsis: "Kaori’s health takes a troubling turn, leaving Kousei worried as he realizes the impact she has had on his life and music."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536147.jpg",
+            synopsis: "Kousei battles self-doubt and trauma during a recital, but memories of Kaori's encouragement give him strength."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536148.jpg",
+            synopsis: "Kousei discovers that Kaori may be hiding a secret about her health, raising his fears of losing someone he cares about."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536149.jpg",
+            synopsis: "As Kousei grows closer to Kaori, he begins to find a renewed love for music and his desire to play again."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536150.jpg",
+            synopsis: "Kaori’s influence helps Kousei overcome his insecurities, leading to an emotional performance that captures the audience."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536151.jpg",
+            synopsis: "Kousei reflects on his relationship with his mother and his journey with music, recognizing Kaori's role in his healing."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536152.jpg",
+            synopsis: "With renewed confidence, Kousei begins to envision a future with music and a life beyond his past traumas."
+          },
+          {
+            epiNum: 13,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536153.jpg",
+            synopsis: "Kousei faces a personal setback as he learns more about Kaori's deteriorating health, making him realize his feelings for her."
+          },
+          {
+            epiNum: 14,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536154.jpg",
+            synopsis: "Kousei continues to play piano, inspired by Kaori’s spirit, as he grapples with his growing affection for her."
+          },
+          {
+            epiNum: 15,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536155.jpg",
+            synopsis: "Kousei pushes forward with his music career, deciding to honor Kaori's wish for him to live life to the fullest."
+          },
+          {
+            epiNum: 16,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536156.jpg",
+            synopsis: "Kousei confronts his feelings about Kaori's illness, struggling to process the emotions her condition stirs in him."
+          },
+          {
+            epiNum: 17,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536157.jpg",
+            synopsis: "As Kaori’s condition worsens, Kousei plays a moving piano piece to express his feelings, reaching out to her through music."
+          },
+          {
+            epiNum: 18,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536158.jpg",
+            synopsis: "Kousei performs at a competition, channeling his emotions for Kaori and his personal growth into a heartfelt performance."
+          },
+          {
+            epiNum: 19,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536159.jpg",
+            synopsis: "Kousei prepares for a pivotal performance, determined to honor Kaori’s legacy and the inspiration she gave him."
+          },
+          {
+            epiNum: 20,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536160.jpg",
+            synopsis: "Kousei pours his heart into his music as he reflects on his journey, cherishing every moment shared with Kaori."
+          },
+          {
+            epiNum: 21,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536161.jpg",
+            synopsis: "With Kaori’s memory guiding him, Kousei delivers a final performance that captivates everyone and heals his heart."
+          },
+          {
+            epiNum: 22,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536162.jpg",
+            synopsis: "Kousei receives a letter from Kaori that reveals her true feelings, giving him closure and strength to move forward."
+          }
         ]
       }
     ]
@@ -22,9 +129,106 @@ const movieData = [
       {
         seasonNumber: 1,
         episodes: [
-          { epiNum: 1 },
-          { epiNum: 2 },
-          { epiNum: 3 },
+          {
+            epiNum: 1,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064464.jpg",
+            synopsis: "Ryuuji Takasu, a gentle high schooler with a fierce face, meets Taiga Aisaka, the feisty 'Palmtop Tiger,' leading to an unexpected alliance."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064465.jpg",
+            synopsis: "Ryuuji and Taiga agree to help each other with their respective crushes, but their partnership is off to a rocky start."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064466.jpg",
+            synopsis: "Ryuuji gets closer to his crush Minori, while Taiga tries to bond with her crush, Yusaku, leading to amusing mishaps."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064467.jpg",
+            synopsis: "Taiga and Ryuuji’s bond deepens as they share more about their lives and struggle with their feelings."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064468.jpg",
+            synopsis: "A class trip brings Taiga and Ryuuji's friends closer, creating complicated feelings among them all."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064469.jpg",
+            synopsis: "Taiga’s rivalry with Ami, a new transfer student, intensifies, adding drama to her friendship with Ryuuji."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064470.jpg",
+            synopsis: "Ryuuji’s growing friendship with Ami sparks jealousy in Taiga, causing tension in their alliance."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064471.jpg",
+            synopsis: "A beach trip brings moments of reflection, as Taiga begins to realize her feelings for Ryuuji."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064472.jpg",
+            synopsis: "The school festival stirs mixed emotions in Taiga, as she wrestles with her growing feelings for Ryuuji."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064473.jpg",
+            synopsis: "A heartfelt moment between Taiga and Ryuuji leads them to question their true feelings for each other."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064474.jpg",
+            synopsis: "Ryuuji and Taiga face a turning point in their relationship when a misunderstanding reveals hidden emotions."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064475.jpg",
+            synopsis: "As Christmas approaches, Taiga and Ryuuji plan a party to confess their feelings to their crushes."
+          },
+          {
+            epiNum: 13,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064476.jpg",
+            synopsis: "A series of misunderstandings at the Christmas party leads to emotional revelations between Taiga and Ryuuji."
+          },
+          {
+            epiNum: 14,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064477.jpg",
+            synopsis: "Taiga makes a difficult decision about her future, but her bond with Ryuuji continues to affect her."
+          },
+          {
+            epiNum: 15,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064478.jpg",
+            synopsis: "Ryuuji’s resolve is tested as he realizes his true feelings, and he begins to take steps to confront them."
+          },
+          {
+            epiNum: 16,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064479.jpg",
+            synopsis: "A new year brings changes in Taiga and Ryuuji’s lives, challenging them to face their evolving relationship."
+          },
+          {
+            epiNum: 17,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064480.jpg",
+            synopsis: "Taiga and Ryuuji’s friends intervene to help them admit their feelings, pushing them toward a revelation."
+          },
+          {
+            epiNum: 18,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064481.jpg",
+            synopsis: "With graduation approaching, Taiga and Ryuuji must decide how they will move forward together."
+          },
+          {
+            epiNum: 19,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064482.jpg",
+            synopsis: "Ryuuji proposes a bold plan for their future, but Taiga’s response changes everything."
+          },
+          {
+            epiNum: 20,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064483.jpg",
+            synopsis: "In the final moments, Taiga and Ryuuji confront their feelings and make a decision about their relationship."
+          }
         ]
       }
     ]

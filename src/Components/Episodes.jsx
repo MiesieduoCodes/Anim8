@@ -69,7 +69,7 @@ const EpisodesPage = () => {
                 ></div>
                 <div className="p-5">
                   <h2 className="text-xl font-semibold text-gray-900">{episode.title || `Episode ${idx + 1}`}</h2>
-                  <p className="text-gray-700 mt-2 mb-4">{episode.description || "No description available."}</p>
+                  <p className="text-gray-700 mt-2 mb-4">{episode.synopsis || "No description available."}</p>
                   
                   {/* Download Episode Button */}
                   <a 
