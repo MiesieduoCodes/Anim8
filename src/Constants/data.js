@@ -1366,6 +1366,964 @@ const movieData = [
       }
     ]
   },
+  {
+    title: "Fire Force",
+    backgroundImage: "https://cdn.animeukiyo.com/wp-content/uploads/2020/11/fire-force-1200x675.jpg",
+    synopsis: "In a world plagued by spontaneous human combustion, special fire brigades battle to protect humanity from demonic Infernals.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1468/101453.jpg",
+            synopsis: "Shinra Kusakabe joins the Fire Force Company 8 and reveals his fiery powers to combat Infernals."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1469/101453.jpg",
+            synopsis: "Shinra faces his first battle as a member of Company 8 and confronts his troubled past."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1470/101453.jpg",
+            synopsis: "Company 8 investigates a mysterious outbreak of Infernals and uncovers a hidden threat."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1471/101453.jpg",
+            synopsis: "Shinra encounters a rival pyrokinetic, Arthur Boyle, who challenges him to a fiery showdown."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1472/101453.jpg",
+            synopsis: "Company 8 takes on a dangerous mission to stop a powerful Infernal terrorizing the city."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1473/101453.jpg",
+            synopsis: "Shinra and his teammates learn about the origins of spontaneous human combustion and the role of the Evangelist."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1474/101453.jpg",
+            synopsis: "The squad faces new challenges as a mysterious White-Clad organization emerges with sinister plans."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1475/101453.jpg",
+            synopsis: "Shinra's search for his brother intensifies as he uncovers shocking truths about his family."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1476/101453.jpg",
+            synopsis: "Company 8 teams up with other brigades to investigate an Infernal outbreak in the Nether."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1477/101453.jpg",
+            synopsis: "Shinra faces an intense battle in the Nether and discovers the true power of his Adolla Burst."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1478/101453.jpg",
+            synopsis: "Company 8 continues their mission in the Nether, facing dangerous foes and deadly challenges."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1479/101453.jpg",
+            synopsis: "The final confrontation in the Nether reveals secrets that could change the course of the Fire Force."
+          }
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1510/101453.jpg",
+            synopsis: "Company 8 faces a new wave of Infernals as they continue their mission to protect humanity."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1511/101453.jpg",
+            synopsis: "Shinra trains to enhance his abilities and faces a tough opponent from the White-Clad."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1512/101453.jpg",
+            synopsis: "Company 8 investigates a series of Infernal outbreaks linked to the Evangelist’s followers."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1513/101453.jpg",
+            synopsis: "Shinra discovers new powers within his Adolla Burst, but struggles to control them."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1514/101453.jpg",
+            synopsis: "Company 8 teams up with other brigades to counter the White-Clad's escalating attacks."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1515/101453.jpg",
+            synopsis: "Shinra learns of the Pillars, individuals crucial to the Evangelist's grand scheme."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1516/101453.jpg",
+            synopsis: "Company 8 faces a deadly battle as the Evangelist's forces launch an all-out assault."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1517/101453.jpg",
+            synopsis: "Shinra pushes himself to the limit to protect his comrades and stop the Evangelist."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1518/101453.jpg",
+            synopsis: "The Fire Force uncovers a deeper conspiracy linked to the spontaneous human combustion phenomena."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1519/101453.jpg",
+            synopsis: "Shinra confronts a powerful enemy, testing his limits in a fierce battle for survival."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1520/101453.jpg",
+            synopsis: "Company 8 confronts the White-Clad's elite members in a showdown that could change everything."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1521/101453.jpg",
+            synopsis: "In the explosive season finale, Shinra faces the Evangelist's forces in a battle for humanity's future."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Inuyashiki",
+    backgroundImage: "https://www.gamerfocus.co/wp-content/uploads/2018/01/Inuyashiki.jpg",
+    synopsis: "An elderly man and a troubled teen gain powerful abilities after a strange accident, leading them down drastically different paths.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/8/87935.jpg",
+            synopsis: "Ichiro Inuyashiki, an elderly man with a bleak life, is transformed after an accident, gaining a mysterious new body and powers."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/9/87936.jpg",
+            synopsis: "Ichiro tests his new abilities and realizes he can heal people, while another man with similar powers uses them in darker ways."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/87937.jpg",
+            synopsis: "The other man, Hiro Shishigami, begins a violent spree, pushing Ichiro to use his powers to stop him."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/87938.jpg",
+            synopsis: "Ichiro saves lives in a hospital and publicly becomes a hero, while Hiro's destructive actions escalate."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/87939.jpg",
+            synopsis: "As Hiro continues his rampage, Ichiro resolves to confront him directly, realizing the responsibility of his abilities."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/87940.jpg",
+            synopsis: "A national manhunt for Hiro begins, and Ichiro faces new challenges as he tries to protect innocents."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/87941.jpg",
+            synopsis: "Ichiro gains more control over his abilities and allies with others to prevent further violence."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/87942.jpg",
+            synopsis: "Ichiro and Hiro clash as their paths collide, leading to a battle that puts countless lives at stake."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/87943.jpg",
+            synopsis: "Hiro’s motives are questioned as Ichiro finds a way to bring hope to people amidst the chaos."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/87944.jpg",
+            synopsis: "In a climactic showdown, Ichiro and Hiro face off in a final confrontation that will determine their legacies."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/18/87945.jpg",
+            synopsis: "In the series finale, Ichiro makes a sacrifice for humanity, proving the hero he has become."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Erased",
+    backgroundImage: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/06/Erased.jpg",
+    synopsis: "A young man with the ability to travel back in time tries to prevent a tragedy that affected his childhood.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/6/77862.jpg",
+            synopsis: "Satoru Fujinuma discovers his power, 'Revival,' which sends him briefly back in time to prevent nearby tragedies."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/7/77863.jpg",
+            synopsis: "After his mother's murder, Satoru's 'Revival' sends him back 18 years, where he tries to stop a series of kidnappings."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/8/77864.jpg",
+            synopsis: "Satoru befriends Kayo Hinazuki, a lonely girl, as he tries to prevent her from becoming the kidnapper's next victim."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/9/77865.jpg",
+            synopsis: "Satoru begins to see the signs of abuse in Kayo's life and makes efforts to protect her, while the mystery deepens."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/77866.jpg",
+            synopsis: "Satoru's actions start changing the course of events, but new obstacles arise in his mission to save Kayo."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/77867.jpg",
+            synopsis: "As Satoru grows closer to Kayo, he becomes more determined to stop the crimes, risking exposure of his plans."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/77868.jpg",
+            synopsis: "Satoru's actions lead to major shifts in the timeline, as he works to ensure Kayo's safety and avoid more tragedies."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/77869.jpg",
+            synopsis: "A breakthrough occurs as Satoru manages to alter Kayo's fate, but the kidnapper remains a threat."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/77870.jpg",
+            synopsis: "Satoru continues his investigation, but a slip-up brings him closer to danger as the real villain watches him."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/77871.jpg",
+            synopsis: "The kidnapper's identity is revealed, leading to a confrontation that pushes Satoru's 'Revival' to its limits."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/77872.jpg",
+            synopsis: "In the present, Satoru faces the truth about his journey, his powers, and the person responsible for the tragedies."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/77873.jpg",
+            synopsis: "The series finale sees Satoru confront the villain once more, determined to finally resolve the past."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "The Promised Neverland",
+    backgroundImage: "https://assets.mycast.io/posters/the-promised-neverland-live-action-fan-casting-poster-186564-large.jpg",
+    synopsis: "A group of orphans uncovers the dark secrets of their idyllic orphanage and plans a daring escape.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/91955.jpg",
+            synopsis: "Emma, Norman, and Ray discover the horrific truth about their orphanage when they try to return a forgotten toy."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/91956.jpg",
+            synopsis: "The children formulate a plan to escape, while being watched closely by the suspicious 'Mom,' Isabella."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/91957.jpg",
+            synopsis: "Emma and Norman investigate possible escape routes while testing their physical abilities."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/91958.jpg",
+            synopsis: "The arrival of Sister Krone complicates the children's escape plans as she suspects their intentions."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/91959.jpg",
+            synopsis: "Ray reveals his shocking role as a spy, but he also becomes an unexpected ally to Emma and Norman."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/91960.jpg",
+            synopsis: "The children test Krone's trustworthiness, while Isabella tightens security around the orphanage."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/91961.jpg",
+            synopsis: "Krone learns more about the children’s escape plans, but her ambitions bring unforeseen consequences."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/91962.jpg",
+            synopsis: "The children put their escape plan into action, but Isabella's relentless pursuit puts everything at risk."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/18/91963.jpg",
+            synopsis: "The group faces unexpected challenges as their escape unfolds, forcing them to make difficult decisions."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/19/91964.jpg",
+            synopsis: "Emma and Ray lead a desperate final attempt to escape, pushing their courage and resolve to the limit."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/20/91965.jpg",
+            synopsis: "The children confront Isabella one last time as they struggle to reach freedom."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/21/91966.jpg",
+            synopsis: "The escape concludes with a heart-pounding climax as the children finally find their way out of the orphanage."
+          }
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1937/111859.jpg",
+            synopsis: "Now in the outside world, the children face new dangers in a mysterious forest filled with demons."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1938/111860.jpg",
+            synopsis: "Emma and Ray find unlikely allies as they navigate the unfamiliar terrain outside the orphanage."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1939/111861.jpg",
+            synopsis: "The group discovers the horrifying history of the world they live in, and their place within it."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1940/111862.jpg",
+            synopsis: "A deadly pursuit ensues as the children come closer to finding a way to true freedom."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1941/111863.jpg",
+            synopsis: "Emma faces her toughest decision yet, one that will affect the future of all the orphans."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1942/111864.jpg",
+            synopsis: "The group stumbles upon a hidden base, where they meet those fighting to end the human-demon conflict."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1943/111865.jpg",
+            synopsis: "The children attempt a rescue mission, but the stakes grow higher with every move they make."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1944/111866.jpg",
+            synopsis: "Emma and her friends face betrayal and unforeseen dangers as they push toward their goal."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1945/111867.jpg",
+            synopsis: "The children confront the harsh realities of their mission, questioning their own beliefs."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1946/111868.jpg",
+            synopsis: "In the season finale, the children make a stand for freedom, hoping to change the fate of all orphans."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Psycho-Pass",
+    backgroundImage: "https://wallpapercave.com/wp/wp2592210.jpg",
+    synopsis: "In a future where the state of mind can be quantified, enforcers must capture latent criminals before they act.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://static1.fandomspot.com/images/8f709249e66de50896c1777ecaa4f1f0.jpg",
+            synopsis: "A rookie inspector joins the Public Safety Bureau and encounters the harsh reality of crime and justice."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://static1.fandomspot.com/images/92e88de47cd4b26d62268da705417b0c.jpg",
+            synopsis: "As tensions rise, the team faces a serial killer with a unique method of eluding the law."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://static1.fandomspot.com/images/26ca9aa7cbe924ae2e5df5a1dc79e1e6.jpg",
+            synopsis: "The team investigates a series of murders linked to an underground syndicate, testing their skills and resolve."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://static1.fandomspot.com/images/3c651f4c4f8cde7339ef92e09f2b6c25.jpg",
+            synopsis: "A mysterious case arises, leading to a confrontation with a powerful enemy that challenges the system."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://static1.fandomspot.com/images/94ec79cb13a38e59b1c5c2df458e168b.jpg",
+            synopsis: "The enforcers must navigate moral dilemmas as they pursue a criminal mastermind with a personal vendetta."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://static1.fandomspot.com/images/dba4af5c5a23a57922070d6b09ab12d0.jpg",
+            synopsis: "A terrorist attack shakes the city, forcing the team to act quickly to prevent further chaos."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://static1.fandomspot.com/images/a65e4f53b11a1252cf817ad16da5380c.jpg",
+            synopsis: "The investigation leads to shocking revelations about the nature of justice and the human psyche."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://static1.fandomspot.com/images/98cbe774b1cc51b079e6196de6a91ee2.jpg",
+            synopsis: "A new case involving a cult tests the team's loyalties and challenges their beliefs about the system."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://static1.fandomspot.com/images/91e9f1f61dc9d85f91ae05f0c67b0c40.jpg",
+            synopsis: "As the investigation deepens, the team uncovers a conspiracy that threatens the stability of society."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://static1.fandomspot.com/images/4170835c55a7e90a42bdfc739047c1f5.jpg",
+            synopsis: "The stakes rise as personal ties are tested and the line between right and wrong blurs."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://static1.fandomspot.com/images/d84c8239a5a5620c2d60c8bc57fd63a7.jpg",
+            synopsis: "A confrontation with a former ally reveals the true nature of their work and the price of justice."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://static1.fandomspot.com/images/b4f3078d58c0de39ef08e649c4a3732e.jpg",
+            synopsis: "As the season comes to a close, the team faces their most significant challenge yet, testing their resolve and beliefs."
+          }
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://static1.fandomspot.com/images/4b1b63d1cd23b5b5d07a63707c4f3f3a.jpg",
+            synopsis: "The story resumes with Akane Tsunemori, who is now a full inspector in the Public Safety Bureau, confronting a new threat."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://static1.fandomspot.com/images/4d902e4f4e5b8c9421a5a5f8c4ebde4f.jpg",
+            synopsis: "As new criminals emerge, Akane and her team must adapt to changing circumstances and moral dilemmas."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://static1.fandomspot.com/images/cf019c5a1a72c558c40946ffb83aa2d4.jpg",
+            synopsis: "The investigation into a recent crime leads to shocking discoveries about the criminal organization."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://static1.fandomspot.com/images/6d27e2346e14bb5df0c70754b1c62e2d.jpg",
+            synopsis: "Tensions rise within the team as personal conflicts and philosophical differences come to light."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://static1.fandomspot.com/images/7f4ffacbfbb36264fd4368991e72ac2f.jpg",
+            synopsis: "A confrontation with a rogue agent leads to moral questioning and a deeper exploration of the system."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://static1.fandomspot.com/images/57a776f36c24587c86bafee6d83da74d.jpg",
+            synopsis: "As new threats arise, Akane must navigate complex relationships and the consequences of her decisions."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://static1.fandomspot.com/images/bd42f2511e36caa3d593c98e589019cb.jpg",
+            synopsis: "The case leads to a confrontation with a shadowy organization intent on manipulating the system."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://static1.fandomspot.com/images/68a4b22c6c3c623b024678b487f36557.jpg",
+            synopsis: "As the investigation progresses, Akane faces challenges that test her beliefs about justice and morality."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://static1.fandomspot.com/images/348fb3d4c677580e9b2da41dbdc9aaab.jpg",
+            synopsis: "The stakes escalate as personal stakes become intertwined with the broader investigation."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://static1.fandomspot.com/images/1c676816b0a6c5e4c17f74c6be3c25c9.jpg",
+            synopsis: "Akane's choices lead to significant consequences, forcing her to confront her role in the system."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://static1.fandomspot.com/images/a6d80fef12e4e631503bbd5035b3f6c8.jpg",
+            synopsis: "The season builds to a dramatic confrontation that will test the limits of the law and justice."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://static1.fandomspot.com/images/07b5aa6885aa067d58a3ee648e9e34d0.jpg",
+            synopsis: "In a gripping finale, Akane and her team must face the reality of their world and the choices they’ve made."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Another",
+    backgroundImage: "https://cdn.myanimelist.net/images/anime/10/33767.jpg",
+    synopsis: "A transfer student uncovers the terrifying curse affecting his class, leading to a series of deadly incidents.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1/33761.jpg",
+            synopsis: "Kouichi Sakakibara transfers to Yomiyama North Middle School and encounters a strange girl named Mei Misaki."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/2/33762.jpg",
+            synopsis: "Kouichi tries to learn more about the school's dark history, but his classmates are reluctant to share details."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/3/33763.jpg",
+            synopsis: "Mysterious deaths begin, and Kouichi starts to understand the implications of the curse."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/4/33764.jpg",
+            synopsis: "Kouichi and Mei investigate further, realizing the class is connected to a deadly chain of events."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/5/33765.jpg",
+            synopsis: "The students try different tactics to avoid the curse, but tragedy strikes again."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/6/33766.jpg",
+            synopsis: "Kouichi and Mei piece together clues that might lead to breaking the curse."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/7/33767.jpg",
+            synopsis: "In a desperate attempt, the class uncovers past secrets that shed light on the mystery."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/8/33768.jpg",
+            synopsis: "As they face greater dangers, Kouichi and Mei realize the curse's reach is deeper than they imagined."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/9/33769.jpg",
+            synopsis: "The classmates devise a final plan to end the curse once and for all."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/33770.jpg",
+            synopsis: "A shocking revelation changes everything, leading to a final showdown with the curse."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/33771.jpg",
+            synopsis: "The mystery of the curse comes to light, with devastating consequences for those involved."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/33772.jpg",
+            synopsis: "The final episode brings closure to the horror and unveils the origin of the curse."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Terror in Resonance",
+    backgroundImage: "https://cdn.myanimelist.net/images/anime/1050/113316.jpg",
+    synopsis: "Two teenage boys with a mysterious past embark on a series of terrorist attacks in Tokyo, challenging the city to uncover their motives.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113320.jpg",
+            synopsis: "In the aftermath of a terrorist attack, the police struggle to find leads as the attackers remain anonymous."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113321.jpg",
+            synopsis: "The mystery deepens as the attackers continue their game, and the authorities race against time to stop them."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113322.jpg",
+            synopsis: "As the boys reveal their true identities, their motives become clearer, drawing attention from various factions."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113323.jpg",
+            synopsis: "The duo's next move puts them on a collision course with law enforcement and raises the stakes of their mission."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113324.jpg",
+            synopsis: "A close call forces the boys to reconsider their actions and the implications of their choices."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113325.jpg",
+            synopsis: "New alliances form as the boys seek help, complicating their plans and increasing the tension."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113326.jpg",
+            synopsis: "The investigation heats up, and the boys are pushed to their limits as their pasts catch up with them."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113327.jpg",
+            synopsis: "As the threat escalates, the line between friend and foe blurs, forcing tough decisions."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113328.jpg",
+            synopsis: "The confrontation reaches its peak as the true purpose of their actions is revealed."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113329.jpg",
+            synopsis: "In a race against time, the boys must execute their final plan to achieve their goals."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113330.jpg",
+            synopsis: "The consequences of their actions come to fruition, leading to a shocking conclusion."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113331.jpg",
+            synopsis: "The series finale ties up loose ends as the boys confront their past and the legacy of their choices."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Made in Abyss",
+    backgroundImage: "https://static1.fandomspot.com/images/0dc97599e5c4032db9f9a63c155fa80c.jpg",
+    synopsis: "In a world where a vast chasm known as the Abyss beckons explorers, a young girl and her robot friend venture deep into its mysterious depths in search of her mother.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://static1.fandomspot.com/images/39e8778f1b788e57417e5db4f48b4509.jpg",
+            synopsis: "Riko, a young girl, descends into the Abyss to find her mother, meeting a mysterious robot boy named Reg along the way."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://static1.fandomspot.com/images/68470c27f1b2c894b74586a36cc3efba.jpg",
+            synopsis: "Riko and Reg face the dangers of the Abyss as they begin their adventure, encountering strange creatures and environments."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://static1.fandomspot.com/images/7ae4b537e79c76d3aa2b5f9e848dd64d.jpg",
+            synopsis: "The duo faces their first real challenge in the Abyss, testing their skills and determination."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://static1.fandomspot.com/images/0471c23c1ff0fbe5c477b2f63c1bc634.jpg",
+            synopsis: "As they delve deeper, Riko and Reg learn more about the Abyss and the perils it holds."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://static1.fandomspot.com/images/43eeb5111c36b17e6ae305d15d08a22d.jpg",
+            synopsis: "Riko's resolve is tested when they face the harsh realities of the Abyss's effects on explorers."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://static1.fandomspot.com/images/4e7a1e4c24ec65ccecb3b1ed470f2bde.jpg",
+            synopsis: "The duo encounters new allies and threats as they navigate the mysteries of the Abyss."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://static1.fandomspot.com/images/693891c780f23c372c1e1b3c0f401e89.jpg",
+            synopsis: "Riko and Reg confront the challenges posed by the Abyss and learn about its history."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://static1.fandomspot.com/images/94b4e19b44c4c2705d030f6591824e83.jpg",
+            synopsis: "The mysteries of the Abyss deepen as Riko and Reg encounter dangerous foes."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://static1.fandomspot.com/images/b9cd0b5b8475112ac48cc93647b85c81.jpg",
+            synopsis: "Riko faces personal challenges and doubts as the journey continues deeper into the Abyss."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://static1.fandomspot.com/images/24f7c618a7d0599ec79fdb0340c4d118.jpg",
+            synopsis: "Reg's true nature is revealed, changing the dynamics of their partnership."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://static1.fandomspot.com/images/d65ac57147375c2cc3b14654a4f3f8e7.jpg",
+            synopsis: "The climax approaches as Riko and Reg prepare for the challenges that await in the Abyss."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://static1.fandomspot.com/images/3c226c3e75495d5b1f4e982b63bb0089.jpg",
+            synopsis: "In the season finale, Riko's journey leads her to shocking discoveries about her mother and the Abyss."
+          }
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://static1.fandomspot.com/images/a051b3e8f56d19a844f7519e8c36d8b3.jpg",
+            synopsis: "Riko and Reg continue their journey deeper into the Abyss, encountering new challenges and old foes."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://static1.fandomspot.com/images/891c58e67e69d8c14428b1f2ffb5406f.jpg",
+            synopsis: "As they navigate the dangers of the Abyss, Riko and Reg's bond is tested in unexpected ways."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://static1.fandomspot.com/images/0d74f909882db0d3bfb325b499e07c5e.jpg",
+            synopsis: "The duo discovers new allies who aid them in their quest but also face new threats lurking in the shadows."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://static1.fandomspot.com/images/5cf03a0d50492af0a6ae85f4a69e2fae.jpg",
+            synopsis: "Riko encounters a former explorer who shares the dark truths of the Abyss, leaving her shaken."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://static1.fandomspot.com/images/a807fbdc9a8981ee50c9301f9322d8a6.jpg",
+            synopsis: "The duo faces an overwhelming challenge that tests their strength and determination."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://static1.fandomspot.com/images/89b0d5bc8c72b405045cd45d90c8e931.jpg",
+            synopsis: "Riko discovers a hidden area of the Abyss filled with wonders and dangers alike."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://static1.fandomspot.com/images/708eedd48beae053375f48b7d2b87b64.jpg",
+            synopsis: "As they descend further, Riko and Reg face moral dilemmas that challenge their beliefs."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://static1.fandomspot.com/images/87f5ff15101975c00c091f444088d6bb.jpg",
+            synopsis: "New threats emerge as the duo navigates the Abyss, leading to intense confrontations."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://static1.fandomspot.com/images/a16fd8ec8dcce2ae539158a6cb6939a1.jpg",
+            synopsis: "Riko's quest becomes more perilous as she learns of the Abyss's true nature."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://static1.fandomspot.com/images/05e1e1385a05e9af04ee7f9b82e2a756.jpg",
+            synopsis: "Reg faces his own past as the duo confronts their fears and the realities of the Abyss."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://static1.fandomspot.com/images/6c55e0ae56dceae85c2008c0f8b1ef84.jpg",
+            synopsis: "In a climactic battle, Riko and Reg must unite their strengths to survive the Abyss's threats."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://static1.fandomspot.com/images/20d1b77e77c9d27043193e4dc5f09884.jpg",
+            synopsis: "In the season finale, revelations unfold, and the journey ahead is set for Riko and Reg."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "The Rising of the Shield Hero",
+    backgroundImage: "https://static1.fandomspot.com/images/62bd1423e7a1f7e817c23c81c1e46f0f.jpg",
+    synopsis: "A man is summoned to a fantasy world as the Shield Hero and must fight against waves of monsters to save the realm, facing betrayal and hardship.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://static1.fandomspot.com/images/43c39b57dd38d0662e586eae869bb2d7.jpg",
+            synopsis: "Naofumi Iwatani is summoned to another world as the Shield Hero. After being betrayed, he must find a way to grow stronger and defend the realm."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://static1.fandomspot.com/images/a63e9425ae00a12b812b3e1c99a6dc26.jpg",
+            synopsis: "With his trust shattered, Naofumi begins his journey to gain strength. He meets a demi-human named Raphtalia and begins training her."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://static1.fandomspot.com/images/4d2c1c52a7e054f02b53d7e36d225de9.jpg",
+            synopsis: "Naofumi and Raphtalia face their first battle together against the waves of monsters, learning to trust each other amidst adversity."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://static1.fandomspot.com/images/76397f167b2f8bc1dca231e8bca2c2d3.jpg",
+            synopsis: "The duo continues their quest, but Naofumi struggles with the harsh realities of being the Shield Hero and faces prejudice from others."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://static1.fandomspot.com/images/617f22426f6e8b5f2656dfe25a5be724.jpg",
+            synopsis: "As Naofumi's reputation grows, he must confront challenges from other heroes and protect his newfound friends at all costs."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://static1.fandomspot.com/images/36c9abf8f0d4d09b539db7f47490acfc.jpg",
+            synopsis: "Naofumi and Raphtalia embark on a journey to gather allies, showcasing their determination to protect the realm from the impending threat."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://static1.fandomspot.com/images/6ff96a73528794d82711ff77a24a12fd.jpg",
+            synopsis: "The group encounters powerful enemies, forcing Naofumi to devise strategies that utilize his shield to turn the tide of battle."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://static1.fandomspot.com/images/15e84bc41310ff79b5c62707a3c6d592.jpg",
+            synopsis: "A new companion joins Naofumi's party, adding complexity to their dynamics as they face deeper challenges in their quest."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://static1.fandomspot.com/images/3e046e8b87cfbf195c8b97d01e1a5283.jpg",
+            synopsis: "As they delve deeper into the world, Naofumi faces the consequences of his actions and learns valuable lessons about trust and leadership."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://static1.fandomspot.com/images/586d1be16fdd3e52aa202f9d768095d9.jpg",
+            synopsis: "With new threats emerging, Naofumi must rally his allies and prepare for the ultimate battle against the waves of monsters."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://static1.fandomspot.com/images/f8b98834a5f4773ee0e58d3621c8d33f.jpg",
+            synopsis: "The heroes face a powerful enemy in an epic confrontation that tests their strength, resolve, and the bonds they've formed."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://static1.fandomspot.com/images/c69ebcc8327c7de5b82a95c4ee03c1d7.jpg",
+            synopsis: "In the season finale, Naofumi reflects on his journey, the friends he's made, and prepares for the next challenges that lie ahead."
+          }
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://static1.fandomspot.com/images/8e672639c95c9a23807a8b4d3e5f68e8.jpg",
+            synopsis: "Naofumi and his friends return as they face a new threat and must navigate the challenges of being heroes in a changing world."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://static1.fandomspot.com/images/6aefde0f7c839dbd645539bc3f30e1b7.jpg",
+            synopsis: "A powerful enemy emerges, forcing Naofumi to reassess his strategies and gather new allies to combat this looming danger."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://static1.fandomspot.com/images/a2ec1e38e61983c5e0e1c9b0364154ee.jpg",
+            synopsis: "As conflicts escalate, Naofumi must confront his past and the decisions that led him to become the Shield Hero."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://static1.fandomspot.com/images/0a15170318c76e65484c1c58f1d5ab3b.jpg",
+            synopsis: "New alliances are formed, but trust remains a fragile bond as the heroes navigate their complex relationships."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://static1.fandomspot.com/images/df55efcd64f123b50c52b56546c8a1f0.jpg",
+            synopsis: "With the threat of war looming, Naofumi must make difficult choices to protect those he cares about."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://static1.fandomspot.com/images/48605c6c7b07a63e05154f5cc8c71a40.jpg",
+            synopsis: "As battles rage, Naofumi discovers hidden truths about the world and the true nature of the enemies he faces."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://static1.fandomspot.com/images/d3c0472e7df689d569515fb4a1c7c7cb.jpg",
+            synopsis: "In the midst of chaos, friendships are tested as Naofumi faces betrayals and alliances shift."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://static1.fandomspot.com/images/8d1676a0ef2d90a9b3e5c53eb4c2e198.jpg",
+            synopsis: "The heroes confront their enemies head-on, leading to intense battles that challenge their resolve."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://static1.fandomspot.com/images/3de03aef738f4a4e5097be05be7229d3.jpg",
+            synopsis: "Naofumi learns more about the history of the Shield Hero and the legacy he must uphold."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://static1.fandomspot.com/images/eb1e44d4bde34bc4976bbcfb46e3d9ca.jpg",
+            synopsis: "As the season nears its climax, Naofumi must rally his allies for the ultimate confrontation."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://static1.fandomspot.com/images/c03ea37cc885f93a3f716f65f0d27d64.jpg",
+            synopsis: "The battle for the fate of the realm escalates, testing the heroes in unimaginable ways."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://static1.fandomspot.com/images/3e27c9da964dedbe15dc645b9a94a1ef.jpg",
+            synopsis: "In the season finale, sacrifices are made, and Naofumi faces the consequences of his choices as the future hangs in the balance."
+          }
+        ]
+      }
+    ]
+  }
   // Remaining movies follow the same format
 ];
 

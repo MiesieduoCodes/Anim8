@@ -2,18 +2,7 @@ import { Link } from 'react-router-dom';
 import movies from '../Constants/data'; // Import your movies data
 
 const SeasonDetails = () => {
-  // const { id, seasonId } = useParams(); // Destructure both id and seasonId
-  // const movie = movies.find((m) => m.id === parseInt(id));
 
-  // if (!movie) {
-  //   return <p className="text-center mt-10">Movie not found.</p>;
-  // }
-
-  // const season = movie.seasons.find((s) => s.id === parseInt(seasonId));
-
-  // if (!season) {
-  //   return <p className="text-center mt-10">Season not found.</p>; // Handle season not found
-  // }
   const queryParams = new URLSearchParams(window.location.search);
   const animeTitle = queryParams.get('title');
   //alert (animeTitle);
@@ -26,11 +15,7 @@ const SeasonDetails = () => {
       <p className="text-lg mb-6">{result.synopsis}</p>
       <h2 className="text-3xl font-semibold mb-4">Episodes</h2>
       <ul className="list-disc pl-6">
-        {/* {[...Array(season.episodeCount).keys()].map((index) => (
-          <li key={index} className="mb-2">
-            <p>Episode {index + 1}</p>
-          </li>
-        ))} */}
+
       </ul>
     </div>
   );
