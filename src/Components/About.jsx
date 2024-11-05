@@ -3,8 +3,22 @@ import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
 import FloatingMusicButton from '../FloatingMusicButton';
+import { useState } from 'react';
 
 const About = () => {
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+    // Add logic to play/pause the music
+  };
+
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+    // Add logic to change the track
+  };
+
   return (
     <div className="main-content pt-24 bg-gray-900">
       <Navbar />
@@ -13,7 +27,7 @@ const About = () => {
         className="bg-cover bg-center py-20 relative"
         style={{ backgroundImage: "url('/welcome-bg.jpg')" }}
       >
-        <div className="absolute inset-0 bg-gray-900 opacity-50"></div> {/* Overlay */}
+        <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
         <div className="relative z-10 px-6 md:px-12">
           <h1 className="text-5xl font-bold text-center mb-6 md:text-6xl text-yellow-500">Welcome to Anim8</h1>
           <p className="text-center text-lg font-light mb-6 md:text-xl text-gray-300">Your Gateway to Endless Animation Adventures</p>
@@ -25,7 +39,7 @@ const About = () => {
         className="bg-cover bg-center py-20 px-6 relative"
         style={{ backgroundImage: "url('/mission-bg.jpg')" }}
       >
-        <div className="absolute inset-0 bg-gray-900 opacity-50"></div> {/* Overlay */}
+        <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-yellow-500">Our Mission</h2>
           <p className="text-xl mb-4 text-gray-300">To become the ultimate destination for animation lovers, offering:</p>
@@ -42,7 +56,7 @@ const About = () => {
         className="bg-cover bg-center py-20 px-6 relative"
         style={{ backgroundImage: "url('/vision-bg.jpg')" }}
       >
-        <div className="absolute inset-0 bg-gray-900 opacity-50"></div> {/* Overlay */}
+        <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-yellow-500">Our Vision</h2>
           <p className="text-xl mb-6 text-gray-300">To evolve into a renowned animation production firm, creating original content that inspires and entertains.</p>
@@ -57,10 +71,15 @@ const About = () => {
       </div>
 
       {/* Footer Section */}
-<Footer/>
+      <Footer />
 
       {/* Floating Music Button */}
-      <FloatingMusicButton />
+      <FloatingMusicButton 
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
       
     </div>
   );
