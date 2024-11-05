@@ -2,15 +2,8 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import FloatingMusicButton from '../FloatingMusicButton';
-import { useState } from "react";
 
 const Trivias = () => {
-  const [expandedMovie, setExpandedMovie] = useState(null);
-
-  // Toggle the expanded card
-  const toggleAccordion = (movie) => {
-    setExpandedMovie(expandedMovie === movie ? null : movie);
-  };
   const triviaData = {
     "Incredibles 2": [
       "Evelyn Deavor's name is a pun on 'evil endeavor,' foreshadowing her villainous side.",
@@ -124,13 +117,13 @@ const Trivias = () => {
   };
 
   return (
-    <div className="main-content pt-24 min-h-screen bg-gradient-to-br from-purple-200 via-blue-300 to-pink-300 relative overflow-hidden">
+   <div className="main-content pt-24 min-h-screen bg-gradient-to-br from-purple-200 via-blue-300 to-pink-300 relative overflow-hidden">
       <Navbar />
       <div className="absolute inset-0 bg-trivia-pattern opacity-10"></div>
       <div
         className="relative bg-cover bg-center h-80 md:h-96 lg:h-[32rem]"
         style={{
-          backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg')`,
+          backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamworks_wallpaper_by_maxtop9002_dfzdlcd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWU0MjAwYjQtMWNhOC00ZWY3LTljY2ItMWI2NjM1OWViMjQ3XC9kZnpkbGNkLWMwZTQxODg3LTE4NWMtNGI2NS1hMjRmLWU4OGJhNjBlZThmNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MmZD7VVsp2Fx8uii0TWUCo0J7Q_JEMyMLnEGYo2twQM')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 flex flex-col justify-center items-center p-6">
@@ -146,35 +139,20 @@ const Trivias = () => {
         {Object.entries(triviaData).map(([movie, trivias]) => (
           <div
             key={movie}
-            className="relative bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+            className="relative group bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden transition-transform transform hover:-rotate-1 hover:scale-105"
           >
-            <div
-              className="p-5 border-b border-gray-200 bg-blue-600 text-white font-bold text-2xl cursor-pointer flex justify-between items-center"
-              onClick={() => toggleAccordion(movie)}
-            >
-              <span>{movie}</span>
-              <span className="transform transition-transform duration-300 ease-in-out">
-                {expandedMovie === movie ? "–" : "+"}
-              </span>
+            <div className="p-5 border-b border-gray-200 bg-blue-600 text-white font-bold text-2xl">
+              {movie}
             </div>
-            <div
-              className={`overflow-hidden transition-[height] duration-500 ease-in-out ${
-                expandedMovie === movie ? "max-h-[400px]" : "max-h-0"
-              }`}
-              style={{
-                height: expandedMovie === movie ? "auto" : 0,
-              }}
-            >
-              <div className="p-6 space-y-3">
-                {trivias.map((trivia, index) => (
-                  <div
-                    key={index}
-                    className="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300"
-                  >
-                    <p className="text-gray-700 text-sm">{trivia}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="p-6 space-y-3">
+              {trivias.map((trivia, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300 transform group-hover:rotate-1"
+                >
+                  <p className="text-gray-700 text-sm">{trivia}</p>
+                </div>
+              ))}
             </div>
           </div>
         ))}
@@ -182,8 +160,8 @@ const Trivias = () => {
       <Footer />
       <FloatingMusicButton />
     </div>
+
   );
 };
-
 
 export default Trivias;
