@@ -2,8 +2,15 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import FloatingMusicButton from '../FloatingMusicButton';
+import { useState } from "react";
 
 const Trivias = () => {
+  const [expandedMovie, setExpandedMovie] = useState(null);
+
+  // Toggle the expanded card
+  const toggleAccordion = (movie) => {
+    setExpandedMovie(expandedMovie === movie ? null : movie);
+  };
   const triviaData = {
     "Incredibles 2": [
       "Evelyn Deavor's name is a pun on 'evil endeavor,' foreshadowing her villainous side.",
@@ -117,34 +124,66 @@ const Trivias = () => {
   };
 
   return (
-    <div className="main-content pt-24 bg-gray-100 min-h-screen">
+    <div className="main-content pt-24 min-h-screen bg-gradient-to-br from-purple-200 via-blue-300 to-pink-300 relative overflow-hidden">
       <Navbar />
-      <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamworks_wallpaper_by_maxtop9002_dfzdlcd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWU0MjAwYjQtMWNhOC00ZWY3LTljY2ItMWI2NjM1OWViMjQ3XC9kZnpkbGNkLWMwZTQxODg3LTE4NWMtNGI2NS1hMjRmLWU4OGJhNjBlZThmNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MmZD7VVsp2Fx8uii0TWUCo0J7Q_JEMyMLnEGYo2twQM')` }}>
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-             Trivias Text Here
-            </h1>
-            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              DYKs For Animated Content
-            </p>
-          </div>
+      <div className="absolute inset-0 bg-trivia-pattern opacity-10"></div>
+      <div
+        className="relative bg-cover bg-center h-80 md:h-96 lg:h-[32rem]"
+        style={{
+          backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg')`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 flex flex-col justify-center items-center p-6">
+          <h1 className="text-white text-5xl md:text-6xl font-extrabold text-center">
+            Animation Trivia
+          </h1>
+          <p className="text-white text-xl md:text-2xl mt-4 text-center">
+            Discover Hidden Facts Behind Your Favorite Films
+          </p>
         </div>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-4">
+      </div>
+      <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3 p-8 md:p-12">
         {Object.entries(triviaData).map(([movie, trivias]) => (
-          <div key={movie} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
-            <h2 className="text-2xl font-semibold mb-4 text-blue-600 p-4 border-b border-gray-300">{movie}</h2>
-            <ul className="list-disc pl-5 space-y-2 p-4">
-              {trivias.map((trivia, index) => (
-                <li key={index} className="text-gray-700">{trivia}</li>
-              ))}
-            </ul>
+          <div
+            key={movie}
+            className="relative bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <div
+              className="p-5 border-b border-gray-200 bg-blue-600 text-white font-bold text-2xl cursor-pointer flex justify-between items-center"
+              onClick={() => toggleAccordion(movie)}
+            >
+              <span>{movie}</span>
+              <span className="transform transition-transform duration-300 ease-in-out">
+                {expandedMovie === movie ? "–" : "+"}
+              </span>
+            </div>
+            <div
+              className={`overflow-hidden transition-[height] duration-500 ease-in-out ${
+                expandedMovie === movie ? "max-h-[400px]" : "max-h-0"
+              }`}
+              style={{
+                height: expandedMovie === movie ? "auto" : 0,
+              }}
+            >
+              <div className="p-6 space-y-3">
+                {trivias.map((trivia, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300"
+                  >
+                    <p className="text-gray-700 text-sm">{trivia}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         ))}
       </div>
-<Footer />
+      <Footer />
       <FloatingMusicButton />
     </div>
   );
 };
+
 
 export default Trivias;

@@ -6,11 +6,11 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 22 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} description for "Your Lie in April" – pivotal events and emotional development in Kosei’s journey.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp5536141.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+          { epiNum: 3 },
+        ]
       }
     ]
   },
@@ -21,11 +21,11 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 25 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Toradora!" – Ryuji and Taiga’s unique friendship blossoms as they help each other with their crushes.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp2591514.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+          { epiNum: 3 },
+        ]
       }
     ]
   },
@@ -36,27 +36,24 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Kaguya-sama: Love Is War" – a tactical mind game between Kaguya and Miyuki unfolds.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp6306544.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       },
       {
         seasonNumber: 2,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Kaguya-sama: Love Is War" – season 2’s mind games intensify as emotions grow.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp6651540.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       },
       {
         seasonNumber: 3,
-        episodes: Array.from({ length: 13 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Kaguya-sama: Love Is War" – the romantic tension between Kaguya and Miyuki reaches new heights.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp10887916.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
   },
@@ -67,11 +64,10 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 13 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Horimiya" – Hori and Miyamura explore each other's hidden sides.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp9398544.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
   },
@@ -82,11 +78,10 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Ao Haru Ride" – Futaba reconnects with her old friend Kou.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp5192585.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
   },
@@ -97,11 +92,10 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 11 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Darwin's Game" – Kaname faces deadly challenges in the game.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp6764166.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
   },
@@ -112,19 +106,17 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "One Punch Man" – Saitama’s search for a worthy opponent begins.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp6422561.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       },
       {
         seasonNumber: 2,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "One Punch Man" – Saitama continues to face new challenges.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp5120175.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
   },
@@ -135,27 +127,24 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Mob Psycho 100" – Mob learns to control his psychic powers.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp2178326.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       },
       {
         seasonNumber: 2,
-        episodes: Array.from({ length: 13 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Mob Psycho 100" – Mob’s powers evolve as he faces new threats.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp4012544.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       },
       {
         seasonNumber: 3,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Mob Psycho 100" – Mob’s journey reaches its peak in this season.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp4012552.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
   },
@@ -166,21 +155,63 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        episodes: Array.from({ length: 13 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Fate/Zero" – The epic Holy Grail War begins.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp6316360.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       },
       {
         seasonNumber: 2,
-        episodes: Array.from({ length: 12 }, (_, i) => ({
-          epiNum: i + 1,
-          description: `Episode ${i + 1} of "Fate/Zero" – The war intensifies as alliances form and betrayals emerge.`,
-          backgroundImage: "https://wallpapercave.com/wp/wp6764188.jpg"
-        }))
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
       }
     ]
-  }
+  },
+  {
+    title: "Vinland Saga",
+    backgroundImage: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*aRgVjpScRTPByVv2cI6YYw.png",
+    synopsis: "A young Viking seeks revenge for his father's murder and becomes entangled in war.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
+      }
+    ]
+  },
+  {
+    title: "Jujutsu Kaisen",
+    backgroundImage: "https://static.wikia.nocookie.net/08cb8af6-daab-42bf-a591-c23e9ccbe09a/scale-to-width-down/800",
+    synopsis: "A student becomes involved in a world of curses and sorcery.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
+      },
+      {
+        seasonNumber: 2,
+        episodes: [
+          { epiNum: 1 },
+          { epiNum: 2 },
+        ]
+      }
+    ]
+  },
+  // Remaining movies follow the same format
 ];
+
 export default movieData;

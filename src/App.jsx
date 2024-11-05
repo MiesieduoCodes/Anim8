@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../src/Components/Navbar";
 import Footer from "../src/Components/Footer";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react"; // Add useEffect here
 import { MdSkipNext, MdPause, MdPlayArrow } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 import FloatingMusicButton from "./FloatingMusicButton";
@@ -14,6 +14,7 @@ const AppContent = () => {
     currentTrackIndex,
     setCurrentTrackIndex,
     tracks,
+    setTracks, // Ensure you get setTracks here
     isFavorite,
     setIsFavorite,
     audioRef,
@@ -24,9 +25,22 @@ const AppContent = () => {
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    // Placeholder for actual login logic
     console.log("Login submitted:", { email, password });
   };
+
+  // Example to set tracks dynamically
+  useEffect(() => {
+    const fetchTracks = async () => {
+      // Simulate fetching tracks (replace with actual fetch logic)
+      const fetchedTracks = [
+        { title: "Track 1", url: "url1.mp3", background: "bg1.jpg" },
+        { title: "Track 2", url: "url2.mp3", background: "bg2.jpg" },
+      ];
+      setTracks(fetchedTracks);
+    };
+
+    fetchTracks();
+  }, [setTracks]); // Dependency array ensures this runs once
 
   return (
     <div className="main-content pt-24">
@@ -34,7 +48,7 @@ const AppContent = () => {
       <div className="relative z-0 h-screen">
         <AnimatePresence mode="wait">
           <motion.div
-            key={tracks[currentTrackIndex]?.background} // Optional chaining to prevent errors
+            key={tracks[currentTrackIndex]?.background} // Optional chaining
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
