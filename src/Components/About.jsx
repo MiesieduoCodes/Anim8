@@ -3,21 +3,59 @@ import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
 import FloatingMusicButton from '../FloatingMusicButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+const audioTracks = [
+  {
+    title: "Jack Garratt - Surprise Yourself",
+    url: "https://rildi.sunproxy.net/file/cWJSL0N2aFdQbTVEZmQ2S2FCb3VWL2Y3MjRMS2FvYTRVTEgyYW5MSWU0d2wvK3pZRnZwNVprUGxWNEhnTFpZVkRRUnh1V3RlTEZiUHNYZlo5V29tOVlKNC81M0VWbTJKVnMxU3l6Z1V2a0U9/Jack_Garratt_-_1-08._Surprise_Yourself_(Hydr0.org).mp3",
+  },
+  {
+    title: "Timeless Full Drum Loop",
+    url: "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Cymatics_-_Timeless_Full_Drum_Loop.mp3?v=1618935629",
+  },
+  {
+    title: "Summer Daze Melody",
+    url: "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Cymatics_-_Summer_Daze_Melody_b06e61cb-334f-4673-a5b4-c28f873d643c.mp3?v=1618935629",
+  },
+  // ... (other tracks)
+];
 
 const About = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const [audio] = useState(new Audio(audioTracks[currentTrackIndex].url));
 
   const toggleMusic = () => {
-    setIsMusicPlaying(!isMusicPlaying);
-    // Add logic to play/pause the music
+    setIsMusicPlaying(prev => !prev);
   };
 
   const changeTrack = (index) => {
     setCurrentTrackIndex(index);
-    // Add logic to change the track
   };
+
+  // Play or pause music based on state
+  useEffect(() => {
+    if (isMusicPlaying) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+
+    // Cleanup function to pause audio on component unmount
+    return () => {
+      audio.pause();
+      audio.currentTime = 0; // Reset to start
+    };
+  }, [isMusicPlaying, audio]);
+
+  // Change track when currentTrackIndex changes
+  useEffect(() => {
+    audio.src = audioTracks[currentTrackIndex].url;
+    if (isMusicPlaying) {
+      audio.play();
+    }
+  }, [currentTrackIndex, audio, isMusicPlaying]);
 
   return (
     <div className="main-content pt-24 bg-gray-900">
@@ -80,7 +118,6 @@ const About = () => {
         currentTrackIndex={currentTrackIndex}
         changeTrack={changeTrack}
       />
-      
     </div>
   );
 };

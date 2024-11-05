@@ -41,7 +41,7 @@ const AppContent = () => {
 
     fetchTracks();
   }, [setTracks]); // Dependency array ensures this runs once
-
+// let ContMusic = tracks[currentTrackIndex]?.url;
   return (
     <div className="main-content pt-24">
       <Navbar />
