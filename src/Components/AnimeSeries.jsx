@@ -228,7 +228,16 @@ const AnimeSeries = () => {
     <div className="bg-gray-400 main-content pt-24 min-h-screen">
       <Navbar />
       <div className="container mx-auto my-10">
-        <h1 className="text-4xl font-bold mb-6">Anime Series</h1>
+      <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+            Discover the Magic of Disney
+          </h1>
+          <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
+            Explore our collection of animated walt disney magic that have captured <br />hearts over the years.
+          </p>
+        </div>
+      </div>
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">{genre}</h2>

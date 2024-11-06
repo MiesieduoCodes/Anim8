@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from "./Footer";
@@ -6,11 +6,11 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { SiThreads } from "react-icons/si";
 import FloatingMusicButton from '../FloatingMusicButton';
-import { MusicContext } from '../MusicContext';
+//import { MusicContext } from '../MusicContext';
 import emailjs from 'emailjs-com';
 
 const ContactLoginPage = () => {
-  const { isMusicPlaying, toggleMusic, currentTrackIndex, tracks } = useContext(MusicContext);
+  // const { isMusicPlaying, toggleMusic, currentTrackIndex, tracks } = useContext(MusicContext);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -127,10 +127,10 @@ const ContactLoginPage = () => {
 
       <Footer />
       <FloatingMusicButton
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        tracks={tracks}
+        // isMusicPlaying={isMusicPlaying}
+        // toggleMusic={toggleMusic}
+        // currentTrackIndex={currentTrackIndex}
+        // tracks={tracks}
       />
             
     </div>

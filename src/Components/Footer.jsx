@@ -6,7 +6,7 @@ const Footer = () => {
 <footer className="bg-gray-800 text-white py-8">
 <div className="max-w-6xl mx-auto px-4">
   <div className="flex flex-col md:flex-row justify-between gap-8">
-    <div>
+    {/* <div>
       <h2 className="text-xl font-bold mb-2">Get the App</h2>
       <p className="text-gray-400">Download our app for the best experience.</p>
       <div className="mt-4">
@@ -14,7 +14,7 @@ const Footer = () => {
         <br />
         <Link to="/" className="text-yellow-500 hover:underline"> Get it on Google Play </Link>
       </div>
-    </div>
+    </div> */}
 
     <div>
       <h2 className="text-xl font-bold mb-2">More</h2>
