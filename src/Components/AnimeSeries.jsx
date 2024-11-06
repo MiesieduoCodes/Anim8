@@ -231,10 +231,10 @@ const AnimeSeries = () => {
       <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-            Discover the Magic of Disney
+            Anim-Seried Related Text
           </h1>
           <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-            Explore our collection of animated walt disney magic that have captured <br />hearts over the years.
+            what everrrr
           </p>
         </div>
       </div>

@@ -24,37 +24,40 @@ const DCMovies = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="relative w-full h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-90"
-              style={{
-                backgroundImage: `url(${card.backgroundImage})`,
-              }}
-            >
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
-                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
-                  {card.title}
-                </h2>
-                <p className="text-white text-lg text-center mb-2">{card.story}</p>
-                <div className="w-full bg-gray-300 rounded-full h-4 overflow-hidden mb-2">
-                  <div
-                    className="bg-purple-800 h-full rounded-full"
-                    style={{ width: `${card.rating ? card.rating * 10 : 0}%` }}
-                  ></div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+                    {cards.map((card, index) => (
+                        <div
+                            key={index}
+                            className="relative w-full p-36 h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500"
+                            style={{
+                                backgroundImage: `url(${card.backgroundImage})`,
+                            }}
+                        >
+                            {/* Overlay for text */}
+                            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
+                                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                                    {card.title}
+                                </h2>
+                                <p className="text-white text-lg text-center mb-2">{card.story}</p>
+                                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+                                    <div
+                                        className="bg-purple-800 h-full rounded-full"
+                                        style={{ width: `${card.rating * 10}%` }} // Adjusted width calculation
+                                    ></div>
+                                </div>
+                                <p className="text-white text-lg">{card.rating}</p>
+                                <a
+                                    href={card.downloadLink} // Make sure movieData includes a downloadLink property
+                                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
+                                    onClick={() => alert(`Downloading ${card.title}`)}
+                                    download
+                                >
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                <p className="text-white text-lg">{card.rating}</p>
-                <button
-                  className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
-                  onClick={() => alert(`Downloading ${card.title}`)}
-                >
-                  Download
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
       <Footer/>
       <FloatingMusicButton />

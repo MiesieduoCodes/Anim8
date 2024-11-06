@@ -29,38 +29,40 @@ const DreamWorks = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-10">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="relative w-full h-48 md:h-64 lg:h-72 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105"
-              style={{
-                backgroundImage: card.backgroundImage,
-              }}
-            >
-              {/* Overlay for text and loading bar */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-2 md:p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
-                <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-bold mb-2 text-center">
-                  {card.title}
-                </h2>
-                <p className="text-white text-sm md:text-base lg:text-lg text-center mb-2">{card.story}</p>
-                <div className="w-full bg-gray-300 rounded-full h-2 overflow-hidden mb-2">
-                  <div
-                    className="bg-red-400 h-full rounded-full"
-                    style={{ width: `${card.rating * 10}%` }}
-                  ></div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+                    {cards.map((card, index) => (
+                        <div
+                            key={index}
+                            className="relative w-full p-36 h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500"
+                            style={{
+                                backgroundImage: `url(${card.backgroundImage})`,
+                            }}
+                        >
+                            {/* Overlay for text */}
+                            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
+                                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                                    {card.title}
+                                </h2>
+                                <p className="text-white text-lg text-center mb-2">{card.story}</p>
+                                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+                                    <div
+                                        className="bg-purple-800 h-full rounded-full"
+                                        style={{ width: `${card.rating * 10}%` }} // Adjusted width calculation
+                                    ></div>
+                                </div>
+                                <p className="text-white text-lg">{card.rating}</p>
+                                <a
+                                    href={card.downloadLink} // Make sure movieData includes a downloadLink property
+                                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
+                                    onClick={() => alert(`Downloading ${card.title}`)}
+                                    download
+                                >
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                <p className="text-white text-sm md:text-base">{card.rating}</p>
-                <button
-                  className="bg-blue-500 text-white font-bold py-1 px-2 rounded hover:bg-green-700 transition-colors duration-300 mt-2"
-                  onClick={() => alert(`Downloading ${card.title}`)}
-                >
-                  Download
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
       <Footer/>
           <FloatingMusicButton />
