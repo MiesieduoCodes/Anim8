@@ -632,6 +632,74 @@ const movieData = [
     ]
   },
   {
+    title: "Darwin's Game",
+    backgroundImage: "https://otakukart.com/wp-content/uploads/2020/02/darwins-game-1024x576.jpg",
+    synopsis: "A high school student is dragged into a brutal survival game after receiving an invitation on his phone.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          { 
+            epiNum: 1,
+                      backgroundImage: "https://animecorner.me/wp-content/uploads/2020/01/darwins-game-episode-1-review-1280x720-1.jpg",
+            synopsis: "Kaname receives a mysterious invitation to a mobile game, which quickly turns deadly."
+          },
+          { 
+            epiNum: 2,
+                      backgroundImage: "https://anime2you.de/wp-content/uploads/2020/01/darwins-game-episode-2.jpg",
+            synopsis: "Kaname starts to learn the brutal rules of Darwin's Game and meets a powerful new ally."
+          },
+          { 
+            epiNum: 3,
+                    backgroundImage: "https://www.otakutale.com/wp-content/uploads/2020/01/Darwins-Game-Episode-3-Preview-Image-3.jpg",
+            synopsis: "Kaname and Shuka team up, but their bond is tested in a life-or-death match against another player."
+          },
+          { 
+            epiNum: 4,
+                     backgroundImage: "https://www.animefeminist.com/wp-content/uploads/2020/01/darwins-game-ep-4.jpg",
+            synopsis: "As the game intensifies, Kaname takes drastic measures to survive the ambush of powerful opponents."
+          },
+          { 
+            epiNum: 5,
+                  backgroundImage: "https://www.animefeminist.com/wp-content/uploads/2020/01/darwins-game-ep-5.jpg",
+            synopsis: "Kaname assembles a team and prepares to strike back against the formidable Eighth Clan."
+          },
+          { 
+            epiNum: 6,
+                    backgroundImage: "https://static.anime21.blog.br/2020/02/IMG_20200219_173654.jpg",
+            synopsis: "Kaname and his allies make their move, but unexpected challenges arise in their battle for survival."
+          },
+          { 
+            epiNum: 7,
+                  backgroundImage: "https://honeysanime.com/images/2020/02/Darwins-Game-wallpaper-8-700x394.jpg",
+            synopsis: "Kaname faces off against Wang, the ruthless leader of the Eighth Clan, in a fight for dominance."
+          },
+          { 
+            epiNum: 8,
+                   backgroundImage: "https://honeysanime.com/images/2020/02/Darwins-Game-wallpaper-9.jpg",
+            synopsis: "The alliances shift as players reevaluate their strategies and adapt to new threats in the game."
+          },
+          { 
+            epiNum: 9,
+                    backgroundImage: "https://animecorner.me/wp-content/uploads/2020/03/darwins-game-episode-9-review-1280x720-1.jpg",
+            synopsis: "Kaname encounters formidable new enemies as the game reaches a turning point."
+          },
+          { 
+            epiNum: 10,
+                   backgroundImage: "https://honeysanime.com/images/2020/02/Darwins-Game-wallpaper-10.jpg",
+            synopsis: "The battle intensifies, pushing Kaname and his allies to their limits in a race for survival."
+          },
+          { 
+            epiNum: 11,
+            
+            backgroundImage: "https://anime2you.de/wp-content/uploads/2020/03/Darwins-Game-Episode-11.jpg",
+            synopsis: "Kaname takes a stand, establishing a new set of rules and forging a path for the future."
+          }
+        ]
+      }
+    ]
+  },  
+  {
     title: "One Punch Man",
     backgroundImage: "https://images.thedirect.com/media/article_full/one-punch-man-season-3-release.jpg?imgeng=/cmpr_60/w_auto",
     synopsis: "A hero who can defeat any opponent with a single punch searches for meaning.",
