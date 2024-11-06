@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import { useState } from 'react';
 import Footer from './Footer';
 import FloatingMusicButton from '../FloatingMusicButton';
+
 
 const movies = [
   // Romance Genre
@@ -222,6 +224,19 @@ const groupMoviesByGenre = (movies) => {
 };
 
 const AnimeSeries = () => {
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
+const toggleMusic = () => {
+  setIsMusicPlaying(!isMusicPlaying);
+  // Add logic to play/pause the music
+};
+
+const changeTrack = (index) => {
+  setCurrentTrackIndex(index);
+  // Add logic to change the track
+};
+  
   const moviesByGenre = groupMoviesByGenre(movies);
 
   return (
@@ -270,7 +285,12 @@ const AnimeSeries = () => {
         ))}
       </div>
       <Footer />
-      <FloatingMusicButton />
+      <FloatingMusicButton 
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
     </div>
   );
 };

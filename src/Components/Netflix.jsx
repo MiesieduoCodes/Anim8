@@ -106,7 +106,12 @@ const Netflix = () => {
           <p>&copy; {new Date().getFullYear()} Anim8. All rights reserved.</p>
         </div>
       </footer>
-      <FloatingMusicButton />
+      <FloatingMusicButton 
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
     </div>
   );
 };

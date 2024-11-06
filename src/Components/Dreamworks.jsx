@@ -65,7 +65,12 @@ const DreamWorks = () => {
                 </div>
       </div>
       <Footer/>
-          <FloatingMusicButton />
+          <FloatingMusicButton 
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
     </div>
   );
 };
