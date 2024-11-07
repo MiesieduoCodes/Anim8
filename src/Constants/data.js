@@ -2017,8 +2017,138 @@ const movieData = [
         ]
       }
     ]
-  }
-  
-];
+  },
+
+      {
+        "title": "Konosuba: God's Blessing on this Wonderful World!",
+        "backgroundImage": "https://example.com/konosuba-image.jpg",
+        "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
+        "seasons": [
+          {
+            "seasonNumber": 1,
+            "episodes": [
+              {
+                "epiNum": 1,
+                "title": "This Self-Proclaimed Goddess and Reincarnation in Another World",
+                "backgroundImage": "https://example.com/konosuba-episode-1.jpg",
+                "synopsis": "Kazuma is reincarnated in a fantasy world with a goddess, where they begin their chaotic journey."
+              },
+              {
+                "epiNum": 2,
+                "title": "The Great Chaos at the Crystal Tower",
+                "backgroundImage": "https://example.com/konosuba-episode-2.jpg",
+                "synopsis": "Kazuma and his party attempt to defeat a dangerous monster, only to end up in disastrous situations."
+              },
+              {
+                "epiNum": 3,
+                "title": "Explosion Magic and a Battle of Wits",
+                "backgroundImage": "https://example.com/konosuba-episode-3.jpg",
+                "synopsis": "Megumin, the eccentric mage, introduces her explosive magic, and the group is caught in a tight situation."
+              }
+              // Add all other episodes of season 1 here
+            ]
+          },
+          {
+            "seasonNumber": 2,
+            "episodes": [
+              {
+                "epiNum": 1,
+                "title": "A New Life in the Country",
+                "backgroundImage": "https://example.com/konosuba-s2-episode-1.jpg",
+                "synopsis": "Kazuma's party faces a new challenge in the countryside, where they try to make a living."
+              },
+              {
+                "epiNum": 2,
+                "title": "A Duel to the Death in the City",
+                "backgroundImage": "https://example.com/konosuba-s2-episode-2.jpg",
+                "synopsis": "Kazuma faces off against a powerful foe in the city while the team deals with growing problems."
+              }
+              // Add all other episodes of season 2 here
+            ]
+          },
+          {
+            "seasonNumber": 3,
+            "episodes": [
+              {
+                "epiNum": 1,
+                "title": "A Return to Glory",
+                "backgroundImage": "https://example.com/konosuba-s3-episode-1.jpg",
+                "synopsis": "The story picks up with the team facing their most challenging yet hilarious adventure yet."
+              }
+              // Add remaining episodes of season 3 here
+            ]
+          }
+        ]
+      },
+      {
+        "title": "No Game No Life",
+        "backgroundImage": "https://example.com/ngnl-image.jpg",
+        "synopsis": "A brother and sister duo, undefeated gamers, are transported to a world where everything is decided by games.",
+        "seasons": [
+          {
+            "seasonNumber": 1,
+            "episodes": [
+              {
+                "epiNum": 1,
+                "title": "No Game No Life",
+                "backgroundImage": "https://example.com/ngnl-episode-1.jpg",
+                "synopsis": "Sora and Shiro, two brilliant siblings, are invited to a world of games by a mysterious being, Tet."
+              },
+              {
+                "epiNum": 2,
+                "title": "All That's Left Is the Winning",
+                "backgroundImage": "https://example.com/ngnl-episode-2.jpg",
+                "synopsis": "The siblings take on the challenge of defeating their first opponent, aiming to prove their gaming skills."
+              }
+              // Add all other episodes of season 1 here
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Jobless Reincarnation: Mushoku Tensei",
+        "backgroundImage": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/12/Mushoku-Tensei-Episode-22.jpg",
+        "synopsis": "A 34-year-old NEET is reincarnated in a fantasy world with the resolve to live his new life to the fullest.",
+        "seasons": [
+          {
+            "seasonNumber": 1,
+            "episodes": [
+              {
+                "epiNum": 1,
+                "title": "Jobless Reincarnation",
+                "backgroundImage": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Mushoku-Tensei.jpg",
+                "synopsis": "A man reincarnates into a fantasy world as Rudeus, and begins his journey with new goals and challenges."
+              },
+              {
+                "epiNum": 2,
+                "title": "Master",
+                "backgroundImage": "https://animecorner.me/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-2-Review.png",
+                "synopsis": "Rudeus starts magic training with his new tutor, Roxy, showcasing his talent and determination."
+              },
+              {
+                "epiNum": 3,
+                "title": "A Friend",
+                "backgroundImage": "https://www.animefeminist.com/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-3.jpg",
+                "synopsis": "Rudeus makes his first friend, Sylphiette, and learns the importance of kindness and companionship."
+              },
+              {
+                "epiNum": 4,
+                "title": "Emergency Family Meeting",
+                "backgroundImage": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-4.jpg",
+                "synopsis": "Family conflicts arise, forcing Rudeus to navigate the complexities of relationships in his new world."
+              },
+              {
+                "epiNum": 5,
+                "title": "A Young Lady and Violence",
+                "backgroundImage": "https://animecorner.me/wp-content/uploads/2021/02/Mushoku-Tensei-Episode-5.jpg",
+                "synopsis": "Rudeus encounters Eris, a feisty noble, and faces new challenges in a hostile environment."
+              }
+              // Add all other episodes of season 1 here
+            ]
+          }
+        ]
+      }
+    ]
+
 
 export default movieData;

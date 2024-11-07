@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -64,29 +65,39 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Search Input for Desktop */}
-        <div className="relative hidden md:flex items-center flex-grow">
+        {/* Search Input for Desktop with Entrance Animation */}
+        <motion.div
+          className="relative hidden md:flex items-center flex-grow"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Search Movies or Shows..."
             value={searchTerm}
             onChange={handleSearch}
-            className="border rounded-lg p-2 w-full max-w-xs"
+            className="border rounded-lg p-2 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-red-500"
           />
           {searchTerm && searchResults.length > 0 && (
-            <div className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2">
+            <motion.div
+              className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2 max-h-72 overflow-y-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
               {searchResults.map((result, index) => (
                 <Link
                   key={index}
-                  to={`/${result.toLowerCase().replace(/\s+/g, '-')}`} // Adjust the path as necessary
-                  className="block px-4 py-2 hover:bg-gray-500"
+                  to={`/${result.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="block px-4 py-2 hover:bg-gray-100"
                 >
                   {result}
                 </Link>
               ))}
-            </div>
+            </motion.div>
           )}
-        </div>
+        </motion.div>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center gap-8">
@@ -113,23 +124,28 @@ const Navbar = () => {
           <div className="relative mb-4">
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search Movies or Shows..."
               value={searchTerm}
               onChange={handleSearch}
-              className="border rounded-lg p-2 w-full"
+              className="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             {searchTerm && searchResults.length > 0 && (
-              <div className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2">
+              <motion.div
+                className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2 max-h-72 overflow-y-auto"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
                 {searchResults.map((result, index) => (
                   <Link
                     key={index}
                     to={`/${result.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block px-4 py-2 hover:bg-gray-500"
+                    className="block px-4 py-2 hover:bg-gray-100"
                   >
                     {result}
                   </Link>
                 ))}
-              </div>
+              </motion.div>
             )}
           </div>
 

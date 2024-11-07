@@ -9,7 +9,7 @@ const SeasonPage = () => {
   // State management for music
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-
+  const [selectedGenre, setSelectedGenre] = useState(''); // State for genre selection
 
   const toggleMusic = () => {
     setIsMusicPlaying(!isMusicPlaying);
@@ -20,7 +20,7 @@ const SeasonPage = () => {
   };
 
   useEffect(() => {
-    if (length > 0) {
+    if (currentTrackIndex >= 0) {
       const audio = new Audio([currentTrackIndex].url);
       if (isMusicPlaying) {
         audio.play();
@@ -32,7 +32,20 @@ const SeasonPage = () => {
 
   const queryParams = new URLSearchParams(window.location.search);
   const animeTitle = queryParams.get('title');
-  const result = movies.find(movies => movies.title === animeTitle);
+  const result = movies.find((movie) => movie.title === animeTitle);
+
+  // Function to handle genre filtering
+  const handleGenreChange = (e) => {
+    setSelectedGenre(e.target.value);
+  };
+
+  // Filter movies by selected genre
+  const filteredSeasons = result ? result.seasons.filter((season) => {
+    return selectedGenre ? season.genre === selectedGenre : true;
+  }) : [];
+
+  // Get distinct genres from the seasons data
+  const genres = result ? [...new Set(result.seasons.map(season => season.genre))] : [];
 
   return (
     <div className="bg-gray-100 main-content pt-24 min-h-screen">
@@ -43,8 +56,8 @@ const SeasonPage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${result ? result.backgroundImage || 'default-image-url.jpg' : 'default-image-url.jpg'})`}
-          }
+            backgroundImage: `url(${result ? result.backgroundImage || 'default-image-url.jpg' : 'default-image-url.jpg'})`
+          }}
         >
           <div className="bg-black opacity-50 h-full w-full"></div>
         </div>
@@ -63,12 +76,30 @@ const SeasonPage = () => {
       <div className="container mx-auto my-10">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Explore Movies</h1>
 
+        {/* Genre Filter */}
+        <div className="mb-6">
+          <label htmlFor="genre" className="text-lg font-semibold mr-4">Filter by Genre:</label>
+          <select
+            id="genre"
+            value={selectedGenre}
+            onChange={handleGenreChange}
+            className="border border-gray-300 rounded-lg px-4 py-2"
+          >
+            <option value="">All Genres</option>
+            {genres.map((genre) => (
+              <option key={genre} value={genre}>
+                {genre}
+              </option>
+            ))}
+          </select>
+        </div>
+
         {result ? (
           <div>
             <div>
-              {/* Map through the seasons to create a card for each one */}
+              {/* Map through the filtered seasons */}
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {result.seasons.map((season) => (
+                {filteredSeasons.map((season) => (
                   <div key={season.id} className="border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105">
                     <div
                       className="h-40 bg-cover bg-center"
