@@ -1,68 +1,239 @@
 const movieData = [
   {
     title: "Your Lie in April",
-    genre: "Romance",
     backgroundImage: "https://c4.wallpaperflare.com/wallpaper/264/75/737/anime-sunset-piano-clouds-wallpaper-preview.jpg",
     synopsis: "A pianist, traumatized by the death of his mother, rediscovers his love for music and life after meeting a spirited violinist who changes his world.",
     seasons: [
       {
         seasonNumber: 1,
         episodes: [
-          { epiNum: 1, backgroundImage: "https://wallpapercave.com/wp/wp5536141.jpg", synopsis: "Kousei Arima, a piano prodigy, loses his ability to hear the sound of the piano after his mother’s death, but his life changes when he meets a vibrant violinist named Kaori.", downloadLink: "http://example.com/download/your-lie-in-april-ep1" },
-          { epiNum: 2, backgroundImage: "https://wallpapercave.com/wp/wp5536142.jpg", synopsis: "Kaori encourages Kousei to accompany her in a violin competition, forcing him to face his fears and rediscover his musical passion.", downloadLink: "http://example.com/download/your-lie-in-april-ep2" },
-          { epiNum: 3, backgroundImage: "https://wallpapercave.com/wp/wp5536143.jpg", synopsis: "Kousei's past continues to haunt him as he struggles with his first performance after years, while Kaori's free-spirited style helps him find inspiration.", downloadLink: "http://example.com/download/your-lie-in-april-ep3" },
-          { epiNum: 4, backgroundImage: "https://wallpapercave.com/wp/wp5536144.jpg", synopsis: "Kousei's friends rally to support him as he begins practicing piano again, navigating complex emotions he has buried.", downloadLink: "http://example.com/download/your-lie-in-april-ep4" },
-          { epiNum: 5, backgroundImage: "https://wallpapercave.com/wp/wp5536145.jpg", synopsis: "During the piano competition, Kousei faces his deepest fears and memories of his mother, challenging him to move beyond his trauma.", downloadLink: "http://example.com/download/your-lie-in-april-ep5" },
-          { epiNum: 6, backgroundImage: "https://wallpapercave.com/wp/wp5536146.jpg", synopsis: "Kaori’s health takes a troubling turn, leaving Kousei worried as he realizes the impact she has had on his life and music.", downloadLink: "http://example.com/download/your-lie-in-april-ep6" },
-          { epiNum: 7, backgroundImage: "https://wallpapercave.com/wp/wp5536147.jpg", synopsis: "Kousei battles self-doubt and trauma during a recital, but memories of Kaori's encouragement give him strength.", downloadLink: "http://example.com/download/your-lie-in-april-ep7" },
-          { epiNum: 8, backgroundImage: "https://wallpapercave.com/wp/wp5536148.jpg", synopsis: "Kousei discovers that Kaori may be hiding a secret about her health, raising his fears of losing someone he cares about.", downloadLink: "http://example.com/download/your-lie-in-april-ep8" },
-          { epiNum: 9, backgroundImage: "https://wallpapercave.com/wp/wp5536149.jpg", synopsis: "As Kousei grows closer to Kaori, he begins to find a renewed love for music and his desire to play again.", downloadLink: "http://example.com/download/your-lie-in-april-ep9" },
-          { epiNum: 10, backgroundImage: "https://wallpapercave.com/wp/wp5536150.jpg", synopsis: "Kaori’s influence helps Kousei overcome his insecurities, leading to an emotional performance that captures the audience.", downloadLink: "http://example.com/download/your-lie-in-april-ep10" },
-          { epiNum: 11, backgroundImage: "https://wallpapercave.com/wp/wp5536151.jpg", synopsis: "Kousei reflects on his relationship with his mother and his journey with music, recognizing Kaori's role in his healing.", downloadLink: "http://example.com/download/your-lie-in-april-ep11" },
-          { epiNum: 12, backgroundImage: "https://wallpapercave.com/wp/wp5536152.jpg", synopsis: "With renewed confidence, Kousei begins to envision a future with music and a life beyond his past traumas.", downloadLink: "http://example.com/download/your-lie-in-april-ep12" },
-          { epiNum: 13, backgroundImage: "https://wallpapercave.com/wp/wp5536153.jpg", synopsis: "Kousei faces a personal setback as he learns more about Kaori's deteriorating health, making him realize his feelings for her.", downloadLink: "http://example.com/download/your-lie-in-april-ep13" },
-          { epiNum: 14, backgroundImage: "https://wallpapercave.com/wp/wp5536154.jpg", synopsis: "Kousei continues to play piano, inspired by Kaori’s spirit, as he grapples with his growing affection for her.", downloadLink: "http://example.com/download/your-lie-in-april-ep14" },
-          { epiNum: 15, backgroundImage: "https://wallpapercave.com/wp/wp5536155.jpg", synopsis: "Kousei pushes forward with his music career, deciding to honor Kaori's wish for him to live life to the fullest.", downloadLink: "http://example.com/download/your-lie-in-april-ep15" },
-          { epiNum: 16, backgroundImage: "https://wallpapercave.com/wp/wp5536156.jpg", synopsis: "Kousei confronts his feelings about Kaori's illness, struggling to process the emotions her condition stirs in him.", downloadLink: "http://example.com/download/your-lie-in-april-ep16" },
-          { epiNum: 17, backgroundImage: "https://wallpapercave.com/wp/wp5536157.jpg", synopsis: "As Kaori’s condition worsens, Kousei plays a moving piano piece to express his feelings, reaching out to her through music.", downloadLink: "http://example.com/download/your-lie-in-april-ep17" },
-          { epiNum: 18, backgroundImage: "https://wallpapercave.com/wp/wp5536158.jpg", synopsis: "Kousei performs at a competition, channeling his emotions for Kaori and his personal growth into a heartfelt performance.", downloadLink: "http://example.com/download/your-lie-in-april-ep18" },
-          { epiNum: 19, backgroundImage: "https://wallpapercave.com/wp/wp5536159.jpg", synopsis: "Kousei prepares for a pivotal performance, determined to honor Kaori’s legacy and the inspiration she gave him.", downloadLink: "http://example.com/download/your-lie-in-april-ep19" },
-          { epiNum: 20, backgroundImage: "https://wallpapercave.com/wp/wp5536160.jpg", synopsis: "Kousei pours his heart into his music as he reflects on his journey, cherishing every moment shared with Kaori.", downloadLink: "http://example.com/download/your-lie-in-april-ep20" },
-          { epiNum: 21, backgroundImage: "https://wallpapercave.com/wp/wp5536161.jpg", synopsis: "With Kaori’s memory guiding him, Kousei delivers a final performance that captivates everyone and heals his heart.", downloadLink: "http://example.com/download/your-lie-in-april-ep21" },
-          { epiNum: 22, backgroundImage: "https://wallpapercave.com/wp/wp5536162.jpg", synopsis: "Kousei receives a letter from Kaori that reveals her true feelings, giving him closure and strength to move forward.", downloadLink: "http://example.com/download/your-lie-in-april-ep22" }
+          {
+            epiNum: 1,
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/ed552e34-4844-4b46-a49a-dd7534b3eca3?base_image_bucket_name=image_manager&base_image=9c963cd2-ac8d-4836-8e64-8bea6009772b&size=600x338&format=webp",
+            synopsis: "Kousei Arima, a piano prodigy, loses his ability to hear the sound of the piano after his mother’s death, but his life changes when he meets a vibrant violinist named Kaori.",
+            downloadLink : ""
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/a7c58eec-6180-4151-8490-af578e574be8?base_image_bucket_name=image_manager&base_image=db3ccebd-2a98-4d20-b8cc-2864a3e3e37f&size=600x338&format=webp",
+            synopsis: "Kaori encourages Kousei to accompany her in a violin competition, forcing him to face his fears and rediscover his musical passion.",
+            downloadLink : ""
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/8eac66ab-c1bd-42df-bf67-65d2f08c1178?base_image_bucket_name=image_manager&base_image=417be147-2970-4b49-bb5e-f63711359370&size=600x338&format=webp",
+            synopsis: "Kousei's past continues to haunt him as he struggles with his first performance after years, while Kaori's free-spirited style helps him find inspiration.",
+            downloadLink : ""
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/421a5823-a1cd-46f7-b845-d48941bfb1ac?base_image_bucket_name=image_manager&base_image=555813eb-f5fc-482e-9989-b1009367f92a&size=600x338&format=webp",
+            synopsis: "Kousei's friends rally to support him as he begins practicing piano again, navigating complex emotions he has buried.",
+            downloadLink : ""
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/5c261a0a-b712-4a31-b477-a7c2ec6660f4?base_image_bucket_name=image_manager&base_image=82ed34ab-9f36-42c6-af61-d3619037ccd5&size=600x338&format=webp",
+            synopsis: "During the piano competition, Kousei faces his deepest fears and memories of his mother, challenging him to move beyond his trauma.",
+            downloadLink : ""
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536146.jpg",
+            synopsis: "Kaori’s health takes a troubling turn, leaving Kousei worried as he realizes the impact she has had on his life and music."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536147.jpg",
+            synopsis: "Kousei battles self-doubt and trauma during a recital, but memories of Kaori's encouragement give him strength."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536148.jpg",
+            synopsis: "Kousei discovers that Kaori may be hiding a secret about her health, raising his fears of losing someone he cares about."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536149.jpg",
+            synopsis: "As Kousei grows closer to Kaori, he begins to find a renewed love for music and his desire to play again."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536150.jpg",
+            synopsis: "Kaori’s influence helps Kousei overcome his insecurities, leading to an emotional performance that captures the audience."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536151.jpg",
+            synopsis: "Kousei reflects on his relationship with his mother and his journey with music, recognizing Kaori's role in his healing."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536152.jpg",
+            synopsis: "With renewed confidence, Kousei begins to envision a future with music and a life beyond his past traumas."
+          },
+          {
+            epiNum: 13,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536153.jpg",
+            synopsis: "Kousei faces a personal setback as he learns more about Kaori's deteriorating health, making him realize his feelings for her."
+          },
+          {
+            epiNum: 14,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536154.jpg",
+            synopsis: "Kousei continues to play piano, inspired by Kaori’s spirit, as he grapples with his growing affection for her."
+          },
+          {
+            epiNum: 15,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536155.jpg",
+            synopsis: "Kousei pushes forward with his music career, deciding to honor Kaori's wish for him to live life to the fullest."
+          },
+          {
+            epiNum: 16,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536156.jpg",
+            synopsis: "Kousei confronts his feelings about Kaori's illness, struggling to process the emotions her condition stirs in him."
+          },
+          {
+            epiNum: 17,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536157.jpg",
+            synopsis: "As Kaori’s condition worsens, Kousei plays a moving piano piece to express his feelings, reaching out to her through music."
+          },
+          {
+            epiNum: 18,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536158.jpg",
+            synopsis: "Kousei performs at a competition, channeling his emotions for Kaori and his personal growth into a heartfelt performance."
+          },
+          {
+            epiNum: 19,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536159.jpg",
+            synopsis: "Kousei prepares for a pivotal performance, determined to honor Kaori’s legacy and the inspiration she gave him."
+          },
+          {
+            epiNum: 20,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536160.jpg",
+            synopsis: "Kousei pours his heart into his music as he reflects on his journey, cherishing every moment shared with Kaori."
+          },
+          {
+            epiNum: 21,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536161.jpg",
+            synopsis: "With Kaori’s memory guiding him, Kousei delivers a final performance that captivates everyone and heals his heart."
+          },
+          {
+            epiNum: 22,
+            backgroundImage: "https://wallpapercave.com/wp/wp5536162.jpg",
+            synopsis: "Kousei receives a letter from Kaori that reveals her true feelings, giving him closure and strength to move forward."
+          }
         ]
       }
     ]
   },
   {
     title: "Toradora!",
-    genre: "Romance",
     backgroundImage: "https://eyeforaneyepiece.wordpress.com/wp-content/uploads/2013/09/konachan-com-42979-aisaka_taiga-kawashima_ami-kitamura_yusaku-kushieda_minori-takasu_ryuuji-toradora.jpg?w=625&h=400",
     synopsis: "Two high school students form an unlikely friendship to help each other pursue their crushes.",
     seasons: [
       {
         seasonNumber: 1,
         episodes: [
-          { epiNum: 1, backgroundImage: "https://wallpapercave.com/wp/wp4064464.jpg", synopsis: "Ryuuji Takasu, a gentle high schooler with a fierce face, meets Taiga Aisaka, the feisty 'Palmtop Tiger,' leading to an unexpected alliance.", downloadLink: "http://example.com/download/toradora-ep1" },
-          { epiNum: 2, backgroundImage: "https://wallpapercave.com/wp/wp4064465.jpg", synopsis: "Ryuuji and Taiga agree to help each other with their respective crushes, but their partnership is off to a rocky start.", downloadLink: "http://example.com/download/toradora-ep2" },
-          { epiNum: 3, backgroundImage: "https://wallpapercave.com/wp/wp4064466.jpg", synopsis: "Ryuuji gets closer to his crush Minori, while Taiga tries to bond with her crush, Yusaku, leading to amusing mishaps.", downloadLink: "http://example.com/download/toradora-ep3" },
-          { epiNum: 4, backgroundImage: "https://wallpapercave.com/wp/wp4064467.jpg", synopsis: "Taiga and Ryuuji’s bond deepens as they share more about their lives and struggle with their feelings.", downloadLink: "http://example.com/download/toradora-ep4" },
-          { epiNum: 5, backgroundImage: "https://wallpapercave.com/wp/wp4064468.jpg", synopsis: "A class trip brings Taiga and Ryuuji's friends closer, creating complicated feelings among them all.", downloadLink: "http://example.com/download/toradora-ep5" },
-          { epiNum: 6, backgroundImage: "https://wallpapercave.com/wp/wp4064469.jpg", synopsis: "Taiga’s rivalry with Ami, a new transfer student, intensifies, adding drama to her friendship with Ryuuji.", downloadLink: "http://example.com/download/toradora-ep6" },
-          { epiNum: 7, backgroundImage: "https://wallpapercave.com/wp/wp4064470.jpg", synopsis: "Ryuuji’s growing friendship with Ami sparks jealousy in Taiga, causing tension in their alliance.", downloadLink: "http://example.com/download/toradora-ep7" },
-          { epiNum: 8, backgroundImage: "https://wallpapercave.com/wp/wp4064471.jpg", synopsis: "A beach trip brings moments of reflection, as Taiga begins to realize her feelings for Ryuuji.", downloadLink: "http://example.com/download/toradora-ep8" },
-          { epiNum: 9, backgroundImage: "https://wallpapercave.com/wp/wp4064472.jpg", synopsis: "The school festival stirs mixed emotions in Taiga, as she wrestles with her growing feelings for Ryuuji.", downloadLink: "http://example.com/download/toradora-ep9" },
-          { epiNum: 10, backgroundImage: "https://wallpapercave.com/wp/wp4064473.jpg", synopsis: "A heartfelt moment between Taiga and Ryuuji leads them to question their true feelings for each other.", downloadLink: "http://example.com/download/toradora-ep10" },
-          { epiNum: 11, backgroundImage: "https://wallpapercave.com/wp/wp4064474.jpg", synopsis: "Ryuuji and Taiga face a turning point in their relationship when a misunderstanding reveals hidden emotions.", downloadLink: "http://example.com/download/toradora-ep11" },
-          { epiNum: 12, backgroundImage: "https://wallpapercave.com/wp/wp4064475.jpg", synopsis: "As Christmas approaches, Taiga and Ryuuji plan a party to confess their feelings to their crushes.", downloadLink: "http://example.com/download/toradora-ep12" },
-          { epiNum: 13, backgroundImage: "https://wallpapercave.com/wp/wp4064476.jpg", synopsis: "A series of misunderstandings at the Christmas party leads to emotional revelations between Taiga and Ryuuji.", downloadLink: "http://example.com/download/toradora-ep13" },
-          { epiNum: 14, backgroundImage: "https://wallpapercave.com/wp/wp4064477.jpg", synopsis: "Taiga makes a difficult decision about her future, but her bond with Ryuuji continues to affect her.", downloadLink: "http://example.com/download/toradora-ep14" },
-          { epiNum: 15, backgroundImage: "https://wallpapercave.com/wp/wp4064478.jpg", synopsis: "Ryuuji’s resolve is tested as he realizes his true feelings, and he begins to take steps to confront them.", downloadLink: "http://example.com/download/toradora-ep15" },
-          { epiNum: 16, backgroundImage: "https://wallpapercave.com/wp/wp4064479.jpg", synopsis: "A new year brings changes in Taiga and Ryuuji’s lives, challenging them to face their evolving relationship.", downloadLink: "http://example.com/download/toradora-ep16" },
-          { epiNum: 17, backgroundImage: "https://wallpapercave.com/wp/wp4064480.jpg", synopsis: "Taiga and Ryuuji’s friends intervene to help them admit their feelings, pushing them toward a revelation.", downloadLink: "http://example.com/download/toradora-ep17" },
-          { epiNum: 18, backgroundImage: "https://wallpapercave.com/wp/wp4064481.jpg", synopsis: "With graduation approaching, Taiga and Ryuuji must decide how they will move forward together.", downloadLink: "http://example.com/download/toradora-ep18" },
-          { epiNum: 19, backgroundImage: "https://wallpapercave.com/wp/wp4064482.jpg", synopsis: "Ryuuji proposes a bold plan for their future, but Taiga’s response changes everything.", downloadLink: "http://example.com/download/toradora-ep19" },
-          { epiNum: 20, backgroundImage: "https://wallpapercave.com/wp/wp4064483.jpg", synopsis: "In the final moments, Taiga and Ryuuji confront their feelings and make a decision about their relationship.", downloadLink: "http://example.com/download/toradora-ep20" }
+          {
+            epiNum: 1,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064464.jpg",
+            synopsis: "Ryuuji Takasu, a gentle high schooler with a fierce face, meets Taiga Aisaka, the feisty 'Palmtop Tiger,' leading to an unexpected alliance."
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064465.jpg",
+            synopsis: "Ryuuji and Taiga agree to help each other with their respective crushes, but their partnership is off to a rocky start."
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064466.jpg",
+            synopsis: "Ryuuji gets closer to his crush Minori, while Taiga tries to bond with her crush, Yusaku, leading to amusing mishaps."
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064467.jpg",
+            synopsis: "Taiga and Ryuuji’s bond deepens as they share more about their lives and struggle with their feelings."
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064468.jpg",
+            synopsis: "A class trip brings Taiga and Ryuuji's friends closer, creating complicated feelings among them all."
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064469.jpg",
+            synopsis: "Taiga’s rivalry with Ami, a new transfer student, intensifies, adding drama to her friendship with Ryuuji."
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064470.jpg",
+            synopsis: "Ryuuji’s growing friendship with Ami sparks jealousy in Taiga, causing tension in their alliance."
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064471.jpg",
+            synopsis: "A beach trip brings moments of reflection, as Taiga begins to realize her feelings for Ryuuji."
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064472.jpg",
+            synopsis: "The school festival stirs mixed emotions in Taiga, as she wrestles with her growing feelings for Ryuuji."
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064473.jpg",
+            synopsis: "A heartfelt moment between Taiga and Ryuuji leads them to question their true feelings for each other."
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064474.jpg",
+            synopsis: "Ryuuji and Taiga face a turning point in their relationship when a misunderstanding reveals hidden emotions."
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064475.jpg",
+            synopsis: "As Christmas approaches, Taiga and Ryuuji plan a party to confess their feelings to their crushes."
+          },
+          {
+            epiNum: 13,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064476.jpg",
+            synopsis: "A series of misunderstandings at the Christmas party leads to emotional revelations between Taiga and Ryuuji."
+          },
+          {
+            epiNum: 14,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064477.jpg",
+            synopsis: "Taiga makes a difficult decision about her future, but her bond with Ryuuji continues to affect her."
+          },
+          {
+            epiNum: 15,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064478.jpg",
+            synopsis: "Ryuuji’s resolve is tested as he realizes his true feelings, and he begins to take steps to confront them."
+          },
+          {
+            epiNum: 16,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064479.jpg",
+            synopsis: "A new year brings changes in Taiga and Ryuuji’s lives, challenging them to face their evolving relationship."
+          },
+          {
+            epiNum: 17,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064480.jpg",
+            synopsis: "Taiga and Ryuuji’s friends intervene to help them admit their feelings, pushing them toward a revelation."
+          },
+          {
+            epiNum: 18,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064481.jpg",
+            synopsis: "With graduation approaching, Taiga and Ryuuji must decide how they will move forward together."
+          },
+          {
+            epiNum: 19,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064482.jpg",
+            synopsis: "Ryuuji proposes a bold plan for their future, but Taiga’s response changes everything."
+          },
+          {
+            epiNum: 20,
+            backgroundImage: "https://wallpapercave.com/wp/wp4064483.jpg",
+            synopsis: "In the final moments, Taiga and Ryuuji confront their feelings and make a decision about their relationship."
+          }
         ]
       }
     ]
@@ -1852,69 +2023,190 @@ const movieData = [
       }
     ]
   },
-
+  {
+    "title": "Konosuba: God's Blessing on this Wonderful World!",
+    "backgroundImage": "https://cdn.myanimelist.net/images/anime/8/78243.jpg",
+    "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
+    "seasons": [
       {
-        "title": "Konosuba: God's Blessing on this Wonderful World!",
-        "backgroundImage": "https://example.com/konosuba-image.jpg",
-        "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
-        "seasons": [
+        "seasonNumber": 1,
+        "episodes": [
           {
-            "seasonNumber": 1,
-            "episodes": [
-              {
-                "epiNum": 1,
-                "title": "This Self-Proclaimed Goddess and Reincarnation in Another World",
-                "backgroundImage": "https://example.com/konosuba-episode-1.jpg",
-                "synopsis": "Kazuma is reincarnated in a fantasy world with a goddess, where they begin their chaotic journey."
-              },
-              {
-                "epiNum": 2,
-                "title": "The Great Chaos at the Crystal Tower",
-                "backgroundImage": "https://example.com/konosuba-episode-2.jpg",
-                "synopsis": "Kazuma and his party attempt to defeat a dangerous monster, only to end up in disastrous situations."
-              },
-              {
-                "epiNum": 3,
-                "title": "Explosion Magic and a Battle of Wits",
-                "backgroundImage": "https://example.com/konosuba-episode-3.jpg",
-                "synopsis": "Megumin, the eccentric mage, introduces her explosive magic, and the group is caught in a tight situation."
-              }
-              // Add all other episodes of season 1 here
-            ]
+            "epiNum": 1,
+            "title": "This Self-Proclaimed Goddess and Reincarnation in Another World",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79672.jpg",
+            "synopsis": "Kazuma is reincarnated in a fantasy world with a goddess, where they begin their chaotic journey.",
+            "downloadLink": "https://example.com/download/konosuba-episode-1"
           },
           {
-            "seasonNumber": 2,
-            "episodes": [
-              {
-                "epiNum": 1,
-                "title": "A New Life in the Country",
-                "backgroundImage": "https://example.com/konosuba-s2-episode-1.jpg",
-                "synopsis": "Kazuma's party faces a new challenge in the countryside, where they try to make a living."
-              },
-              {
-                "epiNum": 2,
-                "title": "A Duel to the Death in the City",
-                "backgroundImage": "https://example.com/konosuba-s2-episode-2.jpg",
-                "synopsis": "Kazuma faces off against a powerful foe in the city while the team deals with growing problems."
-              }
-              // Add all other episodes of season 2 here
-            ]
+            "epiNum": 2,
+            "title": "The Great Chaos at the Crystal Tower",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79674.jpg",
+            "synopsis": "Kazuma and his party attempt to defeat a dangerous monster, only to end up in disastrous situations.",
+            "downloadLink": "https://example.com/download/konosuba-episode-2"
           },
           {
-            "seasonNumber": 3,
-            "episodes": [
-              {
-                "epiNum": 1,
-                "title": "A Return to Glory",
-                "backgroundImage": "https://example.com/konosuba-s3-episode-1.jpg",
-                "synopsis": "The story picks up with the team facing their most challenging yet hilarious adventure yet."
-              }
-              // Add remaining episodes of season 3 here
-            ]
+            "epiNum": 3,
+            "title": "Explosion Magic and a Battle of Wits",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79675.jpg",
+            "synopsis": "Megumin, the eccentric mage, introduces her explosive magic, and the group is caught in a tight situation.",
+            "downloadLink": "https://example.com/download/konosuba-episode-3"
+          },
+          {
+            "epiNum": 4,
+            "title": "A Bet's a Bet!",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79676.jpg",
+            "synopsis": "Kazuma faces a tough challenge involving a bet with an unlikely opponent, leading to more misadventures.",
+            "downloadLink": "https://example.com/download/konosuba-episode-4"
+          },
+          {
+            "epiNum": 5,
+            "title": "A Lively Reincarnation and a Blessed Adventure",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79677.jpg",
+            "synopsis": "The party embarks on a new quest, with Kazuma’s team facing more hilarious but dangerous situations.",
+            "downloadLink": "https://example.com/download/konosuba-episode-5"
+          },
+          {
+            "epiNum": 6,
+            "title": "The Wonderful, Blessed Life of the Adventurer",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79678.jpg",
+            "synopsis": "Kazuma and the gang face challenges, including dealing with their dysfunctional team dynamics and strange foes.",
+            "downloadLink": "https://example.com/download/konosuba-episode-6"
+          },
+          {
+            "epiNum": 7,
+            "title": "A Day in the City and the Adventurer's Guide",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79679.jpg",
+            "synopsis": "Kazuma and his companions learn more about the city’s rules while participating in local events.",
+            "downloadLink": "https://example.com/download/konosuba-episode-7"
+          },
+          {
+            "epiNum": 8,
+            "title": "Chasing the Lost Demon and the Ransacked Town",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79680.jpg",
+            "synopsis": "The party goes after a demon that is terrorizing the town, leading to unexpected events.",
+            "downloadLink": "https://example.com/download/konosuba-episode-8"
+          },
+          {
+            "epiNum": 9,
+            "title": "The Feast of the Gods and the Battle of Desperation",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79681.jpg",
+            "synopsis": "The team faces a dangerous foe at the mercy of powerful gods, leading to a risky battle.",
+            "downloadLink": "https://example.com/download/konosuba-episode-9"
+          },
+          {
+            "epiNum": 10,
+            "title": "A Little Princess and a Righteous Path",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79682.jpg",
+            "synopsis": "Kazuma and his team deal with a princess who needs their help, but things go awry.",
+            "downloadLink": "https://example.com/download/konosuba-episode-10"
+          },
+          {
+            "epiNum": 11,
+            "title": "The Final Battle and a New Start",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79683.jpg",
+            "synopsis": "The party faces off against a major enemy in an epic battle, but the adventure is far from over.",
+            "downloadLink": "https://example.com/download/konosuba-episode-11"
+          },
+          {
+            "epiNum": 12,
+            "title": "A Reincarnation that Will Never End",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79684.jpg",
+            "synopsis": "The final episode of season 1 wraps up the first adventure with a hilarious and dramatic conclusion.",
+            "downloadLink": "https://example.com/download/konosuba-episode-12"
           }
         ]
       },
       {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "epiNum": 1,
+            "title": "A New Life in the Country",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79685.jpg",
+            "synopsis": "Kazuma's party faces a new challenge in the countryside, where they try to make a living.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-1"
+          },
+          {
+            "epiNum": 2,
+            "title": "A Duel to the Death in the City",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79686.jpg",
+            "synopsis": "Kazuma faces off against a powerful foe in the city while the team deals with growing problems.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-2"
+          },
+          {
+            "epiNum": 3,
+            "title": "The World's Most Unusual Adventurer",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79687.jpg",
+            "synopsis": "The team faces an odd situation as they encounter a new ally with strange powers.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-3"
+          },
+          {
+            "epiNum": 4,
+            "title": "A Beautiful Adventure and a Precious Memory",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79688.jpg",
+            "synopsis": "Kazuma and the team take on a new quest that will test their skills and resolve.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-4"
+          },
+          {
+            "epiNum": 5,
+            "title": "Foolish Decisions and a New Rival",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79689.jpg",
+            "synopsis": "Kazuma’s rivalry with a new adventurer leads to more challenges and conflicts.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-5"
+          },
+          {
+            "epiNum": 6,
+            "title": "The Road to Victory and the Fight for Glory",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79690.jpg",
+            "synopsis": "Kazuma’s team faces a tough battle to save the day while navigating complicated new relationships.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-6"
+          },
+          {
+            "epiNum": 7,
+            "title": "Life as a Hero and the Battle of Desperation",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79691.jpg",
+            "synopsis": "The team fights to protect the village from a great threat, risking everything.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-7"
+          },
+          {
+            "epiNum": 8,
+            "title": "A Dangerous Game and a Worthy Opponent",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79692.jpg",
+            "synopsis": "The party faces off against a dangerous foe, learning some valuable lessons along the way.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-8"
+          },
+          {
+            "epiNum": 9,
+            "title": "The Final Battle and the Ultimate Challenge",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79693.jpg",
+            "synopsis": "The team faces their greatest challenge yet, leading to a thrilling and emotional finale.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-9"
+          },
+          {
+            "epiNum": 10,
+            "title": "The Adventures Continue and New Beginnings",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79694.jpg",
+            "synopsis": "The season ends with new adventures on the horizon for Kazuma and his party.",
+            "downloadLink": "https://example.com/download/konosuba-s2-episode-10"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "epiNum": 1,
+            "title": "A Return to Glory",
+            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79695.jpg",
+            "synopsis": "The story picks up with the team facing their most challenging yet hilarious adventure yet.",
+            "downloadLink": "https://example.com/download/konosuba-s3-episode-1"
+          }
+        ]
+      }
+    ]
+  },
+  {
         "title": "No Game No Life",
         "backgroundImage": "https://example.com/ngnl-image.jpg",
         "synopsis": "A brother and sister duo, undefeated gamers, are transported to a world where everything is decided by games.",
@@ -1939,6 +2231,7 @@ const movieData = [
           }
         ]
       },
+
     ]
 
 
