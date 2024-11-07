@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import Navbar from "./Navbar";
 import RinYoshidaImage from '../Assets/rin-yoshida-in-call-of-duty-mobile-hz.jpg';
 import Footer from "./Footer";
 import { MdSkipNext } from "react-icons/md";
 import FloatingMusicButton from '../FloatingMusicButton';
+
 const DetectiveConan = () => {
   const movies = [
     "The Time-Bombed Skyscraper (1997)",
@@ -34,6 +36,22 @@ const DetectiveConan = () => {
 
   const story = "Detective Conan follows the adventures of Shinichi Kudo, a teenage detective who is transformed into a child after being poisoned. Under the alias Conan Edogawa, he solves various cases while searching for the organization responsible for his condition.";
 
+  // State to control music playback and track
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
+  // Function to toggle music play/pause
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+    // Add logic to play/pause the music
+  };
+
+  // Function to change the music track
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+    // Logic to change track
+  };
+
   return (
     <div className="main-content pt-24">
       <Navbar />
@@ -63,12 +81,16 @@ const DetectiveConan = () => {
                 </button>
             </div>
           ))}
-          
         </div>
-        
       </div>         
-<Footer/>
-    <FloatingMusicButton />
+      <Footer />
+      {/* Floating Music Button */}
+      <FloatingMusicButton 
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
     </div>
   );
 };
