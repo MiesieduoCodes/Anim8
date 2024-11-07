@@ -39,18 +39,21 @@ const movieData = [
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536146.jpg",
-            synopsis: "Kaori’s health takes a troubling turn, leaving Kousei worried as he realizes the impact she has had on his life and music."
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/43b436d4-fee1-44f9-893e-14245882516f?base_image_bucket_name=image_manager&base_image=ff3dbd6f-ef94-4fd3-b9e1-37a8dbf25fa4&size=600x338&format=webp",
+            synopsis: "Kaori’s health takes a troubling turn, leaving Kousei worried as he realizes the impact she has had on his life and music.",
+            downloadLink : "",
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536147.jpg",
-            synopsis: "Kousei battles self-doubt and trauma during a recital, but memories of Kaori's encouragement give him strength."
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/43b436d4-fee1-44f9-893e-14245882516f?base_image_bucket_name=image_manager&base_image=ff3dbd6f-ef94-4fd3-b9e1-37a8dbf25fa4&size=600x338&format=webp",
+            synopsis: "Kousei battles self-doubt and trauma during a recital, but memories of Kaori's encouragement give him strength.",
+            downloadLink : "",
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536148.jpg",
-            synopsis: "Kousei discovers that Kaori may be hiding a secret about her health, raising his fears of losing someone he cares about."
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/bdd9fae7-d796-4059-817f-22ed70dcb220?base_image_bucket_name=image_manager&base_image=e319656b-b532-45f9-96f7-f39d3d6f4d6c&size=600x338&format=webp",
+            synopsis: "Kousei discovers that Kaori may be hiding a secret about her health, raising his fears of losing someone he cares about.",
+            downloadLink : ""
           },
           {
             epiNum: 9,
