@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import FloatingMusicButton from '../FloatingMusicButton';
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -31,6 +32,30 @@ const EpisodesPage = () => {
 
   // Ensure episodes is an array
   const episodes = Array.isArray(season.episodes) ? season.episodes : [];
+
+  // State management for music
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const tracks = anime.soundtracks || []; // Assume soundtracks are in the anime data
+
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+  };
+
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+  };
+
+  useEffect(() => {
+    if (tracks.length > 0) {
+      const audio = new Audio(tracks[currentTrackIndex].url);
+      if (isMusicPlaying) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  }, [isMusicPlaying, currentTrackIndex, tracks]);
 
   return (
     <div className="bg-gray-100 main-content pt-24 min-h-screen">
@@ -89,7 +114,12 @@ const EpisodesPage = () => {
       </div>
 
       <Footer />
-      <FloatingMusicButton />
+      <FloatingMusicButton
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
     </div>
   );
 };

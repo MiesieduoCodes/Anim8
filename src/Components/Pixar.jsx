@@ -6,6 +6,29 @@ import movieData from "../Constants/Pixardata";
 
 const Pixar = () => {
     const [cards, setCards] = useState([]);
+    // State management for music
+    const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+    const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
+
+    const toggleMusic = () => {
+        setIsMusicPlaying(!isMusicPlaying);
+    };
+
+    const changeTrack = (index) => {
+        setCurrentTrackIndex(index);
+    };
+
+    useEffect(() => {
+        if (length > 0) {
+            const audio = new Audio([currentTrackIndex].url);
+            if (isMusicPlaying) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    }, [isMusicPlaying, currentTrackIndex ]);
 
     useEffect(() => {
         // Predefined data for Pixar movies
@@ -65,7 +88,12 @@ const Pixar = () => {
             </div>
 
             <Footer />
-            <FloatingMusicButton />
+            <FloatingMusicButton
+                isMusicPlaying={isMusicPlaying}
+                toggleMusic={toggleMusic}
+                currentTrackIndex={currentTrackIndex}
+                changeTrack={changeTrack}
+            />
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from "./Footer";
@@ -6,11 +6,12 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { SiThreads } from "react-icons/si";
 import FloatingMusicButton from '../FloatingMusicButton';
-//import { MusicContext } from '../MusicContext';
+ // Import the MusicContext
 import emailjs from 'emailjs-com';
 
 const ContactLoginPage = () => {
-  // const { isMusicPlaying, toggleMusic, currentTrackIndex, tracks } = useContext(MusicContext);
+  // Access the music context for controlling playback
+  const { isMusicPlaying, toggleMusic, currentTrackIndex, tracks } = use;
 
   const [formData, setFormData] = useState({
     name: '',
@@ -126,13 +127,13 @@ const ContactLoginPage = () => {
       </div>
 
       <Footer />
-      <FloatingMusicButton
-        // isMusicPlaying={isMusicPlaying}
-        // toggleMusic={toggleMusic}
-        // currentTrackIndex={currentTrackIndex}
-        // tracks={tracks}
+      {/* Include the FloatingMusicButton component */}
+      <FloatingMusicButton 
+        isMusicPlaying={isMusicPlaying} 
+        toggleMusic={toggleMusic} 
+        currentTrackIndex={currentTrackIndex} 
+        tracks={tracks} 
       />
-            
     </div>
   );
 };

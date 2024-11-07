@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
 import FloatingMusicButton from '../FloatingMusicButton';
@@ -5,6 +6,30 @@ import Navbar from "./Navbar";
 import movies from '../Constants/data'; // Import your structured movie data
 
 const SeasonPage = () => {
+  // State management for music
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
+
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+  };
+
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+  };
+
+  useEffect(() => {
+    if (length > 0) {
+      const audio = new Audio([currentTrackIndex].url);
+      if (isMusicPlaying) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  }, [isMusicPlaying, currentTrackIndex]);
+
   const queryParams = new URLSearchParams(window.location.search);
   const animeTitle = queryParams.get('title');
   const result = movies.find(movies => movies.title === animeTitle);
@@ -18,7 +43,8 @@ const SeasonPage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${result ? result.backgroundImage || 'default-image-url.jpg' : 'default-image-url.jpg'})`}}
+            backgroundImage: `url(${result ? result.backgroundImage || 'default-image-url.jpg' : 'default-image-url.jpg'})`}
+          }
         >
           <div className="bg-black opacity-50 h-full w-full"></div>
         </div>
@@ -52,12 +78,12 @@ const SeasonPage = () => {
                     ></div>
                     <div className="p-4 bg-white">
                       <h4 className="text-lg font-semibold text-gray-900">Season {season.seasonNumber}</h4>
-                                <Link to={`/episodes/${result.id}/${season.id}?title=${result.title}&epinum=${season.seasonNumber}`} // Construct the URL with movie and season IDs
-            className="mt-4 inline-block bg-red-500 text-white rounded px-4 py-2"
-          >
-            Watch Season {season.seasonNumber}
-          </Link>
-                  
+                      <Link
+                        to={`/episodes/${result.id}/${season.id}?title=${result.title}&epinum=${season.seasonNumber}`} // Construct the URL with movie and season IDs
+                        className="mt-4 inline-block bg-red-500 text-white rounded px-4 py-2"
+                      >
+                        Watch Season {season.seasonNumber}
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -70,7 +96,12 @@ const SeasonPage = () => {
       </div>
 
       <Footer />
-      <FloatingMusicButton />
+      <FloatingMusicButton
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
     </div>
   );
 };

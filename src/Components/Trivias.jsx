@@ -1,4 +1,5 @@
 // src/Trivias.js
+import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import FloatingMusicButton from "../FloatingMusicButton";
@@ -6,15 +7,36 @@ import triviaData from "../Constants/triviasdata";
 import { motion } from "framer-motion";
 
 const Trivias = () => {
+  // State management for music
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+
+
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+  };
+
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+  };
+
+  useEffect(() => {
+    if (length > 0) {
+      const audio = new Audio([currentTrackIndex].url);
+      if (isMusicPlaying) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  }, [isMusicPlaying, currentTrackIndex]);
+
   return (
-    <motion.div 
+    <div
       className="main-content pt-24 min-h-screen bg-gradient-to-br from-purple-200 via-blue-300 to-pink-300 relative overflow-hidden"
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
     >
       <Navbar />
-      
+
       {/* Background and Header */}
       <div className="absolute inset-0 bg-trivia-pattern opacity-10"></div>
       <motion.div
@@ -34,7 +56,7 @@ const Trivias = () => {
       </motion.div>
 
       {/* Trivia Section */}
-      <motion.div 
+      <motion.div
         className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3 p-8 md:p-12"
         initial="hidden"
         animate="visible"
@@ -62,9 +84,7 @@ const Trivias = () => {
                   className="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300 transform group-hover:rotate-1"
                   whileHover={{ scale: 1.02, rotate: 1 }}
                 >
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    {trivia}
-                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed">{trivia}</p>
                 </motion.div>
               ))}
             </div>
@@ -73,8 +93,13 @@ const Trivias = () => {
       </motion.div>
 
       <Footer />
-      <FloatingMusicButton />
-    </motion.div>
+      <FloatingMusicButton
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
+    </div>
   );
 };
 
