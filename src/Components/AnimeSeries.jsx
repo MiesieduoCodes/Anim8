@@ -4,6 +4,7 @@ import Footer from './Footer';
 import FloatingMusicButton from '../FloatingMusicButton';
 import movies from "../Constants/data";
 
+
 const groupMoviesByGenre = (movies) => {
   return movies.reduce((acc, movie) => {
     const { genre } = movie;
