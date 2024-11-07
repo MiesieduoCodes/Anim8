@@ -436,140 +436,6 @@ const movieData = [
     ]
   },
   {
-    title: "Horimiya",
-    backgroundImage: "https://i0.wp.com/beneaththetangles.com/wp-content/uploads/2023/07/horimiya-the-missing-pieces-ep-1c.png?resize=1400%2C400&ssl=1",
-    synopsis: "A sweet high school romance that reveals the unexpected sides of two classmates.",
-    seasons: [
-      {
-        seasonNumber: 1,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090036.jpg",
-            synopsis: "Hori, a popular girl, meets the quiet and reserved Miyamura outside of school."
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090037.jpg",
-            synopsis: "Hori discovers Miyamura's hidden side and they begin to form a deeper bond."
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090038.jpg",
-            synopsis: "Miyamura and Hori face the challenges of friendship and romance."
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090039.jpg",
-            synopsis: "Hori's family learns about her relationship with Miyamura."
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090040.jpg",
-            synopsis: "Hori and Miyamura navigate the ups and downs of their growing relationship."
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090041.jpg",
-            synopsis: "The couple deals with misunderstandings while trying to understand each other."
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090042.jpg",
-            synopsis: "An unexpected event challenges their relationship and brings them closer."
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090043.jpg",
-            synopsis: "Miyamura and Hori attend a school trip that deepens their bond."
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090044.jpg",
-            synopsis: "Hori struggles with her feelings as they face new challenges."
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090045.jpg",
-            synopsis: "Miyamura realizes how much he cares for Hori as they grow closer."
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090046.jpg",
-            synopsis: "Their relationship is tested during a confrontation with classmates."
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090047.jpg",
-            synopsis: "The season finale sees Hori and Miyamura making a heartfelt decision about their future."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    title: "Ao Haru Ride",
-    backgroundImage: "https://faos.home.blog/wp-content/uploads/2020/10/ao-haru-ride-futaba-friends.jpg?w=1024",
-    synopsis: "A girl reunites with her first love and faces the changes time has brought them.",
-    seasons: [
-      {
-        seasonNumber: 1,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353742.jpg",
-            synopsis: "Futaba, now a high school student, reunites with her first love, Kou, who has changed since they last met."
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353743.jpg",
-            synopsis: "Futaba tries to rekindle her friendship with Kou but struggles with his distant personality."
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353744.jpg",
-            synopsis: "Futaba learns more about Kou’s past and begins to understand his cold behavior."
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353745.jpg",
-            synopsis: "Futaba and Kou face misunderstandings as they try to rebuild their relationship."
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353746.jpg",
-            synopsis: "As Futaba grows closer to Kou, she discovers her own feelings are more complicated than she thought."
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353747.jpg",
-            synopsis: "Kou reveals parts of his troubled past, allowing Futaba to understand his changes even more."
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353748.jpg",
-            synopsis: "Futaba struggles with jealousy when another girl takes an interest in Kou."
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353749.jpg",
-            synopsis: "Futaba and Kou share a moment that strengthens their connection, despite lingering doubts."
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353750.jpg",
-            synopsis: "Kou faces his own feelings and starts to acknowledge his affection for Futaba."
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353751.jpg",
-            synopsis: "The season finale sees Futaba and Kou making a choice about their future together."
-          }
-        ]
-      }
-    ]
-  },
-  {
     title: "Ao Haru Ride",
     backgroundImage: "https://faos.home.blog/wp-content/uploads/2020/10/ao-haru-ride-futaba-friends.jpg?w=1024",
     synopsis: "A girl reunites with her first love and faces the changes time has brought them.",
@@ -831,193 +697,6 @@ const movieData = [
             epiNum: 12,
             backgroundImage: "https://wallpapercave.com/wp/wp3208759.jpg",
             synopsis: "Season finale: Saitama confronts the Monster King, leaving an impact on the hero world."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    title: "Mob Psycho 100",
-    backgroundImage: "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/10/mob-psycho-100-III-mob-and-dimple.jpg?resize=696%2C392&ssl=1",
-    synopsis: "A powerful psychic faces both supernatural and everyday challenges.",
-    seasons: [
-      {
-        seasonNumber: 1,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://wallpaperaccess.com/full/1688474.jpg",
-            synopsis: "Shigeo 'Mob' Kageyama, a psychic middle schooler, hides his powers but is drawn into supernatural events."
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210016.jpg",
-            synopsis: "Mob is coerced by his mentor Reigen into exorcising spirits, meeting strange personalities along the way."
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp3209978.jpg",
-            synopsis: "Mob encounters the Claw organization and must confront his own insecurities about using his psychic abilities."
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210027.jpg",
-            synopsis: "Mob is pushed to his emotional limit in a confrontation that tests his control over his powers."
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210034.jpg",
-            synopsis: "Mob befriends Dimple, a spirit, and faces his toughest battle yet."
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210015.jpg",
-            synopsis: "Mob joins his school's Body Improvement Club, seeking to improve himself physically."
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210029.jpg",
-            synopsis: "Mob finds himself targeted by psychic criminals as he learns more about his power."
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210017.jpg",
-            synopsis: "Mob faces off against Teruki Hanazawa, another psychic with a vastly different outlook."
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210045.jpg",
-            synopsis: "Mob grapples with the limits of his psychic abilities in an emotionally intense showdown."
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210030.jpg",
-            synopsis: "Mob and Reigen team up to take down a powerful villain who threatens the city's safety."
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210041.jpg",
-            synopsis: "The season finale pits Mob against an incredibly strong opponent, forcing him to reach new levels of power."
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210037.jpg",
-            synopsis: "After an intense battle, Mob reflects on the importance of balance between power and emotion."
-          }
-        ]
-      },
-      {
-        seasonNumber: 2,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210055.jpg",
-            synopsis: "Mob faces new challenges as his psychic powers continue to evolve, leading to intense encounters."
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210056.jpg",
-            synopsis: "A series of supernatural incidents pushes Mob to question his role as a psychic."
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210060.jpg",
-            synopsis: "Mob and Reigen investigate a haunted location, encountering disturbing spirits."
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210062.jpg",
-            synopsis: "Mob is forced to confront his feelings when he reconnects with his childhood crush."
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210058.jpg",
-            synopsis: "An emotional confrontation with his powers forces Mob to make a difficult decision."
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210064.jpg",
-            synopsis: "Mob’s friendship with Dimple grows as they face new and powerful enemies."
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210070.jpg",
-            synopsis: "Mob begins to unlock new psychic abilities, but it comes at a cost."
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210075.jpg",
-            synopsis: "Reigen is thrown into danger, forcing Mob to use his full power to rescue him."
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210079.jpg",
-            synopsis: "A mysterious new organization seeks out Mob, believing him to be a threat."
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210081.jpg",
-            synopsis: "Mob must navigate complex relationships as his abilities begin to attract unwanted attention."
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210084.jpg",
-            synopsis: "A powerful enemy threatens Mob and those he loves, leading to a climactic battle."
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210090.jpg",
-            synopsis: "Mob reaches a critical turning point in his journey as a psychic, choosing a path for the future."
-          }
-        ]
-      },
-      {
-        seasonNumber: 3,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210092.jpg",
-            synopsis: "Mob faces new psychic threats, while balancing his growing powers with his desire for a normal life."
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210094.jpg",
-            synopsis: "As Mob’s powers grow, he struggles with the weight of his responsibilities as a psychic."
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210098.jpg",
-            synopsis: "Mob discovers new aspects of his powers, leading him to question his own identity."
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210100.jpg",
-            synopsis: "A new psychic appears, challenging Mob’s beliefs about strength and power."
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210102.jpg",
-            synopsis: "Mob is forced to protect his loved ones as his powers attract more dangerous enemies."
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210104.jpg",
-            synopsis: "Mob’s journey reaches a high-stakes turning point, revealing his true potential."
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210106.jpg",
-            synopsis: "As Mob’s power reaches unimaginable levels, he confronts his darkest fears."
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210108.jpg",
-            synopsis: "Mob faces a powerful enemy, forcing him to push his psychic abilities to the limit."
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp3210110.jpg",
-            synopsis: "The season finale explores Mob’s ultimate choice between power and peace."
           }
         ]
       }
@@ -2256,143 +1935,89 @@ const movieData = [
     ]
   },
   {
-    title: "The Rising of the Shield Hero",
-    backgroundImage: "https://static1.fandomspot.com/images/62bd1423e7a1f7e817c23c81c1e46f0f.jpg",
-    synopsis: "A man is summoned to a fantasy world as the Shield Hero and must fight against waves of monsters to save the realm, facing betrayal and hardship.",
+    title: "Jobless Reincarnation: Mushoku Tensei",
+    backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/12/Mushoku-Tensei-Episode-22.jpg",
+    synopsis: "A 34-year-old NEET is reincarnated in a fantasy world with the resolve to live his new life to the fullest.",
     seasons: [
       {
         seasonNumber: 1,
         episodes: [
-          {
+          { 
             epiNum: 1,
-            backgroundImage: "https://static1.fandomspot.com/images/43c39b57dd38d0662e586eae869bb2d7.jpg",
-            synopsis: "Naofumi Iwatani is summoned to another world as the Shield Hero. After being betrayed, he must find a way to grow stronger and defend the realm."
+            title: "Jobless Reincarnation",
+            backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Mushoku-Tensei.jpg",
+            synopsis: "A man reincarnates into a fantasy world as Rudeus, and begins his journey with new goals and challenges."
           },
-          {
+          { 
             epiNum: 2,
-            backgroundImage: "https://static1.fandomspot.com/images/a63e9425ae00a12b812b3e1c99a6dc26.jpg",
-            synopsis: "With his trust shattered, Naofumi begins his journey to gain strength. He meets a demi-human named Raphtalia and begins training her."
+            title: "Master",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-2-Review.png",
+            synopsis: "Rudeus starts magic training with his new tutor, Roxy, showcasing his talent and determination."
           },
-          {
+          { 
             epiNum: 3,
-            backgroundImage: "https://static1.fandomspot.com/images/4d2c1c52a7e054f02b53d7e36d225de9.jpg",
-            synopsis: "Naofumi and Raphtalia face their first battle together against the waves of monsters, learning to trust each other amidst adversity."
+            title: "A Friend",
+            backgroundImage: "https://www.animefeminist.com/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-3.jpg",
+            synopsis: "Rudeus makes his first friend, Sylphiette, and learns the importance of kindness and companionship."
           },
-          {
+          { 
             epiNum: 4,
-            backgroundImage: "https://static1.fandomspot.com/images/76397f167b2f8bc1dca231e8bca2c2d3.jpg",
-            synopsis: "The duo continues their quest, but Naofumi struggles with the harsh realities of being the Shield Hero and faces prejudice from others."
+            title: "Emergency Family Meeting",
+            backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-4.jpg",
+            synopsis: "Family conflicts arise, forcing Rudeus to navigate the complexities of relationships in his new world."
           },
-          {
+          { 
             epiNum: 5,
-            backgroundImage: "https://static1.fandomspot.com/images/617f22426f6e8b5f2656dfe25a5be724.jpg",
-            synopsis: "As Naofumi's reputation grows, he must confront challenges from other heroes and protect his newfound friends at all costs."
+            title: "A Young Lady and Violence",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/02/Mushoku-Tensei-Episode-5.jpg",
+            synopsis: "Rudeus encounters Eris, a feisty noble, and faces new challenges in a hostile environment."
           },
-          {
+          { 
             epiNum: 6,
-            backgroundImage: "https://static1.fandomspot.com/images/36c9abf8f0d4d09b539db7f47490acfc.jpg",
-            synopsis: "Naofumi and Raphtalia embark on a journey to gather allies, showcasing their determination to protect the realm from the impending threat."
+            title: "A Day Off in Roa",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/02/Mushoku-Tensei-Episode-6.jpg",
+            synopsis: "Rudeus and Eris experience life in the city, developing a friendship as they learn about each other."
           },
-          {
+          { 
             epiNum: 7,
-            backgroundImage: "https://static1.fandomspot.com/images/6ff96a73528794d82711ff77a24a12fd.jpg",
-            synopsis: "The group encounters powerful enemies, forcing Naofumi to devise strategies that utilize his shield to turn the tide of battle."
+            title: "What Lies Beyond Effort",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-7.jpg",
+            synopsis: "Rudeus trains hard with Eris, preparing for unexpected challenges while discovering his potential."
           },
-          {
+          { 
             epiNum: 8,
-            backgroundImage: "https://static1.fandomspot.com/images/15e84bc41310ff79b5c62707a3c6d592.jpg",
-            synopsis: "A new companion joins Naofumi's party, adding complexity to their dynamics as they face deeper challenges in their quest."
+            title: "Turning Point 1",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-8.jpg",
+            synopsis: "A mysterious incident transports Rudeus to a dangerous new location, changing his life forever."
           },
-          {
+          { 
             epiNum: 9,
-            backgroundImage: "https://static1.fandomspot.com/images/3e046e8b87cfbf195c8b97d01e1a5283.jpg",
-            synopsis: "As they delve deeper into the world, Naofumi faces the consequences of his actions and learns valuable lessons about trust and leadership."
+            title: "Encounter",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-9.jpg",
+            synopsis: "Rudeus meets Ruijerd, a powerful warrior, who aids him and Eris in surviving their new surroundings."
           },
-          {
+          { 
             epiNum: 10,
-            backgroundImage: "https://static1.fandomspot.com/images/586d1be16fdd3e52aa202f9d768095d9.jpg",
-            synopsis: "With new threats emerging, Naofumi must rally his allies and prepare for the ultimate battle against the waves of monsters."
+            title: "The Value of a Life and the First Job",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-10.jpg",
+            synopsis: "Rudeus takes on his first job, learning the harsh realities of survival and the weight of decisions."
           },
-          {
+          { 
             epiNum: 11,
-            backgroundImage: "https://static1.fandomspot.com/images/f8b98834a5f4773ee0e58d3621c8d33f.jpg",
-            synopsis: "The heroes face a powerful enemy in an epic confrontation that tests their strength, resolve, and the bonds they've formed."
+            title: "Children and Warriors",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-11.jpg",
+            synopsis: "Rudeus and his companions tackle challenges that test their strength and resolve as adventurers."
           },
-          {
+          { 
             epiNum: 12,
-            backgroundImage: "https://static1.fandomspot.com/images/c69ebcc8327c7de5b82a95c4ee03c1d7.jpg",
-            synopsis: "In the season finale, Naofumi reflects on his journey, the friends he's made, and prepares for the next challenges that lie ahead."
-          }
-        ]
-      },
-      {
-        seasonNumber: 2,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://static1.fandomspot.com/images/8e672639c95c9a23807a8b4d3e5f68e8.jpg",
-            synopsis: "Naofumi and his friends return as they face a new threat and must navigate the challenges of being heroes in a changing world."
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://static1.fandomspot.com/images/6aefde0f7c839dbd645539bc3f30e1b7.jpg",
-            synopsis: "A powerful enemy emerges, forcing Naofumi to reassess his strategies and gather new allies to combat this looming danger."
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://static1.fandomspot.com/images/a2ec1e38e61983c5e0e1c9b0364154ee.jpg",
-            synopsis: "As conflicts escalate, Naofumi must confront his past and the decisions that led him to become the Shield Hero."
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://static1.fandomspot.com/images/0a15170318c76e65484c1c58f1d5ab3b.jpg",
-            synopsis: "New alliances are formed, but trust remains a fragile bond as the heroes navigate their complex relationships."
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://static1.fandomspot.com/images/df55efcd64f123b50c52b56546c8a1f0.jpg",
-            synopsis: "With the threat of war looming, Naofumi must make difficult choices to protect those he cares about."
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://static1.fandomspot.com/images/48605c6c7b07a63e05154f5cc8c71a40.jpg",
-            synopsis: "As battles rage, Naofumi discovers hidden truths about the world and the true nature of the enemies he faces."
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://static1.fandomspot.com/images/d3c0472e7df689d569515fb4a1c7c7cb.jpg",
-            synopsis: "In the midst of chaos, friendships are tested as Naofumi faces betrayals and alliances shift."
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://static1.fandomspot.com/images/8d1676a0ef2d90a9b3e5c53eb4c2e198.jpg",
-            synopsis: "The heroes confront their enemies head-on, leading to intense battles that challenge their resolve."
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://static1.fandomspot.com/images/3de03aef738f4a4e5097be05be7229d3.jpg",
-            synopsis: "Naofumi learns more about the history of the Shield Hero and the legacy he must uphold."
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://static1.fandomspot.com/images/eb1e44d4bde34bc4976bbcfb46e3d9ca.jpg",
-            synopsis: "As the season nears its climax, Naofumi must rally his allies for the ultimate confrontation."
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://static1.fandomspot.com/images/c03ea37cc885f93a3f716f65f0d27d64.jpg",
-            synopsis: "The battle for the fate of the realm escalates, testing the heroes in unimaginable ways."
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://static1.fandomspot.com/images/3e27c9da964dedbe15dc645b9a94a1ef.jpg",
-            synopsis: "In the season finale, sacrifices are made, and Naofumi faces the consequences of his choices as the future hangs in the balance."
+            title: "The Woman with the Demon Eyes",
+            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/10/Mushoku-Tensei-Episode-12.jpg",
+            synopsis: "Rudeus meets a mysterious figure with extraordinary powers, opening new possibilities and dangers."
           }
         ]
       }
     ]
   }
-  // Remaining movies follow the same format
 ];
 
 export default movieData;

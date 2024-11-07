@@ -89,12 +89,7 @@ const EpisodesPage = () => {
       </div>
 
       <Footer />
-      <FloatingMusicButton 
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-      />
+      <FloatingMusicButton />
     </div>
   );
 };

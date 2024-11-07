@@ -49,7 +49,6 @@ const DCMovies = () => {
                                 <a
                                     href={card.downloadLink} // Make sure movieData includes a downloadLink property
                                     className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
-                                    onClick={() => alert(`Downloading ${card.title}`)}
                                     download
                                 >
                                     Download
@@ -60,12 +59,7 @@ const DCMovies = () => {
                 </div>
       </div>
       <Footer/>
-      <FloatingMusicButton 
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-      />
+      <FloatingMusicButton />
     </div>
   );
 };

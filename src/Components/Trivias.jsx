@@ -73,12 +73,7 @@ const Trivias = () => {
       </motion.div>
 
       <Footer />
-      <FloatingMusicButton 
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-      />
+      <FloatingMusicButton />
     </motion.div>
   );
 };

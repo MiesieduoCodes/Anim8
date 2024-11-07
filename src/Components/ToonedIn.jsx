@@ -57,12 +57,7 @@ const ToonedIn = () => {
           <p>&copy; {new Date().getFullYear()} Anim8. All rights reserved.</p>
         </div>
       </footer>
-      <FloatingMusicButton 
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-      />
+      <FloatingMusicButton />
     </div>
   )
 }

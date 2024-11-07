@@ -109,12 +109,7 @@ const AnimeFilms = () => {
       </div>
 
             <Footer />
-            <FloatingMusicButton 
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-      />
+            <FloatingMusicButton />
     </>
   );
 };
