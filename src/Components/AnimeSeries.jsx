@@ -1,9 +1,9 @@
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import FloatingMusicButton from '../FloatingMusicButton';
 import movies from "../Constants/data";
-
 
 const groupMoviesByGenre = (movies) => {
   return movies.reduce((acc, movie) => {
@@ -19,20 +19,60 @@ const groupMoviesByGenre = (movies) => {
 const AnimeSeries = () => {
   const moviesByGenre = groupMoviesByGenre(movies);
 
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const audioRef = useRef(null);
+
+  // Toggle music playback
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+  };
+
+  // Change to a specific track
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+  };
+
+  // Effect to play/pause music when isMusicPlaying state changes
+  useEffect(() => {
+    if (audioRef.current) {
+      if (isMusicPlaying) {
+        audioRef.current.play();
+      } else {
+        audioRef.current.pause();
+      }
+    }
+  }, [isMusicPlaying]);
+
+  // Effect to change track source when currentTrackIndex changes
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.src = `path/to/your/track-${currentTrackIndex}.mp3`; // Update with actual paths
+      if (isMusicPlaying) {
+        audioRef.current.play();
+      }
+    }
+  });
+
   return (
     <div className="bg-gray-400 main-content pt-24 min-h-screen">
       <Navbar />
       <div className="container mx-auto my-10">
-      <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-            Anime-Seried
-          </h1>
-          <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-            Explore our collection of animated walt disney magic that have captured <br />hearts over the years.
-          </p>
+        <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" 
+          style={{ 
+            backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` 
+          }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+              Anime Series
+            </h1>
+            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
+              Explore our collection of animated magic that have captured hearts over the years.
+            </p>
+          </div>
         </div>
-      </div>
+
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">{genre}</h2>
@@ -64,8 +104,19 @@ const AnimeSeries = () => {
           </div>
         ))}
       </div>
+      
       <Footer />
-      <FloatingMusicButton />
+
+      {/* Floating Music Button with functionality */}
+      <FloatingMusicButton
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
+
+      {/* Audio Element for Music Playback */}
+      <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} />
     </div>
   );
 };
