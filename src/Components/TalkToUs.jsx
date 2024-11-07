@@ -1,18 +1,14 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from "./Footer";
 import { FaInstagramSquare } from "react-icons/fa";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { SiThreads } from "react-icons/si";
-import FloatingMusicButton from '../FloatingMusicButton';
- // Import the MusicContext
 import emailjs from 'emailjs-com';
+import FloatingMusicButton from '../FloatingMusicButton'; // Import the FloatingMusicButton
 
 const ContactLoginPage = () => {
-  // Access the music context for controlling playback
-  const { isMusicPlaying, toggleMusic, currentTrackIndex, tracks } = use;
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,6 +17,8 @@ const ContactLoginPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 
   const handleChange = (e) => {
     setFormData({
@@ -57,6 +55,16 @@ const ContactLoginPage = () => {
     .finally(() => {
       setLoading(false);
     });
+  };
+
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+    // Add logic to play/pause the music
+  };
+
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+    // Add logic to change the track
   };
 
   return (
@@ -127,12 +135,13 @@ const ContactLoginPage = () => {
       </div>
 
       <Footer />
-      {/* Include the FloatingMusicButton component */}
+
+      {/* Floating Music Button */}
       <FloatingMusicButton 
-        isMusicPlaying={isMusicPlaying} 
-        toggleMusic={toggleMusic} 
-        currentTrackIndex={currentTrackIndex} 
-        tracks={tracks} 
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
       />
     </div>
   );
