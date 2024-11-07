@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import FloatingMusicButton from '../FloatingMusicButton';
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -8,35 +8,17 @@ import movieData from '../Constants/data.js'; // Import the movie data
 const EpisodesPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const audioRef = useRef(null); // Ref to store the audio element
+
   const searchParams = new URLSearchParams(location.search);
   const animeTitle = searchParams.get('title');
   const seasonNumber = parseInt(searchParams.get('epinum'), 10); // Parse season number as integer
 
-  // Find the anime using the title from the query params
   const anime = movieData.find((movie) => movie.title === animeTitle);
-
-  // If the anime is not found, redirect to the home page
-  if (!anime) {
-    navigate('/');
-    return null;
-  }
-
-  // Find the corresponding season based on the season number
-  const season = anime.seasons?.find((s) => s.seasonNumber === seasonNumber);
-
-  // If the season is not found, redirect to the home page
-  if (!season) {
-    navigate('/');
-    return null;
-  }
-
-  // Ensure episodes is an array
-  const episodes = Array.isArray(season.episodes) ? season.episodes : [];
-
-  // State management for music
-  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
-  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const tracks = anime.soundtracks || []; // Assume soundtracks are in the anime data
+  const season = anime?.seasons?.find((s) => s.seasonNumber === seasonNumber);
+  const episodes = Array.isArray(season?.episodes) ? season?.episodes : [];
 
   const toggleMusic = () => {
     setIsMusicPlaying(!isMusicPlaying);
@@ -46,16 +28,35 @@ const EpisodesPage = () => {
     setCurrentTrackIndex(index);
   };
 
+  // Moved tracks inside useEffect
   useEffect(() => {
-    if (tracks.length > 0) {
-      const audio = new Audio(tracks[currentTrackIndex].url);
-      if (isMusicPlaying) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
+    if (!anime || !season) {
+      navigate('/');
+      return;
     }
-  }, [isMusicPlaying, currentTrackIndex, tracks]);
+
+    const tracks = anime.soundtracks || []; // Track initialization inside the effect
+
+    if (tracks.length > 0) {
+      if (!audioRef.current) {
+        audioRef.current = new Audio(tracks[currentTrackIndex].url);
+      } else {
+        audioRef.current.src = tracks[currentTrackIndex].url;
+      }
+
+      if (isMusicPlaying) {
+        audioRef.current.play();
+      } else {
+        audioRef.current.pause();
+      }
+
+      // Cleanup audio object when the component unmounts or when the music stops
+      return () => {
+        audioRef.current?.pause();
+        audioRef.current = null;
+      };
+    }
+  }, [isMusicPlaying, currentTrackIndex, anime, season, navigate]); // Dependency list updated
 
   return (
     <div className="bg-gray-100 main-content pt-24 min-h-screen">
@@ -66,15 +67,15 @@ const EpisodesPage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${anime.backgroundImage || 'default-image-url.jpg'})`,
+            backgroundImage: `url(${anime?.backgroundImage || 'default-image-url.jpg'})`,
           }}
         >
           <div className="bg-black opacity-50 h-full w-full"></div>
         </div>
         <div className="container mx-auto relative z-10 text-center">
-          <h1 className="text-5xl font-bold mb-4">{anime.title} - Season {season.seasonNumber}</h1>
+          <h1 className="text-5xl font-bold mb-4">{anime?.title} - Season {season?.seasonNumber}</h1>
           <p className="text-3xl mb-8">
-            Discover all episodes from Season {season.seasonNumber}. Each episode promises an exciting journey and unforgettable moments.
+            Discover all episodes from Season {season?.seasonNumber}. Each episode promises an exciting journey and unforgettable moments.
           </p>
         </div>
       </div>
@@ -84,16 +85,16 @@ const EpisodesPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {episodes.length > 0 ? (
-            episodes.map((episode, idx) => (
-              <div key={idx} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+            episodes.map((episode) => (
+              <div key={episode.id || episode.title} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
                 <div
                   className="h-48 bg-cover bg-center"
                   style={{
-                    backgroundImage: `url(${episode.image || '/path-to-sample-image.jpg'})`, // Use episode image or placeholder
+                    backgroundImage: `url(${episode.image || '/path-to-sample-image.jpg'})`,
                   }}
                 ></div>
                 <div className="p-5">
-                  <h2 className="text-xl font-semibold text-gray-900">{episode.title || `Episode ${idx + 1}`}</h2>
+                  <h2 className="text-xl font-semibold text-gray-900">{episode.title || `Episode ${episode.id || 'Unknown'}`}</h2>
                   <p className="text-gray-700 mt-2 mb-4">{episode.synopsis || "No description available."}</p>
                   
                   {/* Download Episode Button */}
