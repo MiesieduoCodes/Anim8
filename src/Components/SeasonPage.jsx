@@ -60,7 +60,7 @@ const SeasonPage = () => {
       </div>
 
       <div className="container mx-auto my-10">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Explore Movies</h1>
+   
 
         {result ? (
           <div>
@@ -81,7 +81,7 @@ const SeasonPage = () => {
                         to={`/episodes/${result.id}/${season.id}?title=${result.title}&epinum=${season.seasonNumber}`} // Construct the URL with movie and season IDs
                         className="mt-4 inline-block bg-red-500 text-white rounded px-4 py-2"
                       >
-                        Watch Season {season.seasonNumber}
+                        View Season {season.seasonNumber}
                       </Link>
                     </div>
                   </div>

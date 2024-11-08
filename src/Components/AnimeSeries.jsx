@@ -91,7 +91,7 @@ const AnimeSeries = () => {
                       to={`/anime/${movie.id}?title=${movie.title}`}
                       className="mt-2 inline-block bg-red-500 text-white rounded px-4 py-2" >
 
-                      View Details
+                      View Series
 
                     </Link>
                   </div>
