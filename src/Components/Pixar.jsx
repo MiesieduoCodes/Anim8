@@ -76,7 +76,7 @@ const Pixar = () => {
                                 <p className="text-white text-lg">{card.rating}</p>
                                  <a
                                     href={card.downloadLink} // Make sure movieData includes a downloadLink property
-                                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
+                                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300" 
                                     download
                                 >
                                     Download

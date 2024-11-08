@@ -10,6 +10,7 @@ const EpisodesPage = () => {
   const navigate = useNavigate();
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const [tracks, setTracks] = useState([]);
   const audioRef = useRef(null); // Ref to store the audio element
 
   const searchParams = new URLSearchParams(location.search);
@@ -28,14 +29,13 @@ const EpisodesPage = () => {
     setCurrentTrackIndex(index);
   };
 
-  // Moved tracks inside useEffect
   useEffect(() => {
     if (!anime || !season) {
       navigate('/');
       return;
     }
 
-    const tracks = anime.soundtracks || []; // Track initialization inside the effect
+    setTracks(anime.soundtracks || []);
 
     if (tracks.length > 0) {
       if (!audioRef.current) {
@@ -56,7 +56,7 @@ const EpisodesPage = () => {
         audioRef.current = null;
       };
     }
-  }, [isMusicPlaying, currentTrackIndex, anime, season, navigate]); // Dependency list updated
+  }, [isMusicPlaying, currentTrackIndex, anime, season, navigate, tracks]);
 
   return (
     <div className="bg-gray-100 main-content pt-24 min-h-screen">
@@ -74,9 +74,7 @@ const EpisodesPage = () => {
         </div>
         <div className="container mx-auto relative z-10 text-center">
           <h1 className="text-5xl font-bold mb-4">{anime?.title} - Season {season?.seasonNumber}</h1>
-          <p className="text-3xl mb-8">
-            Discover all episodes from Season {season?.seasonNumber}. Each episode promises an exciting journey and unforgettable moments.
-          </p>
+          <p className="text-3xl mb-8">{anime?.synopsis}</p>
         </div>
       </div>
 
@@ -86,20 +84,20 @@ const EpisodesPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {episodes.length > 0 ? (
             episodes.map((episode) => (
-              <div key={episode.id || episode.title} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div key={episode.epiNum || episode.title} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
                 <div
                   className="h-48 bg-cover bg-center"
                   style={{
-                    backgroundImage: `url(${episode.image || '/path-to-sample-image.jpg'})`,
+                    backgroundImage: `url(${episode.backgroundImage || '/path-to-sample-image.jpg'})`,
                   }}
                 ></div>
                 <div className="p-5">
-                  <h2 className="text-xl font-semibold text-gray-900">{episode.title || `Episode ${episode.id || 'Unknown'}`}</h2>
+                  <h2 className="text-xl font-semibold text-gray-900">{episode.title || `Episode ${episode.epiNum || 'Unknown'}`}</h2>
                   <p className="text-gray-700 mt-2 mb-4">{episode.synopsis || "No description available."}</p>
                   
                   {/* Download Episode Button */}
                   <a 
-                    href={episode.downloadUrl || '#'}
+                    href={episode.downloadLink || '#'}
                     className="inline-block mt-3 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition-colors"
                     download
                   >
@@ -120,6 +118,7 @@ const EpisodesPage = () => {
         toggleMusic={toggleMusic}
         currentTrackIndex={currentTrackIndex}
         changeTrack={changeTrack}
+        tracks={tracks}
       />
     </div>
   );
