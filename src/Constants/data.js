@@ -12,43 +12,43 @@ const movieData = [
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536141.jpg",
+            backgroundImage: "https://www.justwatch.com/images/backdrop/243967768/s1440/season-1.webp/season-1.webp",
             synopsis: "Kousei Arima, a piano prodigy, loses his ability to hear the sound of the piano after his mother’s death, but his life changes when he meets a vibrant violinist named Kaori.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-1"
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536142.jpg",
+            backgroundImage: "https://i0.wp.com/beneaththetangles.com/wp-content/uploads/2014/10/april-2b.jpg?resize=718%2C400&ssl=1p",
             synopsis: "Kaori encourages Kousei to accompany her in a violin competition, forcing him to face his fears and rediscover his musical passion.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-2"
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536143.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2014/11/23080726/Your-Lie-In-April-Ep-3-1024x576.png",
             synopsis: "Kousei's past continues to haunt him as he struggles with his first performance after years, while Kaori's free-spirited style helps him find inspiration.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-3"
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536144.jpg",
+            backgroundImage: "https://eastofthewire.wordpress.com/wp-content/uploads/2014/10/shigatsu-4-4.png",
             synopsis: "Kousei's friends rally to support him as he begins practicing piano again, navigating complex emotions he has buried.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-4"
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536145.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2014/11/23074722/Your-Lie-In-April-Ep-5.png",
             synopsis: "During the piano competition, Kousei faces his deepest fears and memories of his mother, challenging him to move beyond his trauma.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-5"
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536146.jpg",
+            backgroundImage: "https://cdn.animenewsnetwork.com/thumbnails/max300x600/cms/episode-review/81041/ylia-ep-6-tsubaki-rotated.jpg",
             synopsis: "Kaori’s health takes a troubling turn, leaving Kousei worried as he realizes the impact she has had on his life and music.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-6"
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536147.jpg",
+            backgroundImage: "https://megaprinceytay.wordpress.com/wp-content/uploads/2014/11/vlcsnap-2014-11-21-11h17m53s187-w800-h600.png?w=300",
             synopsis: "Kousei battles self-doubt and trauma during a recital, but memories of Kaori's encouragement give him strength.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-7"
           },
