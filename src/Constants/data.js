@@ -9,6 +9,7 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage :"https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23065212/Your-Lie-In-April-Ep-10-1024x576.png",
         episodes: [
           {
             epiNum: 1,
@@ -66,7 +67,7 @@ const movieData = [
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536150.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23065212/Your-Lie-In-April-Ep-10-1024x576.png",
             synopsis: "Kaori’s influence helps Kousei overcome his insecurities, leading to an emotional performance that captures the audience.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-10"
           },
