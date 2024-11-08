@@ -54,13 +54,13 @@ const movieData = [
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536148.jpg",
+            backgroundImage: "https://megaprinceytay.wordpress.com/wp-content/uploads/2014/11/vlcsnap-2014-11-29-10h13m51s155-w800-h600.png?w=300",
             synopsis: "Kousei discovers that Kaori may be hiding a secret about her health, raising his fears of losing someone he cares about.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-8"
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536149.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23065218/Your-Lie-In-April-Ep-9.png",
             synopsis: "As Kousei grows closer to Kaori, he begins to find a renewed love for music and his desire to play again.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-9"
           },
