@@ -1,6 +1,9 @@
 const movieData = [
+
+ // genre : Romance {
   {
     title: "Your Lie in April",
+    genre: "Romance",
     backgroundImage: "https://c4.wallpaperflare.com/wallpaper/264/75/737/anime-sunset-piano-clouds-wallpaper-preview.jpg",
     synopsis: "A pianist, traumatized by the death of his mother, rediscovers his love for music and life after meeting a spirited violinist who changes his world.",
     seasons: [
@@ -146,6 +149,7 @@ const movieData = [
   ,
   {
     title: "Toradora!",
+    genre: "Romance",
     backgroundImage: "https://eyeforaneyepiece.wordpress.com/wp-content/uploads/2013/09/konachan-com-42979-aisaka_taiga-kawashima_ami-kitamura_yusaku-kushieda_minori-takasu_ryuuji-toradora.jpg?w=625&h=400",
     synopsis: "Two high school students form an unlikely friendship to help each other pursue their crushes.",
     seasons: [
@@ -279,6 +283,7 @@ const movieData = [
   ,
   {
     title: "Kaguya-sama: Love Is War",
+    genre: "Romance",
     backgroundImage: "https://thecambridgegeek.com/posts/2019/03/20190301-a.jpg",
     synopsis: "A battle of wits and romance between two high school geniuses.",
     seasons: [
@@ -517,8 +522,10 @@ const movieData = [
       }
     ]
   },
+  
   {
     title: "Ao Haru Ride",
+    genre: "Romance",
     backgroundImage: "https://faos.home.blog/wp-content/uploads/2020/10/ao-haru-ride-futaba-friends.jpg?w=1024",
     synopsis: "A girl reunites with her first love and faces the changes time has brought them.",
     seasons: [
@@ -589,8 +596,13 @@ const movieData = [
       }
     ]
   },
+//},
+
+
+//genre : "Action"{
   {
     title: "Darwin's Game",
+    genre: "Action",
     backgroundImage: "https://otakukart.com/wp-content/uploads/2020/02/darwins-game-1024x576.jpg",
     synopsis: "A high school student is dragged into a brutal survival game after receiving an invitation on his phone.",
     seasons: [
@@ -667,9 +679,11 @@ const movieData = [
         ]
       }
     ]
-  },  
+  },
+
   {
     title: "One Punch Man",
+    genre: "Action",
     backgroundImage: "https://images.thedirect.com/media/article_full/one-punch-man-season-3-release.jpg?imgeng=/cmpr_60/w_auto",
     synopsis: "A hero who can defeat any opponent with a single punch searches for meaning.",
     seasons: [
@@ -829,8 +843,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Fate/Zero",
+    genre: "Action",
     backgroundImage: "https://images.squarespace-cdn.com/content/v1/52a28c62e4b0b9264e00c55a/1433095857903-JZCGB06DEUHLVEOP1063/upload.jpeg?format=1500w",
     synopsis: "Seven mages summon heroic spirits to fight in a war for the Holy Grail.",
     seasons: [
@@ -990,8 +1006,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Vinland Saga",
+    genre: "Action",
     backgroundImage: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*aRgVjpScRTPByVv2cI6YYw.png",
     synopsis: "A young Viking seeks revenge for his father's murder and becomes entangled in war.",
     seasons: [
@@ -1151,8 +1169,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Jujutsu Kaisen",
+    genre: "Action",
     backgroundImage: "https://static.wikia.nocookie.net/08cb8af6-daab-42bf-a591-c23e9ccbe09a/scale-to-width-down/800",
     synopsis: "A student becomes involved in a world of curses and sorcery.",
     seasons: [
@@ -1312,8 +1332,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Fire Force",
+    genre: "Action",
     backgroundImage: "https://cdn.animeukiyo.com/wp-content/uploads/2020/11/fire-force-1200x675.jpg",
     synopsis: "In a world plagued by spontaneous human combustion, special fire brigades battle to protect humanity from demonic Infernals.",
     seasons: [
@@ -1473,8 +1495,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Inuyashiki",
+    genre: "Action",
     backgroundImage: "https://www.gamerfocus.co/wp-content/uploads/2018/01/Inuyashiki.jpg",
     synopsis: "An elderly man and a troubled teen gain powerful abilities after a strange accident, leading them down drastically different paths.",
     seasons: [
@@ -1551,8 +1575,13 @@ const movieData = [
       }
     ]
   },
+
+  //},
+
+//genre : "mystery"{
   {
     title: "Erased",
+    genre: "Mystery",
     backgroundImage: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/06/Erased.jpg",
     synopsis: "A young man with the ability to travel back in time tries to prevent a tragedy that affected his childhood.",
     seasons: [
@@ -1635,8 +1664,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "The Promised Neverland",
+    genre: "Mystery",
     backgroundImage: "https://assets.mycast.io/posters/the-promised-neverland-live-action-fan-casting-poster-186564-large.jpg",
     synopsis: "A group of orphans uncovers the dark secrets of their idyllic orphanage and plans a daring escape.",
     seasons: [
@@ -1784,8 +1815,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Psycho-Pass",
+    genre: "Mystery",
     backgroundImage: "https://wallpapercave.com/wp/wp2592210.jpg",
     synopsis: "In a future where the state of mind can be quantified, enforcers must capture latent criminals before they act.",
     seasons: [
@@ -1945,8 +1978,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Another",
+    genre: "Mystery",
     backgroundImage: "https://cdn.myanimelist.net/images/anime/10/33767.jpg",
     synopsis: "A transfer student uncovers the terrifying curse affecting his class, leading to a series of deadly incidents.",
     seasons: [
@@ -2029,8 +2064,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Terror in Resonance",
+    genre: "Mystery",
     backgroundImage: "https://cdn.myanimelist.net/images/anime/1050/113316.jpg",
     synopsis: "Two teenage boys with a mysterious past embark on a series of terrorist attacks in Tokyo, challenging the city to uncover their motives.",
     seasons: [
@@ -2113,8 +2150,12 @@ const movieData = [
       }
     ]
   },
+ // },
+
+
   {
     title: "Made in Abyss",
+    genre: "Adventure",
     backgroundImage: "https://static1.fandomspot.com/images/0dc97599e5c4032db9f9a63c155fa80c.jpg",
     synopsis: "In a world where a vast chasm known as the Abyss beckons explorers, a young girl and her robot friend venture deep into its mysterious depths in search of her mother.",
     seasons: [
@@ -2274,8 +2315,10 @@ const movieData = [
       }
     ]
   },
+
   {
     title: "Jobless Reincarnation: Mushoku Tensei",
+    genre: "Adventure",
     backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/12/Mushoku-Tensei-Episode-22.jpg",
     synopsis: "A 34-year-old NEET is reincarnated in a fantasy world with the resolve to live his new life to the fullest.",
     seasons: [
@@ -2373,6 +2416,7 @@ const movieData = [
 
   {
     "title": "Konosuba: God's Blessing on this Wonderful World!",
+    genre: "Adventure",
     "backgroundImage": "https://cdn.myanimelist.net/images/anime/8/78243.jpg",
     "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
     "seasons": [
@@ -2553,10 +2597,11 @@ const movieData = [
         ]
       }
     ]
-  }
-,  
-      {
+  },
+
+  {
         "title": "No Game No Life",
+        genre: "Adventure",
         "backgroundImage": "https://example.com/ngnl-image.jpg",
         "synopsis": "A brother and sister duo, undefeated gamers, are transported to a world where everything is decided by games.",
         "seasons": [
@@ -2579,9 +2624,9 @@ const movieData = [
             ]
           }
         ]
-      },
+  },
+  
 
-    ]
-
+]
 
 export default movieData;
