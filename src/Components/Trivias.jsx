@@ -81,7 +81,7 @@ const Trivias = () => {
               {trivias.map((trivia, index) => (
                 <motion.div
                   key={index}
-                  className="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300 transform group-hover:rotate-1"
+                  className="bg-gray-300 p-4 rounded-lg shadow-md hover:bg-blue-300 transition-colors duration-300 transform group-hover:rotate-1"
                   whileHover={{ scale: 1.02, rotate: 1 }}
                 >
                   <p className="text-gray-700 text-sm leading-relaxed">{trivia}</p>

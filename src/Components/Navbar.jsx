@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "bg-gray-800 shadow-lg" : "bg-white"
+        scrolled ? "bg-slate-400 shadow-lg" : "bg-white"
       }`}
     >
       <div className="flex items-center font-medium justify-between px-4 md:px-8">

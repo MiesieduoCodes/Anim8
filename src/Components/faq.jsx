@@ -52,13 +52,13 @@ const Faq = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-cover bg-slate-950 bg-center text-white py-20 px-6">
+      <div className="bg-cover bg-slate-500 bg-center text-white py-20 px-6">
         <div className="bg-black bg-opacity-50 py-12 px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold text-center mb-10">Frequently Asked Questions</h1>
 
           <div className="space-y-8">
             {faqData.map((faq, index) => (
-              <div key={index} className="bg-gray-800 p-6 rounded-md">
+              <div key={index} className="bg-gray-700 p-6 rounded-md">
                 {/* Question */}
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -69,7 +69,7 @@ const Faq = () => {
                     <span className="ml-2">
                       {openIndex === index ? (
                         <svg
-                          className="w-6 h-6 text-yellow-500"
+                          className="w-6 h-6 text-yellow-400"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -79,7 +79,7 @@ const Faq = () => {
                         </svg>
                       ) : (
                         <svg
-                          className="w-6 h-6 text-yellow-500"
+                          className="w-6 h-6 text-yellow-400"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -94,7 +94,7 @@ const Faq = () => {
 
                 {/* Answer */}
                 <div
-                  className={`transition-all duration-300 overflow-hidden ${
+                  className={`transition-all duration-500 overflow-hidden ${
                     openIndex === index ? "max-h-full mt-4" : "max-h-0"
                   }`}
                 >
@@ -108,6 +108,7 @@ const Faq = () => {
 
       {/* Footer */}
      <Footer />
+
       <FloatingMusicButton
         isMusicPlaying={isMusicPlaying}
         toggleMusic={toggleMusic}

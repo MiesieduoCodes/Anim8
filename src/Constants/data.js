@@ -256,13 +256,13 @@ const movieData = [
           },
           {
             epiNum: 17,
-            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7exOVabvRWC7r2o5KVxrmiPQQ0z.jpg",
+            backgroundImage: "https://i0.wp.com/i.imgur.com/ZStCaB4.jpg",
             synopsis: "Taiga and Ryuuji’s friends intervene to help them admit their feelings, pushing them toward a revelation.",
             downloadLink: "https://example.com/download/toradora-episode-17"
           },
           {
             epiNum: 18,
-            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7exOVabvRWC7r2o5KVxrmiPQQ0z.jpg",
+            backgroundImage: "https://i0.wp.com/i.imgur.com/8xEneSp.jpg",
             synopsis: "With graduation approaching, Taiga and Ryuuji must decide how they will move forward together.",
             downloadLink: "https://example.com/download/toradora-episode-18"
           },
@@ -291,76 +291,77 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://static.wikia.nocookie.net/kaguyasama-wa-kokurasetai/images/8/8c/Key_Visual.png/revision/latest?cb=20190221211641",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090000.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/01/02.jpg",
             synopsis: "Kaguya and Miyuki engage in a mind game to make the other confess love first.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090001.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/02/02.jpg",
             synopsis: "Kaguya devises a plan to make Miyuki invite her to the summer festival.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090002.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/03/02.jpg",
             synopsis: "A game of 'Forbidden Words' challenges both Miyuki and Kaguya's self-control.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090003.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/04/04.jpg",
             synopsis: "Chika tries to get Miyuki to open up about his insecurities.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090004.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/05/03.jpg",
             synopsis: "Kaguya becomes jealous when a rumor about Miyuki's crush surfaces.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090005.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/06/03.jpg",
             synopsis: "Miyuki and Kaguya bond over a movie outing that leads to misunderstandings.",
 
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090006.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/07/02.jpg",
             synopsis: "When Kaguya's plans are derailed, Miyuki comes to her rescue.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090007.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/08/01.jpg",
             synopsis: "Kaguya’s jealousy gets the better of her as new challenges arise.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090008.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/09/01.jpg",
             synopsis: "Kaguya deals with embarrassment after Miyuki discovers a secret.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090009.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/10/02.jpg",
             synopsis: "Kaguya and Miyuki face off in a student council meeting over love advice.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090010.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/11/02.jpg",
             synopsis: "Kaguya struggles with expressing her feelings on the last day of summer.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090011.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/1st/assets/img/story/12/01.jpg",
             synopsis: "A heartfelt moment between Kaguya and Miyuki closes the season.",
             downloadLink : ""
           }
@@ -368,6 +369,7 @@ const movieData = [
       },
       {
         seasonNumber: 2,
+        backgroundImage :"https://kaguyasama-anime.com/2nd/assets/img/top/img_main02.jpg",
         episodes: [
           {
             epiNum: 1,
