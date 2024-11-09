@@ -775,76 +775,77 @@ const movieData = [
       },
       {
         seasonNumber: 2,
+        backgroundImage : "https://img1.hulu.com/user/v3/artwork/f768e03e-fed5-4d9d-afb2-a240b483b0df?base_image_bucket_name=image_manager&base_image=ebc435f1-0c16-4e20-b4b1-9c750629b402&size=600x338&format=webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208745.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/7d5b8ecb-f2d8-46db-a4f7-1adf602d1bbe?base_image_bucket_name=image_manager&base_image=6bc188f7-d407-4093-8422-23a6b9e15757&size=600x338&format=webp",
             synopsis: "A new threat arises in the form of the Monster Association, challenging Saitama and other heroes.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208746.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/5d29fd54-4133-46ed-94d8-ddedd023ed5f?base_image_bucket_name=image_manager&base_image=e7ab9ab9-d245-4fd1-af26-95124afbe3d6&size=600x338&format=webp",
             synopsis: "Garou, a former hero hunter, begins targeting heroes to prove his own strength.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208748.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/30dd85c4-c518-4479-8351-b4aa48337f8e?base_image_bucket_name=image_manager&base_image=5ed3457a-d1fc-4834-9e94-286858e6c555&size=600x338&format=webp",
             synopsis: "Saitama continues his journey, entering a martial arts tournament to find a worthy opponent.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208749.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/683c8a27-c699-4a2e-9703-9618f2d02992?base_image_bucket_name=image_manager&base_image=04ea235f-6d4d-48a3-b41a-2f3fcf515cc6&size=600x338&format=webp",
             synopsis: "Garou confronts multiple heroes at once, displaying his remarkable combat abilities.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208750.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/933a56d1-5829-415b-ac5f-9cecc4af7cce?base_image_bucket_name=image_manager&base_image=e92b6bfe-68bd-4eee-82d6-dfab2bb01d66&size=600x338&format=webp",
             synopsis: "Saitama learns more about the Hero Association’s inner workings and its issues.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208752.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/c3668ede-4e08-45fd-aa0e-e88f4e621b13?base_image_bucket_name=image_manager&base_image=06c51499-0185-47ee-b049-1b057dc78d6d&size=600x338&format=webp",
             synopsis: "Garou’s battle intensifies, leading to a confrontation with S-Class heroes.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208753.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/1957a015-a3dc-4054-a82a-911bbe14bfcc?base_image_bucket_name=image_manager&base_image=56f967d3-a743-4a28-a3bd-36afff088aa2&size=600x338&format=webp",
             synopsis: "Saitama faces new monsters and grows increasingly frustrated with his mundane hero life.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208754.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/e68cbfc4-517e-428d-a80b-414ac565c8a3?base_image_bucket_name=image_manager&base_image=8c8d124f-6cc9-4a11-b644-4b7df5536452&size=600x338&format=webp",
             synopsis: "Garou’s journey as a hero hunter takes a toll on him as he fights against overwhelming odds.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208755.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/ad27cff4-7e7b-4950-90f6-eaac5026fef4?base_image_bucket_name=image_manager&base_image=c933a505-d002-4d92-bbea-de0111afc0cc&size=600x338&format=webp",
             synopsis: "The Monster Association grows bolder, escalating the conflict with the Hero Association.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208756.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/5ef6a3a3-629d-4ac8-a98a-9d6e4818ec5e?base_image_bucket_name=image_manager&base_image=dfcfb4df-d041-4d58-afb0-ced706e0d8ce&size=600x338&format=webp",
             synopsis: "Saitama’s search for meaning continues as he meets new allies and adversaries.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208758.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/5ef6a3a3-629d-4ac8-a98a-9d6e4818ec5e?base_image_bucket_name=image_manager&base_image=dfcfb4df-d041-4d58-afb0-ced706e0d8ce&size=600x338&format=webp",
             synopsis: "Garou’s inner struggles lead to an intense battle against the Hero Association’s strongest.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp3208759.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/062b359d-b033-4a57-80bd-270739ff4e6f?base_image_bucket_name=image_manager&base_image=e0ed5f44-e684-4e15-9464-b8a35c24653e&size=600x338&format=webp",
             synopsis: "Season finale: Saitama confronts the Monster King, leaving an impact on the hero world.",
             downloadLink : ""
           }
