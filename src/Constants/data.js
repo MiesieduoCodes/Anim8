@@ -190,7 +190,7 @@ const movieData = [
           },
           {
             epiNum: 6,
-            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2020/07/July28112552.jpg?resize=768%2C432&ssl=1",
+            backgroundImage: "https://animeuknews.net/app/uploads/2020/04/toradora-004-1536x864.jpg",
             synopsis: "Taiga’s rivalry with Ami, a new transfer student, intensifies, adding drama to her friendship with Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-6"
           },
@@ -202,13 +202,13 @@ const movieData = [
           },
           {
             epiNum: 8,
-            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2022/07/August29144639.png?resize=768%2C432&ssl=1",
+            backgroundImage: "https://animeuknews.net/app/uploads/2020/04/toradora-007-1536x864.jpg",
             synopsis: "A beach trip brings moments of reflection, as Taiga begins to realize her feelings for Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-8"
           },
           {
             epiNum: 9,
-            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2022/07/August29144639.png?resize=768%2C432&ssl=1",
+            backgroundImage: "https://animeuknews.net/app/uploads/2020/04/toradora-009-1536x864.jpg",
             synopsis: "The school festival stirs mixed emotions in Taiga, as she wrestles with her growing feelings for Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-9"
           },
@@ -226,7 +226,7 @@ const movieData = [
           },
           {
             epiNum: 12,
-            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2020/07/July28112552.jpg?resize=768%2C432&ssl=1",
+            backgroundImage: "https://animeuknews.net/app/uploads/2020/04/toradora-008-1536x864.jpg",
             synopsis: "As Christmas approaches, Taiga and Ryuuji plan a party to confess their feelings to their crushes.",
             downloadLink: "https://example.com/download/toradora-episode-12"
           },
@@ -238,7 +238,7 @@ const movieData = [
           },
           {
             epiNum: 14,
-            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2019/05/chrome_2019-05-09_11-31-04.jpg?resize=768%2C432&ssl=1",
+            backgroundImage: "https://animeuknews.net/app/uploads/2020/04/toradora-005-1536x864.jpg",
             synopsis: "Taiga makes a difficult decision about her future, but her bond with Ryuuji continues to affect her.",
             downloadLink: "https://example.com/download/toradora-episode-14"
           },
