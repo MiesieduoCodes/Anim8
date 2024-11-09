@@ -533,64 +533,65 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://theanimeguru.com/wp-content/uploads/sites/3/2017/06/img_0249-1568x880.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353742.jpg",
+            backgroundImage: "https://theanimeguru.com/wp-content/uploads/sites/3/2017/06/img_0246-1568x878.jpg",
             synopsis: "Futaba, now a high school student, reunites with her first love, Kou, who has changed since they last met.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353743.jpg",
+            backgroundImage: "https://theanimeguru.com/wp-content/uploads/sites/3/2017/06/img_0245-1568x880.jpg",
             synopsis: "Futaba tries to rekindle her friendship with Kou but struggles with his distant personality.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353744.jpg",
+            backgroundImage: "https://theanimeguru.com/wp-content/uploads/sites/3/2017/06/img_0248-1568x876.jpg",
             synopsis: "Futaba learns more about Kou’s past and begins to understand his cold behavior.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353745.jpg",
+        backgroundImage : "https://theanimeguru.com/wp-content/uploads/sites/3/2017/06/img_0247-1568x878.jpg",
             synopsis: "Futaba and Kou face misunderstandings as they try to rebuild their relationship.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353746.jpg",
+            backgroundImage: "https://moesucks.com/wp-content/uploads/2014/08/ao-haru-ride-0504.jpg?w=625&h=351",
             synopsis: "As Futaba grows closer to Kou, she discovers her own feelings are more complicated than she thought.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353747.jpg",
+            backgroundImage: "https://moesucks.com/wp-content/uploads/2014/08/ao-haru-ride-0505.jpg?w=625&h=351",
             synopsis: "Kou reveals parts of his troubled past, allowing Futaba to understand his changes even more.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353748.jpg",
+            backgroundImage: "https://moesucks.com/wp-content/uploads/2014/08/ao-haru-ride-0507.jpg?w=625&h=351",
             synopsis: "Futaba struggles with jealousy when another girl takes an interest in Kou.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353749.jpg",
+            backgroundImage: "https://moesucks.com/wp-content/uploads/2014/08/ao-haru-ride-0508.jpg?w=625&h=351",
             synopsis: "Futaba and Kou share a moment that strengthens their connection, despite lingering doubts.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353750.jpg",
+            backgroundImage: "https://moesucks.com/wp-content/uploads/2014/08/ao-haru-ride-0510.jpg?w=625&h=351",
             synopsis: "Kou faces his own feelings and starts to acknowledge his affection for Futaba.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp6353751.jpg",
+            backgroundImage: "https://moesucks.com/wp-content/uploads/2014/08/ao-haru-ride-0702.jpg?w=625&h=351",
             synopsis: "The season finale sees Futaba and Kou making a choice about their future together.",
             downloadLink : ""
           }
