@@ -615,71 +615,72 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://www.justwatch.com/images/backdrop/105054744/s1440/season-1.webp/season-1.webp",
         episodes: [
           { 
             epiNum: 1,
-                      backgroundImage: "https://animecorner.me/wp-content/uploads/2020/01/darwins-game-episode-1-review-1280x720-1.jpg",
+                      backgroundImage: "https://img1.hulu.com/user/v3/artwork/8c989505-8c61-4898-a2f7-43c2282fb2c4?base_image_bucket_name=image_manager&base_image=3dd891fb-544e-4b0c-a311-32809c20a395&size=600x338&format=webp",
             synopsis: "Kaname receives a mysterious invitation to a mobile game, which quickly turns deadly.",
             downloadLink : ""
           },
           { 
             epiNum: 2,
-                      backgroundImage: "https://anime2you.de/wp-content/uploads/2020/01/darwins-game-episode-2.jpg",
+                      backgroundImage: "https://img1.hulu.com/user/v3/artwork/4e31edbf-b849-4c49-8c18-3274e6641209?base_image_bucket_name=image_manager&base_image=d8739a9d-999a-4099-ac9a-fdfc24b1b5e9&size=600x338&format=webp",
             synopsis: "Kaname starts to learn the brutal rules of Darwin's Game and meets a powerful new ally.",
             downloadLink : ""
           },
           { 
             epiNum: 3,
-                    backgroundImage: "https://www.otakutale.com/wp-content/uploads/2020/01/Darwins-Game-Episode-3-Preview-Image-3.jpg",
+                    backgroundImage: "https://img2.hulu.com/user/v3/artwork/2e5d6d01-1bfb-4b5b-8c77-8b29c75a3fc0?base_image_bucket_name=image_manager&base_image=1effebef-aee7-4d90-af93-e4707e4b7bf9&size=600x338&format=webp",
             synopsis: "Kaname and Shuka team up, but their bond is tested in a life-or-death match against another player.",
             downloadLink : ""
           },
           { 
             epiNum: 4,
-                     backgroundImage: "https://www.animefeminist.com/wp-content/uploads/2020/01/darwins-game-ep-4.jpg",
+                     backgroundImage: "https://img1.hulu.com/user/v3/artwork/cf80e89a-775a-43c2-b7c7-8798789f62b0?base_image_bucket_name=image_manager&base_image=e5b359d0-86cb-4e53-b0ac-20dbfee2bf4a&size=600x338&format=webp",
             synopsis: "As the game intensifies, Kaname takes drastic measures to survive the ambush of powerful opponents.",
             downloadLink : ""
           },
           { 
             epiNum: 5,
-                  backgroundImage: "https://www.animefeminist.com/wp-content/uploads/2020/01/darwins-game-ep-5.jpg",
+                  backgroundImage: "https://img4.hulu.com/user/v3/artwork/998a4bc1-0c5d-483d-a3c4-9def5a8c141f?base_image_bucket_name=image_manager&base_image=c8f459f5-da61-4c40-a065-7991450573a3&size=600x338&format=webp",
             synopsis: "Kaname assembles a team and prepares to strike back against the formidable Eighth Clan.",
             downloadLink : ""
           },
           { 
             epiNum: 6,
-                    backgroundImage: "https://static.anime21.blog.br/2020/02/IMG_20200219_173654.jpg",
+                    backgroundImage: "https://img1.hulu.com/user/v3/artwork/21f9e888-62dd-4a9a-af60-14bb1d463ccc?base_image_bucket_name=image_manager&base_image=ea014886-ed78-4f11-8142-f08028304353&size=600x338&format=webp",
             synopsis: "Kaname and his allies make their move, but unexpected challenges arise in their battle for survival.",
             downloadLink : ""
           },
           { 
             epiNum: 7,
-                  backgroundImage: "https://honeysanime.com/images/2020/02/Darwins-Game-wallpaper-8-700x394.jpg",
+                  backgroundImage: "https://img3.hulu.com/user/v3/artwork/f7f86dba-2e4d-4c30-b628-4d426d6b75b7?base_image_bucket_name=image_manager&base_image=8e391970-5751-4ffe-9094-7c1b3809ca22&size=600x338&format=webp",
             synopsis: "Kaname faces off against Wang, the ruthless leader of the Eighth Clan, in a fight for dominance.",
             downloadLink : ""
           },
           { 
             epiNum: 8,
-                   backgroundImage: "https://honeysanime.com/images/2020/02/Darwins-Game-wallpaper-9.jpg",
+                   backgroundImage: "https://img2.hulu.com/user/v3/artwork/f1a06496-5a16-466f-b038-98af3f0cdccc?base_image_bucket_name=image_manager&base_image=4ac0fa0b-3f38-464e-8e7d-d27276fcdc66&size=600x338&format=webp",
             synopsis: "The alliances shift as players reevaluate their strategies and adapt to new threats in the game.",
             downloadLink : ""
           },
           { 
             epiNum: 9,
-                    backgroundImage: "https://animecorner.me/wp-content/uploads/2020/03/darwins-game-episode-9-review-1280x720-1.jpg",
+                    backgroundImage: "https://img4.hulu.com/user/v3/artwork/ad2ff927-594f-4523-b01e-4dff499ff4ed?base_image_bucket_name=image_manager&base_image=4dae9dc8-40d0-4939-a824-ef084504f17d&size=600x338&format=webp",
             synopsis: "Kaname encounters formidable new enemies as the game reaches a turning point.",
             downloadLink : ""
           },
           { 
             epiNum: 10,
-                   backgroundImage: "https://honeysanime.com/images/2020/02/Darwins-Game-wallpaper-10.jpg",
+                   backgroundImage: "https://img3.hulu.com/user/v3/artwork/1f8b71d2-af9a-4e72-a885-3e689c869d14?base_image_bucket_name=image_manager&base_image=962a61db-05ff-42fd-b19b-ae6e26a032b8&size=600x338&format=webp",
             synopsis: "The battle intensifies, pushing Kaname and his allies to their limits in a race for survival.",
             downloadLink : ""
           },
           { 
             epiNum: 11,
             
-            backgroundImage: "https://anime2you.de/wp-content/uploads/2020/03/Darwins-Game-Episode-11.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/ada10f5b-b31e-4e13-ac26-a5a1d732b97e?base_image_bucket_name=image_manager&base_image=45c3e479-a48e-413b-b897-cc5f8ddd8bd3&size=600x338&format=webp",
             synopsis: "Kaname takes a stand, establishing a new set of rules and forging a path for the future.",
             downloadLink : ""
           }
