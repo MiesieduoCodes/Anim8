@@ -160,97 +160,97 @@ const movieData = [
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "",
+            backgroundImage: "https://m.media-amazon.com/images/S/pv-target-images/7d7e55e0e0ef9368aac2ac49e1e47a01af9369699baafd8a348bd7ea241458db._SX1440_FMwebp_.png",
             synopsis: "Ryuuji Takasu, a gentle high schooler with a fierce face, meets Taiga Aisaka, the feisty 'Palmtop Tiger,' leading to an unexpected alliance.",
             downloadLink: "https://example.com/download/toradora-episode-1"
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064465.jpg",
+            backgroundImage: "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23174436/AAAABT7O2mtWCNpPqV5sGLZKmuYjWfuSxjBDvnrJY7GrTv4orjdm_wUJFUmCfMv3HWt2ftU7b7XUiP3GlhWTCo27TMWVnpuX.jpg?quality=90&strip=all&crop=21.875%2C0%2C56.25%2C100&w=750",
             synopsis: "Ryuuji and Taiga agree to help each other with their respective crushes, but their partnership is off to a rocky start.",
             downloadLink: "https://example.com/download/toradora-episode-2"
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064466.jpg",
+            backgroundImage: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Toradora%21_light_novel_volume_1_cover.jpg/220px-Toradora%21_light_novel_volume_1_cover.jpg",
             synopsis: "Ryuuji gets closer to his crush Minori, while Taiga tries to bond with her crush, Yusaku, leading to amusing mishaps.",
             downloadLink: "https://example.com/download/toradora-episode-3"
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064467.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2019/05/chrome_2019-05-10_08-31-24.png?resize=768%2C432&ssl=1",
             synopsis: "Taiga and Ryuuji’s bond deepens as they share more about their lives and struggle with their feelings.",
             downloadLink: "https://example.com/download/toradora-episode-4"
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064468.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2020/07/July28112552.jpg?resize=768%2C432&ssl=1",
             synopsis: "A class trip brings Taiga and Ryuuji's friends closer, creating complicated feelings among them all.",
             downloadLink: "https://example.com/download/toradora-episode-5"
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064469.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2020/07/July28112552.jpg?resize=768%2C432&ssl=1",
             synopsis: "Taiga’s rivalry with Ami, a new transfer student, intensifies, adding drama to her friendship with Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-6"
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064470.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2022/07/August29144639.png?resize=768%2C432&ssl=1",
             synopsis: "Ryuuji’s growing friendship with Ami sparks jealousy in Taiga, causing tension in their alliance.",
             downloadLink: "https://example.com/download/toradora-episode-7"
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064471.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2022/07/August29144639.png?resize=768%2C432&ssl=1",
             synopsis: "A beach trip brings moments of reflection, as Taiga begins to realize her feelings for Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-8"
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064472.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2022/07/August29144639.png?resize=768%2C432&ssl=1",
             synopsis: "The school festival stirs mixed emotions in Taiga, as she wrestles with her growing feelings for Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-9"
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064473.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2023/02/July03133814.png?resize=768%2C432&ssl=1",
             synopsis: "A heartfelt moment between Taiga and Ryuuji leads them to question their true feelings for each other.",
             downloadLink: "https://example.com/download/toradora-episode-10"
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064474.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2023/10/chrome_2023-10-04_13-20-38.jpg?resize=768%2C432&ssl=1",
             synopsis: "Ryuuji and Taiga face a turning point in their relationship when a misunderstanding reveals hidden emotions.",
             downloadLink: "https://example.com/download/toradora-episode-11"
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064475.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2020/07/July28112552.jpg?resize=768%2C432&ssl=1",
             synopsis: "As Christmas approaches, Taiga and Ryuuji plan a party to confess their feelings to their crushes.",
             downloadLink: "https://example.com/download/toradora-episode-12"
           },
           {
             epiNum: 13,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064476.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2022/07/August29144639.png?resize=768%2C432&ssl=1",
             synopsis: "A series of misunderstandings at the Christmas party leads to emotional revelations between Taiga and Ryuuji.",
             downloadLink: "https://example.com/download/toradora-episode-13"
           },
           {
             epiNum: 14,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064477.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2019/05/chrome_2019-05-09_11-31-04.jpg?resize=768%2C432&ssl=1",
             synopsis: "Taiga makes a difficult decision about her future, but her bond with Ryuuji continues to affect her.",
             downloadLink: "https://example.com/download/toradora-episode-14"
           },
           {
             epiNum: 15,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064478.jpg",
+            backgroundImage: "https://i0.wp.com/wrongeverytime.com/wp-content/uploads/2019/05/chrome_2019-05-09_11-31-04.jpg?resize=768%2C432&ssl=1",
             synopsis: "Ryuuji’s resolve is tested as he realizes his true feelings, and he begins to take steps to confront them.",
             downloadLink: "https://example.com/download/toradora-episode-15"
           },
           {
             epiNum: 16,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064479.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7exOVabvRWC7r2o5KVxrmiPQQ0z.jpg",
             synopsis: "A new year brings changes in Taiga and Ryuuji’s lives, challenging them to face their evolving relationship.",
             downloadLink: "https://example.com/download/toradora-episode-16"
           },
