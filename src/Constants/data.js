@@ -73,81 +73,81 @@ const movieData = [
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536151.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23065206/Your-Lie-In-April-Ep-11.png",
             synopsis: "Kousei reflects on his relationship with his mother and his journey with music, recognizing Kaori's role in his healing.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-11"
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536152.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23062705/Your-Lie-In-April-Ep-12-1024x576.png",
             synopsis: "With renewed confidence, Kousei begins to envision a future with music and a life beyond his past traumas.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-12"
           },
           {
             epiNum: 13,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536153.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23062700/Your-Lie-In-April-Ep-13.png",
             synopsis: "Kousei faces a personal setback as he learns more about Kaori's deteriorating health, making him realize his feelings for her.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-13"
           },
           {
             epiNum: 14,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536154.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/01/23062649/your-lie-in-april-ep-14-correct-1024x576.png",
             synopsis: "Kousei continues to play piano, inspired by Kaori’s spirit, as he grapples with his growing affection for her.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-14"
           },
           {
             epiNum: 15,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536155.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/02/23060604/Your-Lie-In-April-Ep-15-1024x576.png",
             synopsis: "Kousei pushes forward with his music career, deciding to honor Kaori's wish for him to live life to the fullest.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-15"
           },
           {
             epiNum: 16,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536156.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/03/23053834/Your-Lie-In-April-Ep-16.jpg",
             synopsis: "Kousei confronts his feelings about Kaori's illness, struggling to process the emotions her condition stirs in him.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-16"
           },
           {
             epiNum: 17,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536157.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/03/23053829/Your-Lie-In-April-Ep-17-1024x576.png",
             synopsis: "As Kaori’s condition worsens, Kousei plays a moving piano piece to express his feelings, reaching out to her through music.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-17"
           },
           {
             epiNum: 18,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536158.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/03/23053824/Your-Lie-In-April-Ep-18-1024x576.png",
             synopsis: "Kousei performs at a competition, channeling his emotions for Kaori and his personal growth into a heartfelt performance.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-18"
           },
           {
             epiNum: 19,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536159.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/03/23053818/Your-Lie-In-April-Ep-19-1024x576.png",
             synopsis: "Kousei prepares for a pivotal performance, determined to honor Kaori’s legacy and the inspiration she gave him.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-19"
           },
           {
             epiNum: 20,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536160.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/03/23052930/Your-Lie-In-April-Ep-20-1024x576.png",
             synopsis: "Kousei pours his heart into his music as he reflects on his journey, cherishing every moment shared with Kaori.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-20"
           },
           {
             epiNum: 21,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536161.jpg",
+            backgroundImage: "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2015/03/23052925/Your-Lie-In-April-Ep-21-1024x576.png",
             synopsis: "With Kaori’s memory guiding him, Kousei delivers a final performance that captivates everyone and heals his heart.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-21"
           },
           {
             epiNum: 22,
-            backgroundImage: "https://wallpapercave.com/wp/wp5536162.jpg",
+            backgroundImage: "https://cdn.animenewsnetwork.com/thumbnails/max300x600/cms/episode-review/86164/kaori-blaze-of-glory.jpg",
             synopsis: "Kousei receives a letter from Kaori that reveals her true feelings, giving him closure and strength to move forward.",
             downloadLink: "https://example.com/download/your-lie-in-april-episode-22"
           }
         ]
       }
     ]
-  }
-  ,
+  },
+
   {
     title: "Toradora!",
     genre: "Romance",
@@ -156,10 +156,11 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/10/toradora-header.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064464.jpg",
+            backgroundImage: "",
             synopsis: "Ryuuji Takasu, a gentle high schooler with a fierce face, meets Taiga Aisaka, the feisty 'Palmtop Tiger,' leading to an unexpected alliance.",
             downloadLink: "https://example.com/download/toradora-episode-1"
           },
