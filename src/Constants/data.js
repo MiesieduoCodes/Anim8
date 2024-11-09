@@ -256,25 +256,25 @@ const movieData = [
           },
           {
             epiNum: 17,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064480.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7exOVabvRWC7r2o5KVxrmiPQQ0z.jpg",
             synopsis: "Taiga and Ryuuji’s friends intervene to help them admit their feelings, pushing them toward a revelation.",
             downloadLink: "https://example.com/download/toradora-episode-17"
           },
           {
             epiNum: 18,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064481.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7exOVabvRWC7r2o5KVxrmiPQQ0z.jpg",
             synopsis: "With graduation approaching, Taiga and Ryuuji must decide how they will move forward together.",
             downloadLink: "https://example.com/download/toradora-episode-18"
           },
           {
             epiNum: 19,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064482.jpg",
+            backgroundImage: "https://i0.wp.com/i.imgur.com/5sl8l9o.jpg",
             synopsis: "Ryuuji proposes a bold plan for their future, but Taiga’s response changes everything.",
             downloadLink: "https://example.com/download/toradora-episode-19"
           },
           {
             epiNum: 20,
-            backgroundImage: "https://wallpapercave.com/wp/wp4064483.jpg",
+            backgroundImage: "https://i0.wp.com/i.imgur.com/mnEIzsF.jpg",
             synopsis: "In the final moments, Taiga and Ryuuji confront their feelings and make a decision about their relationship.",
             downloadLink: "https://example.com/download/toradora-episode-20"
           }
