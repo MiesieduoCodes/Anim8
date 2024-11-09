@@ -697,76 +697,77 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://img4.hulu.com/user/v3/artwork/54a25fcf-a472-4d40-9968-13e2957e5abf?base_image_bucket_name=image_manager&base_image=38e27cd2-8318-41c3-8348-616d3ed1c9dc&size=1024x576&format=webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpaperaccess.com/full/1601272.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/34ebf58e-5a2a-4efa-8e4d-fb16039a3051?base_image_bucket_name=image_manager&base_image=891e7913-da99-42aa-9f63-6a4bbbdb5514&size=600x338&format=webp",
             synopsis: "Saitama, a seemingly ordinary man, discovers his power to defeat any foe with a single punch.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277293.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/85c3d295-2234-4fd9-994a-417b30b03e26?base_image_bucket_name=image_manager&base_image=8c24d0a7-a496-445e-8af0-4758008059bd&size=600x338&format=webp",
             synopsis: "Genos, a cyborg hero, learns about Saitama’s incredible strength and becomes his disciple.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp2765072.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/dac5e4b5-fa11-45f2-991f-e6eb61f1f617?base_image_bucket_name=image_manager&base_image=7ed8e12a-1cfd-4e0a-995b-9d7b55a6df9d&size=600x338&format=webp",
             synopsis: "Saitama takes on various monstrous foes, all of whom fall with a single punch, leaving him unfulfilled.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp2280202.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/54604aae-24da-4ec1-a6b5-24f8b7d4a270?base_image_bucket_name=image_manager&base_image=bafc7e8a-f345-458a-8543-fdf3e76164a1&size=600x338&format=webp",
             synopsis: "Genos and Saitama face off in a sparring match, showcasing their respective strengths.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277277.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/3b12f124-5fed-4f03-a395-9e9796c1aa41?base_image_bucket_name=image_manager&base_image=13cea1f6-861c-461b-8511-5383db984aaf&size=600x338&format=webp",
             synopsis: "A powerful monster appears, and Saitama must step in to save the day.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277286.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/a95670a4-7a73-4864-8c92-2d5da72ff5b3?base_image_bucket_name=image_manager&base_image=99c149cf-6585-4e49-a3d0-d4d5641ad65a&size=600x338&format=webp",
             synopsis: "The Hero Association approaches Saitama, offering him a chance to become a registered hero.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277292.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/5ee6da0c-9dc6-4a26-9cd1-1222c0d19069?base_image_bucket_name=image_manager&base_image=bf1b4472-87d9-4d8f-b037-4b444f7acab7&size=600x338&format=webp",
             synopsis: "Saitama starts his hero career but quickly grows frustrated with the mundane duties.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277278.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/6c026286-73de-4a99-b4e7-5ffd94c4fd3d?base_image_bucket_name=image_manager&base_image=492a714e-297c-464f-b648-fc67d4a44e4c&size=600x338&format=webp",
             synopsis: "An alien invader named Boros arrives on Earth, challenging Saitama to a thrilling battle.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277296.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/8b5cde15-8195-4cb8-81b0-04de44746de9?base_image_bucket_name=image_manager&base_image=92d69bc9-24b8-4764-9e35-6fca2788ba75&size=600x338&format=webp",
             synopsis: "Saitama faces Boros in an intense showdown, testing his strength like never before.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277298.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/d0c5aec3-e453-42c6-870a-f191c7bfe9d3?base_image_bucket_name=image_manager&base_image=d41fd679-d95d-4c73-bfa6-2b93d1676c84&size=600x338&format=webp",
             synopsis: "The battle concludes as Saitama defeats Boros, returning to his unremarkable life as a hero.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277282.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/fc3ba068-7230-417f-b02b-cbed31350341?base_image_bucket_name=image_manager&base_image=120a5fe0-2de4-4150-9fb5-34c4a2ade5ee&size=600x338&format=webp",
             synopsis: "Saitama realizes the endless cycle of meaningless fights, continuing his search for purpose.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp2277280.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/4c21ad63-3989-4152-936b-1676396272e0?base_image_bucket_name=image_manager&base_image=62bf9194-36a4-46d4-8c94-4d90c17c23dd&size=600x338&format=webp",
             synopsis: "Saitama finishes the season with reflections on heroism, strength, and his place in the world.",
             downloadLink : ""
           }
