@@ -291,7 +291,7 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
-        backgroundImage : "https://static.wikia.nocookie.net/kaguyasama-wa-kokurasetai/images/8/8c/Key_Visual.png/revision/latest?cb=20190221211641",
+        backgroundImage : "https://www.devdiscourse.com/remote.axd?https://devdiscourse.blob.core.windows.net/devnews/25_05_2022_12_43_26_3071351.jpg?width=920&format=webp",
         episodes: [
           {
             epiNum: 1,
@@ -373,74 +373,74 @@ const movieData = [
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090012.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_891_photo_158583021111845224",
             synopsis: "Miyuki’s confidence increases, challenging Kaguya’s strategies.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090013.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_894_photo_1586835865943622038",
             synopsis: "Kaguya attempts to disguise her feelings after a misunderstanding.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090014.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_896_photo_1587457799228558661",
             synopsis: "A new rival appears, sparking jealousy in Kaguya.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090015.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_899_photo_1588044997219802565",
             synopsis: "Kaguya and Miyuki’s relationship is tested during a school event.",
             downloadLink : ""
 
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090016.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_900_photo_1588580803377327971",
             synopsis: "Kaguya finds herself frustrated with Miyuki’s unchanging demeanor.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090017.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_901_photo_1589269787109174898",
             synopsis: "Kaguya’s friends notice her obsession with Miyuki.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090018.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_902_photo_1589877354346995174",
             synopsis: "An unexpected confession puts Miyuki in a difficult position.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090019.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_903_photo_1590483407533150562",
             synopsis: "Kaguya and Miyuki team up for the school’s cultural festival.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090020.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_955_photo_1591073504435402673",
             synopsis: "Kaguya’s resolve weakens as Miyuki shows his softer side.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090021.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_987_photo_1591680846393195755",
             synopsis: "A confrontation at the festival forces Kaguya to face her feelings.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090022.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_1075_photo_1592357479876810248",
             synopsis: "Kaguya’s growing feelings lead to unexpected jealousy.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090023.jpg",
+            backgroundImage: "https://kaguyasama-anime.com/2nd/story/SYS/CONTENTS/story_1115_photo_1593232660817965647",
             synopsis: "The season finale sees Kaguya and Miyuki in a heartfelt exchange.",
             downloadLink : ""
           }
@@ -448,76 +448,78 @@ const movieData = [
       },
       {
         seasonNumber: 3,
+        backgroundImage : "https://cdn.oneesports.gg/cdn-data/2022/02/Anime_KaguyaSamaS3FI-1-1024x576.webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090024.jpg",
+            backgroundImage: "https://staticg.sportskeeda.com/editor/2022/04/a2e8d-16494506349891-1920.jpg",
             synopsis: "As the school year begins, Kaguya and Miyuki find themselves closer than ever.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090025.jpg",
+            backgroundImage: "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2022/03/19976877027c8b057883630531a1fd89-2.png",
+
             synopsis: "A new student council election brings fresh challenges for Kaguya and Miyuki.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090026.jpg",
+            backgroundImage: "https://staticg.sportskeeda.com/editor/2022/05/f95c4-16519132822118-1920.jpg",
             synopsis: "Kaguya contemplates her feelings after an unexpected interaction with Miyuki.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090027.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-001.png?fit=1280%2C720&ssl=1",
             synopsis: "Kaguya and Miyuki find themselves caught in another love-related rivalry.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090028.jpg",
+            backgroundImage: "https://staticg.sportskeeda.com/editor/2022/05/f95c4-16519132822118-1920.jpg",
             synopsis: "A heartfelt confession makes Kaguya reconsider her next steps.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090029.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-005.png?fit=1280%2C720&ssl=1",
             synopsis: "Kaguya and Miyuki face new challenges with unexpected guests.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090030.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-002.png?fit=1280%2C720&ssl=1",
             synopsis: "Kaguya’s insecurities surface as Miyuki’s popularity grows.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090031.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-016.png?fit=1280%2C720&ssl=1",
             synopsis: "A school event brings Kaguya and Miyuki even closer.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090032.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-022.png?fit=1280%2C720&ssl=1",
             synopsis: "A pivotal moment at the festival challenges both Kaguya and Miyuki.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090033.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-017.png?fit=1280%2C720&ssl=1",
             synopsis: "Kaguya’s true feelings are tested as she faces a life-changing decision.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090034.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-020.png?fit=1280%2C720&ssl=1",
             synopsis: "As the year closes, Kaguya and Miyuki experience a defining moment.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp4090035.jpg",
+            backgroundImage: "https://i0.wp.com/blog-media-cloud.nyc3.digitaloceanspaces.com/2022/04/Kaguya-sama-Love-is-War-UR-episode-4-008.png?fit=1280%2C720&ssl=1",
             synopsis: "The season ends with a heartfelt exchange that changes their relationship.",
             downloadLink : ""
 
