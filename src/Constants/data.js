@@ -862,76 +862,77 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://img2.hulu.com/user/v3/artwork/9578a817-6bbb-4ee2-b2ec-b73c28b0ff8a?base_image_bucket_name=image_manager&base_image=59a45fb7-02ee-40bb-aa4c-76d0516fe708&size=1024x576&format=webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995084.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/017ceed0-f50c-4bbe-aa74-7a0bbc5bbb6b?base_image_bucket_name=image_manager&base_image=3552a734-ddfa-4252-9b8b-2d640ad1cdc9&size=600x338&format=webp",
             synopsis: "The Fourth Holy Grail War begins, as the mages summon their Servants to fight for the ultimate prize.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995085.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/4a70c6a3-6f39-4cd5-9f2b-c5f03425903e?base_image_bucket_name=image_manager&base_image=8f1d106c-7873-4015-b604-38bfc09e2baa&size=600x338&format=webp",
             synopsis: "As alliances form, the true nature of the war and the dangers that await each Master become apparent.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995086.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/96a0f987-d597-4079-bade-1f38113a719d?base_image_bucket_name=image_manager&base_image=45b8b639-9d73-4786-854f-5d90f6d42deb&size=600x338&format=webp",
             synopsis: "The first clashes between the Servants lead to unexpected betrayals and reveal hidden motivations.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995087.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/0c164d56-85bb-4f51-aac1-422eba50fc37?base_image_bucket_name=image_manager&base_image=1f3d1f7a-a63a-47d5-9596-742ab233c44d&size=600x338&format=webp",
             synopsis: "Kirei Kotomine’s dark past is explored, as his role in the Holy Grail War begins to take shape.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995088.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/ad957195-b79a-4646-8f2b-d996e2922669?base_image_bucket_name=image_manager&base_image=952bd2c6-24e3-4ea8-9633-c3d30ff01b11&size=600x338&format=webp",
             synopsis: "Rider’s noble intentions are tested in a brutal battle against Lancer, as the stakes escalate.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995089.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/db6aab97-5304-4612-891c-c1ed1196a755?base_image_bucket_name=image_manager&base_image=f162f1fb-f165-4ca1-b068-54c629a49ff8&size=600x338&format=webp",
             synopsis: "The shadows of previous wars loom large as the battles intensify, leading to devastating losses.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995090.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/20fd78ac-08a1-46ce-8bd4-a869c48cc421?base_image_bucket_name=image_manager&base_image=3c20d72b-6db4-47f9-9a9b-a3fbb35d37ed&size=600x338&format=webp",
             synopsis: "The true nature of the Holy Grail is revealed, posing moral dilemmas for the remaining Masters.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995091.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/e4ec30cb-81a7-4222-b222-64043b35dd4b?base_image_bucket_name=image_manager&base_image=77e69e2d-74c6-4374-bc0f-6fc53b44bdce&size=600x338&format=webp",
             synopsis: "A battle royale ensues, with Servants fighting for dominance and survival as alliances shatter.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995092.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/c710cce5-0b40-4548-969c-cd91313a8832?base_image_bucket_name=image_manager&base_image=59f9ae4f-d72a-428b-aba9-6036e4dc7d9e&size=600x338&format=webp",
             synopsis: "As the war progresses, the psychological toll on the Masters becomes apparent.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995093.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/c0e2b371-6cb9-4825-a792-be991faa3e9e?base_image_bucket_name=image_manager&base_image=9d16527b-fa83-4b4e-a4d5-f1ceda69d006&size=600x338&format=webp",
             synopsis: "Kirei’s past collides with the present as revelations threaten to alter the course of the war.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995094.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/719a42c5-030d-4f78-88f0-4c4d46e1c2f5?base_image_bucket_name=image_manager&base_image=081b9d0f-4126-47f6-bfdb-340df325f520&size=600x338&format=webp",
             synopsis: "The penultimate battle brings the remaining Masters and Servants to a climax of ambition and despair.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995095.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/8da4d3ee-f29e-4da6-a59f-282e8575223a?base_image_bucket_name=image_manager&base_image=eca57cd6-4ce6-4d38-b002-0883283490fb&size=600x338&format=webp",
             synopsis: "The culmination of the war leads to a final confrontation that will determine the fate of the Holy Grail.",
             downloadLink : ""
           }
@@ -939,76 +940,77 @@ const movieData = [
       },
       {
         seasonNumber: 2,
+        backgroundImage: "https://img2.hulu.com/user/v3/artwork/9369793f-7c0f-485d-94d1-95dd4c452acd?base_image_bucket_name=image_manager&base_image=6260013d-ee20-4416-b556-1ee754908d7f&size=600x338&format=webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995096.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/c1c7275a-2d83-48c5-9781-97ed2e29aadf?base_image_bucket_name=image_manager&base_image=bd05b6ea-5430-4f1a-bf98-6e951af41487&size=600x338&format=webp",
             synopsis: "The aftermath of the previous war sets the stage for new power dynamics among the surviving Masters.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995097.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/11f1130b-762d-4631-8cbd-5ed1fa7b9fff?base_image_bucket_name=image_manager&base_image=a86f41b9-2cc1-4049-8b4a-ed8e6fdf7b12&size=600x338&format=webp",
             synopsis: "As new participants enter the fray, the true stakes of the Holy Grail War are brought to light.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995098.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/80b14038-ad00-4fa6-a4fa-4f223c66cbbc?base_image_bucket_name=image_manager&base_image=e1852528-c2bb-4c01-b6b2-2057c26da5cf&size=600x338&format=webp",
             synopsis: "A shocking betrayal rocks the battlefield, leading to devastating consequences for all involved.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995099.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/5d5e6906-91e0-4987-8d0e-765272c62b36?base_image_bucket_name=image_manager&base_image=1f50104f-4e50-411f-bef1-1d7a0cf0fed7&size=600x338&format=webp",
             synopsis: "New alliances are forged in the wake of chaos, but trust is a rare commodity in the war.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995100.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/c80bf178-1db3-41fc-9a64-04ded0014888?base_image_bucket_name=image_manager&base_image=77ef6da2-d1e2-4f7e-bdc6-1336941744cf&size=600x338&format=webp",
             synopsis: "The emotional toll of the war becomes clearer as characters confront their motivations and fears.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995101.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/58186033-9cd8-4d0b-bc24-ddf567d69b5a?base_image_bucket_name=image_manager&base_image=38b35dd5-e6a1-4289-a9b3-c8606953a5b9&size=600x338&format=webp",
             synopsis: "Kirei’s growing influence complicates the dynamics, pushing others to reconsider their strategies.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995102.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/8852c413-006b-4fc8-b743-7bc886309754?base_image_bucket_name=image_manager&base_image=be5648b1-27e1-4211-af1e-9b24c62d679b&size=600x338&format=webp",
             synopsis: "The arrival of unexpected foes shifts the balance of power, making survival the priority.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995103.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/32605af2-6fcd-41be-845d-27e8a01b7cc3?base_image_bucket_name=image_manager&base_image=b020ccab-b072-468e-9e1c-3a1ecd1b5e14&size=600x338&format=webp",
             synopsis: "Confrontations escalate as old rivalries reignite, leading to breathtaking battles.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995104.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/f695f4dc-d8ae-4ec3-bc4d-5cb5980a6899?base_image_bucket_name=image_manager&base_image=c0194345-118f-4b97-94eb-5ee365c6f4b8&size=600x338&format=webp",
             synopsis: "A pivotal moment in the war forces the Masters to make impossible choices that will affect their futures.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995105.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/c4d98af6-b322-4f8e-8217-ae17ad7d6e7e?base_image_bucket_name=image_manager&base_image=fc93ef1a-9c30-4b0c-a199-fd92c8c8277a&size=600x338&format=webp",
             synopsis: "The war’s true nature is revealed, leaving characters questioning their values and alliances.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995106.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/0e10b1ce-5ff2-489d-b0aa-567ac712ee85?base_image_bucket_name=image_manager&base_image=3c84e412-bd00-4b11-97bd-e0a3af481798&size=600x338&format=webp",
             synopsis: "As the final battles approach, the emotional stakes rise, testing friendships and loyalties.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://wallpapercave.com/wp/wp1995107.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/e122f469-7093-4e62-b9c4-07528ad1c92c?base_image_bucket_name=image_manager&base_image=e610a2a4-5af7-48ca-9903-11f315f82824&size=600x338&format=webp",
             synopsis: "The conclusion of the Holy Grail War leaves lasting repercussions, shaping the destinies of the survivors.",
             downloadLink : ""
           }
