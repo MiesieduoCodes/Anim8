@@ -1579,13 +1579,13 @@ const movieData = [
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/87944.jpg",
+            backgroundImage: "https://resizing.flixster.com/vCxhQh8hKVS9JO9Md6UCn0MgB1I=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532269_e_h8_aa.jpg",
             synopsis: "In a climactic showdown, Ichiro and Hiro face off in a final confrontation that will determine their legacies.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/18/87945.jpg",
+            backgroundImage: "https://resizing.flixster.com/jdpZl2NT5kJ5psV9VruzzujG3-8=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532277_e_h8_aa.jpg",
             synopsis: "In the series finale, Ichiro makes a sacrifice for humanity, proving the hero he has become.",
             downloadLink : ""
           }
