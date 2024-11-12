@@ -1516,63 +1516,64 @@ const movieData = [
   {
     title: "Inuyashiki",
     genre: "Action",
-    backgroundImage: "https://www.gamerfocus.co/wp-content/uploads/2018/01/Inuyashiki.jpg",
+    backgroundImage: "https://cdn.animenewsnetwork.com/thumbnails/max300x600/cms/episode-review/123299/inuyashiki-ep3.jpg",
     synopsis: "An elderly man and a troubled teen gain powerful abilities after a strange accident, leading them down drastically different paths.",
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://resizing.flixster.com/FOwo5zCe5Mj9DRVePhvQcFTAGUU=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532200_b_v8_ac.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/8/87935.jpg",
+            backgroundImage: "data:image/webp;base64,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",
             synopsis: "Ichiro Inuyashiki, an elderly man with a bleak life, is transformed after an accident, gaining a mysterious new body and powers.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/9/87936.jpg",
+            backgroundImage: "data:image/webp;base64,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",
             synopsis: "Ichiro tests his new abilities and realizes he can heal people, while another man with similar powers uses them in darker ways.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/87937.jpg",
+            backgroundImage: "https://resizing.flixster.com/ETo6D4GfRtqT5iIlQRA2Tc93ZHw=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532222_e_h8_aa.jpg",
             synopsis: "The other man, Hiro Shishigami, begins a violent spree, pushing Ichiro to use his powers to stop him.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/87938.jpg",
+            backgroundImage: "https://resizing.flixster.com/p6eiXNQCTNK8Jg62xvbPIk_-3iM=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532229_e_h8_aa.jpg",
             synopsis: "Ichiro saves lives in a hospital and publicly becomes a hero, while Hiro's destructive actions escalate.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/87939.jpg",
+            backgroundImage: "https://resizing.flixster.com/xIbA0hZ9hCP5humyy9odz-aD528=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532232_e_h8_aa.jpg",
             synopsis: "As Hiro continues his rampage, Ichiro resolves to confront him directly, realizing the responsibility of his abilities.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/87940.jpg",
+            backgroundImage: "https://resizing.flixster.com/vhTSk-qUqZlTrQxbZ7bkl5ocnoY=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532245_e_h8_aa.jpg",
             synopsis: "A national manhunt for Hiro begins, and Ichiro faces new challenges as he tries to protect innocents.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/87941.jpg",
+            backgroundImage: "https://resizing.flixster.com/jCKZ5rukhE8Z8y3VXx85J__wqQ4=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532253_e_h8_aa.jpg",
             synopsis: "Ichiro gains more control over his abilities and allies with others to prevent further violence.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/87942.jpg",
+            backgroundImage: "https://resizing.flixster.com/_FKXbN0Pv4O-VsZqD7rQrvQc7fg=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532258_e_h8_aa.jpg",
             synopsis: "Ichiro and Hiro clash as their paths collide, leading to a battle that puts countless lives at stake.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/87943.jpg",
+            backgroundImage: "https://resizing.flixster.com/geSFh0tbmppD8uNlxbB1h0oIlqE=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15532263_e_h8_aa.jpg",
             synopsis: "Hiro’s motives are questioned as Ichiro finds a way to bring hope to people amidst the chaos.",
             downloadLink : ""
           },
