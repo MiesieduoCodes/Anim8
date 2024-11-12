@@ -610,7 +610,7 @@ const movieData = [
   {
     title: "Darwin's Game",
     genre: "Action",
-    backgroundImage: "https://otakukart.com/wp-content/uploads/2020/02/darwins-game-1024x576.jpg",
+    backgroundImage: "https://img1.hulu.com/user/v3/artwork/4e31edbf-b849-4c49-8c18-3274e6641209?base_image_bucket_name=image_manager&base_image=d8739a9d-999a-4099-ac9a-fdfc24b1b5e9&size=600x338&format=webp",
     synopsis: "A high school student is dragged into a brutal survival game after receiving an invitation on his phone.",
     seasons: [
       {
@@ -1027,64 +1027,65 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://images.plex.tv/photo?size=medium-240&scale=2&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9sIjJIHGSOYaAqU7pe2TSSNRmS0.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337915.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4lJdtYNzhrUfAsJ9PkJXGHqI5fO.jpg",
             synopsis: "Thorfinn grows up hearing tales of Vinland, a peaceful land far to the west. His life changes when he meets the mercenary Askeladd.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337920.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FuOHYGhjbnj172E3TOLXDhx4FHbn.jpg",
             synopsis: "Askeladd’s crew engages in fierce combat, and Thorfinn begins to understand the brutal reality of war.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337924.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FiMl5CIdLGYJSw9H8ZKt1bnwJgUX.jpg",
             synopsis: "Thorfinn faces his first true battle and learns the importance of survival in the harsh Viking world.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337930.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Frk8O2qX6Vlr3vayXeHveE46syDF.jpg",
             synopsis: "Askeladd’s crew encounters new allies and foes, testing Thorfinn’s resolve and dedication to his revenge.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337935.jpg",
+            backgroundImage: "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsoYXAdXZ5Sl53x6H4a1gUPAWl5M.jpg",
             synopsis: "Thorfinn begins to challenge Askeladd, but he must prove his strength to earn the chance for a duel.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337940.jpg",
+            backgroundImage: "https://static.wikia.nocookie.net/vinlandsaga/images/9/9e/Thors_and_Thorkell_defend_in_battle.png/revision/latest/scale-to-width-down/1000?cb=20200103025906",
             synopsis: "In England, Askeladd’s crew faces ambushes, and Thorfinn is forced to confront his growing animosity.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337945.jpg",
+            backgroundImage: "",
             synopsis: "Thorfinn gets closer to his goal of vengeance, but unforeseen events pull him deeper into Askeladd’s plans.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337950.jpg",
+            backgroundImage: "",
             synopsis: "Askeladd reveals his own ambitions, creating a rift within his crew and altering Thorfinn’s path.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337955.jpg",
+            backgroundImage: "",
             synopsis: "Amid political intrigue, Thorfinn’s quest for revenge is tested by unforeseen alliances and betrayals.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://wallpapercave.com/wp/wp5337960.jpg",
+            backgroundImage: "",
             synopsis: "In a climactic battle, Thorfinn inches closer to avenging his father, but his resolve faces new challenges.",
             downloadLink : ""
           },
@@ -1183,167 +1184,169 @@ const movieData = [
   },
 
   {
-    title: "Jujutsu Kaisen",
-    genre: "Action",
-    backgroundImage: "https://static.wikia.nocookie.net/08cb8af6-daab-42bf-a591-c23e9ccbe09a/scale-to-width-down/800",
-    synopsis: "A student becomes involved in a world of curses and sorcery.",
-    seasons: [
+    "title": "Jujutsu Kaisen",
+    "genre": "Action",
+    "backgroundImage": "https://static.wikia.nocookie.net/08cb8af6-daab-42bf-a591-c23e9ccbe09a/scale-to-width-down/800",
+    "synopsis": "High school student Yuji Itadori discovers the world of jujutsu sorcery and becomes bound to a powerful curse, propelling him into battles against deadly spirits.",
+    "seasons": [
       {
-        seasonNumber: 1,
-        episodes: [
+        "seasonNumber": 1,
+        "backgroundImage": "https://animerants.net/wp-content/uploads/2024/01/jujutsu-kaisen-season-1-wallpaper.png?w=1400&h=400&crop=1",
+        "episodes": [
           {
-            epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/81261.jpg",
-            synopsis: "Yuji Itadori, a high schooler, encounters the world of curses and swallows a powerful cursed object.",
-            downloadLink : ""
+            "epiNum": 1,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/1-1.jpg",
+            "synopsis": "Yuji encounters curses and ingests a powerful cursed object, transforming his life.",
+            "downloadLink": ""
           },
           {
-            epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/81261.jpg",
-            synopsis: "Yuji joins the Tokyo Metropolitan Jujutsu Technical High School and meets his new classmates.",
-            downloadLink : ""
+            "epiNum": 2,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/2-1.jpg",
+            "synopsis": "Yuji joins Jujutsu High and meets his new classmates.",
+            "downloadLink": ""
           },
           {
-            epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/81261.jpg",
-            synopsis: "The students face a special-grade curse, putting their abilities and teamwork to the test.",
-            downloadLink : ""
+            "epiNum": 3,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/3-1.jpg",
+            "synopsis": "The students face a dangerous curse, testing their teamwork.",
+            "downloadLink": ""
           },
           {
-            epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/81261.jpg",
-            synopsis: "Gojo Satoru, a powerful sorcerer, demonstrates his strength as he trains Yuji.",
-            downloadLink : ""
+            "epiNum": 4,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/4-1.jpg",
+            "synopsis": "Gojo Satoru trains Yuji, showcasing his immense power.",
+            "downloadLink": ""
           },
           {
-            epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/81261.jpg",
-            synopsis: "Yuji faces a moral dilemma as he learns about the responsibilities of a jujutsu sorcerer.",
-            downloadLink : ""
+            "epiNum": 5,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/5-1.jpg",
+            "synopsis": "Yuji faces a moral challenge as he learns about the duties of a sorcerer.",
+            "downloadLink": ""
           },
           {
-            epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/81261.jpg",
-            synopsis: "The Jujutsu High students encounter cursed spirits at a detention center, leading to a fierce battle.",
-            downloadLink : ""
+            "epiNum": 6,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/6-1.jpg",
+            "synopsis": "The students battle fierce cursed spirits at a detention center.",
+            "downloadLink": ""
           },
           {
-            epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/81261.jpg",
-            synopsis: "Yuji learns the true extent of his power as he battles a powerful curse.",
-            downloadLink : ""
+            "epiNum": 7,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/7-1.jpg",
+            "synopsis": "Yuji uncovers the extent of his powers in a battle with a powerful curse.",
+            "downloadLink": ""
           },
           {
-            epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/18/81261.jpg",
-            synopsis: "A new threat arises as a group of powerful cursed spirits plot against Jujutsu High.",
-            downloadLink : ""
+            "epiNum": 8,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/8-1.jpg",
+            "synopsis": "A new threat looms as powerful curses plot against Jujutsu High.",
+            "downloadLink": ""
           },
           {
-            epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/19/81261.jpg",
-            synopsis: "The Kyoto Sister School Exchange Event begins, pitting students against each other in a fierce competition.",
-            downloadLink : ""
+            "epiNum": 9,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/9-1.jpg",
+            "synopsis": "The Kyoto Sister School Exchange Event begins, pitting students against each other.",
+            "downloadLink": ""
           },
           {
-            epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/20/81261.jpg",
-            synopsis: "Yuji and his classmates face off against the Kyoto school students, each with unique abilities.",
-            downloadLink : ""
+            "epiNum": 10,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/10-1.jpg",
+            "synopsis": "Yuji and friends face the Kyoto school students in fierce battles.",
+            "downloadLink": ""
           },
           {
-            epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/21/81261.jpg",
-            synopsis: "In a dramatic showdown, the students confront their opponents and themselves.",
-            downloadLink : ""
+            "epiNum": 11,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/11-1.jpg",
+            "synopsis": "A dramatic showdown tests the students' abilities and resolve.",
+            "downloadLink": ""
           },
           {
-            epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/22/81261.jpg",
-            synopsis: "The threat escalates as powerful curses infiltrate the Exchange Event.",
-            downloadLink : ""
+            "epiNum": 12,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/12-1.jpg",
+            "synopsis": "Powerful curses infiltrate the Exchange Event, raising the stakes.",
+            "downloadLink": ""
           }
         ]
       },
       {
-        seasonNumber: 2,
-        episodes: [
+        "seasonNumber": 2,
+        backgroundImage : "https://jujutsukaisen.jp/images/episodes/24-1.jpg",
+        "episodes": [
           {
-            epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/23/81261.jpg",
-            synopsis: "Yuji learns about the history of Jujutsu High and the sorcerers who came before him.",
-            downloadLink : ""
+            "epiNum": 1,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/1-2.jpg",
+            "synopsis": "Yuji learns about Jujutsu High’s history and its past sorcerers.",
+            "downloadLink": ""
           },
           {
-            epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/24/81261.jpg",
-            synopsis: "The backstory of Satoru Gojo and his past with Suguru Geto reveals secrets about their complex relationship.",
-            downloadLink : ""
+            "epiNum": 2,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/2-2.jpg",
+            "synopsis": "Gojo’s past with Geto reveals complex secrets.",
+            "downloadLink": ""
           },
           {
-            epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/25/81261.jpg",
-            synopsis: "Gojo and Geto face a powerful curse in a fight that shapes the future of Jujutsu High.",
-            downloadLink : ""
+            "epiNum": 3,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/3-2.jpg",
+            "synopsis": "Gojo and Geto battle a powerful curse, shaping Jujutsu High’s future.",
+            "downloadLink": ""
           },
           {
-            epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/26/81261.jpg",
-            synopsis: "Yuji’s training intensifies as he prepares for the battles ahead with cursed spirits.",
-            downloadLink : ""
+            "epiNum": 4,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/4-2.jpg",
+            "synopsis": "Yuji’s intense training prepares him for battles with curses.",
+            "downloadLink": ""
           },
           {
-            epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/27/81261.jpg",
-            synopsis: "The Jujutsu High students face deadly curses in the Shibuya incident, a battle that tests them all.",
-            downloadLink : ""
+            "epiNum": 5,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/5-2.jpg",
+            "synopsis": "Deadly curses emerge in the Shibuya incident, testing Jujutsu High.",
+            "downloadLink": ""
           },
           {
-            epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/28/81261.jpg",
-            synopsis: "Yuji and his allies navigate Shibuya's chaotic streets as curses continue their assault.",
-            downloadLink : ""
+            "epiNum": 6,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/6-2.jpg",
+            "synopsis": "Yuji and allies struggle to survive Shibuya’s chaotic streets.",
+            "downloadLink": ""
           },
           {
-            epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/29/81261.jpg",
-            synopsis: "In a deadly encounter, Yuji confronts an enemy who forces him to push his limits.",
-            downloadLink : ""
+            "epiNum": 7,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/7-2.jpg",
+            "synopsis": "Yuji pushes his limits against a powerful enemy.",
+            "downloadLink": ""
           },
           {
-            epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/30/81261.jpg",
-            synopsis: "Amid the Shibuya incident, Gojo fights alone against overwhelming odds.",
-            downloadLink : ""
+            "epiNum": 8,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/8-2.jpg",
+            "synopsis": "Gojo fights overwhelming curses alone in Shibuya.",
+            "downloadLink": ""
           },
           {
-            epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/31/81261.jpg",
-            synopsis: "Yuji and Megumi make a desperate stand as they face high-level curses in Shibuya.",
-            downloadLink : ""
+            "epiNum": 9,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/9-2.jpg",
+            "synopsis": "Yuji and Megumi make a stand against high-level curses.",
+            "downloadLink": ""
           },
           {
-            epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/32/81261.jpg",
-            synopsis: "The Shibuya incident reaches its climax, leaving devastating effects on Jujutsu High.",
-            downloadLink : ""
+            "epiNum": 10,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/10-2.jpg",
+            "synopsis": "The Shibuya incident’s climax leaves Jujutsu High in turmoil.",
+            "downloadLink": ""
           },
           {
-            epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/33/81261.jpg",
-            synopsis: "Yuji’s resolve is tested as he faces the aftermath of the Shibuya incident.",
-            downloadLink : ""
+            "epiNum": 11,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/11-2.jpg",
+            "synopsis": "Yuji confronts the aftermath of the Shibuya incident.",
+            "downloadLink": ""
           },
           {
-            epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/34/81261.jpg",
-            synopsis: "With renewed determination, Yuji sets out to confront new challenges in the world of curses.",
-            downloadLink : ""
+            "epiNum": 12,
+            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/12-2.jpg",
+            "synopsis": "With new resolve, Yuji faces future battles in the world of curses.",
+            "downloadLink": ""
           }
         ]
       }
     ]
-  },
+  },  
 
   {
     title: "Fire Force",
@@ -1353,76 +1356,77 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://fireforce-anime.jp/3rdwp/wp-content/themes/enn-enn-season3-teaser/_assets/images/fv/webp/fv_000.webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1468/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/07/Fire-Force-Episode-01-Figure-07.jpg?w=960&ssl=1",
             synopsis: "Shinra Kusakabe joins the Fire Force Company 8 and reveals his fiery powers to combat Infernals.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1469/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/07/Fire-Force-Episode-01-Figure-02.jpg?w=640&ssl=1",
             synopsis: "Shinra faces his first battle as a member of Company 8 and confronts his troubled past.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1470/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/07/Fire-Force-Episode-01-Figure-03.jpg?w=640&ssl=1",
             synopsis: "Company 8 investigates a mysterious outbreak of Infernals and uncovers a hidden threat.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1471/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/07/Fire-Force-Episode-01-Figure-04.jpg?w=640&ssl=1",
             synopsis: "Shinra encounters a rival pyrokinetic, Arthur Boyle, who challenges him to a fiery showdown.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1472/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/07/Fire-Force-Episode-01-Figure-05.jpg?w=640&ssl=1",
             synopsis: "Company 8 takes on a dangerous mission to stop a powerful Infernal terrorizing the city.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1473/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/08/Fire-Force-Episode-06-Figure-02.jpg?w=640&ssl=1",
             synopsis: "Shinra and his teammates learn about the origins of spontaneous human combustion and the role of the Evangelist.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1474/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/08/Fire-Force-Episode-07-Figure-03.jpg?w=640&ssl=1",
             synopsis: "The squad faces new challenges as a mysterious White-Clad organization emerges with sinister plans.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1475/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/09/Fire-Force-Episode-08-Figure-04.jpg?w=640&ssl=1",
             synopsis: "Shinra's search for his brother intensifies as he uncovers shocking truths about his family.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1476/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/09/Fire-Force-Episode-09-Figure-02.jpg?w=960&ssl=1",
             synopsis: "Company 8 teams up with other brigades to investigate an Infernal outbreak in the Nether.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1477/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/09/Fire-Force-Episode-10-Figure-01.jpg?w=640&ssl=1",
             synopsis: "Shinra faces an intense battle in the Nether and discovers the true power of his Adolla Burst.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1478/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/09/Fire-Force-Episode-11-Figure-05.jpg?w=640&ssl=1",
             synopsis: "Company 8 continues their mission in the Nether, facing dangerous foes and deadly challenges.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1479/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/10/Fire-Force-Episode-12-Figure-03.jpg?resize=768%2C432&ssl=1",
             synopsis: "The final confrontation in the Nether reveals secrets that could change the course of the Fire Force.",
             downloadLink : ""
           }
@@ -1430,76 +1434,77 @@ const movieData = [
       },
       {
         seasonNumber: 2,
+        backgroundImage : "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/10/Fire-Force-Episode-13-Figure-02.jpg?resize=768%2C432&ssl=1",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1510/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/10/Fire-Force-Episode-13-Figure-04.jpg?resize=768%2C432&ssl=1",
             synopsis: "Company 8 faces a new wave of Infernals as they continue their mission to protect humanity.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1511/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/10/Fire-Force-Episode-13-Figure-06.jpg?resize=768%2C432&ssl=1",
             synopsis: "Shinra trains to enhance his abilities and faces a tough opponent from the White-Clad.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1512/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/10/Fire-Force-Episode-14-Figure-04.jpg?resize=768%2C431&ssl=1",
             synopsis: "Company 8 investigates a series of Infernal outbreaks linked to the Evangelist’s followers.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1513/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/11/Fire-Force-Episode-15-Figure-05.jpg?resize=768%2C432&ssl=1",
             synopsis: "Shinra discovers new powers within his Adolla Burst, but struggles to control them.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1514/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/11/Fire-Force-Episode-16-Figure-03.jpg?resize=768%2C432&ssl=1",
             synopsis: "Company 8 teams up with other brigades to counter the White-Clad's escalating attacks.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1515/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/11/Fire-Force-Episode-18-Figure-04.jpg?resize=768%2C431&ssl=1",
             synopsis: "Shinra learns of the Pillars, individuals crucial to the Evangelist's grand scheme.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1516/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/12/Fire-Force-Episode-19-Figure-10.jpg?w=960&ssl=1",
             synopsis: "Company 8 faces a deadly battle as the Evangelist's forces launch an all-out assault.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1517/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/12/Fire-Force-Episode-19-Figure-01.jpg?resize=768%2C431&ssl=1",
             synopsis: "Shinra pushes himself to the limit to protect his comrades and stop the Evangelist.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1518/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/12/Fire-Force-Episode-23-Figure-07.jpg?resize=768%2C431&ssl=1",
             synopsis: "The Fire Force uncovers a deeper conspiracy linked to the spontaneous human combustion phenomena.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1519/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/12/Fire-Force-Episode-21-Figure-01.jpg?resize=768%2C432&ssl=1",
             synopsis: "Shinra confronts a powerful enemy, testing his limits in a fierce battle for survival.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1520/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/12/Fire-Force-Episode-23-Figure-08.jpg?w=959&ssl=1",
             synopsis: "Company 8 confronts the White-Clad's elite members in a showdown that could change everything.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1521/101453.jpg",
+            backgroundImage: "https://i0.wp.com/www.crowsworldofanime.com/wp-content/uploads/2019/12/Fire-Force-Episode-22-Figure-05.jpg?w=960&ssl=1",
             synopsis: "In the explosive season finale, Shinra faces the Evangelist's forces in a battle for humanity's future.",
             downloadLink : ""
           }
