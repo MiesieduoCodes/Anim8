@@ -66,7 +66,7 @@ const AnimeFilms = () => {
         {/* Video Background */}
         <video
           className="fixed top-0 left-0 w-full h-full object-cover -z-10"
-          src="https://fireforce-anime.jp/3rdwp/wp-content/themes/enn-enn-season3-teaser/_assets/video/loader.mp4"
+          src="https://static.videezy.com/system/resources/previews/000/008/148/original/Microscope_v5.mp4"
           autoPlay
           loop
           muted
