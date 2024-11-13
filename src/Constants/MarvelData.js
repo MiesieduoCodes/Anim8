@@ -69,13 +69,13 @@ const marvelMovies = [
     story: "Black Widow teams up with the Punisher to stop an organization from using a dangerous weapon.",
     downloadLink: "https://example.com/download/avengers-confidential"
   },
-  {
-    title: "Big Hero 6",
-    rating: "7.8",
-    backgroundImage: "/path/to/big-hero-6-poster.jpg",
-    story: "Hiro, a young robotics prodigy, teams up with a group of friends and a lovable healthcare robot to save their city.",
-    downloadLink: "https://example.com/download/big-hero-6"
-  },
+  // {
+  //   title: "Big Hero 6",
+  //   rating: "7.8",
+  //   backgroundImage: "/path/to/big-hero-6-poster.jpg",
+  //   story: "Hiro, a young robotics prodigy, teams up with a group of friends and a lovable healthcare robot to save their city.",
+  //   downloadLink: "https://example.com/download/big-hero-6"
+  // },
   {
     title: "Spider-Man: Into the Spider-Verse",
     rating: "8.4",

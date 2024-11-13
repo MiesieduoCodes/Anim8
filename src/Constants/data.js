@@ -2353,91 +2353,91 @@ const movieData = [
     ]
   },
 
- {
-    title: "Solo Leveling",
-    genre: "Adventure",
-    backgroundImage: "https://example.com/solo-leveling-main-background.jpg",
-    synopsis: "In a world filled with hunters fighting monsters from mysterious gates, weak hunter Sung Jinwoo gains a leveling-up ability that could turn him into the world’s strongest hunter.",
-    seasons: [
-      {
-        seasonNumber: 1,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://example.com/solo-leveling-episode-1.jpg",
-            synopsis: "Sung Jinwoo, known as the weakest hunter, faces a near-fatal encounter in a dangerous dungeon and awakens a mysterious power.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://example.com/solo-leveling-episode-2.jpg",
-            synopsis: "Jinwoo explores his newfound abilities, encountering the challenges of leveling up in dangerous situations.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://example.com/solo-leveling-episode-3.jpg",
-            synopsis: "Jinwoo takes on quests assigned by the System, leading to shocking discoveries about his strength.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://example.com/solo-leveling-episode-4.jpg",
-            synopsis: "Growing stronger, Jinwoo revisits old dungeons and reveals more of his potential to others.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://example.com/solo-leveling-episode-5.jpg",
-            synopsis: "Jinwoo uncovers the dangers of the System’s penalties while trying to balance his new power.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://example.com/solo-leveling-episode-6.jpg",
-            synopsis: "His abilities tested, Jinwoo faces higher-level monsters and realizes he can no longer stay unnoticed.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://example.com/solo-leveling-episode-7.jpg",
-            synopsis: "Jinwoo gains allies as he grows in strength, but his reputation among hunters begins to shift.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://example.com/solo-leveling-episode-8.jpg",
-            synopsis: "Venturing into new territories, Jinwoo begins understanding the darker secrets of the hunter world.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://example.com/solo-leveling-episode-9.jpg",
-            synopsis: "A powerful foe challenges Jinwoo’s newfound abilities, testing his limits.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://example.com/solo-leveling-episode-10.jpg",
-            synopsis: "Jinwoo faces the true extent of the System’s challenges as he is pushed into a deadly situation.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://example.com/solo-leveling-episode-11.jpg",
-            synopsis: "With higher stakes, Jinwoo realizes his journey as a hunter will reshape his life.",
-            downloadLink: ""
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://example.com/solo-leveling-episode-12.jpg",
-            synopsis: "In a climactic battle, Jinwoo reveals his full potential, leaving an impact on the hunter world.",
-            downloadLink: ""
-          }
-        ]
-      }
-    ]
-  },
+//  {
+//     title: "Solo Leveling",
+//     genre: "Adventure",
+//     backgroundImage: "https://example.com/solo-leveling-main-background.jpg",
+//     synopsis: "In a world filled with hunters fighting monsters from mysterious gates, weak hunter Sung Jinwoo gains a leveling-up ability that could turn him into the world’s strongest hunter.",
+//     seasons: [
+//       {
+//         seasonNumber: 1,
+//         episodes: [
+//           {
+//             epiNum: 1,
+//             backgroundImage: "https://example.com/solo-leveling-episode-1.jpg",
+//             synopsis: "Sung Jinwoo, known as the weakest hunter, faces a near-fatal encounter in a dangerous dungeon and awakens a mysterious power.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 2,
+//             backgroundImage: "https://example.com/solo-leveling-episode-2.jpg",
+//             synopsis: "Jinwoo explores his newfound abilities, encountering the challenges of leveling up in dangerous situations.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 3,
+//             backgroundImage: "https://example.com/solo-leveling-episode-3.jpg",
+//             synopsis: "Jinwoo takes on quests assigned by the System, leading to shocking discoveries about his strength.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 4,
+//             backgroundImage: "https://example.com/solo-leveling-episode-4.jpg",
+//             synopsis: "Growing stronger, Jinwoo revisits old dungeons and reveals more of his potential to others.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 5,
+//             backgroundImage: "https://example.com/solo-leveling-episode-5.jpg",
+//             synopsis: "Jinwoo uncovers the dangers of the System’s penalties while trying to balance his new power.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 6,
+//             backgroundImage: "https://example.com/solo-leveling-episode-6.jpg",
+//             synopsis: "His abilities tested, Jinwoo faces higher-level monsters and realizes he can no longer stay unnoticed.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 7,
+//             backgroundImage: "https://example.com/solo-leveling-episode-7.jpg",
+//             synopsis: "Jinwoo gains allies as he grows in strength, but his reputation among hunters begins to shift.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 8,
+//             backgroundImage: "https://example.com/solo-leveling-episode-8.jpg",
+//             synopsis: "Venturing into new territories, Jinwoo begins understanding the darker secrets of the hunter world.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 9,
+//             backgroundImage: "https://example.com/solo-leveling-episode-9.jpg",
+//             synopsis: "A powerful foe challenges Jinwoo’s newfound abilities, testing his limits.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 10,
+//             backgroundImage: "https://example.com/solo-leveling-episode-10.jpg",
+//             synopsis: "Jinwoo faces the true extent of the System’s challenges as he is pushed into a deadly situation.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 11,
+//             backgroundImage: "https://example.com/solo-leveling-episode-11.jpg",
+//             synopsis: "With higher stakes, Jinwoo realizes his journey as a hunter will reshape his life.",
+//             downloadLink: ""
+//           },
+//           {
+//             epiNum: 12,
+//             backgroundImage: "https://example.com/solo-leveling-episode-12.jpg",
+//             synopsis: "In a climactic battle, Jinwoo reveals his full potential, leaving an impact on the hunter world.",
+//             downloadLink: ""
+//           }
+//         ]
+//       }
+//     ]
+//   },
   
   {
     title: "Jobless Reincarnation: Mushoku Tensei",

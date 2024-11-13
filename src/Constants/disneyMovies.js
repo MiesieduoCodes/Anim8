@@ -14,13 +14,6 @@ const disneyMovies = [
     downloadLink: "https://example.com/movies/treasure-planet.mp4"
   },
   {
-    title: "Brother Bear",
-    rating: "6.8",
-    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/581/973/261/1brotherbear-adventure-animation-bear-wallpaper-preview.jpg",
-    story: "A young Inuit hunter seeks vengeance on a bear, only to be magically changed into a bear himself.",
-    downloadLink: "https://example.com/movies/brother-bear.mp4"
-  },
-  {
     title: "Chicken Little",
     rating: "5.7",
     backgroundImage: "https://c4.wallpaperflare.com/wallpaper/472/16/943/chicken-little-funny-hd-wallpaper-wallpaper-preview.jpg",
@@ -82,6 +75,35 @@ const disneyMovies = [
     backgroundImage: "https://c4.wallpaperflare.com/wallpaper/134/1023/771/raya-and-the-last-dragon-animated-movies-raya-raya-and-the-last-dragon-movies-hd-wallpaper-preview.jpg",
     story: "In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.",
     downloadLink: "https://example.com/movies/raya-and-the-last-dragon.mp4"
+  },
+  // New entries
+  {
+    title: "Encanto",
+    rating: "7.3",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/775/522/806/encanto-disney-animated-movie-wallpaper-preview.jpg",
+    story: "The Madrigal family lives in a magical house in a vibrant town, but one of them, Mirabel, discovers that she might be the key to saving their home and magic.",
+    downloadLink: "https://example.com/movies/encanto.mp4"
+  },
+  {
+    title: "Wish",
+    rating: "N/A",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/120/543/167/disney-wish-animated-movie-wallpaper-preview.jpg",
+    story: "In the kingdom of Rosas, a young woman named Asha makes a wish to the stars, beginning a journey that will change her destiny.",
+    downloadLink: "https://example.com/movies/wish.mp4"
+  },
+  {
+    title: "Strange World",
+    rating: "6.3",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/457/745/206/strange-world-disney-movie-wallpaper-preview.jpg",
+    story: "The Clade family, explorers of a mysterious and uncharted world, face strange creatures and obstacles as they venture into a realm beyond imagination.",
+    downloadLink: "https://example.com/movies/strange-world.mp4"
+  },
+  {
+    title: "Frozen II",
+    rating: "6.9",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/537/792/108/frozen-ii-disney-animated-movie-wallpaper-preview.jpg",
+    story: "Anna and Elsa embark on a journey to discover the origins of Elsa's powers and uncover the truth about their family's past.",
+    downloadLink: "https://example.com/movies/frozen-ii.mp4"
   }
 ];
 

@@ -1,17 +1,45 @@
 const netflixMovies = [
   {
+    title: "Next Gen",
+    rating: "6.6",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/320/228/329/next-gen-animated-wallpaper-preview.jpg",
+    story: "A friendship between a rebellious girl and a top-secret robot develops as they fight a villainous tech mogul.",
+    downloadLink: "https://example.com/download/next-gen"
+  },
+  {
+    title: "White Fang",
+    rating: "6.7",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/606/22/476/white-fang-movie-wallpaper-preview.jpg",
+    story: "A young boy and his loyal wolfdog must face the dangers of the Alaskan wilderness to survive.",
+    downloadLink: "https://example.com/download/white-fang"
+  },
+  {
+    title: "The Christmas Chronicles",
+    rating: "7.0",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/299/776/839/christmas-wallpaper-preview.jpg",
+    story: "Two siblings accidentally crash Santa’s sleigh and must work together to save Christmas.",
+    downloadLink: "https://example.com/download/christmas-chronicles"
+  },
+  {
     title: "Klaus",
     rating: "8.2",
-    backgroundImage: "/path/to/klaus-poster.jpg",
-    story: "A selfish postman and a reclusive toymaker form an unlikely friendship, delivering joy to a cold, dark town.",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/384/491/1001/klaus-movie-wallpaper-preview.jpg",
+    story: "A young postman forms an unlikely friendship with a reclusive toymaker, changing the fate of their town.",
     downloadLink: "https://example.com/download/klaus"
+  },
+  {
+    title: "I Lost My Body",
+    rating: "7.6",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/117/779/927/i-lost-my-body-wallpaper-preview.jpg",
+    story: "A severed hand embarks on a journey across Paris to reunite with its owner.",
+    downloadLink: "https://example.com/download/i-lost-my-body"
   },
   {
     title: "The Willoughbys",
     rating: "6.4",
-    backgroundImage: "https://wallpapercave.com/wp/wp6249468.jpg",
-    story: "Convinced they'd be better off raising themselves, the Willoughby children hatch a plan to send their selfish parents on vacation.",
-    downloadLink: "https://example.com/download/willoughbys"
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/821/283/732/the-willoughbys-movie-wallpaper-preview.jpg",
+    story: "Four children invent a dangerous plan to send their neglectful parents on vacation so they can experience true family love.",
+    downloadLink: "https://example.com/download/the-willoughbys"
   },
   {
     title: "Over the Moon",
@@ -21,123 +49,95 @@ const netflixMovies = [
     downloadLink: "https://example.com/download/over-the-moon"
   },
   {
-    title: "Soul",
-    rating: "8.0",
-    backgroundImage: "https://wallpapercave.com/wp/wp8207832.jpg",
-    story: "A middle-school band teacher's life takes a new direction when his soul is separated from his body after a near-death experience.",
-    downloadLink: "https://example.com/download/soul"
+    title: "A Shaun the Sheep Movie: Farmageddon",
+    rating: "6.8",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/767/312/370/shaun-the-sheep-movie-farmageddon-wallpaper-preview.jpg",
+    story: "Shaun and his flock try to help a friendly alien named Lu-La escape government agents and return home.",
+    downloadLink: "https://example.com/download/shaun-the-sheep-farmageddon"
   },
   {
     title: "The Mitchells vs. the Machines",
     rating: "7.7",
-    backgroundImage: "https://wallpapercave.com/wp/wp8995076.jpg",
-    story: "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse.",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/626/115/926/the-mitchells-vs-the-machines-wallpaper-preview.jpg",
+    story: "A quirky family fights to save the world from a robot apocalypse during a road trip across the country.",
     downloadLink: "https://example.com/download/mitchells-vs-machines"
   },
   {
-    title: "Wish Dragon",
-    rating: "7.2",
-    backgroundImage: "https://wallpapercave.com/wp/wp9347563.jpg",
-    story: "A young man and a wish-granting dragon embark on an adventure to show the boy the beauty of life and human connection.",
-    downloadLink: "https://example.com/download/wish-dragon"
+    title: "America: The Motion Picture",
+    rating: "5.7",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/681/558/973/america-the-motion-picture-hd-wallpaper-preview.jpg",
+    story: "A raunchy animated take on American history where George Washington battles evil forces during the Revolutionary War.",
+    downloadLink: "https://example.com/download/america-motion-picture"
   },
   {
-    title: "Extinct",
-    rating: "5.4",
-    backgroundImage: "https://images7.alphacoders.com/117/thumb-1920-1172674.jpg",
-    story: "Two Flummels, small, donut-shaped animals, accidentally time-travel to the future and learn that their species has become extinct.",
-    downloadLink: "https://example.com/download/extinct"
+    title: "The Loud House Movie",
+    rating: "6.0",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/624/435/350/the-loud-house-movie-wallpaper-preview.jpg",
+    story: "The Loud family visits Scotland where they discover they have royal blood, and embark on a mission to save the throne.",
+    downloadLink: "https://example.com/download/loud-house-movie"
   },
   {
     title: "Vivo",
-    rating: "6.7",
-    backgroundImage: "https://wallpapercave.com/wp/wp9624137.jpg",
-    story: "Vivo, a music-loving kinkajou, embarks on the journey of a lifetime to deliver a song to a beloved performer.",
+    rating: "6.8",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/193/510/678/vivo-movie-wallpaper-preview.jpg",
+    story: "A kinkajou must deliver a love song from his late owner to the famous singer who inspired him.",
     downloadLink: "https://example.com/download/vivo"
   },
   {
-    title: "My Little Pony: A New Generation",
-    rating: "6.8",
-    backgroundImage: "https://wallpapercave.com/wp/wp9932154.jpg",
-    story: "Equestria's divided pony races must come together to restore harmony in this new animated adventure.",
-    downloadLink: "https://example.com/download/my-little-pony"
+    title: "The Addams Family 2",
+    rating: "5.3",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/380/207/951/addams-family-2-movie-wallpaper-preview.jpg",
+    story: "The Addams family embarks on a road trip that reveals their quirkiest secrets and brings them closer than ever.",
+    downloadLink: "https://example.com/download/addams-family-2"
+  },
+  {
+    title: "Back to the Outback",
+    rating: "6.6",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/597/672/827/back-to-the-outback-movie-wallpaper-preview.jpg",
+    story: "A group of Australia’s most dangerous animals embarks on an adventure to escape the zoo and return to the wild.",
+    downloadLink: "https://example.com/download/back-to-the-outback"
   },
   {
     title: "The Sea Beast",
     rating: "7.1",
-    backgroundImage: "https://images7.alphacoders.com/132/thumb-1920-1321564.jpeg",
-    story: "A young girl stows away on the ship of a legendary sea monster hunter, embarking on a grand adventure.",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/612/348/526/the-sea-beast-wallpaper-preview.jpg",
+    story: "A young girl stows away on a legendary sea monster hunter’s ship, and together they challenge the beasts they hunt.",
     downloadLink: "https://example.com/download/sea-beast"
   },
   {
-    title: "Puss in Boots: The Last Wish",
-    rating: "7.8",
-    backgroundImage: "https://images4.alphacoders.com/129/thumb-1920-1297183.jpg",
-    story: "Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives.",
-    downloadLink: "https://example.com/download/puss-in-boots"
+    title: "Lyle, Lyle, Crocodile",
+    rating: "6.1",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/645/320/588/lyle-lyle-crocodile-movie-wallpaper-preview.jpg",
+    story: "A young boy befriends a singing crocodile who helps him embrace his true self in New York City.",
+    downloadLink: "https://example.com/download/lyle-lyle-crocodile"
   },
   {
-    title: "Apollo 10½: A Space Age Childhood",
-    rating: "7.3",
-    backgroundImage: "https://media.themoviedb.org/t/p/w500_and_h282_face/3yAoVcQR1i7Zgm7yNxy58i3RzCi.jpg",
-    story: "A man narrates stories of his life as a 10-year-old boy in 1969 Houston, weaving together tales of nostalgia and space adventure.",
-    downloadLink: "https://example.com/download/apollo-10-1-2"
+    title: "Guillermo del Toro's Pinocchio",
+    rating: "8.0",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/431/548/237/pinocchio-2022-movie-wallpaper-preview.jpg",
+    story: "Guillermo del Toro's reimagining of the classic tale of Pinocchio, exploring themes of life, death, and the pursuit of happiness.",
+    downloadLink: "https://example.com/download/pinocchio-2022"
   },
   {
-    title: "Nimona",
-    rating: "7.4",
-    backgroundImage: "https://wallpapercave.com/wp/wp12502250.jpg",
-    story: "A shapeshifting teen joins forces with a knight to fight an oppressive regime.",
-    downloadLink: "https://example.com/download/nimona"
+    title: "Entergalactic",
+    rating: "7.0",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/689/97/395/entergalactic-movie-wallpaper-preview.jpg",
+    story: "A young man’s journey through love, art, and self-discovery as he navigates relationships in the heart of New York City.",
+    downloadLink: "https://example.com/download/entergalactic"
   },
   {
     title: "The Magician's Elephant",
-    rating: "6.8",
-    backgroundImage: "https://www.motionpictures.org/wp-content/uploads/2023/03/The_Magicians_Elephant_00_27_38_07.jpg",
-    story: "An orphan boy is told by a fortune teller that an elephant will lead him to his long-lost sister.",
+    rating: "6.9",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/676/872/732/magicians-elephant-movie-wallpaper-preview.jpg",
+    story: "A young boy embarks on a quest to find a magical elephant, hoping to reunite with his lost sister.",
     downloadLink: "https://example.com/download/magicians-elephant"
   },
   {
-    title: "The Amazing Maurice",
-    rating: "6.3",
-    backgroundImage: "https://images7.alphacoders.com/132/thumb-1920-1321332.jpeg",
-    story: "Maurice, a streetwise cat, leads a band of rats to create a money-making scheme by pretending to solve a town’s rat problem.",
-    downloadLink: "https://example.com/download/amazing-maurice"
-  },
-  {
-    title: "The Boss Baby: Family Business",
-    rating: "5.9",
-    backgroundImage: "https://wallpapercave.com/wp/wp5346867.jpg",
-    story: "The Templeton brothers have become adults and drifted apart, but a new boss baby brings them together.",
-    downloadLink: "https://example.com/download/boss-baby-family-business"
-  },
-  {
-    title: "Naya’s Dream",
-    rating: "6.1",
-    backgroundImage: "/path/to/nayas-dream-poster.jpg",
-    story: "A magical dreamworld opens up for a young girl trying to protect her home and family.",
-    downloadLink: "https://example.com/download/nayas-dream"
-  },
-  {
-    title: "Raya and the Last Dragon",
-    rating: "7.3",
-    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/134/1023771/raya-and-the-last-dragon-animated-movies-raya-raya-and-the-last-dragon-movies-hd-wallpaper-preview.jpg",
-    story: "A young warrior sets out to find the last dragon and save her people from an ancient evil.",
-    downloadLink: "https://example.com/download/raya-last-dragon"
-  },
-  {
-    title: "Luck",
-    rating: "6.3",
-    backgroundImage: "https://images8.alphacoders.com/125/thumb-1920-1254691.jpg",
-    story: "An unlucky girl discovers the world's luckiest place and teams up with magical creatures to turn her fortune around.",
-    downloadLink: "https://example.com/download/luck"
-  },
-  {
-    title: "Back to the Outback",
-    rating: "6.5",
-    backgroundImage: "https://wallpapercave.com/wp/wp10431048.jpg",
-    story: "Tired of being locked in a reptile house, a group of Australia's deadliest creatures plot their escape to the Outback.",
-    downloadLink: "https://example.com/download/back-to-outback"
+    title: "Nimona",
+    rating: "7.5",
+    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/118/891/244/nimona-movie-wallpaper-preview.jpg",
+    story: "A shapeshifter and a villainous scientist work together to wreak havoc, exploring themes of identity and friendship.",
+    downloadLink: "https://example.com/download/nimona"
   }
 ];
 
