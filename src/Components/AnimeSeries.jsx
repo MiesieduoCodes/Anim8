@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion'; // Importing Framer Motion
 import Navbar from './Navbar';
 import Footer from './Footer';
 import FloatingMusicButton from '../FloatingMusicButton';
@@ -79,7 +80,7 @@ const AnimeSeries = () => {
             <h2 className="text-3xl font-bold text-white mb-4">{genre}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {moviesByGenre[genre].map((movie) => (
-                <div
+                <motion.div
                   key={movie.id}
                   className="relative border border-gray-200 rounded-lg overflow-hidden"
                   style={{
@@ -87,6 +88,20 @@ const AnimeSeries = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     height: '300px',
+                  }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{
+                    scale: 1.05,
+                    x: [0, -5, 5, -5, 5, 0], // Horizontal shake
+                    y: [0, -5, 5, -5, 5, 0], // Vertical shake
+                    transition: {
+                      type: 'spring',
+                      stiffness: 300,
+                      damping: 10,
+                      duration: 0.6,
+                    },
                   }}
                 >
                   <div className="bg-black bg-opacity-50 p-5 h-full flex flex-col justify-end">
@@ -100,7 +115,7 @@ const AnimeSeries = () => {
                       View Series
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

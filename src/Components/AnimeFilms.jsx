@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import Navbar from './Navbar';
 import FloatingMusicButton from '../FloatingMusicButton';
-import Footer from "./Footer";
+import Footer from './Footer';
 import collections from "../Constants/Animedata";
+import { motion } from 'framer-motion'; // Importing Framer Motion
 
 const AnimeFilms = () => {
   const [animeCollections, setAnimeCollections] = useState([]);
@@ -57,13 +58,22 @@ const AnimeFilms = () => {
         audioRef.current.play();
       }
     }
-  });
+  }, [currentTrackIndex, isMusicPlaying]);
 
   return (
     <>
-      <div className="main-content bg-slate-950 pt-24">
-        <Navbar />
+      <div className="relative min-h-screen">
+        {/* Video Background */}
+        <video
+          className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+          src="https://fireforce-anime.jp/3rdwp/wp-content/themes/enn-enn-season3-teaser/_assets/video/loader.mp4"
+          autoPlay
+          loop
+          muted
+        />
 
+        <Navbar />
+        
         {/* Header Section */}
         <div
           className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
@@ -82,13 +92,28 @@ const AnimeFilms = () => {
         {/* Anime Collection Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {animeCollections[0]?.items.map((item, index) => (
-            <div
+            <motion.div
               key={index}
               className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                height: '300px',
+              }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              whileHover={{
+                scale: 1.05,
+                x: [0, -5, 5, -5, 5, 0], // Horizontal shake
+                y: [0, -5, 5, -5, 5, 0], // Vertical shake
+                transition: {
+                  type: 'spring',
+                  stiffness: 300,
+                  damping: 10,
+                  duration: 0.6,
+                },
               }}
             >
               <div className="flex items-end h-full p-4 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
@@ -109,24 +134,23 @@ const AnimeFilms = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
+
+        <Footer />
+        
+        {/* Floating Music Button */}
+        <FloatingMusicButton
+          isMusicPlaying={isMusicPlaying}
+          toggleMusic={toggleMusic}
+          currentTrackIndex={currentTrackIndex}
+          changeTrack={changeTrack}
+        />
+
+        {/* Audio Element for Music Playback */}
+        <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} />
       </div>
-
-      {/* Footer Section */}
-      <Footer />
-
-      {/* Floating Music Button with functionality */}
-      <FloatingMusicButton
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-      />
-
-      {/* Audio Element for Music Playback */}
-      <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} />
     </>
   );
 };

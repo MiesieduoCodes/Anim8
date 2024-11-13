@@ -1186,82 +1186,82 @@ const movieData = [
   {
     "title": "Jujutsu Kaisen",
     "genre": "Action",
-    "backgroundImage": "https://static.wikia.nocookie.net/08cb8af6-daab-42bf-a591-c23e9ccbe09a/scale-to-width-down/800",
+    backgroundImage: "https://static.wikia.nocookie.net/08cb8af6-daab-42bf-a591-c23e9ccbe09a/scale-to-width-down/800",
     "synopsis": "High school student Yuji Itadori discovers the world of jujutsu sorcery and becomes bound to a powerful curse, propelling him into battles against deadly spirits.",
     "seasons": [
       {
         "seasonNumber": 1,
-        "backgroundImage": "https://animerants.net/wp-content/uploads/2024/01/jujutsu-kaisen-season-1-wallpaper.png?w=1400&h=400&crop=1",
+        backgroundImage: "https://animerants.net/wp-content/uploads/2024/01/jujutsu-kaisen-season-1-wallpaper.png?w=1400&h=400&crop=1",
         "episodes": [
           {
-            "epiNum": 1,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/1-1.jpg",
+            epiNum: 1,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/1-1.jpg",
             "synopsis": "Yuji encounters curses and ingests a powerful cursed object, transforming his life.",
             "downloadLink": ""
           },
           {
-            "epiNum": 2,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/2-1.jpg",
+            epiNum: 2,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/2-1.jpg",
             "synopsis": "Yuji joins Jujutsu High and meets his new classmates.",
             "downloadLink": ""
           },
           {
-            "epiNum": 3,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/3-1.jpg",
+            epiNum: 3,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/3-1.jpg",
             "synopsis": "The students face a dangerous curse, testing their teamwork.",
             "downloadLink": ""
           },
           {
-            "epiNum": 4,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/4-1.jpg",
+            epiNum: 4,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/4-1.jpg",
             "synopsis": "Gojo Satoru trains Yuji, showcasing his immense power.",
             "downloadLink": ""
           },
           {
-            "epiNum": 5,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/5-1.jpg",
+            epiNum: 5,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/5-1.jpg",
             "synopsis": "Yuji faces a moral challenge as he learns about the duties of a sorcerer.",
             "downloadLink": ""
           },
           {
-            "epiNum": 6,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/6-1.jpg",
+            epiNum: 6,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/6-1.jpg",
             "synopsis": "The students battle fierce cursed spirits at a detention center.",
             "downloadLink": ""
           },
           {
-            "epiNum": 7,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/7-1.jpg",
+            epiNum: 7,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/7-1.jpg",
             "synopsis": "Yuji uncovers the extent of his powers in a battle with a powerful curse.",
             "downloadLink": ""
           },
           {
-            "epiNum": 8,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/8-1.jpg",
+            epiNum: 8,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/8-1.jpg",
             "synopsis": "A new threat looms as powerful curses plot against Jujutsu High.",
             "downloadLink": ""
           },
           {
-            "epiNum": 9,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/9-1.jpg",
+            epiNum: 9,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/9-1.jpg",
             "synopsis": "The Kyoto Sister School Exchange Event begins, pitting students against each other.",
             "downloadLink": ""
           },
           {
-            "epiNum": 10,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/10-1.jpg",
+            epiNum: 10,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/10-1.jpg",
             "synopsis": "Yuji and friends face the Kyoto school students in fierce battles.",
             "downloadLink": ""
           },
           {
-            "epiNum": 11,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/11-1.jpg",
+            epiNum: 11,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/11-1.jpg",
             "synopsis": "A dramatic showdown tests the students' abilities and resolve.",
             "downloadLink": ""
           },
           {
-            "epiNum": 12,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/12-1.jpg",
+            epiNum: 12,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/12-1.jpg",
             "synopsis": "Powerful curses infiltrate the Exchange Event, raising the stakes.",
             "downloadLink": ""
           }
@@ -1272,74 +1272,74 @@ const movieData = [
         backgroundImage : "https://jujutsukaisen.jp/images/episodes/24-1.jpg",
         "episodes": [
           {
-            "epiNum": 1,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/1-2.jpg",
+            epiNum: 1,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/1-2.jpg",
             "synopsis": "Yuji learns about Jujutsu High’s history and its past sorcerers.",
             "downloadLink": ""
           },
           {
-            "epiNum": 2,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/2-2.jpg",
+            epiNum: 2,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/2-2.jpg",
             "synopsis": "Gojo’s past with Geto reveals complex secrets.",
             "downloadLink": ""
           },
           {
-            "epiNum": 3,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/3-2.jpg",
+            epiNum: 3,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/3-2.jpg",
             "synopsis": "Gojo and Geto battle a powerful curse, shaping Jujutsu High’s future.",
             "downloadLink": ""
           },
           {
-            "epiNum": 4,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/4-2.jpg",
+            epiNum: 4,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/4-2.jpg",
             "synopsis": "Yuji’s intense training prepares him for battles with curses.",
             "downloadLink": ""
           },
           {
-            "epiNum": 5,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/5-2.jpg",
+            epiNum: 5,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/5-2.jpg",
             "synopsis": "Deadly curses emerge in the Shibuya incident, testing Jujutsu High.",
             "downloadLink": ""
           },
           {
-            "epiNum": 6,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/6-2.jpg",
+            epiNum: 6,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/6-2.jpg",
             "synopsis": "Yuji and allies struggle to survive Shibuya’s chaotic streets.",
             "downloadLink": ""
           },
           {
-            "epiNum": 7,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/7-2.jpg",
+            epiNum: 7,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/7-2.jpg",
             "synopsis": "Yuji pushes his limits against a powerful enemy.",
             "downloadLink": ""
           },
           {
-            "epiNum": 8,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/8-2.jpg",
+            epiNum: 8,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/8-2.jpg",
             "synopsis": "Gojo fights overwhelming curses alone in Shibuya.",
             "downloadLink": ""
           },
           {
-            "epiNum": 9,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/9-2.jpg",
+            epiNum: 9,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/9-2.jpg",
             "synopsis": "Yuji and Megumi make a stand against high-level curses.",
             "downloadLink": ""
           },
           {
-            "epiNum": 10,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/10-2.jpg",
+            epiNum: 10,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/10-2.jpg",
             "synopsis": "The Shibuya incident’s climax leaves Jujutsu High in turmoil.",
             "downloadLink": ""
           },
           {
-            "epiNum": 11,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/11-2.jpg",
+            epiNum: 11,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/11-2.jpg",
             "synopsis": "Yuji confronts the aftermath of the Shibuya incident.",
             "downloadLink": ""
           },
           {
-            "epiNum": 12,
-            "backgroundImage": "https://jujutsukaisen.jp/images/episodes/12-2.jpg",
+            epiNum: 12,
+            backgroundImage: "https://jujutsukaisen.jp/images/episodes/12-2.jpg",
             "synopsis": "With new resolve, Yuji faces future battles in the world of curses.",
             "downloadLink": ""
           }
@@ -2356,81 +2356,82 @@ const movieData = [
  {
     title: "Solo Leveling",
     genre: "Adventure",
-    backgroundImage: "https://example.com/solo-leveling-main-background.jpg",
+    backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/4305090653ee4239dd0d797f1a4a6bdf.jpg",
     synopsis: "In a world filled with hunters fighting monsters from mysterious gates, weak hunter Sung Jinwoo gains a leveling-up ability that could turn him into the world’s strongest hunter.",
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/4305090653ee4239dd0d797f1a4a6bdf.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://example.com/solo-leveling-episode-1.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/9685e02cab2b3d22296e7c7e46d78aa8.jpg",
             synopsis: "Sung Jinwoo, known as the weakest hunter, faces a near-fatal encounter in a dangerous dungeon and awakens a mysterious power.",
             downloadLink: ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://example.com/solo-leveling-episode-2.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/50a0eb40c919b8efea01fd4799df08ff.jpg",
             synopsis: "Jinwoo explores his newfound abilities, encountering the challenges of leveling up in dangerous situations.",
             downloadLink: ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://example.com/solo-leveling-episode-3.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/c6adceca173ff32ae979af193a476fb2.jpg",
             synopsis: "Jinwoo takes on quests assigned by the System, leading to shocking discoveries about his strength.",
             downloadLink: ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://example.com/solo-leveling-episode-4.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/78de61960488c9f16f960dae0b554eca.jpg",
             synopsis: "Growing stronger, Jinwoo revisits old dungeons and reveals more of his potential to others.",
             downloadLink: ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://example.com/solo-leveling-episode-5.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/403416c5837765866f3b19ac27932777.jpg",
             synopsis: "Jinwoo uncovers the dangers of the System’s penalties while trying to balance his new power.",
             downloadLink: ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://example.com/solo-leveling-episode-6.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/4622fd0dd6f0072211526a8ae67f0c5c.jpg",
             synopsis: "His abilities tested, Jinwoo faces higher-level monsters and realizes he can no longer stay unnoticed.",
             downloadLink: ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://example.com/solo-leveling-episode-7.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/018425874ef4c1b18b32c26645d6c848.jpg",
             synopsis: "Jinwoo gains allies as he grows in strength, but his reputation among hunters begins to shift.",
             downloadLink: ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://example.com/solo-leveling-episode-8.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ba4454c313d44737a3a72fc390bd2159.jpg",
             synopsis: "Venturing into new territories, Jinwoo begins understanding the darker secrets of the hunter world.",
             downloadLink: ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://example.com/solo-leveling-episode-9.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/08ade842ca3ae544ccc5e4f6a207b529.jpg",
             synopsis: "A powerful foe challenges Jinwoo’s newfound abilities, testing his limits.",
             downloadLink: ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://example.com/solo-leveling-episode-10.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/9833d2909af5311139e79b32a44d9605.jpg",
             synopsis: "Jinwoo faces the true extent of the System’s challenges as he is pushed into a deadly situation.",
             downloadLink: ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://example.com/solo-leveling-episode-11.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/66e3cabc8e0557f77c93c24178e7a5cd.jpg",
             synopsis: "With higher stakes, Jinwoo realizes his journey as a hunter will reshape his life.",
             downloadLink: ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://example.com/solo-leveling-episode-12.jpg",
+            backgroundImage: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/cda77a98de7021522ebb5f0cc9bebd7d.jpg",
             synopsis: "In a climactic battle, Jinwoo reveals his full potential, leaving an impact on the hunter world.",
             downloadLink: ""
           }
@@ -2442,93 +2443,82 @@ const movieData = [
   {
     title: "Jobless Reincarnation: Mushoku Tensei",
     genre: "Adventure",
-    backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/12/Mushoku-Tensei-Episode-22.jpg",
+    backgroundImage: "https://img4.hulu.com/user/v3/artwork/787a5fb4-9cba-4a69-96b2-4fb3b10c860a?base_image_bucket_name=image_manager&base_image=f435465f-3115-4c3c-bd4b-0ec734091b12&size=1024x576&format=webp",
     synopsis: "A 34-year-old NEET is reincarnated in a fantasy world with the resolve to live his new life to the fullest.",
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://img1.hulu.com/user/v3/artwork/466615c0-7686-48c9-be32-068ca9504625?base_image_bucket_name=image_manager&base_image=9850838f-8ca8-4c75-9fe1-40566bfe1189&size=600x338&format=webp",
         episodes: [
           { 
             epiNum: 1,
-            title: "Jobless Reincarnation",
-            backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Mushoku-Tensei.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/ba54ca0d-6bd0-44d8-bbd3-2fd3249eb28a?base_image_bucket_name=image_manager&base_image=7369bb29-b8a4-49c8-af73-0a9463cd2def&size=600x338&format=webp",
             synopsis: "A man reincarnates into a fantasy world as Rudeus, and begins his journey with new goals and challenges.",
             downloadLink : ""
           },
           { 
             epiNum: 2,
-            title: "Master",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-2-Review.png",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/c9b1df90-ac68-46af-8d6a-a336dab5e71f?base_image_bucket_name=image_manager&base_image=28dac980-c9c3-4332-b0c8-b1966caf8e98&size=600x338&format=webp",
             synopsis: "Rudeus starts magic training with his new tutor, Roxy, showcasing his talent and determination.",
             downloadLink : ""
           },
           { 
             epiNum: 3,
-            title: "A Friend",
-            backgroundImage: "https://www.animefeminist.com/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-3.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/b1ae7571-98d6-434e-8348-1feb40d682f5?base_image_bucket_name=image_manager&base_image=5ac09629-ff90-433e-9a65-8151b1b3df36&size=600x338&format=webp",
             synopsis: "Rudeus makes his first friend, Sylphiette, and learns the importance of kindness and companionship.",
             downloadLink : ""
           },
           { 
             epiNum: 4,
-            title: "Emergency Family Meeting",
-            backgroundImage: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Mushoku-Tensei-Episode-4.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/f81a6825-636b-4533-970b-64f4a5015008?base_image_bucket_name=image_manager&base_image=120f44f1-4d83-469a-b95c-1b9b2903a9b8&size=600x338&format=webp",
             synopsis: "Family conflicts arise, forcing Rudeus to navigate the complexities of relationships in his new world.",
             downloadLink : ""
           },
           { 
             epiNum: 5,
-            title: "A Young Lady and Violence",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/02/Mushoku-Tensei-Episode-5.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/c918a1f8-5afd-4335-95bc-84e2533f71ac?base_image_bucket_name=image_manager&base_image=5058bcf7-9084-42d8-924a-308269e39bd7&size=600x338&format=webp",
             synopsis: "Rudeus encounters Eris, a feisty noble, and faces new challenges in a hostile environment.",
             downloadLink : ""
           },
           { 
             epiNum: 6,
-            title: "A Day Off in Roa",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/02/Mushoku-Tensei-Episode-6.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/f1bfcbe6-7cf0-4477-b618-fa4b7541625e?base_image_bucket_name=image_manager&base_image=925d8e3e-44a3-443f-809d-01441d0a7574&size=600x338&format=webp",
             synopsis: "Rudeus and Eris experience life in the city, developing a friendship as they learn about each other.",
             downloadLink : ""
           },
           { 
             epiNum: 7,
-            title: "What Lies Beyond Effort",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-7.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/a3371975-27a6-44d2-bb34-3eba889eae01?base_image_bucket_name=image_manager&base_image=9952bff0-3d82-46ad-96b2-0169df10d8fd&size=600x338&format=webp",
             synopsis: "Rudeus trains hard with Eris, preparing for unexpected challenges while discovering his potential.",
             downloadLink : ""
           },
           { 
             epiNum: 8,
-            title: "Turning Point 1",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-8.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/8165c1f4-366f-4bbc-8ccc-94810e314672?base_image_bucket_name=image_manager&base_image=aa23c39e-40e8-481c-9543-0f166ee55455&size=600x338&format=webp",
             synopsis: "A mysterious incident transports Rudeus to a dangerous new location, changing his life forever.",
             downloadLink : ""
           },
           { 
             epiNum: 9,
-            title: "Encounter",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-9.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/3f700315-cd00-4e21-9ec5-2054d2935101?base_image_bucket_name=image_manager&base_image=e3663824-793a-4dd7-aea9-1b1465549576&size=600x338&format=webp",
             synopsis: "Rudeus meets Ruijerd, a powerful warrior, who aids him and Eris in surviving their new surroundings.",
             downloadLink : ""
           },
           { 
             epiNum: 10,
-            title: "The Value of a Life and the First Job",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-10.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/546f243c-ef27-4c07-95ad-3a78cfa67a32?base_image_bucket_name=image_manager&base_image=64d8aa06-3d42-4065-aa68-0b2a68690903&size=600x338&format=webp",
             synopsis: "Rudeus takes on his first job, learning the harsh realities of survival and the weight of decisions.",
             downloadLink : ""
           },
           { 
             epiNum: 11,
-            title: "Children and Warriors",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/03/Mushoku-Tensei-Episode-11.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/964e35e0-90a3-4927-978d-457e61570f61?base_image_bucket_name=image_manager&base_image=a9f0ad78-d751-4206-b6a8-956208daec8d&size=600x338&format=webp",
             synopsis: "Rudeus and his companions tackle challenges that test their strength and resolve as adventurers.",
             downloadLink : ""
           },
           { 
             epiNum: 12,
-            title: "The Woman with the Demon Eyes",
-            backgroundImage: "https://animecorner.me/wp-content/uploads/2021/10/Mushoku-Tensei-Episode-12.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/7a159500-341b-4a2d-a63f-b31c4b453a00?base_image_bucket_name=image_manager&base_image=3a2b7999-6c6a-4233-b514-7d26499d2218&size=600x338&format=webp",
             synopsis: "Rudeus meets a mysterious figure with extraordinary powers, opening new possibilities and dangers.",
             downloadLink : ""
           }
@@ -2540,93 +2530,93 @@ const movieData = [
   // {
   //   "title": "Konosuba: God's Blessing on this Wonderful World!",
   //   genre: "Adventure",
-  //   "backgroundImage": "https://cdn.myanimelist.net/images/anime/8/78243.jpg",
+  //   backgroundImage: "https://cdn.myanimelist.net/images/anime/8/78243.jpg",
   //   "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
   //   "seasons": [
   //     {
   //       "seasonNumber": 1,
   //       "episodes": [
   //         {
-  //           "epiNum": 1,
+  //           epiNum: 1,
   //           "title": "This Self-Proclaimed Goddess and Reincarnation in Another World",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79672.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79672.jpg",
   //           "synopsis": "Kazuma is reincarnated in a fantasy world with a goddess, where they begin their chaotic journey.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-1"
   //         },
   //         {
-  //           "epiNum": 2,
+  //           epiNum: 2,
   //           "title": "The Great Chaos at the Crystal Tower",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79674.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79674.jpg",
   //           "synopsis": "Kazuma and his party attempt to defeat a dangerous monster, only to end up in disastrous situations.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-2"
   //         },
   //         {
-  //           "epiNum": 3,
+  //           epiNum: 3,
   //           "title": "Explosion Magic and a Battle of Wits",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79675.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79675.jpg",
   //           "synopsis": "Megumin, the eccentric mage, introduces her explosive magic, and the group is caught in a tight situation.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-3"
   //         },
   //         {
-  //           "epiNum": 4,
+  //           epiNum: 4,
   //           "title": "A Bet's a Bet!",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79676.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79676.jpg",
   //           "synopsis": "Kazuma faces a tough challenge involving a bet with an unlikely opponent, leading to more misadventures.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-4"
   //         },
   //         {
-  //           "epiNum": 5,
+  //           epiNum: 5,
   //           "title": "A Lively Reincarnation and a Blessed Adventure",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79677.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79677.jpg",
   //           "synopsis": "The party embarks on a new quest, with Kazuma’s team facing more hilarious but dangerous situations.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-5"
   //         },
   //         {
-  //           "epiNum": 6,
+  //           epiNum: 6,
   //           "title": "The Wonderful, Blessed Life of the Adventurer",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79678.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79678.jpg",
   //           "synopsis": "Kazuma and the gang face challenges, including dealing with their dysfunctional team dynamics and strange foes.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-6"
   //         },
   //         {
-  //           "epiNum": 7,
+  //           epiNum: 7,
   //           "title": "A Day in the City and the Adventurer's Guide",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79679.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79679.jpg",
   //           "synopsis": "Kazuma and his companions learn more about the city’s rules while participating in local events.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-7"
   //         },
   //         {
-  //           "epiNum": 8,
+  //           epiNum: 8,
   //           "title": "Chasing the Lost Demon and the Ransacked Town",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79680.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79680.jpg",
   //           "synopsis": "The party goes after a demon that is terrorizing the town, leading to unexpected events.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-8"
   //         },
   //         {
-  //           "epiNum": 9,
+  //           epiNum: 9,
   //           "title": "The Feast of the Gods and the Battle of Desperation",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79681.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79681.jpg",
   //           "synopsis": "The team faces a dangerous foe at the mercy of powerful gods, leading to a risky battle.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-9"
   //         },
   //         {
-  //           "epiNum": 10,
+  //           epiNum: 10,
   //           "title": "A Little Princess and a Righteous Path",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79682.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79682.jpg",
   //           "synopsis": "Kazuma and his team deal with a princess who needs their help, but things go awry.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-10"
   //         },
   //         {
-  //           "epiNum": 11,
+  //           epiNum: 11,
   //           "title": "The Final Battle and a New Start",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79683.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79683.jpg",
   //           "synopsis": "The party faces off against a major enemy in an epic battle, but the adventure is far from over.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-11"
   //         },
   //         {
-  //           "epiNum": 12,
+  //           epiNum: 12,
   //           "title": "A Reincarnation that Will Never End",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79684.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79684.jpg",
   //           "synopsis": "The final episode of season 1 wraps up the first adventure with a hilarious and dramatic conclusion.",
   //           "downloadLink": "https://example.com/download/konosuba-episode-12"
   //         }
@@ -2636,72 +2626,72 @@ const movieData = [
   //       "seasonNumber": 2,
   //       "episodes": [
   //         {
-  //           "epiNum": 1,
+  //           epiNum: 1,
   //           "title": "A New Life in the Country",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79685.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79685.jpg",
   //           "synopsis": "Kazuma's party faces a new challenge in the countryside, where they try to make a living.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-1"
   //         },
   //         {
-  //           "epiNum": 2,
+  //           epiNum: 2,
   //           "title": "A Duel to the Death in the City",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79686.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79686.jpg",
   //           "synopsis": "Kazuma faces off against a powerful foe in the city while the team deals with growing problems.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-2"
   //         },
   //         {
-  //           "epiNum": 3,
+  //           epiNum: 3,
   //           "title": "The World's Most Unusual Adventurer",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79687.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79687.jpg",
   //           "synopsis": "The team faces an odd situation as they encounter a new ally with strange powers.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-3"
   //         },
   //         {
-  //           "epiNum": 4,
+  //           epiNum: 4,
   //           "title": "A Beautiful Adventure and a Precious Memory",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79688.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79688.jpg",
   //           "synopsis": "Kazuma and the team take on a new quest that will test their skills and resolve.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-4"
   //         },
   //         {
-  //           "epiNum": 5,
+  //           epiNum: 5,
   //           "title": "Foolish Decisions and a New Rival",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79689.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79689.jpg",
   //           "synopsis": "Kazuma’s rivalry with a new adventurer leads to more challenges and conflicts.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-5"
   //         },
   //         {
-  //           "epiNum": 6,
+  //           epiNum: 6,
   //           "title": "The Road to Victory and the Fight for Glory",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79690.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79690.jpg",
   //           "synopsis": "Kazuma’s team faces a tough battle to save the day while navigating complicated new relationships.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-6"
   //         },
   //         {
-  //           "epiNum": 7,
+  //           epiNum: 7,
   //           "title": "Life as a Hero and the Battle of Desperation",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79691.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79691.jpg",
   //           "synopsis": "The team fights to protect the village from a great threat, risking everything.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-7"
   //         },
   //         {
-  //           "epiNum": 8,
+  //           epiNum: 8,
   //           "title": "A Dangerous Game and a Worthy Opponent",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79692.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79692.jpg",
   //           "synopsis": "The party faces off against a dangerous foe, learning some valuable lessons along the way.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-8"
   //         },
   //         {
-  //           "epiNum": 9,
+  //           epiNum: 9,
   //           "title": "The Final Battle and the Ultimate Challenge",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79693.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79693.jpg",
   //           "synopsis": "The team faces their greatest challenge yet, leading to a thrilling and emotional finale.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-9"
   //         },
   //         {
-  //           "epiNum": 10,
+  //           epiNum: 10,
   //           "title": "The Adventures Continue and New Beginnings",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79694.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79694.jpg",
   //           "synopsis": "The season ends with new adventures on the horizon for Kazuma and his party.",
   //           "downloadLink": "https://example.com/download/konosuba-s2-episode-10"
   //         }
@@ -2711,9 +2701,9 @@ const movieData = [
   //       "seasonNumber": 3,
   //       "episodes": [
   //         {
-  //           "epiNum": 1,
+  //           epiNum: 1,
   //           "title": "A Return to Glory",
-  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79695.jpg",
+  //           backgroundImage: "https://cdn.myanimelist.net/images/anime/9/79695.jpg",
   //           "synopsis": "The story picks up with the team facing their most challenging yet hilarious adventure yet.",
   //           "downloadLink": "https://example.com/download/konosuba-s3-episode-1"
   //         }
@@ -2723,60 +2713,60 @@ const movieData = [
   // },
 
   {
-    "title": "No Game No Life",
-    "genre": "Adventure, Fantasy, Game",
-    "backgroundImage": "https://wallpapercave.com/wp/wp3163523.jpg",
-    "synopsis": "Sora and Shiro, an undefeated sibling duo of gamers, are transported to a mysterious world where everything is decided by games. They aim to defeat the enigmatic being, Tet, and conquer the world.",
-    "seasons": [
+    title: "No Game No Life",
+    genre: "Adventure",
+    backgroundImage: "https://img.hulu.com/user/v3/artwork/6e4dd558-5c67-465f-be02-abc5226900bb?base_image_bucket_name=image_manager&base_image=d02d15a0-74ca-4c25-9292-8ec677a6cfad&size=1024x576&format=webp",
+    synopsis: "Sora and Shiro, an undefeated sibling duo of gamers, are transported to a mysterious world where everything is decided by games. They aim to defeat the enigmatic being, Tet, and conquer the world.",
+    seasons: [
       {
-        "seasonNumber": 1,
-        "episodes": [
+        seasonNumber: 1,
+        backgroundImage : "https://img.hulu.com/user/v3/artwork/efc54025-5a45-4a86-bc92-1dc8a32c948a?base_image_bucket_name=image_manager&base_image=ee54cd16-8695-49e0-a50c-30ae3aa18435&size=600x338&format=webp",
+        episodes: [
           {
-            "epiNum": 1,
-            "title": "No Game No Life",
-            "backgroundImage": "https://wallpapercave.com/wp/wp4087110.jpg",
+            epiNum: 1,
+  
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/efc54025-5a45-4a86-bc92-1dc8a32c948a?base_image_bucket_name=image_manager&base_image=ee54cd16-8695-49e0-a50c-30ae3aa18435&size=600x338&format=webp",
             "synopsis": "Sora and Shiro, two brilliant siblings, are invited to a world of games by a mysterious being, Tet. They accept the challenge to beat Tet in a game of chess and win a place in this new world."
           },
           {
-            "epiNum": 2,
-            "title": "All That's Left Is the Winning",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163524.jpg",
+            epiNum: 2,
+
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/80d70ca0-1d4f-4a1d-bc3b-161af32e6e62?base_image_bucket_name=image_manager&base_image=7046a3a6-f4a7-458e-8cf6-de43c4bf9ccd&size=600x338&format=webp",
             "synopsis": "The siblings take on the challenge of defeating their first opponent, the Eastern Federation, in a game of poker, aiming to prove their gaming skills and superiority."
           },
           {
-            "epiNum": 3,
-            "title": "Challengers",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163525.jpg",
+            epiNum: 3,
+
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/80d70ca0-1d4f-4a1d-bc3b-161af32e6e62?base_image_bucket_name=image_manager&base_image=7046a3a6-f4a7-458e-8cf6-de43c4bf9ccd&size=600x338&format=webp",
             "synopsis": "Sora and Shiro enter their first serious game in the world of Disboard, against the Eastern Federation. The siblings must outsmart the Federation to gain control over the first piece of land."
           },
           {
-            "epiNum": 4,
-            "title": "Prisoner",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163526.jpg",
+            epiNum: 4,
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/80d70ca0-1d4f-4a1d-bc3b-161af32e6e62?base_image_bucket_name=image_manager&base_image=7046a3a6-f4a7-458e-8cf6-de43c4bf9ccd&size=600x338&format=webp",
             "synopsis": "Sora and Shiro aim to beat the Eastern Federation’s Chess King, and they realize their opponents are more dangerous than they first thought."
           },
           {
-            "epiNum": 5,
-            "title": "The World Where I Am God",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163527.jpg",
+            epiNum: 5,
+
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/80d70ca0-1d4f-4a1d-bc3b-161af32e6e62?base_image_bucket_name=image_manager&base_image=7046a3a6-f4a7-458e-8cf6-de43c4bf9ccd&size=600x338&format=webp",
             "synopsis": "Sora and Shiro face new challenges in the world of Disboard, encountering strange characters and power struggles, all while trying to stay ahead of their rivals."
           },
           {
-            "epiNum": 6,
-            "title": "The Strongest Opponent in the World",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163528.jpg",
+            epiNum: 6,
+   
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/467805ea-da6e-4448-986e-0fe60d30a9af?base_image_bucket_name=image_manager&base_image=febaaa44-86ab-4443-b743-b037d1598df1&size=600x338&format=webp",
             "synopsis": "The siblings take on a new, powerful opponent in a game of strategy and wit, testing their skills and determination as gamers."
           },
           {
-            "epiNum": 7,
-            "title": "Unbeaten",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163529.jpg",
+            epiNum: 7,
+   
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/467805ea-da6e-4448-986e-0fe60d30a9af?base_image_bucket_name=image_manager&base_image=febaaa44-86ab-4443-b743-b037d1598df1&size=600x338&format=webp",
             "synopsis": "Sora and Shiro face yet another tough challenge, proving that they are indeed unbeatable as they face stronger and more cunning enemies."
           },
           {
-            "epiNum": 8,
-            "title": "The Final Game",
-            "backgroundImage": "https://wallpapercave.com/wp/wp3163530.jpg",
+            epiNum: 8,
+
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/5f00e53d-07a5-4762-abd2-d569835a4715?base_image_bucket_name=image_manager&base_image=16867095-8190-4abc-9bb9-6a3f7f7913a8&size=600x338&format=webp",
             "synopsis": "The siblings come face-to-face with Tet in an epic game that will determine their future in the world of Disboard, leading to a life-changing victory or defeat."
           }
         ]
