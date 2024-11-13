@@ -1605,76 +1605,77 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://www.animerankings.com/wp-content/uploads/2024/04/Erased-Anime-1024x768.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/6/77862.jpg",
+            backgroundImage: "https://www.animerankings.com/wp-content/uploads/2024/04/Erased-1024x537.jpg",
             synopsis: "Satoru Fujinuma discovers his power, 'Revival,' which sends him briefly back in time to prevent nearby tragedies.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/7/77863.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/e350c44c-c10f-426e-a07b-56f48d3e0359?base_image_bucket_name=image_manager&base_image=3366df9a-5699-44ea-b508-2638dcfbdb21&size=600x338&format=webp",
             synopsis: "After his mother's murder, Satoru's 'Revival' sends him back 18 years, where he tries to stop a series of kidnappings.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/8/77864.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/387914b3-0158-4b30-ac1c-a1b3295ee6f0?base_image_bucket_name=image_manager&base_image=441fa77a-18b9-4f5f-8b74-06559f19e638&size=600x338&format=webp",
             synopsis: "Satoru befriends Kayo Hinazuki, a lonely girl, as he tries to prevent her from becoming the kidnapper's next victim.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/9/77865.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/8496e9d3-5266-4cbd-8b28-2e8d3125f698?base_image_bucket_name=image_manager&base_image=9e09548b-2db6-4e31-8f46-c701ccdb9362&size=600x338&format=webp",
             synopsis: "Satoru begins to see the signs of abuse in Kayo's life and makes efforts to protect her, while the mystery deepens.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/77866.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/dd3298ed-06db-4a2f-8844-f111e43a1501?base_image_bucket_name=image_manager&base_image=282f4389-7719-4059-8f94-57d07b3a9c43&size=600x338&format=webp",
             synopsis: "Satoru's actions start changing the course of events, but new obstacles arise in his mission to save Kayo.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/77867.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/88dcc0b6-50a4-4c5f-9e60-ee628e3816d0?base_image_bucket_name=image_manager&base_image=a7499430-ae2d-4f62-bdec-a213029bc43e&size=600x338&format=webp",
             synopsis: "As Satoru grows closer to Kayo, he becomes more determined to stop the crimes, risking exposure of his plans.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/77868.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/a957b98c-95da-4169-8cdd-21560c3ab078?base_image_bucket_name=image_manager&base_image=cfc89b64-c925-4baf-8aad-3bcb6385e50a&size=600x338&format=webp",
             synopsis: "Satoru's actions lead to major shifts in the timeline, as he works to ensure Kayo's safety and avoid more tragedies.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/77869.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/635a6633-6cf7-4e3f-b13e-73abf4096cc3?base_image_bucket_name=image_manager&base_image=0bde5623-2d99-4f6d-964d-9d11a12ebbeb&size=600x338&format=webp",
             synopsis: "A breakthrough occurs as Satoru manages to alter Kayo's fate, but the kidnapper remains a threat.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/77870.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/97536c3f-a6ea-46b8-9d69-60ab41c96a32?base_image_bucket_name=image_manager&base_image=d35520d4-a0ab-4e0e-914e-35b45de326f3&size=600x338&format=webp",
             synopsis: "Satoru continues his investigation, but a slip-up brings him closer to danger as the real villain watches him.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/77871.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/b4900cf5-f5f8-450c-a825-b7fef0066aeb?base_image_bucket_name=image_manager&base_image=3fa9b16f-68b8-4c47-9945-f5493d9c2e56&size=600x338&format=webp",
             synopsis: "The kidnapper's identity is revealed, leading to a confrontation that pushes Satoru's 'Revival' to its limits.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/77872.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/6542023b-0782-4e96-8b69-853dbdb6d049?base_image_bucket_name=image_manager&base_image=689292fa-2116-40b6-9a67-43eab81f1859&size=600x338&format=webp",
             synopsis: "In the present, Satoru faces the truth about his journey, his powers, and the person responsible for the tragedies.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/77873.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/828ee729-16f1-48c1-978e-e6cd589ebdc3?base_image_bucket_name=image_manager&base_image=7bd19135-8917-41d8-ba2f-77fe31d34116&size=600x338&format=webp",
             synopsis: "The series finale sees Satoru confront the villain once more, determined to finally resolve the past.",
             downloadLink : ""
           }
@@ -1691,76 +1692,77 @@ const movieData = [
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://img2.hulu.com/user/v3/artwork/6b1c065e-e6e2-45f9-a396-acee6ec4c09a?base_image_bucket_name=image_manager&base_image=f6a75ab5-34b9-4529-8069-e20314349327&size=600x338&format=webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/91955.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/7ace8f41-b966-4a68-b678-3e0330016478?base_image_bucket_name=image_manager&base_image=f34c0a93-b13f-45ff-9a6b-5ef657c924d1&size=600x338&format=webp",
             synopsis: "Emma, Norman, and Ray discover the horrific truth about their orphanage when they try to return a forgotten toy.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/91956.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/001d09b4-ecc7-429e-9452-0a3c55d2086b?base_image_bucket_name=image_manager&base_image=79e09f31-132a-4950-9b3e-9fb2e8c4fe8c&size=600x338&format=webp",
             synopsis: "The children formulate a plan to escape, while being watched closely by the suspicious 'Mom,' Isabella.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/91957.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/62601443-856a-49d4-bbaa-afbdc8cb81da?base_image_bucket_name=image_manager&base_image=0a13b7e5-7817-420d-a5bf-69b79f9d32e9&size=600x338&format=webp",
             synopsis: "Emma and Norman investigate possible escape routes while testing their physical abilities.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/13/91958.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/154cf025-fc18-46b8-be4e-8b61f9ddfb94?base_image_bucket_name=image_manager&base_image=5dcd66d2-c01a-4fe5-8aec-cde920f44dca&size=600x338&format=webp",
             synopsis: "The arrival of Sister Krone complicates the children's escape plans as she suspects their intentions.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/14/91959.jpg",
+            backgroundImage: "https://img.hulu.com/user/v3/artwork/f168f692-d5ac-40b3-8912-2378adb5ca8f?base_image_bucket_name=image_manager&base_image=302c572b-dc79-458f-a932-1e556600e556&size=600x338&format=webp",
             synopsis: "Ray reveals his shocking role as a spy, but he also becomes an unexpected ally to Emma and Norman.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/15/91960.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/8d472c46-b159-49a9-83b9-52a168fc0a1c?base_image_bucket_name=image_manager&base_image=b3c5c388-437d-4c62-b93b-bd29438ada70&size=600x338&format=webp",
             synopsis: "The children test Krone's trustworthiness, while Isabella tightens security around the orphanage.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/16/91961.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/0b8eafe3-d7bf-4952-b3e5-c98451141772?base_image_bucket_name=image_manager&base_image=1d0bb7d5-a872-41ff-8d48-47b5d9a92867&size=600x338&format=webp",
             synopsis: "Krone learns more about the children’s escape plans, but her ambitions bring unforeseen consequences.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/17/91962.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/0b8eafe3-d7bf-4952-b3e5-c98451141772?base_image_bucket_name=image_manager&base_image=1d0bb7d5-a872-41ff-8d48-47b5d9a92867&size=600x338&format=webp",
             synopsis: "The children put their escape plan into action, but Isabella's relentless pursuit puts everything at risk.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/18/91963.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/836ca32d-9c95-40e2-8118-aa0df9c8e4e5?base_image_bucket_name=image_manager&base_image=3ff1c968-3cdf-44e1-8142-54a834fe34fc&size=600x338&format=webp",
             synopsis: "The group faces unexpected challenges as their escape unfolds, forcing them to make difficult decisions.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/19/91964.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/bac0b181-36f5-4bb0-9dbd-cde2a35a0d9a?base_image_bucket_name=image_manager&base_image=67d51e79-c615-4a94-ae6e-8a8d4ef3603d&size=600x338&format=webp",
             synopsis: "Emma and Ray lead a desperate final attempt to escape, pushing their courage and resolve to the limit.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/20/91965.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/886ca3d1-cac5-4589-aa40-f56e7e911a8d?base_image_bucket_name=image_manager&base_image=cf41d943-cf99-4e48-af67-ddd5d583551c&size=600x338&format=webp",
             synopsis: "The children confront Isabella one last time as they struggle to reach freedom.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/21/91966.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/008631cf-6f19-4609-8dbd-a655475d085f?base_image_bucket_name=image_manager&base_image=2ab89b72-05cd-4d97-9769-b634542ecc13&size=600x338&format=webp",
             synopsis: "The escape concludes with a heart-pounding climax as the children finally find their way out of the orphanage.",
             downloadLink : ""
           }
@@ -1768,65 +1770,72 @@ const movieData = [
       },
       {
         seasonNumber: 2,
+        backgroundImage:"https://img1.hulu.com/user/v3/artwork/df8a0952-b509-4717-a5a6-269e9d51b413?base_image_bucket_name=image_manager&base_image=149d8ceb-a80f-4b96-a0cd-5f8352f60eb4&size=600x338&format=webp",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1937/111859.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/d9119f74-777a-4ae1-8ba7-15b67a0f9c85?base_image_bucket_name=image_manager&base_image=17553221-234c-4a98-8e2b-c310895d3de3&size=600x338&format=webp",
             synopsis: "Now in the outside world, the children face new dangers in a mysterious forest filled with demons.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1938/111860.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/5cf0ff60-cc3d-4376-8a3d-d9841a92d12d?base_image_bucket_name=image_manager&base_image=36d5e272-1434-460e-afac-8d247f44aa84&size=600x338&format=webp",
             synopsis: "Emma and Ray find unlikely allies as they navigate the unfamiliar terrain outside the orphanage.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1939/111861.jpg",
+            backgroundImage: "https://img2.hulu.com/user/v3/artwork/60db3d52-8e87-49ae-be12-e44f66928398?base_image_bucket_name=image_manager&base_image=97c3e54e-8d41-4665-ae0e-2c74f6696ed5&size=600x338&format=webp",
             synopsis: "The group discovers the horrifying history of the world they live in, and their place within it.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1940/111862.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/e9e3ce24-cbb2-4562-b86f-bdd8aad34325?base_image_bucket_name=image_manager&base_image=644a6a9b-ef7b-4295-922a-7e3e0c6f2c94&size=600x338&format=webp",
             synopsis: "A deadly pursuit ensues as the children come closer to finding a way to true freedom.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1941/111863.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/61c469ca-e6be-49e9-a155-029b93f9700a?base_image_bucket_name=image_manager&base_image=cdd1a6aa-8ad3-40d3-9532-c06a6b05d510&size=600x338&format=webp",
             synopsis: "Emma faces her toughest decision yet, one that will affect the future of all the orphans.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1942/111864.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/a1626d6d-c28b-4043-a25e-c663f06e49c3?base_image_bucket_name=image_manager&base_image=fb1a89a5-8e94-4af1-8042-35151b502f35&size=600x338&format=webp",
             synopsis: "The group stumbles upon a hidden base, where they meet those fighting to end the human-demon conflict.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1943/111865.jpg",
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/832d7dc5-4889-469d-829a-4016ab03b1d7?base_image_bucket_name=image_manager&base_image=43d54391-8ccf-48c8-8d44-4b66971710ff&size=600x338&format=webp",
             synopsis: "The children attempt a rescue mission, but the stakes grow higher with every move they make.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1944/111866.jpg",
+            backgroundImage: "https://img1.hulu.com/user/v3/artwork/672aefba-4476-4fff-a0c8-d6a66589c46c?base_image_bucket_name=image_manager&base_image=861b68af-d749-4ada-b771-19756c4a2383&size=600x338&format=webp",
             synopsis: "Emma and her friends face betrayal and unforeseen dangers as they push toward their goal.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1945/111867.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/84cc4d9e-327a-410d-b678-dae803489fc0?base_image_bucket_name=image_manager&base_image=db137f07-7654-41be-90d6-808a51138d90&size=600x338&format=webp",
             synopsis: "The children confront the harsh realities of their mission, questioning their own beliefs.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1946/111868.jpg",
+            backgroundImage: "https://img3.hulu.com/user/v3/artwork/9213d67e-6e2c-40ce-be99-19242c0a72cb?base_image_bucket_name=image_manager&base_image=d55d1fef-9c04-4e71-9a8c-0a80fb21ed5a&size=600x338&format=webp",
             synopsis: "In the season finale, the children make a stand for freedom, hoping to change the fate of all orphans.",
+            downloadLink : ""
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://img4.hulu.com/user/v3/artwork/252524cc-dfbe-4c6e-ad61-a21501fb5baf?base_image_bucket_name=image_manager&base_image=83a3b5df-ed0a-4242-b1e7-279d81bb2fc5&size=600x338&format=webp",
+            synopsis: "As Emma extends her hand to Peter and says, 'Let's be free,' he shows a calm expression, but realizes his true fate.",
             downloadLink : ""
           }
         ]
@@ -1834,247 +1843,248 @@ const movieData = [
     ]
   },
 
-  {
-    title: "Psycho-Pass",
-    genre: "Mystery",
-    backgroundImage: "https://wallpapercave.com/wp/wp2592210.jpg",
-    synopsis: "In a future where the state of mind can be quantified, enforcers must capture latent criminals before they act.",
-    seasons: [
-      {
-        seasonNumber: 1,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://static1.fandomspot.com/images/8f709249e66de50896c1777ecaa4f1f0.jpg",
-            synopsis: "A rookie inspector joins the Public Safety Bureau and encounters the harsh reality of crime and justice.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://static1.fandomspot.com/images/92e88de47cd4b26d62268da705417b0c.jpg",
-            synopsis: "As tensions rise, the team faces a serial killer with a unique method of eluding the law.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://static1.fandomspot.com/images/26ca9aa7cbe924ae2e5df5a1dc79e1e6.jpg",
-            synopsis: "The team investigates a series of murders linked to an underground syndicate, testing their skills and resolve.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://static1.fandomspot.com/images/3c651f4c4f8cde7339ef92e09f2b6c25.jpg",
-            synopsis: "A mysterious case arises, leading to a confrontation with a powerful enemy that challenges the system.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://static1.fandomspot.com/images/94ec79cb13a38e59b1c5c2df458e168b.jpg",
-            synopsis: "The enforcers must navigate moral dilemmas as they pursue a criminal mastermind with a personal vendetta.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://static1.fandomspot.com/images/dba4af5c5a23a57922070d6b09ab12d0.jpg",
-            synopsis: "A terrorist attack shakes the city, forcing the team to act quickly to prevent further chaos.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://static1.fandomspot.com/images/a65e4f53b11a1252cf817ad16da5380c.jpg",
-            synopsis: "The investigation leads to shocking revelations about the nature of justice and the human psyche.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://static1.fandomspot.com/images/98cbe774b1cc51b079e6196de6a91ee2.jpg",
-            synopsis: "A new case involving a cult tests the team's loyalties and challenges their beliefs about the system.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://static1.fandomspot.com/images/91e9f1f61dc9d85f91ae05f0c67b0c40.jpg",
-            synopsis: "As the investigation deepens, the team uncovers a conspiracy that threatens the stability of society.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://static1.fandomspot.com/images/4170835c55a7e90a42bdfc739047c1f5.jpg",
-            synopsis: "The stakes rise as personal ties are tested and the line between right and wrong blurs.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://static1.fandomspot.com/images/d84c8239a5a5620c2d60c8bc57fd63a7.jpg",
-            synopsis: "A confrontation with a former ally reveals the true nature of their work and the price of justice.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://static1.fandomspot.com/images/b4f3078d58c0de39ef08e649c4a3732e.jpg",
-            synopsis: "As the season comes to a close, the team faces their most significant challenge yet, testing their resolve and beliefs.",
-            downloadLink : ""
-          }
-        ]
-      },
-      {
-        seasonNumber: 2,
-        episodes: [
-          {
-            epiNum: 1,
-            backgroundImage: "https://static1.fandomspot.com/images/4b1b63d1cd23b5b5d07a63707c4f3f3a.jpg",
-            synopsis: "The story resumes with Akane Tsunemori, who is now a full inspector in the Public Safety Bureau, confronting a new threat.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 2,
-            backgroundImage: "https://static1.fandomspot.com/images/4d902e4f4e5b8c9421a5a5f8c4ebde4f.jpg",
-            synopsis: "As new criminals emerge, Akane and her team must adapt to changing circumstances and moral dilemmas.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 3,
-            backgroundImage: "https://static1.fandomspot.com/images/cf019c5a1a72c558c40946ffb83aa2d4.jpg",
-            synopsis: "The investigation into a recent crime leads to shocking discoveries about the criminal organization.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 4,
-            backgroundImage: "https://static1.fandomspot.com/images/6d27e2346e14bb5df0c70754b1c62e2d.jpg",
-            synopsis: "Tensions rise within the team as personal conflicts and philosophical differences come to light.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 5,
-            backgroundImage: "https://static1.fandomspot.com/images/7f4ffacbfbb36264fd4368991e72ac2f.jpg",
-            synopsis: "A confrontation with a rogue agent leads to moral questioning and a deeper exploration of the system.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 6,
-            backgroundImage: "https://static1.fandomspot.com/images/57a776f36c24587c86bafee6d83da74d.jpg",
-            synopsis: "As new threats arise, Akane must navigate complex relationships and the consequences of her decisions.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 7,
-            backgroundImage: "https://static1.fandomspot.com/images/bd42f2511e36caa3d593c98e589019cb.jpg",
-            synopsis: "The case leads to a confrontation with a shadowy organization intent on manipulating the system.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 8,
-            backgroundImage: "https://static1.fandomspot.com/images/68a4b22c6c3c623b024678b487f36557.jpg",
-            synopsis: "As the investigation progresses, Akane faces challenges that test her beliefs about justice and morality.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 9,
-            backgroundImage: "https://static1.fandomspot.com/images/348fb3d4c677580e9b2da41dbdc9aaab.jpg",
-            synopsis: "The stakes escalate as personal stakes become intertwined with the broader investigation.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 10,
-            backgroundImage: "https://static1.fandomspot.com/images/1c676816b0a6c5e4c17f74c6be3c25c9.jpg",
-            synopsis: "Akane's choices lead to significant consequences, forcing her to confront her role in the system.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 11,
-            backgroundImage: "https://static1.fandomspot.com/images/a6d80fef12e4e631503bbd5035b3f6c8.jpg",
-            synopsis: "The season builds to a dramatic confrontation that will test the limits of the law and justice.",
-            downloadLink : ""
-          },
-          {
-            epiNum: 12,
-            backgroundImage: "https://static1.fandomspot.com/images/07b5aa6885aa067d58a3ee648e9e34d0.jpg",
-            synopsis: "In a gripping finale, Akane and her team must face the reality of their world and the choices they’ve made.",
-            downloadLink : ""
-          }
-        ]
-      }
-    ]
-  },
+  // {
+  //   title: "Psycho-Pass",
+  //   genre: "Mystery",
+  //   backgroundImage: "https://wallpapercave.com/wp/wp2592210.jpg",
+  //   synopsis: "In a future where the state of mind can be quantified, enforcers must capture latent criminals before they act.",
+  //   seasons: [
+  //     {
+  //       seasonNumber: 1,
+  //       episodes: [
+  //         {
+  //           epiNum: 1,
+  //           backgroundImage: "https://static1.fandomspot.com/images/8f709249e66de50896c1777ecaa4f1f0.jpg",
+  //           synopsis: "A rookie inspector joins the Public Safety Bureau and encounters the harsh reality of crime and justice.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 2,
+  //           backgroundImage: "https://static1.fandomspot.com/images/92e88de47cd4b26d62268da705417b0c.jpg",
+  //           synopsis: "As tensions rise, the team faces a serial killer with a unique method of eluding the law.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 3,
+  //           backgroundImage: "https://static1.fandomspot.com/images/26ca9aa7cbe924ae2e5df5a1dc79e1e6.jpg",
+  //           synopsis: "The team investigates a series of murders linked to an underground syndicate, testing their skills and resolve.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 4,
+  //           backgroundImage: "https://static1.fandomspot.com/images/3c651f4c4f8cde7339ef92e09f2b6c25.jpg",
+  //           synopsis: "A mysterious case arises, leading to a confrontation with a powerful enemy that challenges the system.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 5,
+  //           backgroundImage: "https://static1.fandomspot.com/images/94ec79cb13a38e59b1c5c2df458e168b.jpg",
+  //           synopsis: "The enforcers must navigate moral dilemmas as they pursue a criminal mastermind with a personal vendetta.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 6,
+  //           backgroundImage: "https://static1.fandomspot.com/images/dba4af5c5a23a57922070d6b09ab12d0.jpg",
+  //           synopsis: "A terrorist attack shakes the city, forcing the team to act quickly to prevent further chaos.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 7,
+  //           backgroundImage: "https://static1.fandomspot.com/images/a65e4f53b11a1252cf817ad16da5380c.jpg",
+  //           synopsis: "The investigation leads to shocking revelations about the nature of justice and the human psyche.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 8,
+  //           backgroundImage: "https://static1.fandomspot.com/images/98cbe774b1cc51b079e6196de6a91ee2.jpg",
+  //           synopsis: "A new case involving a cult tests the team's loyalties and challenges their beliefs about the system.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 9,
+  //           backgroundImage: "https://static1.fandomspot.com/images/91e9f1f61dc9d85f91ae05f0c67b0c40.jpg",
+  //           synopsis: "As the investigation deepens, the team uncovers a conspiracy that threatens the stability of society.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 10,
+  //           backgroundImage: "https://static1.fandomspot.com/images/4170835c55a7e90a42bdfc739047c1f5.jpg",
+  //           synopsis: "The stakes rise as personal ties are tested and the line between right and wrong blurs.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 11,
+  //           backgroundImage: "https://static1.fandomspot.com/images/d84c8239a5a5620c2d60c8bc57fd63a7.jpg",
+  //           synopsis: "A confrontation with a former ally reveals the true nature of their work and the price of justice.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 12,
+  //           backgroundImage: "https://static1.fandomspot.com/images/b4f3078d58c0de39ef08e649c4a3732e.jpg",
+  //           synopsis: "As the season comes to a close, the team faces their most significant challenge yet, testing their resolve and beliefs.",
+  //           downloadLink : ""
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       seasonNumber: 2,
+  //       episodes: [
+  //         {
+  //           epiNum: 1,
+  //           backgroundImage: "https://static1.fandomspot.com/images/4b1b63d1cd23b5b5d07a63707c4f3f3a.jpg",
+  //           synopsis: "The story resumes with Akane Tsunemori, who is now a full inspector in the Public Safety Bureau, confronting a new threat.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 2,
+  //           backgroundImage: "https://static1.fandomspot.com/images/4d902e4f4e5b8c9421a5a5f8c4ebde4f.jpg",
+  //           synopsis: "As new criminals emerge, Akane and her team must adapt to changing circumstances and moral dilemmas.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 3,
+  //           backgroundImage: "https://static1.fandomspot.com/images/cf019c5a1a72c558c40946ffb83aa2d4.jpg",
+  //           synopsis: "The investigation into a recent crime leads to shocking discoveries about the criminal organization.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 4,
+  //           backgroundImage: "https://static1.fandomspot.com/images/6d27e2346e14bb5df0c70754b1c62e2d.jpg",
+  //           synopsis: "Tensions rise within the team as personal conflicts and philosophical differences come to light.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 5,
+  //           backgroundImage: "https://static1.fandomspot.com/images/7f4ffacbfbb36264fd4368991e72ac2f.jpg",
+  //           synopsis: "A confrontation with a rogue agent leads to moral questioning and a deeper exploration of the system.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 6,
+  //           backgroundImage: "https://static1.fandomspot.com/images/57a776f36c24587c86bafee6d83da74d.jpg",
+  //           synopsis: "As new threats arise, Akane must navigate complex relationships and the consequences of her decisions.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 7,
+  //           backgroundImage: "https://static1.fandomspot.com/images/bd42f2511e36caa3d593c98e589019cb.jpg",
+  //           synopsis: "The case leads to a confrontation with a shadowy organization intent on manipulating the system.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 8,
+  //           backgroundImage: "https://static1.fandomspot.com/images/68a4b22c6c3c623b024678b487f36557.jpg",
+  //           synopsis: "As the investigation progresses, Akane faces challenges that test her beliefs about justice and morality.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 9,
+  //           backgroundImage: "https://static1.fandomspot.com/images/348fb3d4c677580e9b2da41dbdc9aaab.jpg",
+  //           synopsis: "The stakes escalate as personal stakes become intertwined with the broader investigation.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 10,
+  //           backgroundImage: "https://static1.fandomspot.com/images/1c676816b0a6c5e4c17f74c6be3c25c9.jpg",
+  //           synopsis: "Akane's choices lead to significant consequences, forcing her to confront her role in the system.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 11,
+  //           backgroundImage: "https://static1.fandomspot.com/images/a6d80fef12e4e631503bbd5035b3f6c8.jpg",
+  //           synopsis: "The season builds to a dramatic confrontation that will test the limits of the law and justice.",
+  //           downloadLink : ""
+  //         },
+  //         {
+  //           epiNum: 12,
+  //           backgroundImage: "https://static1.fandomspot.com/images/07b5aa6885aa067d58a3ee648e9e34d0.jpg",
+  //           synopsis: "In a gripping finale, Akane and her team must face the reality of their world and the choices they’ve made.",
+  //           downloadLink : ""
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
 
   {
     title: "Another",
     genre: "Mystery",
-    backgroundImage: "https://cdn.myanimelist.net/images/anime/10/33767.jpg",
+    backgroundImage: "https://cdn.animenewsnetwork.com/thumbnails/crop900x350/video/category/616/key_art_another.jpg",
     synopsis: "A transfer student uncovers the terrifying curse affecting his class, leading to a series of deadly incidents.",
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://www.anime-planet.com/images/anime/screenshots/another-4417-1.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1/33761.jpg",
+            backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvH5N0_V7NcmoQGQrQ2bErc_WqcR_Bk5V4jyZeLRzi3icGukilwkop3g2QCiwmyg5Sjo&usqp=CAU",
             synopsis: "Kouichi Sakakibara transfers to Yomiyama North Middle School and encounters a strange girl named Mei Misaki.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/2/33762.jpg",
+            backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7drGOy83duaYFUgvtBxWGjCKyIyHfsyB36ApAorBc80WEHqA7jcxnVgLy3rWwghKgLIc&usqp=CAU",
             synopsis: "Kouichi tries to learn more about the school's dark history, but his classmates are reluctant to share details.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/3/33763.jpg",
+            backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahK4CDOI4vAx03bmQswAAsEzLqGAcrQkDPJVNaQvvXa6CFzoFea17Yun8y6fv3ADYw5o&usqp=CAU",
             synopsis: "Mysterious deaths begin, and Kouichi starts to understand the implications of the curse.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/4/33764.jpg",
+            backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIeMALYL3OfRhx-7XBzEZLW05sqBwRUz0IHs5Tp77cOXnQqgcCB4dH4qy4KYvY3GJSUg&usqp=CAU",
             synopsis: "Kouichi and Mei investigate further, realizing the class is connected to a deadly chain of events.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/5/33765.jpg",
+            backgroundImage: "https://images5.alphacoders.com/639/thumbbig-639790.webp",
             synopsis: "The students try different tactics to avoid the curse, but tragedy strikes again.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/6/33766.jpg",
+            backgroundImage: "https://images8.alphacoders.com/639/thumbbig-639784.webp",
             synopsis: "Kouichi and Mei piece together clues that might lead to breaking the curse.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/7/33767.jpg",
+            backgroundImage: "https://images2.alphacoders.com/639/thumbbig-639792.webp",
             synopsis: "In a desperate attempt, the class uncovers past secrets that shed light on the mystery.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/8/33768.jpg",
+            backgroundImage: "https://images.alphacoders.com/639/thumbbig-639785.webp",
             synopsis: "As they face greater dangers, Kouichi and Mei realize the curse's reach is deeper than they imagined.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/9/33769.jpg",
+            backgroundImage: "https://images2.alphacoders.com/240/thumbbig-240070.webp",
             synopsis: "The classmates devise a final plan to end the curse once and for all.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/10/33770.jpg",
+            backgroundImage: "https://images6.alphacoders.com/639/thumbbig-639822.webp",
             synopsis: "A shocking revelation changes everything, leading to a final showdown with the curse.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/11/33771.jpg",
+            backgroundImage: "https://images3.alphacoders.com/727/thumbbig-727995.webp",
             synopsis: "The mystery of the curse comes to light, with devastating consequences for those involved.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/12/33772.jpg",
+            backgroundImage: "https://images3.alphacoders.com/639/thumbbig-639809.webp",
             synopsis: "The final episode brings closure to the horror and unveils the origin of the curse.",
             downloadLink : ""
           }
@@ -2086,81 +2096,82 @@ const movieData = [
   {
     title: "Terror in Resonance",
     genre: "Mystery",
-    backgroundImage: "https://cdn.myanimelist.net/images/anime/1050/113316.jpg",
+    backgroundImage: "https://m.media-amazon.com/images/M/MV5BMmVhMWJjMTgtYzVjYS00Y2M2LWE2ZjItZDM3OWQ5NDllMjJlXkEyXkFqcGdeQWRpZWdtb25n._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
     synopsis: "Two teenage boys with a mysterious past embark on a series of terrorist attacks in Tokyo, challenging the city to uncover their motives.",
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage: "https://m.media-amazon.com/images/M/MV5BMGZjOTcxOGMtM2VlOC00YzA1LTk1YjYtYTZmMWJiYTU0NTk1XkEyXkFqcGc@._V1_FMjpg_UX1280_.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113320.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMDIxYWE5NjUtZGE3NC00NGQyLWIxNWUtYjM5ZTZhNjkxMzkwXkEyXkFqcGc@._V1_QL75_UX388_.jpg",
             synopsis: "In the aftermath of a terrorist attack, the police struggle to find leads as the attackers remain anonymous.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113321.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BYmNiNzM4MDEtZDcwNy00MTdjLWI4OTItZjkzOTBjNzExODk5XkEyXkFqcGc@._V1_QL75_UX407_.jpg",
             synopsis: "The mystery deepens as the attackers continue their game, and the authorities race against time to stop them.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113322.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZmQwZTQyZWUtNTFmYS00NjM2LTg0NGEtMDFiMzE2ZTVhZWEzXkEyXkFqcGc@._V1_QL75_UX406_.jpg",
             synopsis: "As the boys reveal their true identities, their motives become clearer, drawing attention from various factions.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113323.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BYWNlZjQxZDMtZTg5YS00MmVkLWE3MjQtOTgwMzJiZTk2Y2JhXkEyXkFqcGc@._V1_.jpg",
             synopsis: "The duo's next move puts them on a collision course with law enforcement and raises the stakes of their mission.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113324.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BOWRlOGRmNmItODM5MS00ZmRiLWFhNGItYTY4NzAyMmVlNTdkXkEyXkFqcGc@._V1_.jpg",
             synopsis: "A close call forces the boys to reconsider their actions and the implications of their choices.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113325.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BY2M3ODZmZmYtZDJmYi00NmY5LWE2NGUtYmZhNjc5YmRkM2E2XkEyXkFqcGc@._V1_.jpg",
             synopsis: "New alliances form as the boys seek help, complicating their plans and increasing the tension.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113326.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMDRhM2ZjMjUtOTdkYS00NzQwLTgxOTctYWZiZTM5OGRjNGIyXkEyXkFqcGc@._V1_.jpg",
             synopsis: "The investigation heats up, and the boys are pushed to their limits as their pasts catch up with them.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113327.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZTYyNzJmYTMtZGNiNy00YzIzLTkxY2UtZjZkNzBhYzg5YzkwXkEyXkFqcGc@._V1_.jpg",
             synopsis: "As the threat escalates, the line between friend and foe blurs, forcing tough decisions.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113328.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNTJjMTBkNmItOGNiMC00Y2NjLThkYWEtNDAwMDhmYmU0ZDRjXkEyXkFqcGc@._V1_.jpg",
             synopsis: "The confrontation reaches its peak as the true purpose of their actions is revealed.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113329.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZmI5YzEwZTItZjZiMi00NzI2LTlhMjQtNzQ1N2MxNzBlMTQ3XkEyXkFqcGc@._V1_.jpg",
             synopsis: "In a race against time, the boys must execute their final plan to achieve their goals.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113330.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BY2M2MjAxNTItZjRlYi00Njg3LWIxNDgtNDFiMzYwMGUxYjI5XkEyXkFqcGc@._V1_.jpg",
             synopsis: "The consequences of their actions come to fruition, leading to a shocking conclusion.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://cdn.myanimelist.net/images/anime/1094/113331.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNmJkNWMzMmYtMTdhMi00YzM2LWFkMjYtNjMwYTUzNjlhZmE1XkEyXkFqcGc@._V1_.jpg",
             synopsis: "The series finale ties up loose ends as the boys confront their past and the legacy of their choices.",
             downloadLink : ""
           }
@@ -2174,158 +2185,166 @@ const movieData = [
   {
     title: "Made in Abyss",
     genre: "Adventure",
-    backgroundImage: "https://static1.fandomspot.com/images/0dc97599e5c4032db9f9a63c155fa80c.jpg",
+    backgroundImage: "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Made_in_Abyss_KV.jpg/220px-Made_in_Abyss_KV.jpg",
     synopsis: "In a world where a vast chasm known as the Abyss beckons explorers, a young girl and her robot friend venture deep into its mysterious depths in search of her mother.",
     seasons: [
       {
         seasonNumber: 1,
+        backgroundImage : "https://m.media-amazon.com/images/M/MV5BODYzNDYwMjAtMWE5Yy00MTQ3LWIxN2ItMWE2NTAyM2U0YmIzXkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://static1.fandomspot.com/images/39e8778f1b788e57417e5db4f48b4509.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BODYzNDYwMjAtMWE5Yy00MTQ3LWIxN2ItMWE2NTAyM2U0YmIzXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
             synopsis: "Riko, a young girl, descends into the Abyss to find her mother, meeting a mysterious robot boy named Reg along the way.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://static1.fandomspot.com/images/68470c27f1b2c894b74586a36cc3efba.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZWFlZDdiNmEtNTNlMC00MGNjLWJjNjMtMzBmOTUzMjRiMTRiXkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
             synopsis: "Riko and Reg face the dangers of the Abyss as they begin their adventure, encountering strange creatures and environments.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://static1.fandomspot.com/images/7ae4b537e79c76d3aa2b5f9e848dd64d.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNjZiMmFkYWItMjQxNC00MDVkLWE2YjgtNWFmZDc1ODFkZjM4XkEyXkFqcGc@._V1_QL75_UY563_CR0,0,1000,563_.jpg",
             synopsis: "The duo faces their first real challenge in the Abyss, testing their skills and determination.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://static1.fandomspot.com/images/0471c23c1ff0fbe5c477b2f63c1bc634.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNjE5YWM0ZGItYzFkYy00ZjlkLTg3ZTctYjEyNjRjMWU2NGI4XkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
             synopsis: "As they delve deeper, Riko and Reg learn more about the Abyss and the perils it holds.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://static1.fandomspot.com/images/43eeb5111c36b17e6ae305d15d08a22d.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZjI5M2VmOWItY2UwOC00MzgwLTgxYzgtMTZhZTBhYzkzYTU4XkEyXkFqcGc@._V1_QL75_UY563_CR1,0,1000,563_.jpg",
             synopsis: "Riko's resolve is tested when they face the harsh realities of the Abyss's effects on explorers.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://static1.fandomspot.com/images/4e7a1e4c24ec65ccecb3b1ed470f2bde.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BOWJhNDE5MTUtYjVmMS00MWFkLWJiMzQtMGI4MGZmNjNiZjM1XkEyXkFqcGc@._V1_QL75_UY563_CR0,0,1000,563_.jpg",
             synopsis: "The duo encounters new allies and threats as they navigate the mysteries of the Abyss.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://static1.fandomspot.com/images/693891c780f23c372c1e1b3c0f401e89.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNTAzOWQ5MTQtMzE2Ni00OWFlLTg4ZGMtMTQ2Y2UzODMzNDVlXkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
             synopsis: "Riko and Reg confront the challenges posed by the Abyss and learn about its history.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://static1.fandomspot.com/images/94b4e19b44c4c2705d030f6591824e83.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZWRlOTUzNGEtZWZhMi00ODczLWFjMzMtOGZjODc5ZDRlODMyXkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
             synopsis: "The mysteries of the Abyss deepen as Riko and Reg encounter dangerous foes.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://static1.fandomspot.com/images/b9cd0b5b8475112ac48cc93647b85c81.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMTljYTZlMmMtNjk4NC00NGNkLTllZmItZDIxZTU3YTdiZTY0XkEyXkFqcGc@._V1_QL75_UY563_CR1,0,1000,563_.jpg",
             synopsis: "Riko faces personal challenges and doubts as the journey continues deeper into the Abyss.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://static1.fandomspot.com/images/24f7c618a7d0599ec79fdb0340c4d118.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMTljYTZlMmMtNjk4NC00NGNkLTllZmItZDIxZTU3YTdiZTY0XkEyXkFqcGc@._V1_QL75_UY563_CR1,0,1000,563_.jpg",
             synopsis: "Reg's true nature is revealed, changing the dynamics of their partnership.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://static1.fandomspot.com/images/d65ac57147375c2cc3b14654a4f3f8e7.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMjIxNDRlYzUtMTM5OC00ZThlLWIzZTItOTA5YWE1MGQxODYxXkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
             synopsis: "The climax approaches as Riko and Reg prepare for the challenges that await in the Abyss.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://static1.fandomspot.com/images/3c226c3e75495d5b1f4e982b63bb0089.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZjdkNWE1MmMtZmI3Mi00ZTk1LWFkNGQtNjY3NDUyY2MzYjFjXkEyXkFqcGc@._V1_QL75_UX1000_CR0,0,1000,563_.jpg",
             synopsis: "In the season finale, Riko's journey leads her to shocking discoveries about her mother and the Abyss.",
+            downloadLink : ""
+          },          
+          {
+            epiNum: 13,
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMDdhN2IxNzYtNmMxNC00ODVkLWFmODMtZWVjMDUwNDFkMTljXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+            synopsis: "Nanachi and Mitty's past is revealed. How did they become what they are and who is responsible for it? Meanwhile, Riko is on the mend after her injuries.",
             downloadLink : ""
           }
         ]
       },
       {
         seasonNumber: 2,
+        backgroundImage :"https://m.media-amazon.com/images/M/MV5BYTZiZDVkMWMtY2M1ZS00MzQwLTkwMmMtMjJhYjkxMzRhYTBmXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
         episodes: [
           {
             epiNum: 1,
-            backgroundImage: "https://static1.fandomspot.com/images/a051b3e8f56d19a844f7519e8c36d8b3.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMjE3OTVkY2UtZmZmNS00MWM3LWFmZjAtYzViODcwYjYwZjYxXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
             synopsis: "Riko and Reg continue their journey deeper into the Abyss, encountering new challenges and old foes.",
             downloadLink : ""
           },
           {
             epiNum: 2,
-            backgroundImage: "https://static1.fandomspot.com/images/891c58e67e69d8c14428b1f2ffb5406f.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNDFjZTk0MTctODczNS00NmQ4LWI2ZDYtMmRhYjY3ZTNkZmNhXkEyXkFqcGc@._V1_QL75_UY281_CR1,0,500,281_.jpg",
             synopsis: "As they navigate the dangers of the Abyss, Riko and Reg's bond is tested in unexpected ways.",
             downloadLink : ""
           },
           {
             epiNum: 3,
-            backgroundImage: "https://static1.fandomspot.com/images/0d74f909882db0d3bfb325b499e07c5e.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNDRlYTY2NTAtYmJiOS00YWUxLThkYjEtYjQwZDVkYmRmMWRjXkEyXkFqcGc@._V1_QL75_UY281_CR1,0,500,281_.jpg",
             synopsis: "The duo discovers new allies who aid them in their quest but also face new threats lurking in the shadows.",
             downloadLink : ""
           },
           {
             epiNum: 4,
-            backgroundImage: "https://static1.fandomspot.com/images/5cf03a0d50492af0a6ae85f4a69e2fae.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZDEwMzEzZDYtNDk3Ni00MjNmLWI0NGMtNzgwMzk1NTljOTk1XkEyXkFqcGc@._V1_QL75_UY281_CR1,0,500,281_.jpg",
             synopsis: "Riko encounters a former explorer who shares the dark truths of the Abyss, leaving her shaken.",
             downloadLink : ""
           },
           {
             epiNum: 5,
-            backgroundImage: "https://static1.fandomspot.com/images/a807fbdc9a8981ee50c9301f9322d8a6.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZTEyOTg5ODYtMDUwOC00ZDU1LWIxMDctM2Q2NjE2ZWE1NjQ4XkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
             synopsis: "The duo faces an overwhelming challenge that tests their strength and determination.",
             downloadLink : ""
           },
           {
             epiNum: 6,
-            backgroundImage: "https://static1.fandomspot.com/images/89b0d5bc8c72b405045cd45d90c8e931.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BYmIxM2FlNTItM2ZlOS00NmQ5LTg3YjItOWY2MWY5ZDRiMTk4XkEyXkFqcGc@._V1_QL75_UY281_CR1,0,500,281_.jpg",
             synopsis: "Riko discovers a hidden area of the Abyss filled with wonders and dangers alike.",
             downloadLink : ""
           },
           {
             epiNum: 7,
-            backgroundImage: "https://static1.fandomspot.com/images/708eedd48beae053375f48b7d2b87b64.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BYmQ0ZWM3ZjQtYzk4NC00MTM0LTkzYzItM2IyMDRiYTk5NGY1XkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
             synopsis: "As they descend further, Riko and Reg face moral dilemmas that challenge their beliefs.",
             downloadLink : ""
           },
           {
             epiNum: 8,
-            backgroundImage: "https://static1.fandomspot.com/images/87f5ff15101975c00c091f444088d6bb.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BY2M1MWM5NzEtYzNmZS00ZDBkLWJmMmMtYTVjYjkwMDhjZDBhXkEyXkFqcGc@._V1_QL75_UY281_CR1,0,500,281_.jpg",
             synopsis: "New threats emerge as the duo navigates the Abyss, leading to intense confrontations.",
             downloadLink : ""
           },
           {
             epiNum: 9,
-            backgroundImage: "https://static1.fandomspot.com/images/a16fd8ec8dcce2ae539158a6cb6939a1.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BMzVjNjA0ZjgtMjU5Yi00NGEzLWFjNjYtNTNhOTRiNGZjY2EwXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
             synopsis: "Riko's quest becomes more perilous as she learns of the Abyss's true nature.",
             downloadLink : ""
           },
           {
             epiNum: 10,
-            backgroundImage: "https://static1.fandomspot.com/images/05e1e1385a05e9af04ee7f9b82e2a756.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZjg0OGYzMDktMjlkMy00ODI0LTlkYzUtZGU2MTY0YzVlZGJiXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
             synopsis: "Reg faces his own past as the duo confronts their fears and the realities of the Abyss.",
             downloadLink : ""
           },
           {
             epiNum: 11,
-            backgroundImage: "https://static1.fandomspot.com/images/6c55e0ae56dceae85c2008c0f8b1ef84.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BNjM1NDg2MGQtOWQ1Yy00YTBjLTk5ZTctMTgxNDliMGVlMjRmXkEyXkFqcGc@._V1_QL75_UY281_CR1,0,500,281_.jpg",
             synopsis: "In a climactic battle, Riko and Reg must unite their strengths to survive the Abyss's threats.",
             downloadLink : ""
           },
           {
             epiNum: 12,
-            backgroundImage: "https://static1.fandomspot.com/images/20d1b77e77c9d27043193e4dc5f09884.jpg",
+            backgroundImage: "https://m.media-amazon.com/images/M/MV5BZjM4ODA5YTktNjliMC00NzI5LTk3ZTctZWYyYWEyNTJhMmQzXkEyXkFqcGc@._V1_QL75_UX500_CR0,216,500,281_.jpg",
             synopsis: "In the season finale, revelations unfold, and the journey ahead is set for Riko and Reg.",
             downloadLink : ""
           }
@@ -2334,6 +2353,92 @@ const movieData = [
     ]
   },
 
+ {
+    title: "Solo Leveling",
+    genre: "Adventure",
+    backgroundImage: "https://example.com/solo-leveling-main-background.jpg",
+    synopsis: "In a world filled with hunters fighting monsters from mysterious gates, weak hunter Sung Jinwoo gains a leveling-up ability that could turn him into the world’s strongest hunter.",
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          {
+            epiNum: 1,
+            backgroundImage: "https://example.com/solo-leveling-episode-1.jpg",
+            synopsis: "Sung Jinwoo, known as the weakest hunter, faces a near-fatal encounter in a dangerous dungeon and awakens a mysterious power.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 2,
+            backgroundImage: "https://example.com/solo-leveling-episode-2.jpg",
+            synopsis: "Jinwoo explores his newfound abilities, encountering the challenges of leveling up in dangerous situations.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 3,
+            backgroundImage: "https://example.com/solo-leveling-episode-3.jpg",
+            synopsis: "Jinwoo takes on quests assigned by the System, leading to shocking discoveries about his strength.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 4,
+            backgroundImage: "https://example.com/solo-leveling-episode-4.jpg",
+            synopsis: "Growing stronger, Jinwoo revisits old dungeons and reveals more of his potential to others.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 5,
+            backgroundImage: "https://example.com/solo-leveling-episode-5.jpg",
+            synopsis: "Jinwoo uncovers the dangers of the System’s penalties while trying to balance his new power.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 6,
+            backgroundImage: "https://example.com/solo-leveling-episode-6.jpg",
+            synopsis: "His abilities tested, Jinwoo faces higher-level monsters and realizes he can no longer stay unnoticed.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 7,
+            backgroundImage: "https://example.com/solo-leveling-episode-7.jpg",
+            synopsis: "Jinwoo gains allies as he grows in strength, but his reputation among hunters begins to shift.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 8,
+            backgroundImage: "https://example.com/solo-leveling-episode-8.jpg",
+            synopsis: "Venturing into new territories, Jinwoo begins understanding the darker secrets of the hunter world.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 9,
+            backgroundImage: "https://example.com/solo-leveling-episode-9.jpg",
+            synopsis: "A powerful foe challenges Jinwoo’s newfound abilities, testing his limits.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 10,
+            backgroundImage: "https://example.com/solo-leveling-episode-10.jpg",
+            synopsis: "Jinwoo faces the true extent of the System’s challenges as he is pushed into a deadly situation.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 11,
+            backgroundImage: "https://example.com/solo-leveling-episode-11.jpg",
+            synopsis: "With higher stakes, Jinwoo realizes his journey as a hunter will reshape his life.",
+            downloadLink: ""
+          },
+          {
+            epiNum: 12,
+            backgroundImage: "https://example.com/solo-leveling-episode-12.jpg",
+            synopsis: "In a climactic battle, Jinwoo reveals his full potential, leaving an impact on the hunter world.",
+            downloadLink: ""
+          }
+        ]
+      }
+    ]
+  },
+  
   {
     title: "Jobless Reincarnation: Mushoku Tensei",
     genre: "Adventure",
