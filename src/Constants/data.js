@@ -2537,217 +2537,252 @@ const movieData = [
     ]
   },
 
+  // {
+  //   "title": "Konosuba: God's Blessing on this Wonderful World!",
+  //   genre: "Adventure",
+  //   "backgroundImage": "https://cdn.myanimelist.net/images/anime/8/78243.jpg",
+  //   "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
+  //   "seasons": [
+  //     {
+  //       "seasonNumber": 1,
+  //       "episodes": [
+  //         {
+  //           "epiNum": 1,
+  //           "title": "This Self-Proclaimed Goddess and Reincarnation in Another World",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79672.jpg",
+  //           "synopsis": "Kazuma is reincarnated in a fantasy world with a goddess, where they begin their chaotic journey.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-1"
+  //         },
+  //         {
+  //           "epiNum": 2,
+  //           "title": "The Great Chaos at the Crystal Tower",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79674.jpg",
+  //           "synopsis": "Kazuma and his party attempt to defeat a dangerous monster, only to end up in disastrous situations.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-2"
+  //         },
+  //         {
+  //           "epiNum": 3,
+  //           "title": "Explosion Magic and a Battle of Wits",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79675.jpg",
+  //           "synopsis": "Megumin, the eccentric mage, introduces her explosive magic, and the group is caught in a tight situation.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-3"
+  //         },
+  //         {
+  //           "epiNum": 4,
+  //           "title": "A Bet's a Bet!",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79676.jpg",
+  //           "synopsis": "Kazuma faces a tough challenge involving a bet with an unlikely opponent, leading to more misadventures.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-4"
+  //         },
+  //         {
+  //           "epiNum": 5,
+  //           "title": "A Lively Reincarnation and a Blessed Adventure",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79677.jpg",
+  //           "synopsis": "The party embarks on a new quest, with Kazuma’s team facing more hilarious but dangerous situations.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-5"
+  //         },
+  //         {
+  //           "epiNum": 6,
+  //           "title": "The Wonderful, Blessed Life of the Adventurer",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79678.jpg",
+  //           "synopsis": "Kazuma and the gang face challenges, including dealing with their dysfunctional team dynamics and strange foes.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-6"
+  //         },
+  //         {
+  //           "epiNum": 7,
+  //           "title": "A Day in the City and the Adventurer's Guide",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79679.jpg",
+  //           "synopsis": "Kazuma and his companions learn more about the city’s rules while participating in local events.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-7"
+  //         },
+  //         {
+  //           "epiNum": 8,
+  //           "title": "Chasing the Lost Demon and the Ransacked Town",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79680.jpg",
+  //           "synopsis": "The party goes after a demon that is terrorizing the town, leading to unexpected events.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-8"
+  //         },
+  //         {
+  //           "epiNum": 9,
+  //           "title": "The Feast of the Gods and the Battle of Desperation",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79681.jpg",
+  //           "synopsis": "The team faces a dangerous foe at the mercy of powerful gods, leading to a risky battle.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-9"
+  //         },
+  //         {
+  //           "epiNum": 10,
+  //           "title": "A Little Princess and a Righteous Path",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79682.jpg",
+  //           "synopsis": "Kazuma and his team deal with a princess who needs their help, but things go awry.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-10"
+  //         },
+  //         {
+  //           "epiNum": 11,
+  //           "title": "The Final Battle and a New Start",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79683.jpg",
+  //           "synopsis": "The party faces off against a major enemy in an epic battle, but the adventure is far from over.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-11"
+  //         },
+  //         {
+  //           "epiNum": 12,
+  //           "title": "A Reincarnation that Will Never End",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79684.jpg",
+  //           "synopsis": "The final episode of season 1 wraps up the first adventure with a hilarious and dramatic conclusion.",
+  //           "downloadLink": "https://example.com/download/konosuba-episode-12"
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       "seasonNumber": 2,
+  //       "episodes": [
+  //         {
+  //           "epiNum": 1,
+  //           "title": "A New Life in the Country",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79685.jpg",
+  //           "synopsis": "Kazuma's party faces a new challenge in the countryside, where they try to make a living.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-1"
+  //         },
+  //         {
+  //           "epiNum": 2,
+  //           "title": "A Duel to the Death in the City",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79686.jpg",
+  //           "synopsis": "Kazuma faces off against a powerful foe in the city while the team deals with growing problems.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-2"
+  //         },
+  //         {
+  //           "epiNum": 3,
+  //           "title": "The World's Most Unusual Adventurer",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79687.jpg",
+  //           "synopsis": "The team faces an odd situation as they encounter a new ally with strange powers.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-3"
+  //         },
+  //         {
+  //           "epiNum": 4,
+  //           "title": "A Beautiful Adventure and a Precious Memory",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79688.jpg",
+  //           "synopsis": "Kazuma and the team take on a new quest that will test their skills and resolve.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-4"
+  //         },
+  //         {
+  //           "epiNum": 5,
+  //           "title": "Foolish Decisions and a New Rival",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79689.jpg",
+  //           "synopsis": "Kazuma’s rivalry with a new adventurer leads to more challenges and conflicts.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-5"
+  //         },
+  //         {
+  //           "epiNum": 6,
+  //           "title": "The Road to Victory and the Fight for Glory",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79690.jpg",
+  //           "synopsis": "Kazuma’s team faces a tough battle to save the day while navigating complicated new relationships.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-6"
+  //         },
+  //         {
+  //           "epiNum": 7,
+  //           "title": "Life as a Hero and the Battle of Desperation",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79691.jpg",
+  //           "synopsis": "The team fights to protect the village from a great threat, risking everything.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-7"
+  //         },
+  //         {
+  //           "epiNum": 8,
+  //           "title": "A Dangerous Game and a Worthy Opponent",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79692.jpg",
+  //           "synopsis": "The party faces off against a dangerous foe, learning some valuable lessons along the way.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-8"
+  //         },
+  //         {
+  //           "epiNum": 9,
+  //           "title": "The Final Battle and the Ultimate Challenge",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79693.jpg",
+  //           "synopsis": "The team faces their greatest challenge yet, leading to a thrilling and emotional finale.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-9"
+  //         },
+  //         {
+  //           "epiNum": 10,
+  //           "title": "The Adventures Continue and New Beginnings",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79694.jpg",
+  //           "synopsis": "The season ends with new adventures on the horizon for Kazuma and his party.",
+  //           "downloadLink": "https://example.com/download/konosuba-s2-episode-10"
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       "seasonNumber": 3,
+  //       "episodes": [
+  //         {
+  //           "epiNum": 1,
+  //           "title": "A Return to Glory",
+  //           "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79695.jpg",
+  //           "synopsis": "The story picks up with the team facing their most challenging yet hilarious adventure yet.",
+  //           "downloadLink": "https://example.com/download/konosuba-s3-episode-1"
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+
   {
-    "title": "Konosuba: God's Blessing on this Wonderful World!",
-    genre: "Adventure",
-    "backgroundImage": "https://cdn.myanimelist.net/images/anime/8/78243.jpg",
-    "synopsis": "A man is reincarnated in a fantasy world after his tragic death, where he teams up with a group of misfits on hilarious adventures.",
+    "title": "No Game No Life",
+    "genre": "Adventure, Fantasy, Game",
+    "backgroundImage": "https://wallpapercave.com/wp/wp3163523.jpg",
+    "synopsis": "Sora and Shiro, an undefeated sibling duo of gamers, are transported to a mysterious world where everything is decided by games. They aim to defeat the enigmatic being, Tet, and conquer the world.",
     "seasons": [
       {
         "seasonNumber": 1,
         "episodes": [
           {
             "epiNum": 1,
-            "title": "This Self-Proclaimed Goddess and Reincarnation in Another World",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79672.jpg",
-            "synopsis": "Kazuma is reincarnated in a fantasy world with a goddess, where they begin their chaotic journey.",
-            "downloadLink": "https://example.com/download/konosuba-episode-1"
+            "title": "No Game No Life",
+            "backgroundImage": "https://wallpapercave.com/wp/wp4087110.jpg",
+            "synopsis": "Sora and Shiro, two brilliant siblings, are invited to a world of games by a mysterious being, Tet. They accept the challenge to beat Tet in a game of chess and win a place in this new world."
           },
           {
             "epiNum": 2,
-            "title": "The Great Chaos at the Crystal Tower",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79674.jpg",
-            "synopsis": "Kazuma and his party attempt to defeat a dangerous monster, only to end up in disastrous situations.",
-            "downloadLink": "https://example.com/download/konosuba-episode-2"
+            "title": "All That's Left Is the Winning",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163524.jpg",
+            "synopsis": "The siblings take on the challenge of defeating their first opponent, the Eastern Federation, in a game of poker, aiming to prove their gaming skills and superiority."
           },
           {
             "epiNum": 3,
-            "title": "Explosion Magic and a Battle of Wits",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79675.jpg",
-            "synopsis": "Megumin, the eccentric mage, introduces her explosive magic, and the group is caught in a tight situation.",
-            "downloadLink": "https://example.com/download/konosuba-episode-3"
+            "title": "Challengers",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163525.jpg",
+            "synopsis": "Sora and Shiro enter their first serious game in the world of Disboard, against the Eastern Federation. The siblings must outsmart the Federation to gain control over the first piece of land."
           },
           {
             "epiNum": 4,
-            "title": "A Bet's a Bet!",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79676.jpg",
-            "synopsis": "Kazuma faces a tough challenge involving a bet with an unlikely opponent, leading to more misadventures.",
-            "downloadLink": "https://example.com/download/konosuba-episode-4"
+            "title": "Prisoner",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163526.jpg",
+            "synopsis": "Sora and Shiro aim to beat the Eastern Federation’s Chess King, and they realize their opponents are more dangerous than they first thought."
           },
           {
             "epiNum": 5,
-            "title": "A Lively Reincarnation and a Blessed Adventure",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79677.jpg",
-            "synopsis": "The party embarks on a new quest, with Kazuma’s team facing more hilarious but dangerous situations.",
-            "downloadLink": "https://example.com/download/konosuba-episode-5"
+            "title": "The World Where I Am God",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163527.jpg",
+            "synopsis": "Sora and Shiro face new challenges in the world of Disboard, encountering strange characters and power struggles, all while trying to stay ahead of their rivals."
           },
           {
             "epiNum": 6,
-            "title": "The Wonderful, Blessed Life of the Adventurer",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79678.jpg",
-            "synopsis": "Kazuma and the gang face challenges, including dealing with their dysfunctional team dynamics and strange foes.",
-            "downloadLink": "https://example.com/download/konosuba-episode-6"
+            "title": "The Strongest Opponent in the World",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163528.jpg",
+            "synopsis": "The siblings take on a new, powerful opponent in a game of strategy and wit, testing their skills and determination as gamers."
           },
           {
             "epiNum": 7,
-            "title": "A Day in the City and the Adventurer's Guide",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79679.jpg",
-            "synopsis": "Kazuma and his companions learn more about the city’s rules while participating in local events.",
-            "downloadLink": "https://example.com/download/konosuba-episode-7"
+            "title": "Unbeaten",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163529.jpg",
+            "synopsis": "Sora and Shiro face yet another tough challenge, proving that they are indeed unbeatable as they face stronger and more cunning enemies."
           },
           {
             "epiNum": 8,
-            "title": "Chasing the Lost Demon and the Ransacked Town",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79680.jpg",
-            "synopsis": "The party goes after a demon that is terrorizing the town, leading to unexpected events.",
-            "downloadLink": "https://example.com/download/konosuba-episode-8"
-          },
-          {
-            "epiNum": 9,
-            "title": "The Feast of the Gods and the Battle of Desperation",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79681.jpg",
-            "synopsis": "The team faces a dangerous foe at the mercy of powerful gods, leading to a risky battle.",
-            "downloadLink": "https://example.com/download/konosuba-episode-9"
-          },
-          {
-            "epiNum": 10,
-            "title": "A Little Princess and a Righteous Path",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79682.jpg",
-            "synopsis": "Kazuma and his team deal with a princess who needs their help, but things go awry.",
-            "downloadLink": "https://example.com/download/konosuba-episode-10"
-          },
-          {
-            "epiNum": 11,
-            "title": "The Final Battle and a New Start",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79683.jpg",
-            "synopsis": "The party faces off against a major enemy in an epic battle, but the adventure is far from over.",
-            "downloadLink": "https://example.com/download/konosuba-episode-11"
-          },
-          {
-            "epiNum": 12,
-            "title": "A Reincarnation that Will Never End",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79684.jpg",
-            "synopsis": "The final episode of season 1 wraps up the first adventure with a hilarious and dramatic conclusion.",
-            "downloadLink": "https://example.com/download/konosuba-episode-12"
-          }
-        ]
-      },
-      {
-        "seasonNumber": 2,
-        "episodes": [
-          {
-            "epiNum": 1,
-            "title": "A New Life in the Country",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79685.jpg",
-            "synopsis": "Kazuma's party faces a new challenge in the countryside, where they try to make a living.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-1"
-          },
-          {
-            "epiNum": 2,
-            "title": "A Duel to the Death in the City",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79686.jpg",
-            "synopsis": "Kazuma faces off against a powerful foe in the city while the team deals with growing problems.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-2"
-          },
-          {
-            "epiNum": 3,
-            "title": "The World's Most Unusual Adventurer",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79687.jpg",
-            "synopsis": "The team faces an odd situation as they encounter a new ally with strange powers.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-3"
-          },
-          {
-            "epiNum": 4,
-            "title": "A Beautiful Adventure and a Precious Memory",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79688.jpg",
-            "synopsis": "Kazuma and the team take on a new quest that will test their skills and resolve.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-4"
-          },
-          {
-            "epiNum": 5,
-            "title": "Foolish Decisions and a New Rival",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79689.jpg",
-            "synopsis": "Kazuma’s rivalry with a new adventurer leads to more challenges and conflicts.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-5"
-          },
-          {
-            "epiNum": 6,
-            "title": "The Road to Victory and the Fight for Glory",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79690.jpg",
-            "synopsis": "Kazuma’s team faces a tough battle to save the day while navigating complicated new relationships.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-6"
-          },
-          {
-            "epiNum": 7,
-            "title": "Life as a Hero and the Battle of Desperation",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79691.jpg",
-            "synopsis": "The team fights to protect the village from a great threat, risking everything.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-7"
-          },
-          {
-            "epiNum": 8,
-            "title": "A Dangerous Game and a Worthy Opponent",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79692.jpg",
-            "synopsis": "The party faces off against a dangerous foe, learning some valuable lessons along the way.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-8"
-          },
-          {
-            "epiNum": 9,
-            "title": "The Final Battle and the Ultimate Challenge",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79693.jpg",
-            "synopsis": "The team faces their greatest challenge yet, leading to a thrilling and emotional finale.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-9"
-          },
-          {
-            "epiNum": 10,
-            "title": "The Adventures Continue and New Beginnings",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79694.jpg",
-            "synopsis": "The season ends with new adventures on the horizon for Kazuma and his party.",
-            "downloadLink": "https://example.com/download/konosuba-s2-episode-10"
-          }
-        ]
-      },
-      {
-        "seasonNumber": 3,
-        "episodes": [
-          {
-            "epiNum": 1,
-            "title": "A Return to Glory",
-            "backgroundImage": "https://cdn.myanimelist.net/images/anime/9/79695.jpg",
-            "synopsis": "The story picks up with the team facing their most challenging yet hilarious adventure yet.",
-            "downloadLink": "https://example.com/download/konosuba-s3-episode-1"
+            "title": "The Final Game",
+            "backgroundImage": "https://wallpapercave.com/wp/wp3163530.jpg",
+            "synopsis": "The siblings come face-to-face with Tet in an epic game that will determine their future in the world of Disboard, leading to a life-changing victory or defeat."
           }
         ]
       }
     ]
-  },
-
-  {
-        "title": "No Game No Life",
-        genre: "Adventure",
-        "backgroundImage": "https://example.com/ngnl-image.jpg",
-        "synopsis": "A brother and sister duo, undefeated gamers, are transported to a world where everything is decided by games.",
-        "seasons": [
-          {
-            "seasonNumber": 1,
-            "episodes": [
-              {
-                "epiNum": 1,
-                "title": "No Game No Life",
-                "backgroundImage": "https://example.com/ngnl-episode-1.jpg",
-                "synopsis": "Sora and Shiro, two brilliant siblings, are invited to a world of games by a mysterious being, Tet."
-              },
-              {
-                "epiNum": 2,
-                "title": "All That's Left Is the Winning",
-                "backgroundImage": "https://example.com/ngnl-episode-2.jpg",
-                "synopsis": "The siblings take on the challenge of defeating their first opponent, aiming to prove their gaming skills."
-              }
-              // Add all other episodes of season 1 here
-            ]
-          }
-        ]
-  },
+  }
   
 
 ]
