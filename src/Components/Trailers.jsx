@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from "./Navbar";
-import { FaHeart, FaShare, FaPlus } from 'react-icons/fa';
+import { FaHeart, FaShare, FaPlus, FaFacebook, FaTwitter, FaWhatsapp, FaLinkedin, FaTimes } from 'react-icons/fa';
 import initialTrailersData from "../Constants/Trailersdata";
 
 const ReelsPage = () => {
@@ -9,6 +9,8 @@ const ReelsPage = () => {
   const [trailersData, setTrailersData] = useState(initialTrailersData);
   const [likes, setLikes] = useState(new Array(initialTrailersData.length).fill(false));
   const [favorites, setFavorites] = useState(new Array(initialTrailersData.length).fill(false));
+  const [sharePopupVisible, setSharePopupVisible] = useState(false);
+  const [currentTrailer, setCurrentTrailer] = useState(null);
 
   useEffect(() => {
     const observerOptions = {
@@ -55,6 +57,22 @@ const ReelsPage = () => {
     const newFavorites = [...favorites];
     newFavorites[index] = !newFavorites[index];
     setFavorites(newFavorites);
+  };
+
+  const handleShareClick = (trailer) => {
+    setCurrentTrailer(trailer);
+    setSharePopupVisible(true);
+  };
+
+  const closePopup = () => {
+    setSharePopupVisible(false);
+  };
+
+  const shareUrls = {
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentTrailer?.videoUrl)}`,
+    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentTrailer?.videoUrl)}&text=${encodeURIComponent(currentTrailer?.title)}`,
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(currentTrailer?.videoUrl)}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentTrailer?.videoUrl)}`,
   };
 
   return (
@@ -122,7 +140,10 @@ const ReelsPage = () => {
                 <span className="text-sm">{favorites[index] ? 'Favorited' : 'Favorite'}</span>
               </button>
 
-              <button className="flex flex-col items-center text-white">
+              <button
+                className="flex flex-col items-center text-white"
+                onClick={() => handleShareClick(trailer)}
+              >
                 <FaShare className="text-3xl" />
                 <span className="text-sm">Share</span>
               </button>
@@ -130,6 +151,60 @@ const ReelsPage = () => {
           </motion.div>
         ))}
       </div>
+
+      {sharePopupVisible && currentTrailer && (
+        <motion.div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          transition={{ type: "spring", stiffness: 150, damping: 20 }}
+        >
+          <div className="bg-white p-8 rounded-lg max-w-md w-full relative">
+            <button
+              onClick={closePopup}
+              className="absolute top-4 right-4 text-xl text-gray-600 hover:text-gray-800"
+            >
+              <FaTimes />
+            </button>
+            <h3 className="text-xl font-bold mb-4 text-center">Share this trailer</h3>
+            <div className="flex justify-center space-x-6">
+              <a
+                href={shareUrls.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800"
+              >
+                <FaFacebook className="text-3xl" />
+              </a>
+              <a
+                href={shareUrls.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-600"
+              >
+                <FaTwitter className="text-3xl" />
+              </a>
+              <a
+                href={shareUrls.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-500 hover:text-green-700"
+              >
+                <FaWhatsapp className="text-3xl" />
+              </a>
+              <a
+                href={shareUrls.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:text-blue-900"
+              >
+                <FaLinkedin className="text-3xl" />
+              </a>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };
