@@ -2,63 +2,63 @@ const movieData = [
     {
         title: "Toy Story",
         rating: "8.3",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/407/622/339/toy-story-barbie-bullseye-toy-story-buzz-lightyear-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/woody-and-buzz-lightyear-disney-4k-ultra-wide-9qlzumxyotdmyezo.webp",
         story: "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's room.",
         downloadLink: "https://ia601309.us.archive.org/25/items/toy-story_202402/Toy%20Story.mp4"
     },
     {
         title: "Toy Story 2",
         rating: "7.9",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/160/504/941/toy-story-toy-story-2-buzz-lightyear-woody-toy-story-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/buzz-lightyear-and-jessie-toy-story-2-ljru9ncjb7hy0zv3.webp",
         story: "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save him.",
         downloadLink: "https://example.com/toy-story-2.mp4"
     },
     {
         title: "Toy Story 3",
         rating: "8.3",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/387/50/364/toy-story-3-box-toy-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/toy-story-3-woody-l3aygq55uq8ydqpa.webp",
         story: "The toys are mistakenly delivered to a daycare center instead of the attic before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned.",
         downloadLink: "https://example.com/toy-story-3.mp4"
     },
     {
         title: "Toy Story 4",
         rating: "7.8",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/152/1019/587/toy-story-4-woody-buzz-lightyear-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/hd/toy-story-4-ducky-and-bunny-kfkl61mkly2eqjby.webp",
         story: "Woody, Buzz, and the gang embark on a road trip adventure with Bonnie and her new toy, Forky, who struggles with his identity as a toy.",
         downloadLink: "https://example.com/toy-story-4.mp4"
     },
     {
         title: "Elemental",
         rating: "7.1",
-        backgroundImage: "https://wallpapercave.com/dwp1x/wp13585033.jpg", // Replace with actual image URL
+        backgroundImage: "https://wallpapers.com/images/high/elemental-animated-characters-waterand-fire-f0be5vat0y3npn5g.webp", // Replace with actual image URL
         story: "In a city where fire, water, land, and air residents live together, Ember, a fiery young woman, and Wade, a go-with-the-flow water guy, must learn to understand each other despite their differences.",
         downloadLink: "https://example.com/elemental.mp4" // Replace with actual download link if available
     },
-    {
-        title: "A Bug's Life",
-        rating: "7.2",
-        backgroundImage: "https://images.bauerhosting.com/legacy/empire-tmdb/films/9487/images/gOvW00ZMoEiyRwXVkHPfBictPAl.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=768&q=80",
-        story: "A misfit ant, looking for 'warriors' to save his colony from greedy grasshoppers, recruits a group of bugs that turn out to be an inept circus troupe.",
-        downloadLink: "https://example.com/a-bugs-life.mp4"
-    },
+    // {
+    //     title: "A Bug's Life",
+    //     rating: "7.2",
+    //     backgroundImage: "",
+    //     story: "A misfit ant, looking for 'warriors' to save his colony from greedy grasshoppers, recruits a group of bugs that turn out to be an inept circus troupe.",
+    //     downloadLink: "https://example.com/a-bugs-life.mp4"
+    // },
     {
         title: "Monsters, Inc.",
         rating: "8.1",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/803/629/189/cartoon-gate-friends-statues-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/monsters-inc-1400-x-933-background-neib0vhkfo4vogb8.webp",
         story: "In order to power the city, monsters have to scare children so they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.",
         downloadLink: "https://example.com/monsters-inc.mp4"
     },
     {
         title: "Finding Nemo",
         rating: "8.1",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/700/141/259/finding-nemo-disney-movies-fish-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/finding-nemo-great-white-shark-bruce-jncsh864ujhqpxok.webp",
         story: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
         downloadLink: "https://example.com/finding-nemo.mp4"
     },
     {
         title: "The Incredibles",
         rating: "8.0",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/770/993/260/movie-the-incredibles-dash-parr-elastigirl-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/mr-incredible-explosion-xdwwl002uyaxxvbd.webp",
         story: "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
         downloadLink: "https://example.com/the-incredibles.mp4"
     },
@@ -128,14 +128,14 @@ const movieData = [
     {
         title: "Soul",
         rating: "8.1",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/557/103/110/soul-pixar-animated-movies-2020-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/soul-1920-x-1080-background-ickjolsqmlszmt7j.webp",
         story: "A middle-school band teacher's life changes forever when he has an accident, and his soul embarks on a transformative journey through the afterlife.",
         downloadLink: "https://example.com/soul.mp4"
     },
     {
         title: "Luca",
         rating: "7.5",
-        backgroundImage: "https://c4.wallpaperflare.com/wallpaper/848/139/215/luca-2021-pixar-movie-wallpaper-preview.jpg",
+        backgroundImage: "https://wallpapers.com/images/high/luca-characters-rides-green-vespa-ph18a5j1rvszg29f.webp",
         story: "A young boy experiences a life-changing summer in the Italian Riviera while hiding his true identity as a sea monster.",
         downloadLink: "https://example.com/luca.mp4"
     },
