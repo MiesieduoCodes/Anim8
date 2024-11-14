@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Importing Framer Motion
+import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import FloatingMusicButton from '../FloatingMusicButton';
@@ -52,7 +52,6 @@ const AnimeSeries = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Video Background */}
       <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
         src="https://fireforce-anime.jp/3rdwp/wp-content/themes/enn-enn-season3-teaser/_assets/video/loader.mp4"
@@ -79,7 +78,7 @@ const AnimeSeries = () => {
           <div key={genre} className="mb-8">
             <h2 className="text-3xl font-bold text-white mb-4">{genre}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {moviesByGenre[genre].map((movie) => (
+              {moviesByGenre[genre].map((movie, index) => (
                 <motion.div
                   key={movie.id}
                   className="relative border border-gray-200 rounded-lg overflow-hidden"
@@ -89,13 +88,12 @@ const AnimeSeries = () => {
                     backgroundPosition: 'center',
                     height: '300px',
                   }}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true, amount: 0.5 }}
                   whileHover={{
                     scale: 1.05,
-                    x: [0, -5, 5, -5, 5, 0], // Horizontal shake
-                    y: [0, -5, 5, -5, 5, 0], // Vertical shake
                     transition: {
                       type: 'spring',
                       stiffness: 300,

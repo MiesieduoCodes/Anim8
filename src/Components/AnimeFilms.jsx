@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import FloatingMusicButton from '../FloatingMusicButton';
 import Footer from './Footer';
 import collections from "../Constants/Animedata";
-import { motion } from 'framer-motion'; // Importing Framer Motion
+import { motion } from 'framer-motion';
 
 const AnimeFilms = () => {
   const [animeCollections, setAnimeCollections] = useState([]);
@@ -15,7 +15,6 @@ const AnimeFilms = () => {
     setAnimeCollections(collections);
   }, []);
 
-  // Function to handle download
   const handleDownload = (item) => {
     const element = document.createElement("a");
     const fileData = `Title: ${item.title}\nRating: ${item.rating}`;
@@ -29,41 +28,25 @@ const AnimeFilms = () => {
     document.body.removeChild(element);
   };
 
-  // Toggle music playback
-  const toggleMusic = () => {
-    setIsMusicPlaying(!isMusicPlaying);
-  };
+  const toggleMusic = () => setIsMusicPlaying(!isMusicPlaying);
+  const changeTrack = (index) => setCurrentTrackIndex(index);
 
-  // Change to a specific track
-  const changeTrack = (index) => {
-    setCurrentTrackIndex(index);
-  };
-
-  // Effect to play/pause music when isMusicPlaying state changes
   useEffect(() => {
     if (audioRef.current) {
-      if (isMusicPlaying) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
+      isMusicPlaying ? audioRef.current.play() : audioRef.current.pause();
     }
   }, [isMusicPlaying]);
 
-  // Effect to change track source when currentTrackIndex changes
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.src = `path/to/your/track-${currentTrackIndex}.mp3`; // Update with actual paths
-      if (isMusicPlaying) {
-        audioRef.current.play();
-      }
+      audioRef.current.src = `path/to/your/track-${currentTrackIndex}.mp3`;
+      if (isMusicPlaying) audioRef.current.play();
     }
   }, [currentTrackIndex, isMusicPlaying]);
 
   return (
     <>
       <div className="relative min-h-screen">
-        {/* Video Background */}
         <video
           className="fixed top-0 left-0 w-full h-full object-cover -z-10"
           src="https://static.videezy.com/system/resources/previews/000/008/148/original/Microscope_v5.mp4"
@@ -71,10 +54,8 @@ const AnimeFilms = () => {
           loop
           muted
         />
-
         <Navbar />
         
-        {/* Header Section */}
         <div
           className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
           style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}
@@ -89,7 +70,6 @@ const AnimeFilms = () => {
           </div>
         </div>
 
-        {/* Anime Collection Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {animeCollections[0]?.items.map((item, index) => (
             <motion.div
@@ -101,13 +81,14 @@ const AnimeFilms = () => {
                 backgroundPosition: 'center',
                 height: '300px',
               }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{
                 scale: 1.05,
-                x: [0, -5, 5, -5, 5, 0], // Horizontal shake
-                y: [0, -5, 5, -5, 5, 0], // Vertical shake
+                x: [0, -5, 5, -5, 5, 0],
+                y: [0, -5, 5, -5, 5, 0],
                 transition: {
                   type: 'spring',
                   stiffness: 300,
@@ -140,7 +121,6 @@ const AnimeFilms = () => {
 
         <Footer />
         
-        {/* Floating Music Button */}
         <FloatingMusicButton
           isMusicPlaying={isMusicPlaying}
           toggleMusic={toggleMusic}
@@ -148,7 +128,6 @@ const AnimeFilms = () => {
           changeTrack={changeTrack}
         />
 
-        {/* Audio Element for Music Playback */}
         <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} />
       </div>
     </>
