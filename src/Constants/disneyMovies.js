@@ -80,28 +80,28 @@ const disneyMovies = [
   {
     title: "Encanto",
     rating: "7.3",
-    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/775/522/806/encanto-disney-animated-movie-wallpaper-preview.jpg",
+    backgroundImage: "https://wallpapers.com/images/high/encanto-mirabel-holding-broken-glass-dxyz7q1udwx09toc.webp",
     story: "The Madrigal family lives in a magical house in a vibrant town, but one of them, Mirabel, discovers that she might be the key to saving their home and magic.",
     downloadLink: "https://example.com/movies/encanto.mp4"
   },
   {
     title: "Wish",
     rating: "N/A",
-    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/120/543/167/disney-wish-animated-movie-wallpaper-preview.jpg",
+    backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5s1N2CIXcUaRbjDakKFuRK-GvCTB5d1JYg&s",
     story: "In the kingdom of Rosas, a young woman named Asha makes a wish to the stars, beginning a journey that will change her destiny.",
     downloadLink: "https://example.com/movies/wish.mp4"
   },
   {
     title: "Strange World",
     rating: "6.3",
-    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/457/745/206/strange-world-disney-movie-wallpaper-preview.jpg",
+    backgroundImage: "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24223176/STRANGE_WORLD_ONLINE_USE_fullcomp_317_39_6k_film.0013_a.jpg?quality=90&strip=all&crop=25.180921052632%2C0%2C62.8125%2C100&w=2400",
     story: "The Clade family, explorers of a mysterious and uncharted world, face strange creatures and obstacles as they venture into a realm beyond imagination.",
     downloadLink: "https://example.com/movies/strange-world.mp4"
   },
   {
     title: "Frozen II",
     rating: "6.9",
-    backgroundImage: "https://c4.wallpaperflare.com/wallpaper/537/792/108/frozen-ii-disney-animated-movie-wallpaper-preview.jpg",
+    backgroundImage: "https://wallpapers.com/images/high/elsa-and-anna-adult-kncpyugry2704mkd.webp",
     story: "Anna and Elsa embark on a journey to discover the origins of Elsa's powers and uncover the truth about their family's past.",
     downloadLink: "https://example.com/movies/frozen-ii.mp4"
   }

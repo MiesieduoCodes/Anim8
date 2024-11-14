@@ -43,54 +43,62 @@ const Netflix = () => {
 
         <div
           className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
-          style={{ backgroundImage: `url('https://wallpapers.com/images/featured/video-on-demand-wwar5riu8muamrn5.webp')` }}
+          style={{ backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQklVwKcPGkcAL7oTZB8Y9Aje2-7macJG0qCg&s')` }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              Discover the Magic of Netflix
-            </h1>
-            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              Dive into our curated selection of animated classics that have
-              <br />
-              enchanted audiences worldwide, just like your favorite Netflix originals.
-            </p>
-          </div>
+         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
+  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+    Unlock the Enchantment of Netflix Animation
+  </h1>
+  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
+    Journey through a spellbinding collection of animated wonders <br /> that blend heart, humor, and unforgettable stories—only on Netflix.
+  </p>
+</div>
+
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="relative w-full p-36 h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500"
-              style={{
-                backgroundImage: `url(${card.backgroundImage})`,
-              }}
-            >
-              {/* Overlay for text */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
-                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
-                  {card.title}
-                </h2>
-                <p className="text-white text-lg text-center mb-2">{card.story}</p>
-                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
-                  <div
-                    className="bg-purple-800 h-full rounded-full"
-                    style={{ width: `${card.rating * 10}%` }} // Adjusted width calculation
-                  ></div>
-                </div>
-                <p className="text-white text-lg">{card.rating}</p>
-                <a
-                  href={card.downloadLink} // Make sure movieData includes a downloadLink property
-                  className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
-                  download
-                >
-                  Download
-                </a>
-              </div>
-            </div>
-          ))}
+  {cards.map((card, index) => (
+    <div
+      key={index}
+      className="relative w-full h-60 md:h-72 lg:h-80 xl:h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105"
+      style={{
+        backgroundImage: `url(${card.backgroundImage})`,
+      }}
+    >
+      {/* Overlay for text */}
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 opacity-0 hover:opacity-100 transition-opacity duration-500">
+        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+          {card.title}
+        </h2>
+        <p className="text-white text-base md:text-lg lg:text-xl text-center mb-2 px-4">
+          {card.story}
+        </p>
+        {/* Synopsis Section */}
+        <div className="w-full p-3 bg-black bg-opacity-30 rounded-lg mb-2">
+          <p className="text-gray-200 text-sm text-center leading-relaxed px-2">
+            {card.synopsis}
+          </p>
         </div>
+        <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+          <div
+            className="bg-purple-800 h-full rounded-full transition-all duration-500 ease-in-out"
+            style={{ width: `${card.rating * 10}%` }}
+          ></div>
+        </div>
+        <p className="text-white text-lg">{card.rating}</p>
+        <a
+          href={card.downloadLink}
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300 transform hover:scale-105"
+          download
+        >
+          Download
+        </a>
       </div>
+    </div>
+  ))}
+</div>
+
+            </div>
       <Footer />
 
       <FloatingMusicButton

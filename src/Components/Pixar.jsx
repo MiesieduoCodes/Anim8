@@ -36,20 +36,30 @@ const Pixar = () => {
     }, []); // Dependency array to run once
 
     return (
-        <div className="main-content pt-24">
+        <div className="relative min-h-screen">
+
+        <video className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+                src="https://static.videezy.com/system/resources/previews/000/005/054/original/Cieling_Flames_4K_Motion_Background_Loop.mp4"
+                autoPlay
+                loop
+                muted/>
+
+
+
             <Navbar />
             <div className="relative h-full w-full bg-slate-950">
                 <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
                 <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://wallpapers.com/images/featured/pixar-cx81w1x378htuj4p.webp')` }}>
-                    <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-                        <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-                            Discover the Magic of Pixar
-                        </h1>
-                        <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-                            Explore our collection of animated classics that have captured <br />hearts across the globe.
-                        </p>
-                    </div>
+<div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
+  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+    Step into the World of Pixar Magic
+  </h1>
+  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
+    Discover animated masterpieces that inspire imagination <br /> and touch hearts around the world.
+  </p>
+</div>
+
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">

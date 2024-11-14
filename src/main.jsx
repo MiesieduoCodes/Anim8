@@ -36,6 +36,7 @@ import Psycho from "./Components/Psycho";
 import FullMetal from "./Components/FullMetalAlchemist";
 import Garden from "./Components/The Garden of Sinners";
 import Pokemon from "./Components/Pokemon";
+import Illumination from "./Components/Illumination";
 
 // Other Pages
 import SeasonsPage from "./Components/SeasonPage";
@@ -77,6 +78,7 @@ const router = createBrowserRouter([
   { path: "/anime/:id", element: <SeasonsPage /> },
   { path: "/pokemon", element: <Pokemon /> },
   { path: "/get", element: <GetApp /> },
+  {path : "/illumination", element: <Illumination />},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

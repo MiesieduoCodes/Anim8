@@ -1,45 +1,28 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import Footer from "./Footer";
 import FloatingMusicButton from '../FloatingMusicButton';
-import cards from "../Constants/DCData";
-import { motion } from 'framer-motion';
+import Footer from "./Footer";
+import movies from "../Constants/IlluminateData";
+import { motion } from 'framer-motion'; // Import MusicContext if you're using it
 
-const DCMovies = () => {
+const Illumination = () => {
+  const [cards, setCards] = useState([]);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const audioRef = useRef(null);
 
-  // Toggle music playback
+  useEffect(() => {
+    setCards(movies);
+  }, []);
+
   const toggleMusic = () => {
     setIsMusicPlaying(!isMusicPlaying);
+    // Add logic to play/pause the music here (e.g., using an HTML audio element or API)
   };
 
-  // Change to a specific track
   const changeTrack = (index) => {
     setCurrentTrackIndex(index);
+    // Add logic to change the track here
   };
-
-  // Effect to play/pause music when isMusicPlaying state changes
-  useEffect(() => {
-    if (audioRef.current) {
-      if (isMusicPlaying) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
-    }
-  }, [isMusicPlaying]);
-
-  // Effect to change track source when currentTrackIndex changes
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.src = `path/to/your/track-${currentTrackIndex}.mp3`; // Replace with actual paths
-      if (isMusicPlaying) {
-        audioRef.current.play();
-      }
-    }
-  });
 
   return (
     <>
@@ -55,16 +38,16 @@ const DCMovies = () => {
 
       <div
         className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
-        style={{ backgroundImage: `url('https://example.com/disney-background.jpg')` }}
+        style={{ backgroundImage: `url('https://i.ytimg.com/vi/f00eH6LpWfg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgTCh_MA8=&rs=AOn4CLBQ4x7g78bo13_Ih1eF044Hn1qhUQ')` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-            Discover the Magic of Disney
-          </h1>
-          <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-            Explore our collection of animated classics that have captured hearts worldwide.
-          </p>
-        </div>
+<div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
+  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+    Step into the Brilliance of Illumination
+  </h1>
+  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
+    Dive into a world of animated wonders that blend humor, heart, <br /> and unforgettable stories for all ages.
+  </p>
+</div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
@@ -123,10 +106,10 @@ const DCMovies = () => {
         changeTrack={changeTrack}
       />
 
-      <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} />
+      {/* <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} /> */}
     </div>
   </>
-  );
+    );
 };
 
-export default DCMovies;
+export default Illumination;

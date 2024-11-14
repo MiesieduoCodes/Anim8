@@ -27,11 +27,12 @@ const NavLinks = () => {
             { name: "DreamWorks", link: "/dreamworks" },
             { name: "Disney", link: "/disney" },
             { name: "Netflix", link: "/netflix" },
+            { name : "Illumination", link: "/illumination"},
             {
-              sublink: [
-                { name: "Marvel", link: "/marvel" },
-                { name: "DC", link: "/dc" },
-              ],
+              // sublink: [
+              //   { name: "Marvel", link: "/marvel" },
+              //   { name: "DC", link: "/dc" },
+              // ],
             },
           ],
         },
