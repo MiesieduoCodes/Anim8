@@ -11,18 +11,18 @@ import { FaPlay, FaPause, FaTimes } from "react-icons/fa";
 // Define the music tracks and their associated accent colors
 const audioTracks = [
   {
-    title: "Bez - More You",
-    url: "https://example.com/more_you.mp3",
+    title: "Burna Boy - I Told Them",
+    url: "https://rildi.sunproxy.net/file/VDY0d2dqays5OStzQXZaL2ZKaWxTRy9ZVzBlNFpBd3RwbEQxNXdGUHRTTzM4RzhCeURramZVenF6MEdOd0lUME12M0xFRWorWHNYa0tsdUUrK3lOMzlXUjFVV1FTakRZcTQ3Y2hhN2VvWU09/Disney_s_MOANA_Movie_-_You_re_Welcome_Song_(Hydr0.org).mp3",
     color: "#FF6347", // Tomato
   },
   {
-    title: "Burna Boy - I Told Them",
-    url: "https://example.com/i_told_them.mp3",
+    title: "Kanye West - Runaway",
+    url: "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Cymatics_-_Timeless_Full_Drum_Loop.mp3?v=1618935629",
     color: "#1E90FF", // DodgerBlue
   },
   {
-    title: "Taylor Swift - Love Story",
-    url: "https://example.com/love_story.mp3",
+    title: "Kanye West - Ghost Town",
+    url: "https://olagist.net/wp-content/uploads/2023/06/Kanye_West_Ft_PartyNextDoor_-_Ghost_Town.mp3?_=1",
     color: "#32CD32", // LimeGreen
   },
 ];
@@ -78,10 +78,8 @@ const FloatingMusicButton = () => {
       {/* Music Player Popup */}
       {isOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center transition-all duration-500"
-          style={{
-            backgroundColor: currentColor,
-          }}
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 transition-all duration-500"
+
         >
           <div
             className="bg-white rounded-xl shadow-xl p-6 w-96 relative"
@@ -123,7 +121,7 @@ const FloatingMusicButton = () => {
               <button onClick={() => setIsShuffle((prev) => !prev)}>
                 <MdShuffle
                   size={24}
-                  style={{ color: isShuffle ? "white" : "#F0F0F0" }}
+                  style={{ color: isShuffle ? "white" : "black" }}
                 />
               </button>
               <button onClick={toggleMusic}>
@@ -139,13 +137,13 @@ const FloatingMusicButton = () => {
               <button onClick={() => setIsRepeat((prev) => !prev)}>
                 <MdRepeat
                   size={24}
-                  style={{ color: isRepeat ? "white" : "#F0F0F0" }}
+                  style={{ color: isRepeat ? "white" : "black" }}
                 />
               </button>
               <button onClick={() => setIsCrossfade((prev) => !prev)}>
                 <span
                   style={{
-                    color: isCrossfade ? "white" : "#F0F0F0",
+                    color: isCrossfade ? "white" : "black",
                   }}
                 >
                   Crossfade
