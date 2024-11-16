@@ -6,7 +6,7 @@ import initialTrailersData from "../Constants/Trailersdata";
 
 const ReelsPage = () => {
   const videoRefs = useRef([]);
-  const [trailersData, setTrailersData] = useState(initialTrailersData);
+  const [trailersData] = useState(initialTrailersData);
   const [likes, setLikes] = useState(new Array(initialTrailersData.length).fill(false));
   const [favorites, setFavorites] = useState(new Array(initialTrailersData.length).fill(false));
   const [sharePopupVisible, setSharePopupVisible] = useState(false);
