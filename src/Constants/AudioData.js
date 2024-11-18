@@ -1,5 +1,5 @@
 const audioTracks = [
-    { title: "Adam Levine - Stereo Hearts", url: "https://example.com/Adam_Levine_-_Stereo_Hearts.mp3", color: "#FFD700" }, // Gold
+    { title: "Adam Levine - Stereo Hearts", url: "https://olagist.net/wp-content/uploads/2023/06/Kanye_West_Ft_PartyNextDoor_-_Ghost_Town.mp3?_=1", color: "#FFD700" }, // Gold
     { title: "Alicia Keys - Falling", url: "https://example.com/Alicia_Keys_-_Falling.mp3", color: "#FF6347" }, // Tomato
     { title: "Ardee - Oliver Twist", url: "https://example.com/Ardee_-_Oliver_Twist.mp3", color: "#8A2BE2" }, // BlueViolet
     { title: "Burna Boy - I Told Them", url: "https://example.com/Burna_Boy_-_I_Told_Them.mp3", color: "#40E0D0" }, // Turquoise

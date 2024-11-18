@@ -4,11 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 // Main Components
-import App from "./App"; // Main site component
+import App from "./App";
 import About from "./Components/About";
 import FAQ from "./Components/faq";
 import Talk from "./Components/TalkToUs";
-import Get from "./Components/GetTheApp";
+import GetApp from "./Components/GetTheApp";
 import Trivias from "./Components/Trivias";
 import Trailers from "./Components/Trailers";
 import WhatsGood from "./Components/Whatsup";
@@ -23,7 +23,6 @@ import Marvel from "./Components/Marvel";
 import DC from "./Components/DC";
 import AnimeF from "./Components/AnimeFilms";
 import AnimeS from "./Components/AnimeSeries";
-//import AnimeCollection from "./Components/AnimeCollection";
 
 // Anime Shows and Movies
 import DetectiveConan from "./Components/DetectiveConan";
@@ -38,34 +37,41 @@ import Garden from "./Components/The Garden of Sinners";
 import Pokemon from "./Components/Pokemon";
 import Illumination from "./Components/Illumination";
 
-// Other Pages
+// Episodes and Seasons
 import SeasonsPage from "./Components/SeasonPage";
 import EpisodesPage from "./Components/Episodes";
-import SeasonDetails from "./Components/SeasonDetails"; 
-import GetApp from "./Components/GetTheApp";// Import your SeasonDetails component
+import SeasonDetails from "./Components/SeasonDetails";
+import Hero from "./Components/Hero";
+
+// Import MusicProvider
+import { MusicProvider } from "../src/MusicContext"; // Adjust the path as needed
 
 const router = createBrowserRouter([
+  // Home
   { path: "/", element: <App /> },
-  { path: "/season", element: <SeasonsPage /> },
-  { path: "/episodes/:id/:seasonId", element: <EpisodesPage /> }, // Updated to handle both movie id and seasonId
-  { path: "/season/:id", element: <SeasonDetails /> }, // Add route for SeasonDetails
+
+  // General Pages
   { path: "/faqs", element: <FAQ /> },
   { path: "/about", element: <About /> },
   { path: "/trivias", element: <Trivias /> },
-  { path: "/anime-films", element: <AnimeF /> },
   { path: "/trailers", element: <Trailers /> },
-  { path: "/anime-series", element: <AnimeS /> },
   { path: "/toonedin", element: <Toons /> },
   { path: "/whatsgood", element: <WhatsGood /> },
+  { path: "/talk", element: <Talk /> },
+  { path: "/get", element: <GetApp /> },
+  { path: "/hero", element: <Hero /> },
+
+  // Animation Collections
   { path: "/pixar", element: <Pixar /> },
   { path: "/dreamworks", element: <DreamWorks /> },
   { path: "/disney", element: <Disney /> },
   { path: "/netflix", element: <Netflix /> },
-  //{ path: "/anime-collection", element: <AnimeCollection /> },
   { path: "/marvel", element: <Marvel /> },
   { path: "/dc", element: <DC /> },
-  { path: "/get", element: <Get /> },
-  { path: "/talk", element: <Talk /> },
+  { path: "/anime-films", element: <AnimeF /> },
+  { path: "/anime-series", element: <AnimeS /> },
+
+  // Anime Shows and Movies
   { path: "/detective", element: <DetectiveConan /> },
   { path: "/one-piece", element: <OnePiece /> },
   { path: "/sword", element: <Sword /> },
@@ -75,14 +81,21 @@ const router = createBrowserRouter([
   { path: "/psycho", element: <Psycho /> },
   { path: "/fullmetal", element: <FullMetal /> },
   { path: "/garden", element: <Garden /> },
-  { path: "/anime/:id", element: <SeasonsPage /> },
   { path: "/pokemon", element: <Pokemon /> },
-  { path: "/get", element: <GetApp /> },
-  {path : "/illumination", element: <Illumination />},
+  { path: "/illumination", element: <Illumination /> },
+
+  // Episodes and Seasons
+  { path: "/season", element: <SeasonsPage /> },
+  { path: "/episodes/:id/:seasonId", element: <EpisodesPage /> }, // Supports dynamic movie and season IDs
+  { path: "/season/:id", element: <SeasonDetails /> },
+  { path: "/anime/:id", element: <SeasonsPage /> }, // Reusing for anime seasons
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* Wrap the RouterProvider with MusicProvider */}
+    <MusicProvider>
+      <RouterProvider router={router} />
+    </MusicProvider>
   </React.StrictMode>
 );

@@ -2,6 +2,7 @@
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
+import { FaInstagramSquare, FaFacebook,FaWhatsapp } from "react-icons/fa";
 import FloatingMusicButton from '../FloatingMusicButton';
 import { useState } from 'react';
 
@@ -63,9 +64,11 @@ const About = () => {
           <h3 className="text-3xl font-semibold mb-4 text-yellow-500">Join Us:</h3>
           <p className="text-lg mb-4 text-gray-200">Follow us on:</p>
           <div className="flex justify-center space-x-4">
-            <Link to="/instagram" className="text-lg text-blue-500 hover:text-blue-400">Instagram</Link>
-            <Link to="/facebook" className="text-lg text-blue-500 hover:text-blue-400">Facebook</Link>
-            <Link to="/whatsapp" className="text-lg text-green-500 hover:text-green-400">WhatsApp</Link>
+
+            <Link to="/instagram" className="text-5xl text-red-500 hover:text-red-400"><FaInstagramSquare/></Link>
+            <Link to="/facebook" className="text-5xl text-blue-500 hover:text-blue-400"><FaFacebook/></Link>
+            <Link to="/whatsapp" className="text-5xl text-green-500 hover:text-green-400"><FaWhatsapp /></Link>
+
           </div>
         </div>
       </div>

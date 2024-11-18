@@ -102,7 +102,7 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center gap-8">
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <Link to="/hero" className="py-7 px-3 inline-block">
               Home
             </Link>
           </li>

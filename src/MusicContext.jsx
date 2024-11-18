@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useState, useRef, useEffect } from "react";
-import audioTracks from "../src/Constants/AudioData";
+import { createContext, useContext, useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import audioTracks from "../src/Constants/AudioData"; // Adjust path as needed
 
 // Create MusicContext
 export const MusicContext = createContext();
@@ -7,50 +8,55 @@ export const MusicContext = createContext();
 // Custom hook to use MusicContext
 export const useMusic = () => useContext(MusicContext);
 
-// Music Provider to wrap the app and manage music state
+// MusicProvider Component
 export const MusicProvider = ({ children }) => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [isShuffle, setIsShuffle] = useState(false);
   const [isRepeat, setIsRepeat] = useState(false);
+  const [volume, setVolume] = useState(0.8); // Default volume: 80%
   const audioRef = useRef(new Audio());
 
-
-  // Handle track change and play/pause logic
+  // Load current track and manage playback
   useEffect(() => {
-    if (audioTracks[currentTrackIndex]) {
-      audioRef.current.src = audioTracks[currentTrackIndex].url;
+    const currentTrack = audioTracks[currentTrackIndex];
+    if (currentTrack) {
+      audioRef.current.src = currentTrack.url;
+      audioRef.current.volume = volume;
       if (isMusicPlaying) {
-        audioRef.current.play();
+        audioRef.current.play().catch((error) => console.error("Playback error:", error));
       } else {
         audioRef.current.pause();
       }
     }
-  }, [isMusicPlaying, currentTrackIndex]);
+  }, [isMusicPlaying, currentTrackIndex, volume]);
 
-  // Handle the next track
+  // Play/Pause toggle
+  const toggleMusic = () => setIsMusicPlaying((prev) => !prev);
+
+  // Skip to the next track
   const handleNextTrack = () => {
-    if (!audioTracks.length) return; // Prevent access if no tracks exist
+    if (!audioTracks.length) return;
     const nextIndex = isShuffle
       ? Math.floor(Math.random() * audioTracks.length)
       : (currentTrackIndex + 1) % audioTracks.length;
     setCurrentTrackIndex(nextIndex);
   };
 
-  // Handle previous track
+  // Go back to the previous track
   const handlePreviousTrack = () => {
     const prevIndex =
       currentTrackIndex === 0 ? audioTracks.length - 1 : currentTrackIndex - 1;
     setCurrentTrackIndex(prevIndex);
   };
 
-  // Toggle shuffle mode
+  // Shuffle toggle
   const toggleShuffle = () => setIsShuffle((prev) => !prev);
 
-  // Toggle repeat mode
+  // Repeat toggle
   const toggleRepeat = () => setIsRepeat((prev) => !prev);
 
-  // Handle track end logic for repeat or next track
+  // Handle track end
   const handleTrackEnd = () => {
     if (isRepeat) {
       audioRef.current.currentTime = 0;
@@ -60,7 +66,7 @@ export const MusicProvider = ({ children }) => {
     }
   };
 
-  // Listen to the audio end event
+  // Attach event listeners to handle track end
   useEffect(() => {
     const audio = audioRef.current;
     audio.addEventListener("ended", handleTrackEnd);
@@ -69,22 +75,44 @@ export const MusicProvider = ({ children }) => {
     };
   }, [isRepeat]);
 
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      audioRef.current.pause();
+      audioRef.current.src = "";
+    };
+  }, []);
+
+  // Adjust volume
+  const setAudioVolume = (newVolume) => {
+    setVolume(newVolume);
+    audioRef.current.volume = newVolume;
+  };
+
   return (
     <MusicContext.Provider
       value={{
         audioTracks,
         isMusicPlaying,
         currentTrackIndex,
-        toggleMusic: () => setIsMusicPlaying((prev) => !prev),
+        currentTrack: audioTracks[currentTrackIndex], // Provide the current track details
+        toggleMusic,
         handleNextTrack,
         handlePreviousTrack,
         toggleShuffle,
         toggleRepeat,
         isShuffle,
         isRepeat,
+        volume,
+        setAudioVolume,
       }}
     >
       {children}
     </MusicContext.Provider>
   );
+};
+
+// PropTypes validation
+MusicProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
