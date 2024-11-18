@@ -16,27 +16,43 @@ const FloatingMusicButton = () => {
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [isShuffle, setIsShuffle] = useState(false);
   const [isRepeat, setIsRepeat] = useState(false);
-  const audioRef = useRef(null);
+  const audioRef = useRef(new Audio());
 
   const currentColor = audioTracks[currentTrackIndex]?.color || "#FF6347";
 
   useEffect(() => {
+    const audio = audioRef.current;
+    audio.src = audioTracks[currentTrackIndex]?.url;
+
     if (isMusicPlaying) {
-      audioRef.current.play();
+      audio.play();
     } else {
-      audioRef.current.pause();
+      audio.pause();
     }
-  }, [isMusicPlaying, currentTrackIndex]);
+
+    const handleTrackEnd = () => {
+      if (isRepeat) {
+        audio.currentTime = 0;
+        audio.play();
+      } else {
+        handleNextTrack();
+      }
+    };
+
+    audio.addEventListener("ended", handleTrackEnd);
+
+    return () => {
+      audio.removeEventListener("ended", handleTrackEnd);
+    };
+  }, [isMusicPlaying, currentTrackIndex, isRepeat]);
 
   const toggleMusicDialog = () => setIsOpen((prev) => !prev);
   const toggleMusic = () => setIsMusicPlaying((prev) => !prev);
 
   const handlePreviousTrack = () => {
-    if (currentTrackIndex === 0) {
-      setCurrentTrackIndex(audioTracks.length - 1);
-    } else {
-      setCurrentTrackIndex((prev) => prev - 1);
-    }
+    setCurrentTrackIndex((prev) =>
+      prev === 0 ? audioTracks.length - 1 : prev - 1
+    );
   };
 
   const handleNextTrack = () => {
@@ -45,15 +61,6 @@ const FloatingMusicButton = () => {
       : (currentTrackIndex + 1) % audioTracks.length;
 
     setCurrentTrackIndex(nextTrackIndex);
-  };
-
-  const handleTrackEnd = () => {
-    if (isRepeat) {
-      audioRef.current.currentTime = 0;
-      audioRef.current.play();
-    } else {
-      handleNextTrack();
-    }
   };
 
   const toggleShuffle = () => setIsShuffle((prev) => !prev);
@@ -87,16 +94,14 @@ const FloatingMusicButton = () => {
             {/* Now Playing Section */}
             <h2 className="text-xl font-bold text-center mb-4">Now Playing</h2>
             <div
-              className="flex flex-col space-y-2 mb-4 overflow-y-auto scrollable"
+              className="track-list flex flex-col space-y-2 mb-4 overflow-y-auto"
               style={{ maxHeight: "200px" }}
             >
               {audioTracks.map((track, index) => (
                 <div
                   key={index}
                   className={`p-2 rounded-md transition-colors ${
-                    currentTrackIndex === index
-                      ? "bg-white text-black"
-                      : "hover:bg-gray-200"
+                    currentTrackIndex === index ? "bg-white text-black" : "hover:bg-gray-200"
                   }`}
                   onClick={() => setCurrentTrackIndex(index)}
                 >
@@ -107,19 +112,19 @@ const FloatingMusicButton = () => {
 
             {/* Music Controls */}
             <div className="flex justify-between items-center space-x-4">
-              <button onClick={handlePreviousTrack}>
+              <button onClick={handlePreviousTrack} aria-label="Previous Track">
                 <MdSkipPrevious size={24} style={{ color: "black" }} />
               </button>
-              <button onClick={toggleShuffle}>
+              <button onClick={toggleShuffle} aria-label="Toggle Shuffle">
                 <MdShuffle size={24} style={{ color: isShuffle ? "white" : "black" }} />
               </button>
-              <button onClick={toggleMusic}>
+              <button onClick={toggleMusic} aria-label={isMusicPlaying ? "Pause" : "Play"}>
                 {isMusicPlaying ? <FaPause size={24} /> : <FaPlay size={24} />}
               </button>
-              <button onClick={handleNextTrack}>
+              <button onClick={handleNextTrack} aria-label="Next Track">
                 <MdSkipNext size={24} style={{ color: "black" }} />
               </button>
-              <button onClick={toggleRepeat}>
+              <button onClick={toggleRepeat} aria-label="Toggle Repeat">
                 <MdRepeat size={24} style={{ color: isRepeat ? "white" : "black" }} />
               </button>
             </div>
@@ -127,11 +132,7 @@ const FloatingMusicButton = () => {
         </div>
       )}
 
-      <audio
-        ref={audioRef}
-        src={audioTracks[currentTrackIndex]?.url}
-        onEnded={handleTrackEnd}
-      />
+      <audio ref={audioRef} />
     </div>
   );
 };
