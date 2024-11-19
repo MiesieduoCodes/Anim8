@@ -84,14 +84,14 @@ const FloatingMusicButton = () => {
 
             {/* Music Controls */}
             <div className="flex justify-between items-center space-x-4">
-              <button onClick={handlePreviousTrack} aria-label="Previous Track">
-                <MdSkipPrevious size={24} className="text-white hover:scale-125" />
-              </button>
               <button onClick={toggleShuffle} aria-label="Toggle Shuffle">
                 <MdShuffle
                   size={24}
                   className={isShuffle ? "text-green-400" : "text-white hover:scale-125"}
                 />
+              </button>
+              <button onClick={handlePreviousTrack} aria-label="Previous Track">
+                <MdSkipPrevious size={24} className="text-white hover:scale-125" />
               </button>
               <button
                 onClick={toggleMusic}

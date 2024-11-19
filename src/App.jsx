@@ -1,6 +1,12 @@
-// Import necessary libraries
+// App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MusicProvider } from "./MusicContext"; // Context to manage music globally
+import { useEffect } from "react";
+
+// Import Firebase
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getFirestore, doc, setDoc } from "firebase/firestore";
+import { app } from "./FireBase"; // Adjusted to use named export
 
 // Floating Music Button
 import FloatingMusicButton from "./FloatingMusicButton";
@@ -38,6 +44,34 @@ import Illumination from "./Components/Illumination";
 
 // Main App Component
 const App = () => {
+  useEffect(() => {
+    // Initialize Firebase Auth and Firestore
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    // Monitor Authentication State
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        console.log("User is logged in:", user);
+        try {
+          // Save user data to Firestore
+          await setDoc(doc(db, "users", user.uid), {
+            email: user.email,
+            lastLogin: new Date(),
+          });
+          console.log("User data saved to Firestore");
+        } catch (error) {
+          console.error("Error saving user data:", error);
+        }
+      } else {
+        console.log("No user is logged in.");
+      }
+    });
+
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
+  }, []);
+
   return (
     <MusicProvider>
       <Router>

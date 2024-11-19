@@ -1,56 +1,52 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { useContext, useState, useEffect } from "react";
-import { MdSkipNext, MdPause, MdPlayArrow } from "react-icons/md";
-import { AiOutlineHeart } from "react-icons/ai";
 import FloatingMusicButton from "../FloatingMusicButton";
+import Footer from "./Footer";
+import { useContext, useState } from "react";
 import { MusicContext } from "../MusicContext";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
 const Hero = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isSigningUp, setIsSigningUp] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const auth = getAuth();
+
+  // Access music state and functions from MusicContext
   const {
     isMusicPlaying,
     toggleMusic,
     currentTrackIndex,
-    setCurrentTrackIndex,
-    tracks,
-    setTracks,
-    isFavorite,
-    setIsFavorite,
-    audioRef,
+    changeTrack,
+    tracks = [],
   } = useContext(MusicContext);
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleLoginSubmit = (e) => {
-    e.preventDefault();
-    console.log("Login submitted:", { email, password });
+  // Safely retrieve the current track or default to an empty object
+  const currentTrack = tracks[currentTrackIndex] || {
+    title: "No Track oiiiii",
+    artist: "Unknown ioooo",
+    cover: "/default-cover.jpg",
   };
 
-  useEffect(() => {
-    const fetchTracks = async () => {
-      const fetchedTracks = [
-        { title: "Track 1", url: "url1.mp3", background: "bg1.jpg" },
-        { title: "Track 2", url: "url2.mp3", background: "bg2.jpg" },
-      ];
-      setTracks(fetchedTracks);
-    };
-
-    fetchTracks();
-  }, [setTracks]);
-
-  if (!tracks || tracks.length === 0) {
-    return (
-      <div className="main-content pt-24">
-        <Navbar />
-        <div className="h-screen flex items-center justify-center bg-black text-white">
-          <p>Loading tracks, please wait...</p>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (isSigningUp) {
+        // Signup process
+        await createUserWithEmailAndPassword(auth, email, password);
+        setErrorMessage("Signup successful! You can now log in.");
+        setIsSigningUp(false);
+      } else {
+        // Login process
+        await signInWithEmailAndPassword(auth, email, password);
+        setErrorMessage("");
+      }
+    } catch (error) {
+      setErrorMessage(error.message);
+    }
+  };
 
   return (
     <div className="main-content pt-24">
@@ -58,13 +54,13 @@ const Hero = () => {
       <div className="relative z-0 h-screen">
         <AnimatePresence mode="wait">
           <motion.div
-            key={tracks[currentTrackIndex]?.background}
+            key="default-background"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="absolute inset-0 z-10 h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${tracks[currentTrackIndex]?.background})` }}
+            style={{ backgroundImage: `url(/default-background.jpg)` }}
           />
         </AnimatePresence>
 
@@ -82,48 +78,6 @@ const Hero = () => {
               <p className="text-white text-sm md:text-lg mt-4">
                 Your One-Stop site for Top-Rated Anime Content
               </p>
-
-              <div className="mt-8">
-                <h2 className="text-white text-lg md:text-xl mb-4">
-                  Currently Playing:{" "}
-                  <span className="text-red-500">
-                    {tracks[currentTrackIndex]?.title}
-                  </span>
-                </h2>
-
-                <div className="flex justify-center md:justify-start gap-4 mt-4">
-                  <button
-                    onClick={toggleMusic}
-                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-300"
-                  >
-                    {isMusicPlaying ? (
-                      <MdPause size={24} />
-                    ) : (
-                      <MdPlayArrow size={24} />
-                    )}
-                  </button>
-                  <button
-                    onClick={() =>
-                      setCurrentTrackIndex(
-                        (currentTrackIndex + 1) % tracks.length
-                      )
-                    }
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300"
-                  >
-                    <MdSkipNext size={24} />
-                  </button>
-                  <button
-                    onClick={() => setIsFavorite(!isFavorite)}
-                    className={`bg-${
-                      isFavorite ? "red" : "gray"
-                    }-500 text-white px-4 py-2 rounded hover:bg-${
-                      isFavorite ? "red" : "gray"
-                    }-700 transition-colors duration-300`}
-                  >
-                    <AiOutlineHeart size={24} />
-                  </button>
-                </div>
-              </div>
             </section>
 
             <section className="w-full max-w-sm md:max-w-md">
@@ -132,8 +86,11 @@ const Hero = () => {
                 className="bg-black bg-opacity-50 p-6 rounded-lg flex flex-col gap-4"
               >
                 <h1 className="text-2xl md:text-3xl text-white font-bold text-center">
-                  Log in to Anim8
+                  {isSigningUp ? "Sign Up for Anim8" : "Log in to Anim8"}
                 </h1>
+                {errorMessage && (
+                  <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
                 <input
                   className="w-full p-2 rounded border text-black"
                   type="email"
@@ -154,24 +111,50 @@ const Hero = () => {
                   className="mt-3 bg-blue-500 text-white font-bold px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300"
                   type="submit"
                 >
-                  Log In
+                  {isSigningUp ? "Sign Up" : "Log In"}
                 </button>
+                <p
+                  className="text-sm text-white mt-4 cursor-pointer hover:underline"
+                  onClick={() => setIsSigningUp(!isSigningUp)}
+                >
+                  {isSigningUp
+                    ? "Already have an account? Log in."
+                    : "Don't have an account? Sign up."}
+                </p>
               </form>
             </section>
           </main>
         </div>
       </div>
+
       <Footer />
 
+      {/* Mini Music Player */}
+      <div className="fixed bottom-16 right-4 bg-white p-4 rounded-lg shadow-lg w-80 flex items-center gap-4">
+        <img
+          src={currentTrack.cover}
+          alt="Track Cover"
+          className="w-16 h-16 object-cover rounded"
+        />
+        <div className="flex-1">
+          <h3 className="text-sm font-bold">{currentTrack.title}</h3>
+          <p className="text-xs text-gray-600">{currentTrack.artist}</p>
+        </div>
+        <button
+          className="p-2 bg-blue-500 text-white rounded-full"
+          onClick={toggleMusic}
+        >
+          {isMusicPlaying ? "Pause" : "Play"}
+        </button>
+      </div>
+
+      {/* Floating Music Button */}
       <FloatingMusicButton
         isMusicPlaying={isMusicPlaying}
         toggleMusic={toggleMusic}
         currentTrackIndex={currentTrackIndex}
-        changeTrack={(index) => setCurrentTrackIndex(index)}
-        tracks={tracks}
+        changeTrack={changeTrack}
       />
-
-      <audio ref={audioRef} src={tracks[currentTrackIndex]?.url} loop />
     </div>
   );
 };

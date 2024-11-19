@@ -11,7 +11,7 @@ const movieData = [
         rating: "7.9",
         backgroundImage: "https://wallpapers.com/images/high/buzz-lightyear-and-jessie-toy-story-2-ljru9ncjb7hy0zv3.webp",
         story: "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save him.",
-        downloadLink: "https://example.com/toy-story-2.mp4"
+        downloadLink: "https://drive.usercontent.google.com/u/0/uc?id=1u2gSV-eH33C0fl36NCoLTuOkkNH9t-8z&export=download"
     },
     {
         title: "Toy Story 3",
