@@ -3,6 +3,11 @@ import Navbar from './Navbar';
 import FloatingMusicButton from '../FloatingMusicButton';
 import Footer from "./Footer";
 import cardsData from "../Constants/Dreamdata"; // Import MusicContext if you're using it
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Import Autoplay module
+import "swiper/css";// Updated import for Navigation module
+import "swiper/css";
+import "swiper/css/navigation";
 
 const DreamWorks = () => {
   const [cards, setCards] = useState([]);
@@ -22,7 +27,27 @@ const DreamWorks = () => {
     setCurrentTrackIndex(index);
     // Add logic to change the track here
   };
-
+  const slides = [
+    {
+      image: "https://wallpapers.com/images/hd/dreamworks-animation-logo-4k-l8f5ydu8r5xhnokg.jpg",
+      title: "Discover the World of DreamWorks Animation",
+      subtitle:
+        "Unleash your imagination with iconic characters and unforgettable stories.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/dreamworks-animation-cast-wallpaper-btfqjfzv5qumezwf.jpg",
+      title: "Iconic Heroes and Hilarious Villains",
+      subtitle:
+        "From Shrek to Kung Fu Panda, enjoy tales of adventure, laughter, and heart.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/how-to-train-your-dragon-4k-dreamworks-vgu8m95p8kq8oh0g.jpg",
+      title: "Soar to New Heights with DreamWorks",
+      subtitle:
+        "Join beloved characters in breathtaking adventures that captivate all ages.",
+    },
+  ];
+  
   return (
     <div className="main-content pt-24">
       {/* Navbar */}
@@ -33,23 +58,36 @@ const DreamWorks = () => {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
         {/* Hero Section */}
-        <div
-          className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
-          style={{
-            backgroundImage:
-              `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee4200b4-1ca8-4ef7-9ccb-1b66359eb247/dfzdlcd-c0e41887-185c-4b65-a24f-e88ba60ee8f4.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamworks_wallpaper_by_maxtop9002_dfzdlcd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWU0MjAwYjQtMWNhOC00ZWY3LTljY2ItMWI2NjM1OWViMjQ3XC9kZnpkbGNkLWMwZTQxODg3LTE4NWMtNGI2NS1hMjRmLWU4OGJhNjBlZThmNC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MmZD7VVsp2Fx8uii0TWUCo0J7Q_JEMyMLnEGYo2twQM')`
-          }}
-        >
- <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
-  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
-    Enter the Wonderful World of DreamWorks
-  </h1>
-  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
-    Dive into our collection of iconic animations <br /> that have brought joy and laughter worldwide.
-  </p>
-</div>
-
+<Swiper
+  modules={[Autoplay]} // Enable autoplay
+  autoplay={{
+    delay: 3000, // Slide change interval in milliseconds
+    disableOnInteraction: false, // Keep autoplay active even after interaction
+  }}
+  loop
+  spaceBetween={0}
+  slidesPerView={1}
+  className="h-[calc(100vh-70px)] md:h-80 lg:h-96" // Adjusted height for better view in mobile
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div
+        className="relative bg-cover bg-center h-[calc(100vh-70px)] md:h-80 lg:h-96"
+        style={{ backgroundImage: `url('${slide.image}')` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10 text-center">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            {slide.title}
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-3 sm:mt-4 md:mt-5">
+            {slide.subtitle}
+          </p>
         </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
 
         {/* Cards Section */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">

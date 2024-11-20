@@ -1,111 +1,144 @@
-import { useState, useEffect } from 'react'; // Import necessary hooks
-import Navbar from './Navbar';
+import { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Import Swiper Autoplay module
+import "swiper/css";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
-import FloatingMusicButton from '../FloatingMusicButton';
+import FloatingMusicButton from "../FloatingMusicButton";
 import movieData from "../Constants/Pixardata";
 
 const Pixar = () => {
-    const [cards, setCards] = useState([]);
-    // State management for music
-    const [isMusicPlaying, setIsMusicPlaying] = useState(false);
-    const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const [cards, setCards] = useState([]);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 
+  const toggleMusic = () => {
+    setIsMusicPlaying(!isMusicPlaying);
+  };
 
-    const toggleMusic = () => {
-        setIsMusicPlaying(!isMusicPlaying);
-    };
+  const changeTrack = (index) => {
+    setCurrentTrackIndex(index);
+  };
 
-    const changeTrack = (index) => {
-        setCurrentTrackIndex(index);
-    };
+  useEffect(() => {
+    setCards(movieData);
+  }, []); // Dependency array to run once
 
-    useEffect(() => {
-        if (length > 0) {
-            const audio = new Audio([currentTrackIndex].url);
-            if (isMusicPlaying) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
-    }, [isMusicPlaying, currentTrackIndex ]);
+  // Background slides data
+  const slides = [
+    {
+      image: "https://wallpapers.com/images/featured/pixar-cx81w1x378htuj4p.webp",
+      title: "Step into the World of Pixar Magic",
+      subtitle:
+        "Discover animated masterpieces that inspire imagination and touch hearts around the world.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/pixar-animation-studios-1920x1080-f2hlyfq6htg1uk9o.jpg",
+      title: "Feel the Emotion Behind Every Story",
+      subtitle:
+        "Explore the stories that bring laughter, tears, and unforgettable memories.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/pixar-lamp-logo-minimal-1920x1080-zcl8huv8qcbuyvgh.jpg",
+      title: "Celebrate the Art of Animation",
+      subtitle:
+        "From Toy Story to Turning Red, relive the magic of every Pixar classic.",
+    },
+  ];
 
-    useEffect(() => {
-        // Predefined data for Pixar movies
-        setCards(movieData);
-    }, []); // Dependency array to run once
+  return (
+    <div className="relative min-h-screen">
+      <video
+        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+        src="https://static.videezy.com/system/resources/previews/000/005/054/original/Cieling_Flames_4K_Motion_Background_Loop.mp4"
+        autoPlay
+        loop
+        muted
+      />
 
-    return (
-        <div className="relative min-h-screen">
+      <Navbar />
 
-        <video className="fixed top-0 left-0 w-full h-full object-cover -z-10"
-                src="https://static.videezy.com/system/resources/previews/000/005/054/original/Cieling_Flames_4K_Motion_Background_Loop.mp4"
-                autoPlay
-                loop
-                muted/>
+      <div className="relative h-full w-full bg-slate-950">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
-
-
-            <Navbar />
-            <div className="relative h-full w-full bg-slate-950">
-                <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
-
-                <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" style={{ backgroundImage: `url('https://wallpapers.com/images/featured/pixar-cx81w1x378htuj4p.webp')` }}>
-<div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
-  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
-    Step into the World of Pixar Magic
-  </h1>
-  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
-    Discover animated masterpieces that inspire imagination <br /> and touch hearts around the world.
-  </p>
-</div>
-
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
-                    {cards.map((card, index) => (
-                        <div
-                            key={index}
-                            className="relative w-full p-36 h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500"
-                            style={{
-                                backgroundImage: `url(${card.backgroundImage})`,
-                            }}
-                        >
-                            {/* Overlay for text */}
-                            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
-                                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
-                                    {card.title}
-                                </h2>
-                                <p className="text-white text-lg text-center mb-2">{card.story}</p>
-                                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
-                                    <div
-                                        className="bg-purple-800 h-full rounded-full"
-                                        style={{ width: `${card.rating * 10}%` }} // Adjusted width calculation
-                                    ></div>
-                                </div>
-                                <p className="text-white text-lg">{card.rating}</p>
-                                 <a
-                                    href={card.downloadLink} // Make sure movieData includes a downloadLink property
-                                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300" 
-                                    download
-                                >
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            <Footer />
-            <FloatingMusicButton
-                isMusicPlaying={isMusicPlaying}
-                toggleMusic={toggleMusic}
-                currentTrackIndex={currentTrackIndex}
-                changeTrack={changeTrack}
-            />
+        {/* Swiper Slider */}
+  <Swiper
+  modules={[Autoplay]} // Enable autoplay
+  autoplay={{
+    delay: 3000, // Slide change interval in milliseconds
+    disableOnInteraction: false, // Keep autoplay active even after interaction
+  }}
+  loop
+  spaceBetween={0}
+  slidesPerView={1}
+  className="h-[calc(100vh-70px)] md:h-80 lg:h-96" // Adjusted height for better view in mobile
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div
+        className="relative bg-cover bg-center h-[calc(100vh-70px)] md:h-80 lg:h-96"
+        style={{ backgroundImage: `url('${slide.image}')` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10 text-center">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            {slide.title}
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-3 sm:mt-4 md:mt-5">
+            {slide.subtitle}
+          </p>
         </div>
-    );
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+        {/* Movie Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="relative w-full p-36 h-48 md:h-64 lg:h-72 xl:h-80 bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500"
+              style={{
+                backgroundImage: `url(${card.backgroundImage})`,
+              }}
+            >
+              {/* Overlay for text */}
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-white text-lg text-center mb-2">
+                  {card.story}
+                </p>
+                <div className="w-full bg-gray-300 border-none rounded-full h-4 overflow-hidden mb-2">
+                  <div
+                    className="bg-purple-800 h-full rounded-full"
+                    style={{ width: `${card.rating * 10}%` }}
+                  ></div>
+                </div>
+                <p className="text-white text-lg">{card.rating}</p>
+                <a
+                  href={card.downloadLink}
+                  className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
+                  download
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Footer />
+      <FloatingMusicButton
+        isMusicPlaying={isMusicPlaying}
+        toggleMusic={toggleMusic}
+        currentTrackIndex={currentTrackIndex}
+        changeTrack={changeTrack}
+      />
+    </div>
+  );
 };
 
 export default Pixar;

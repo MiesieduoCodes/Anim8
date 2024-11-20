@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Import Swiper Autoplay module
+import "swiper/css";
 import FloatingMusicButton from '../FloatingMusicButton';
 import movies from "../Constants/data";
 
@@ -49,7 +52,27 @@ const AnimeSeries = () => {
       }
     }
   }, [currentTrackIndex, isMusicPlaying]);
-
+  const slides = [
+    {
+      image: "https://wallpapers.com/images/hd/attack-on-titan-eren-yeager-anime-wallpaper-8sg42jfakuyqdh2w.jpg",
+      title: "Embark on Legendary Anime Series",
+      subtitle:
+        "Join unforgettable heroes in stories that keep you on the edge of your seat.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/naruto-uzumaki-anime-character-wallpaper-syzq7hdx8v6h5otb.jpg",
+      title: "Dive into Rich Narratives and Iconic Adventures",
+      subtitle:
+        "From Naruto to Attack on Titan, explore tales of growth, courage, and destiny.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/demon-slayer-tanjiro-sunset-anime-hd-jdb8sz7zzvl0nmzl.jpg",
+      title: "An Unparalleled Journey through Anime Worlds",
+      subtitle:
+        "Witness breathtaking battles, emotional stories, and stunning artistry.",
+    },
+  ];
+  
   return (
     <div className="relative min-h-screen">
       <video
@@ -63,16 +86,35 @@ const AnimeSeries = () => {
       <Navbar />
       
       <div className="container mx-auto my-10 relative z-10">
-        <div className="relative bg-cover bg-center h-64 md:h-80 lg:h-96" 
-          style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}>
-
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">Anime Series</h1>
-            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              Explore our collection of animated magic that has captured hearts over the years.
-            </p>
+      <Swiper
+      modules={[Autoplay]} // Enable autoplay
+      autoplay={{
+        delay: 3000, // Slide change interval in milliseconds
+        disableOnInteraction: false, // Keep autoplay active even after interaction
+      }}
+      loop
+      spaceBetween={0}
+      slidesPerView={1}
+      className="h-64 md:h-80 lg:h-96"
+    >
+      {slides.map((slide, index) => (
+        <SwiperSlide key={index}>
+          <div
+            className="relative bg-cover bg-center h-[100vh] md:h-80 lg:h-96"
+            style={{ backgroundImage: `url('${slide.image}')` }}
+          >
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
+              <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+                {slide.title}
+              </h1>
+              <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
+                {slide.subtitle}
+              </p>
+            </div>
           </div>
-        </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
 
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="mb-8">

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
 import FloatingMusicButton from "../FloatingMusicButton";
 import Footer from "./Footer";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { MusicContext } from "../MusicContext";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -11,6 +11,7 @@ const Hero = () => {
   const [password, setPassword] = useState("");
   const [isSigningUp, setIsSigningUp] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const auth = getAuth();
 
@@ -23,23 +24,34 @@ const Hero = () => {
     tracks = [],
   } = useContext(MusicContext);
 
-  // Safely retrieve the current track or default to an empty object
   const currentTrack = tracks[currentTrackIndex] || {
     title: "No Track oiiiii",
     artist: "Unknown ioooo",
     cover: "/default-cover.jpg",
   };
 
+  const backgrounds = [
+    'https://wallpapers.com/images/high/cartoons-in-madagascar-escape-2-africa-izj1z41a3vjuyenh.webp',
+    'https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24223176/STRANGE_WORLD_ONLINE_USE_fullcomp_317_39_6k_film.0013_a.jpg?quality=90&strip=all&crop=25.180921052632%2C0%2C62.8125%2C100&w=2400',
+    'https://m.media-amazon.com/images/S/pv-target-images/83a15e35dec3984d13ea6eb76857106b3bf03470f6f8f571de2464a4cd3b21c2._SX1440_FMwebp_.jpg'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [backgrounds.length]);
+
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
       if (isSigningUp) {
-        // Signup process
         await createUserWithEmailAndPassword(auth, email, password);
         setErrorMessage("Signup successful! You can now log in.");
         setIsSigningUp(false);
       } else {
-        // Login process
         await signInWithEmailAndPassword(auth, email, password);
         setErrorMessage("");
       }
@@ -51,18 +63,20 @@ const Hero = () => {
   return (
     <div className="main-content pt-24">
       <Navbar />
-      <div className="relative z-0 h-screen">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key="default-background"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="absolute inset-0 z-10 h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(/default-background.jpg)` }}
-          />
-        </AnimatePresence>
+      <div className="relative z-0 h-screen overflow-hidden">
+        <div className="absolute inset-0 z-10 h-full w-full">
+          <AnimatePresence initial={false}>
+            <motion.div
+              key={currentSlideIndex}
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${backgrounds[currentSlideIndex]})` }}
+            />
+          </AnimatePresence>
+        </div>
 
         <div className="relative flex inset-0 z-10 items-center justify-center h-full bg-black bg-opacity-50 px-4">
           <main className="flex flex-col md:flex-row justify-between gap-16 items-center">

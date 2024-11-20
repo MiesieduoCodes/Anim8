@@ -31,7 +31,7 @@ const Marvel = () => {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
         <div
-          className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
+          className="relative bg-cover bg-center h-[100vh] md:h-80 lg:h-96"
           style={{ backgroundImage: `url('/src/Assets/ToonImages/Marvel/marvel-background.jpg')` }} // Replace with actual image path
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">

@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import FloatingMusicButton from '../FloatingMusicButton';
 import Footer from "./Footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Import Swiper Autoplay module
+import "swiper/css";
 import movies from "../Constants/IlluminateData";
 import { motion } from 'framer-motion'; // Import MusicContext if you're using it
 
@@ -23,7 +26,27 @@ const Illumination = () => {
     setCurrentTrackIndex(index);
     // Add logic to change the track here
   };
-
+  const slides = [
+    {
+      image: "https://wallpapers.com/images/hd/minions-and-gru-illumination-wallpaper-tzavl5eh5nxbl5py.jpg",
+      title: "Step into the Brilliance of Illumination",
+      subtitle:
+        "Discover the hilarity and heart behind Despicable Me, Minions, and more.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/sing-movie-illumination-hd-tuz8oxlt8f7ka9yi.jpg",
+      title: "Feel the Music and Joy of Sing",
+      subtitle:
+        "Experience the power of music and unforgettable characters in Sing.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/secret-life-of-pets-hd-animation-wallpaper-swn5zpwe98ijijqm.jpg",
+      title: "Explore the Secret Life of Pets",
+      subtitle:
+        "A hilarious look into what our furry friends do when we're not around.",
+    }
+  ];
+  
   return (
     <>
     <div className="relative min-h-screen">
@@ -36,19 +59,35 @@ const Illumination = () => {
       />
       <Navbar />
 
+<Swiper
+  modules={[Autoplay]} // Enable autoplay
+  autoplay={{
+    delay: 3000, // Slide change interval in milliseconds
+    disableOnInteraction: false, // Keep autoplay active even after interaction
+  }}
+  loop
+  spaceBetween={0}
+  slidesPerView={1}
+  className="h-[calc(100vh-70px)] md:h-80 lg:h-96" // Adjusted height for better view in mobile
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
       <div
-        className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
-        style={{ backgroundImage: `url('https://i.ytimg.com/vi/f00eH6LpWfg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgTCh_MA8=&rs=AOn4CLBQ4x7g78bo13_Ih1eF044Hn1qhUQ')` }}
+        className="relative bg-cover bg-center h-[calc(100vh-70px)] md:h-80 lg:h-96"
+        style={{ backgroundImage: `url('${slide.image}')` }}
       >
-<div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
-  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
-    Step into the Brilliance of Illumination
-  </h1>
-  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
-    Dive into a world of animated wonders that blend humor, heart, <br /> and unforgettable stories for all ages.
-  </p>
-</div>
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10 text-center">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            {slide.title}
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-3 sm:mt-4 md:mt-5">
+            {slide.subtitle}
+          </p>
+        </div>
       </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {cards.map((card, index) => (

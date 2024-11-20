@@ -54,7 +54,7 @@ const DCMovies = () => {
       <Navbar />
 
       <div
-        className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
+        className="relative bg-cover bg-center h-[100vh] md:h-80 lg:h-96"
         style={{ backgroundImage: `url('https://example.com/disney-background.jpg')` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">

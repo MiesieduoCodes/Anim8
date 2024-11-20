@@ -4,6 +4,9 @@ import FloatingMusicButton from '../FloatingMusicButton';
 import Footer from './Footer';
 import collections from "../Constants/Animedata";
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Import Swiper Autoplay module
+import "swiper/css";
 
 const AnimeFilms = () => {
   const [animeCollections, setAnimeCollections] = useState([]);
@@ -43,7 +46,27 @@ const AnimeFilms = () => {
       if (isMusicPlaying) audioRef.current.play();
     }
   }, [currentTrackIndex, isMusicPlaying]);
-
+  const slides = [
+    {
+      image: "https://wallpapers.com/images/hd/anime-film-aesthetic-hd-1qox9z9t5lrsnsxl.jpg",
+      title: "Experience the Art of Anime Films",
+      subtitle:
+        "Dive into worlds filled with breathtaking visuals and heart-stirring stories.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/spirited-away-chihiro-studio-ghibli-anime-xyv8bcqxx7cofi7m.jpg",
+      title: "Timeless Classics and Modern Masterpieces",
+      subtitle:
+        "Relive iconic films like Spirited Away and discover new favorites.",
+    },
+    {
+      image: "https://wallpapers.com/images/hd/anime-night-cityscape-film-hd-xgz8d7ifgjpksqxw.jpg",
+      title: "A Cinematic Journey through Anime",
+      subtitle:
+        "From emotional dramas to epic fantasies, explore every genre.",
+    },
+  ];
+  
   return (
     <>
       <div className="relative min-h-screen">
@@ -56,19 +79,35 @@ const AnimeFilms = () => {
         />
         <Navbar />
         
-        <div
-          className="relative bg-cover bg-center h-64 md:h-80 lg:h-96"
-          style={{ backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/279/89/75/goofy-mickey-mouse-donald-duck-daisy-and-pluto-disney-hd-wallpapers-1920%C3%971200-wallpaper-preview.jpg')` }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              Anime Related Text Here
-            </h1>
-            <p className="text-white text-base md:text-lg lg:text-xl text-center mt-2 md:mt-4">
-              Put your Anime Related Story Here So these Mfs Will Understand What they&apos;re <br />downloading before its scam.
-            </p>
-          </div>
+        <Swiper
+  modules={[Autoplay]} // Enable autoplay
+  autoplay={{
+    delay: 3000, // Slide change interval in milliseconds
+    disableOnInteraction: false, // Keep autoplay active even after interaction
+  }}
+  loop
+  spaceBetween={0}
+  slidesPerView={1}
+  className="h-[calc(100vh-70px)] md:h-80 lg:h-96" // Adjusted height for better view in mobile
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div
+        className="relative bg-cover bg-center h-[calc(100vh-70px)] md:h-80 lg:h-96"
+        style={{ backgroundImage: `url('${slide.image}')` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10 text-center">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            {slide.title}
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-3 sm:mt-4 md:mt-5">
+            {slide.subtitle}
+          </p>
         </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {animeCollections[0]?.items.map((item, index) => (
