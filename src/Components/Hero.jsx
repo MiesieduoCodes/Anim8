@@ -16,7 +16,7 @@ const Hero = () => {
   const auth = getAuth();
 
   // Access music state and functions from MusicContext
-  const {
+  const { 
     isMusicPlaying,
     toggleMusic,
     currentTrackIndex,
