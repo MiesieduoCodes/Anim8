@@ -88,7 +88,7 @@ const audioTracks = [
     { title: "Khalid - Talk", url: "https://rildi.sunproxy.net/file/ai9FSGY3ZWp3Vzd4VnJRR2Y5Z0RxWWRDcFZRNnZYMWg3WVJGd3VCZ1pnSGZldDBMUG5mWVVlbHFrOXpXNmRmRGFnNFR0ZnZ2eU8vUlZTYWNtMm85Vm0xYnBFQU1pdkYxVE5VbnhvY3k2ME09/Khalid_-_Talk_(Hydr0.org).mp3", color: "#87CEFA" }, // LightSkyBlue
 
 
-    { title: "Khalid - Young Dumb & Broke", url: "https://rildi.sunproxy.net/file/ai9FSGY3ZWp3Vzd4VnJRR2Y5Z0RxWWRDcFZRNnZYMWg3WVJGd3VCZ1pnSGZldDBMUG5mWVVlbHFrOXpXNmRmREw2cUFBa01HS0szNEsyYlBSZnJHSTRyeHpUaU5SNnBBSzhVTE5iU3ZsNzg9/Khalid_-_Young_Dumb_Broke_(Hydr0.org).mp3", color: "#7FFF00" }, // Chartreuse
+    { title: "Khalid - Young Dumb & Broke", url: "https://rildi.sunproxy.net/fileai9FSGY3ZWp3Vzd4VnJRR2Y5Z0RxWWRDcFZRNnZYMWg3WVJGd3VCZ1pnSGZldDBMUG5mWVVlbHFrOXpXNmRmREw2cUFBa01HS0szNEsyYlBSZnJHSTRyeHpUaU5SNnBBSzhVTE5iU3ZsNzg9/Khalid_-_Young_Dumb_Broke_(Hydr0.org).mp3", color: "#7FFF00" }, // Chartreuse
 
 
     { title: "Khalid & Normani - Love Lies", url: "https://rildi.sunproxy.net/file/ai9FSGY3ZWp3Vzd4VnJRR2Y5Z0RxWWRDcFZRNnZYMWg3WVJGd3VCZ1pnSGZldDBMUG5mWVVlbHFrOXpXNmRmREY3NUs5bTlJRHBtYnVYY0YyRTY4cldaOVc1WVZPZXVxZCtvZWJDdG5lVE09/Khalid_Normani_-_Love_Lies_(Hydr0.org).mp3", color: "#FFA07A" }, // LightSalmon
