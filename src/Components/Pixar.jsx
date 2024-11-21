@@ -33,13 +33,13 @@ const Pixar = () => {
         "Discover animated masterpieces that inspire imagination and touch hearts around the world.",
     },
     {
-      image: "https://wallpapers.com/images/hd/pixar-animation-studios-1920x1080-f2hlyfq6htg1uk9o.jpg",
+      image: "https://wallpapers.com/images/high/pixar-1920-x-1200-background-nkdaue49xsg7t9uo.webp",
       title: "Feel the Emotion Behind Every Story",
       subtitle:
         "Explore the stories that bring laughter, tears, and unforgettable memories.",
     },
     {
-      image: "https://wallpapers.com/images/hd/pixar-lamp-logo-minimal-1920x1080-zcl8huv8qcbuyvgh.jpg",
+      image: "https://wallpapers.com/images/high/pixar-1920-x-1200-background-nkdaue49xsg7t9uo.webp",
       title: "Celebrate the Art of Animation",
       subtitle:
         "From Toy Story to Turning Red, relive the magic of every Pixar classic.",
@@ -47,7 +47,8 @@ const Pixar = () => {
   ];
 
   return (
-    <div className="relative min-h-screen">
+    <div className="main-content pt-24">
+            <Navbar />
       <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
         src="https://static.videezy.com/system/resources/previews/000/005/054/original/Cieling_Flames_4K_Motion_Background_Loop.mp4"
@@ -56,7 +57,7 @@ const Pixar = () => {
         muted
       />
 
-      <Navbar />
+
 
       <div className="relative h-full w-full bg-slate-950">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>

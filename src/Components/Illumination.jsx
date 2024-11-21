@@ -49,7 +49,8 @@ const Illumination = () => {
   
   return (
     <>
-    <div className="relative min-h-screen">
+    <div className="main-content pt-24">
+    <Navbar />
       <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
         src="https://static.videezy.com/system/resources/previews/000/008/148/original/Microscope_v5.mp4"
@@ -57,7 +58,7 @@ const Illumination = () => {
         loop
         muted
       />
-      <Navbar />
+
 
 <Swiper
   modules={[Autoplay]} // Enable autoplay

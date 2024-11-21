@@ -128,7 +128,7 @@ const Hero = () => {
                   {isSigningUp ? "Sign Up" : "Log In"}
                 </button>
                 <p
-                  className="text-sm text-white mt-4 cursor-pointer hover:underline"
+                  className=" text-white text-xl text-center mt-4 cursor-pointer"
                   onClick={() => setIsSigningUp(!isSigningUp)}
                 >
                   {isSigningUp
