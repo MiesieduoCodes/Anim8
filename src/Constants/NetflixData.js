@@ -70,20 +70,20 @@ const netflixMovies = [
     story: "A kinkajou must deliver a love song from his late owner to the famous singer who inspired him.",
     downloadLink: "https://example.com/download/vivo"
   },
-  {
-    title: "The Addams Family",
-    rating: "5.8",
-    backgroundImage: "https://i.guim.co.uk/img/media/5d671028827e5034d86ae13555bfcad45a4063e1/888_584_2803_1683/master/2803.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=07d8dcff2a5fe8283c19f278cd468f8c",
-    story: "The Addams family faces new challenges when they move to a suburban neighborhood, where their unusual nature stands out among the locals.",
-    downloadLink: "https://example.com/download/addams-family-1"
-},
-  {
-    title: "The Addams Family 2",
-    rating: "5.3",
-    backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafchWSZjxTVZopKhI1HZVPT7Jf45o8Swneg&s",
-    story: "The Addams family embarks on a road trip that reveals their quirkiest secrets and brings them closer than ever.",
-    downloadLink: "https://example.com/download/addams-family-2"
-  },
+//   {
+//     title: "The Addams Family",
+//     rating: "5.8",
+//     backgroundImage: "https://i.guim.co.uk/img/media/5d671028827e5034d86ae13555bfcad45a4063e1/888_584_2803_1683/master/2803.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=07d8dcff2a5fe8283c19f278cd468f8c",
+//     story: "The Addams family faces new challenges when they move to a suburban neighborhood, where their unusual nature stands out among the locals.",
+//     downloadLink: "https://example.com/download/addams-family-1"
+// },
+//   {
+//     title: "The Addams Family 2",
+//     rating: "5.3",
+//     backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafchWSZjxTVZopKhI1HZVPT7Jf45o8Swneg&s",
+//     story: "The Addams family embarks on a road trip that reveals their quirkiest secrets and brings them closer than ever.",
+//     downloadLink: "https://example.com/download/addams-family-2"
+//   },
   {
     title: "Back to the Outback",
     rating: "6.6",

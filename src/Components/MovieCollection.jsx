@@ -155,7 +155,6 @@ const AnimeSeries = () => {
                   <div className="bg-black bg-opacity-50 p-5 h-full flex flex-col justify-end">
                     <h3 className="text-xl font-semibold text-white">{movie.title}</h3>
                     <p className="text-white">{movie.synopsis}</p>
-
                     <div className="relative inline-block">
   <Link
     to="whatsapp-link"
@@ -164,13 +163,13 @@ const AnimeSeries = () => {
     Request Movie Collection
   </Link>
   <button
-  className="absolute top-[-1rem] right-[-1rem] bg-gray-100 text-gray-800 text-xs px-2 py-1 shadow-md custom-spiky-border"
-  title="Terms and Conditions apply"
->
-  T & Cs applied
-</button>
-
+    className="absolute top-0 right-0 bg-gray-100 text-gray-800 text-xs px-2 py-1 shadow-md custom-spiky-border"
+    title="Terms and Conditions apply"
+  >
+    T&C apply
+  </button>
 </div>
+
 
                   </div>
                 </motion.div>
