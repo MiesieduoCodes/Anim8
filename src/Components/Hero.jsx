@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
 import FloatingMusicButton from "../FloatingMusicButton";
 import Footer from "./Footer";
+import { Link } from 'react-router-dom';
 import { useContext, useState, useEffect } from "react";
 import { MusicContext } from "../MusicContext";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
@@ -207,6 +208,7 @@ const Hero = () => {
 
       {/* Button with Hover Animation */}
       <div className="relative group">
+
         <button className="bg-white text-green-500 font-bold py-2 px-4 rounded-full flex items-center gap-3 transition-all duration-300 group-hover:pr-6">
           Request Now
           <motion.div
@@ -218,6 +220,7 @@ const Hero = () => {
             <FaWhatsapp className="text-2xl text-green-500 hover:text-green-400" />
           </motion.div>
         </button>
+                    
       </div>
     </motion.div>
 
@@ -238,6 +241,8 @@ const Hero = () => {
 
   {/* Button with Hover Animation */}
   <div className="relative group">
+  <Link to= "/movie">
+      
     <button className="bg-white text-red-500 font-bold py-2 px-4 rounded-full flex items-center gap-3 transition-all duration-300 group-hover:pr-6">
       Request Collection
       <motion.div
@@ -249,6 +254,7 @@ const Hero = () => {
         →
       </motion.div>
     </button>
+    </Link>
   </div>
 </motion.div>
 

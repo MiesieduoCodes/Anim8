@@ -36,7 +36,7 @@ import FullMetal from "./Components/FullMetalAlchemist";
 import Garden from "./Components/The Garden of Sinners";
 import Pokemon from "./Components/Pokemon";
 import Illumination from "./Components/Illumination";
-
+import Movie from "./Components/MovieCollection";
 // Episodes and Seasons
 import SeasonsPage from "./Components/SeasonPage";
 import EpisodesPage from "./Components/Episodes";
@@ -83,6 +83,7 @@ const router = createBrowserRouter([
   { path: "/garden", element: <Garden /> },
   { path: "/pokemon", element: <Pokemon /> },
   { path: "/illumination", element: <Illumination /> },
+  { path: "/movie", element: <Movie /> },
 
   // Episodes and Seasons
   { path: "/season", element: <SeasonsPage /> },
