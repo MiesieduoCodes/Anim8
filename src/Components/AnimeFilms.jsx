@@ -48,19 +48,19 @@ const AnimeFilms = () => {
   }, [currentTrackIndex, isMusicPlaying]);
   const slides = [
     {
-      image: "https://wallpapers.com/images/hd/anime-film-aesthetic-hd-1qox9z9t5lrsnsxl.jpg",
+      image: "https://images.alphacoders.com/136/thumb-440-1363137.webp",
       title: "Experience the Art of Anime Films",
       subtitle:
         "Dive into worlds filled with breathtaking visuals and heart-stirring stories.",
     },
     {
-      image: "https://wallpapers.com/images/hd/spirited-away-chihiro-studio-ghibli-anime-xyv8bcqxx7cofi7m.jpg",
+      image: "https://images7.alphacoders.com/133/thumb-440-1337391.webp",
       title: "Timeless Classics and Modern Masterpieces",
       subtitle:
         "Relive iconic films like Spirited Away and discover new favorites.",
     },
     {
-      image: "https://wallpapers.com/images/hd/anime-night-cityscape-film-hd-xgz8d7ifgjpksqxw.jpg",
+      image: "https://images.alphacoders.com/601/thumb-440-601312.webp",
       title: "A Cinematic Journey through Anime",
       subtitle:
         "From emotional dramas to epic fantasies, explore every genre.",

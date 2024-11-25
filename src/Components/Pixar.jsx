@@ -27,19 +27,19 @@ const Pixar = () => {
   // Background slides data
   const slides = [
     {
-      image: "https://wallpapers.com/images/featured/pixar-cx81w1x378htuj4p.webp",
+      image: "https://images8.alphacoders.com/136/thumb-440-1360697.webp",
       title: "Step into the World of Pixar Magic",
       subtitle:
         "Discover animated masterpieces that inspire imagination and touch hearts around the world.",
     },
     {
-      image: "https://wallpapers.com/images/high/pixar-1920-x-1200-background-nkdaue49xsg7t9uo.webp",
+      image: "https://images.alphacoders.com/229/thumb-440-229893.webp",
       title: "Feel the Emotion Behind Every Story",
       subtitle:
         "Explore the stories that bring laughter, tears, and unforgettable memories.",
     },
     {
-      image: "https://wallpapers.com/images/high/pixar-1920-x-1200-background-nkdaue49xsg7t9uo.webp",
+      image: "https://images8.alphacoders.com/137/thumb-440-1372207.webp",
       title: "Celebrate the Art of Animation",
       subtitle:
         "From Toy Story to Turning Red, relive the magic of every Pixar classic.",

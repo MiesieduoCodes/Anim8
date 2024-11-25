@@ -28,19 +28,19 @@ const Illumination = () => {
   };
   const slides = [
     {
-      image: "https://wallpapers.com/images/hd/minions-and-gru-illumination-wallpaper-tzavl5eh5nxbl5py.jpg",
+      image: "https://images7.alphacoders.com/677/thumb-440-677436.webp",
       title: "Step into the Brilliance of Illumination",
       subtitle:
         "Discover the hilarity and heart behind Despicable Me, Minions, and more.",
     },
     {
-      image: "https://wallpapers.com/images/hd/sing-movie-illumination-hd-tuz8oxlt8f7ka9yi.jpg",
+      image: "https://images6.alphacoders.com/120/thumb-440-1208592.webp",
       title: "Feel the Music and Joy of Sing",
       subtitle:
         "Experience the power of music and unforgettable characters in Sing.",
     },
     {
-      image: "https://wallpapers.com/images/hd/secret-life-of-pets-hd-animation-wallpaper-swn5zpwe98ijijqm.jpg",
+      image: "https://images7.alphacoders.com/825/thumb-440-825278.webp",
       title: "Explore the Secret Life of Pets",
       subtitle:
         "A hilarious look into what our furry friends do when we're not around.",

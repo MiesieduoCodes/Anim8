@@ -55,25 +55,25 @@ const AnimeSeries = () => {
   }, [currentTrackIndex, isMusicPlaying]);
   const slides = [
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/3/33/Scooby-Doo_Where_Are_You%3F_logo.jpg",
+      image: "https://images2.alphacoders.com/471/thumb-440-471197.webp",
       title: "Unravel Mysteries with Scooby-Doo and the Gang",
       subtitle: "Join Scooby-Doo, Shaggy, Velma, Daphne, and Fred as they solve spooky mysteries and unmask villains.",
     },
   
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Barbie_Logo.png",
+      image: "https://wallpapers.com/images/hd/teen-barbie-doll-m75hneqobytwepzf.webp",
       title: "Explore the World of Barbie",
       subtitle: "From fashion to adventures, follow Barbie through her many careers and thrilling escapades.",
     },
   
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Marvel_logo.svg",
+      image: "https://wallpapers.com/images/high/marvel-and-dc-iphone-w2zwnmhjohj7m3wy.webp",
       title: "Join the Marvel Universe",
       subtitle: "Experience the thrilling adventures of Earth's mightiest heroes, from Iron Man to Spider-Man and beyond.",
     },
   
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/a/a4/DC_Comics_logo.svg",
+      image: "https://wallpapers.com/images/high/blue-and-red-dc-superheroes-iozpdy9tja6gbnwa.webp",
       title: "The Legends of DC Comics",
       subtitle: "Step into the world of Batman, Superman, Wonder Woman, and more in epic battles for justice.",
     },
@@ -95,34 +95,36 @@ const AnimeSeries = () => {
       
       <div className="container mx-auto my-10 relative z-10">
       <Swiper
-      modules={[Autoplay]} // Enable autoplay
-      autoplay={{
-        delay: 3000, // Slide change interval in milliseconds
-        disableOnInteraction: false, // Keep autoplay active even after interaction
-      }}
-      loop
-      spaceBetween={0}
-      slidesPerView={1}
-      className="h-64 md:h-80 lg:h-96"
-    >
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
-          <div
-            className="relative bg-cover bg-center h-[100vh] md:h-80 lg:h-96"
-            style={{ backgroundImage: `url('${slide.image}')` }}
-          >
-            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-6 md:p-8 lg:p-10">
-              <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
-                {slide.title}
-              </h1>
-              <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
-                {slide.subtitle}
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+  modules={[Autoplay]} // Enable autoplay
+  autoplay={{
+    delay: 3000, // Slide change interval in milliseconds
+    disableOnInteraction: false, // Keep autoplay active even after interaction
+  }}
+  loop
+  spaceBetween={0}
+  slidesPerView={1}
+  className="h-64 md:h-80 lg:h-96"
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div className="relative h-[100vh] md:h-80 lg:h-96 flex flex-col justify-end">
+        <div
+          className="absolute inset-0 bg-cover bg-center object-center object-cover"
+          style={{ backgroundImage: `url('${slide.image}')` }}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center pt-10 md:pt-20 lg:pt-24">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+            {slide.title}
+          </h1>
+          <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
+            {slide.subtitle}
+          </p>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
 
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="mb-8 p-32">

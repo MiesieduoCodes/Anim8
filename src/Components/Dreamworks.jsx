@@ -29,19 +29,19 @@ const DreamWorks = () => {
   };
   const slides = [
     {
-      image: "https://wallpapers.com/images/hd/dreamworks-animation-logo-4k-l8f5ydu8r5xhnokg.jpg",
+      image: "https://wallpapers.com/images/high/monsters-vs-aliens-dreamworks-6ipboeyh5curod8z.webp",
       title: "Discover the World of DreamWorks Animation",
       subtitle:
         "Unleash your imagination with iconic characters and unforgettable stories.",
     },
     {
-      image: "https://wallpapers.com/images/hd/dreamworks-animation-cast-wallpaper-btfqjfzv5qumezwf.jpg",
+      image: "https://wallpapers.com/images/high/shrek-and-donkey-goofy-dngksu7xmohxyfk7.webp",
       title: "Iconic Heroes and Hilarious Villains",
       subtitle:
         "From Shrek to Kung Fu Panda, enjoy tales of adventure, laughter, and heart.",
     },
     {
-      image: "https://wallpapers.com/images/hd/how-to-train-your-dragon-4k-dreamworks-vgu8m95p8kq8oh0g.jpg",
+      image: "https://wallpapers.com/images/high/how-to-train-your-dragon-4k-6591wv7tsyq2p0xy.webp",
       title: "Soar to New Heights with DreamWorks",
       subtitle:
         "Join beloved characters in breathtaking adventures that captivate all ages.",

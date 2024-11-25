@@ -38,19 +38,19 @@ const Netflix = () => {
   }, [isMusicPlaying, currentTrackIndex]);
   const slides = [
     {
-      image: "https://wallpapers.com/images/hd/netflix-animation-logo-4k-r5vmf22j6ntvjpsu.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9-8wNW3j2639T2ePUrOElynaIzrBxVEWYg&s",
       title: "Dive into Netflix Animation",
       subtitle:
         "Experience groundbreaking animated stories that captivate audiences of all ages.",
     },
     {
-      image: "https://wallpapers.com/images/hd/netflix-animated-series-poster-v2zmyfgkhsvuimcs.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqT7PYRqexCJOAhM5BuknAseavzbS8cy_81Q&s",
       title: "Unforgettable Adventures Await",
       subtitle:
         "Join characters on thrilling journeys filled with humor, heart, and breathtaking visuals.",
     },
     {
-      image: "https://wallpapers.com/images/hd/netflix-animation-movies-wallpaper-t9ut27wg2i7hy41i.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeDIHKbh99wjsA8DdQLkncCuTKzFoO6OpSQ&s",
       title: "Celebrate Animated Excellence",
       subtitle:
         "From family favorites to bold new stories, discover the magic of Netflix animations.",

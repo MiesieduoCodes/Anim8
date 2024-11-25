@@ -57,12 +57,12 @@ const Disney = () => {
       subtitle: "Journey through timeless Disney tales that have inspired wonder and sparked joy across generations."
     },
     {
-      image: "https://wallpapers.com/images/hd/magical-disney-world-w8pu62icwwc57u2q.jpg",
+      image: "https://images8.alphacoders.com/135/thumbbig-1355365.webp",
       title: "Explore the Magic Kingdom",
       subtitle: "Step into a world where dreams come true and adventure awaits at every corner."
     },
     {
-      image: "https://wallpapers.com/images/hd/disney-castle-at-night-3dxz3wc3pc51ouge.jpg",
+      image: "https://images.alphacoders.com/191/thumbbig-191411.webp",
       title: "Discover Iconic Stories",
       subtitle: "Relive your favorite moments from Disney classics and create new memories."
     }
