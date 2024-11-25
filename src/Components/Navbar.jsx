@@ -80,7 +80,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-
       {showSearchPopup && (
         <motion.div
           className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
@@ -101,7 +100,7 @@ const Navbar = () => {
               Search
             </button>
             <button
-              className="text-red-500 font-semibold w-full hover:text-red-700 transition"
+              className="text-red-500 font-semibold  w-full hover:text-red-700 transition"
               onClick={() => setShowSearchPopup(false)}
             >
               Close
