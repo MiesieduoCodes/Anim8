@@ -88,19 +88,20 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
-            <h2 className="text-xl font-bold text-center mb-4">Search Anim8...</h2>
+          <div className="bg-gradient-to-r from-gray-100 to-white p-8 rounded-2xl shadow-xl w-96">
+            <h2 className="text-2xl font-extrabold text-center mb-6 text-gray-800">Search Anim8</h2>
             <input
               type="text"
-              placeholder="Type here..."
-              className="border w-full p-2 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+              placeholder="What are you looking for?"
+              className="border-2 border-gray-300 w-full p-3 rounded-lg mb-6 focus:outline-none focus:ring-4 focus:ring-red-300"
             />
             <button
-              className="bg-red-500 text-white px-4 py-2 rounded-lg w-full">
+              className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg w-full mb-4 shadow-md hover:shadow-lg transition"
+            >
               Search
             </button>
             <button
-              className="mt-4 text-red-500 underline w-full"
+              className="text-red-500 font-semibold w-full hover:text-red-700 transition"
               onClick={() => setShowSearchPopup(false)}
             >
               Close
