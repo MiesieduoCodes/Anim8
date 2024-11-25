@@ -38,14 +38,8 @@ const Hero = () => {
     toggleMusic,
     currentTrackIndex,
     changeTrack,
-    tracks = [],
   } = useContext(MusicContext);
 
-  const currentTrack = tracks[currentTrackIndex] || {
-    title: "No Track oiiiii",
-    artist: "Unknown ioooo",
-    cover: "/default-cover.jpg",
-  };
 
   const backgrounds = [
     'https://wallpapers.com/images/high/cartoons-in-madagascar-escape-2-africa-izj1z41a3vjuyenh.webp',
@@ -264,23 +258,7 @@ const Hero = () => {
       <Footer />
 
       {/* Mini Music Player */}
-      <div className="fixed bottom-16 right-4 bg-white p-4 rounded-lg shadow-lg w-80 flex items-center gap-4">
-        <img
-          src={currentTrack.cover}
-          alt="Track Cover"
-          className="w-16 h-16 object-cover rounded"
-        />
-        <div className="flex-1">
-          <h3 className="text-sm font-bold">{currentTrack.title}</h3>
-          <p className="text-xs text-gray-600">{currentTrack.artist}</p>
-        </div>
-        <button
-          className="p-2 bg-blue-500 text-white rounded-full"
-          onClick={toggleMusic}
-        >
-          {isMusicPlaying ? "Pause" : "Play"}
-        </button>
-      </div>
+
 
       {/* Floating Music Button */}
       <FloatingMusicButton
