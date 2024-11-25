@@ -202,5 +202,53 @@ const movieData = [
         }
       ]
     },
+    {
+      title: "Bleach : The Movie",
+  
+      backgroundImage: "https://example.com/images/teen-titans.jpg",
+      synopsis: "Ichigo Kurosaki and his friends battle dangerous spirits and protect the living world while uncovering secrets of the Soul Society.",
+      seasons: [
+        {
+          seasonNumber: 1,
+          backgroundImage: "https://example.com/images/teen-titans-s1.jpg",
+          episodes: [
+            {
+              epiNum: 1,
+              backgroundImage: "https://example.com/images/teen-titans-s1e1.jpg",
+              synopsis: "The Titans face off against a powerful foe threatening their city."
+            },
+            {
+              epiNum: 2,
+              backgroundImage: "https://example.com/images/teen-titans-s1e2.jpg",
+              synopsis: "A strange signal leads the Titans to uncover a sinister plot."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Detective Conan",
+  
+      backgroundImage: "https://example.com/images/teen-titans.jpg",
+      synopsis: "Conan Edogawa solves complex mysteries and brings criminals to justice while navigating life as a kid detective with a hidden identity.",
+      seasons: [
+        {
+          seasonNumber: 1,
+          backgroundImage: "https://example.com/images/teen-titans-s1.jpg",
+          episodes: [
+            {
+              epiNum: 1,
+              backgroundImage: "https://example.com/images/teen-titans-s1e1.jpg",
+              synopsis: "The Titans face off against a powerful foe threatening their city."
+            },
+            {
+              epiNum: 2,
+              backgroundImage: "https://example.com/images/teen-titans-s1e2.jpg",
+              synopsis: "A strange signal leads the Titans to uncover a sinister plot."
+            }
+          ]
+        }
+      ]
+    },
 ];
 export default movieData;

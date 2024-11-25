@@ -3,25 +3,12 @@ import NavLinks from "./NavLinks";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { IoSearch } from "react-icons/io5";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-
-  // Example content to search through
-  const content = [
-    "Detective Conan",
-    "One Piece",
-    "Sword Art Online",
-    "Bleach",
-    "Ghost in the Shell",
-    "Fullmetal Alchemist",
-    "Psycho-Pass",
-    "The Garden Of Sinners",
-    // Add more items as needed
-  ];
+  const [showSearchPopup, setShowSearchPopup] = useState(false);
 
   const handleScroll = () => {
     setScrolled(window.scrollY > 0);
@@ -33,21 +20,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const handleSearch = (e) => {
-    const term = e.target.value.toLowerCase();
-    setSearchTerm(term);
-
-    // Update search results based on the search term
-    if (term) {
-      const results = content.filter(item =>
-        item.toLowerCase().includes(term)
-      );
-      setSearchResults(results);
-    } else {
-      setSearchResults([]);
-    }
-  };
 
   return (
     <nav
@@ -65,40 +37,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Search Input for Desktop with Entrance Animation */}
-        <motion.div
-          className="relative hidden md:flex items-center flex-grow"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <input
-            type="text"
-            placeholder="Search Movies or Shows..."
-            value={searchTerm}
-            onChange={handleSearch}
-            className="border rounded-lg p-2 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-red-500"
-          />
-          {searchTerm && searchResults.length > 0 && (
-            <motion.div
-              className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2 max-h-72 overflow-y-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              {searchResults.map((result, index) => (
-                <Link
-                  key={index}
-                  to={`/${result.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  {result}
-                </Link>
-              ))}
-            </motion.div>
-          )}
-        </motion.div>
-
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center gap-8">
           <li>
@@ -114,41 +52,19 @@ const Navbar = () => {
           </li>
         </ul>
 
+        <button
+          className="hidden md:block text-red-500 text-2xl"
+          onClick={() => setShowSearchPopup(true)}
+        >
+          <IoSearch/>
+        </button>
+
         {/* Mobile Menu */}
         <ul
           className={`md:hidden bg-white absolute top-0 left-0 z-10 w-full h-screen py-24 pl-4 transition-transform duration-500 ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          {/* Search Input for Mobile */}
-          <div className="relative mb-4">
-            <input
-              type="text"
-              placeholder="Search Movies or Shows..."
-              value={searchTerm}
-              onChange={handleSearch}
-              className="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-red-500"
-            />
-            {searchTerm && searchResults.length > 0 && (
-              <motion.div
-                className="absolute z-20 bg-white text-black shadow-lg rounded-lg w-full mt-2 max-h-72 overflow-y-auto"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-              >
-                {searchResults.map((result, index) => (
-                  <Link
-                    key={index}
-                    to={`/${result.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    {result}
-                  </Link>
-                ))}
-              </motion.div>
-            )}
-          </div>
-
           {/* Mobile Navigation Links */}
           <li>
             <Link to="/" className="py-7 px-3 inline-block">
@@ -163,6 +79,34 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
+      {showSearchPopup && (
+        <motion.div
+          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
+            <h2 className="text-xl font-bold text-center mb-4">Search Anim8...</h2>
+            <input
+              type="text"
+              placeholder="Type here..."
+              className="border w-full p-2 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+            />
+            <button
+              className="bg-red-500 text-white px-4 py-2 rounded-lg w-full">
+              Search
+            </button>
+            <button
+              className="mt-4 text-red-500 underline w-full"
+              onClick={() => setShowSearchPopup(false)}
+            >
+              Close
+            </button>
+          </div>
+        </motion.div>
+      )}
     </nav>
   );
 };
