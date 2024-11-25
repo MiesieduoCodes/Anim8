@@ -19,7 +19,8 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [])
+  ;
 
   return (
     <nav
@@ -27,7 +28,7 @@ const Navbar = () => {
         scrolled ? "bg-slate-400 shadow-lg" : "bg-white"
       }`}
     >
-      <div className="flex items-center font-medium justify-between px-4 md:px-8">
+      <div className="flex items-center font-medium justify-between px-2 md:px-8">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <h1 className="md:cursor-pointer text-3xl h-9">
             Anim<span className="text-red-500">8</span>
