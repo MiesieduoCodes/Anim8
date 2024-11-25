@@ -7,7 +7,7 @@ const movieData = [
     },
     {
       title: "Avengers Assemble",
-      backgroundImage: "https://example.com/images/avengers.jpg",
+      backgroundImage: "https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5131/795131-i",
       synopsis: "Earth's Mightiest Heroes come together to save the world from various threats.",
 
     },
