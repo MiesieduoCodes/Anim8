@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../Firebase'; // Adjust the path to your firebase.js file
 
 const SignupPayment = () => {
   const [email, setEmail] = useState('');
@@ -16,31 +18,35 @@ const SignupPayment = () => {
     const interval = setInterval(() => {
       setBgColor(colors[index]);
       index = (index + 1) % colors.length;
-    }, 3000); // Change color every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    try {
-      // Signup user
-      const response = await fetch('/api/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password, confirmPassword }),
-      });
-      const data = await response.json();
-      console.log(data);
 
-      // Proceed to payment if signup is successful
-      if (data.success) {
-        console.log('Signup successful. Ready for payment.');
-      }
+    if (password !== confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+
+    try {
+      // Save user details to Firestore without password hashing
+      const docRef = await addDoc(collection(db, 'users'), {
+        email,
+        password, // Save the plain password (not recommended for production)
+        subscription: amount === 300 ? 'Monthly' : 'Yearly',
+        signupDate: new Date().toISOString(),
+      });
+
+      console.log('User signed up with ID: ', docRef.id);
+      alert('Signup successful! Proceeding to payment.');
+
+      // Redirect to payment or next step
     } catch (error) {
-      console.error(error);
+      console.error('Error signing up: ', error);
+      alert('Signup failed. Please try again.');
     }
   };
 
@@ -78,7 +84,7 @@ const SignupPayment = () => {
             <select
               id="amount"
               value={amount}
-              onChange={(e) => setAmount(e.target.value)}
+              onChange={(e) => setAmount(Number(e.target.value))}
               className="block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
             >
               <option value={300}>₦300 (Monthly)</option>
