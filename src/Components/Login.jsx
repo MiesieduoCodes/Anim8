@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -50,6 +51,15 @@ const Login = () => {
             Login
           </button>
         </form>
+        {/* Link to Signup */}
+        <div className="mt-4 text-center">
+          <p className="text-sm text-gray-600">
+            Don't have an account?{' '}
+            <Link to="/signup" className="text-blue-500 hover:underline">
+              Sign up here
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

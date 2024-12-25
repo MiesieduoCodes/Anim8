@@ -76,6 +76,11 @@ const Navbar = () => {
               Talk To Anim8
             </Link>
           </li>
+          <li>
+            <Link to="/signup" className="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-600 transition duration-200">
+              Join Anim8
+            </Link>
+          </li>
         </ul>
 
         <button
@@ -100,6 +105,11 @@ const Navbar = () => {
           <li>
             <Link to="/talk" className="py-7 px-3 inline-block">
               Talk To Anim8
+            </Link>
+          </li>
+          <li>
+            <Link to="/signup" className="py-7 px-3 inline-block">
+              Join Anim8
             </Link>
           </li>
         </ul>

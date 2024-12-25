@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// import { PaystackButton } from 'react-paystack';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const SignupPayment = () => {
   const [email, setEmail] = useState('');
@@ -43,20 +43,6 @@ const SignupPayment = () => {
       console.error(error);
     }
   };
-
-  // Uncomment and configure the Paystack payment functionality as needed
-  // const paystackProps = {
-  //   email,
-  //   amount: amount * 100, // Paystack expects amount in kobo
-  //   publicKey: 'YOUR_PAYSTACK_PUBLIC_KEY', // Replace with your Paystack public key
-  //   text: 'Make Payment',
-  //   onSuccess: (reference) => {
-  //     console.log('Payment successful:', reference);
-  //   },
-  //   onClose: () => {
-  //     console.log('Payment closed');
-  //   },
-  // };
 
   return (
     <div className={`flex flex-col items-center justify-center min-h-screen p-4 transition-all duration-500 ${bgColor}`}>
@@ -106,10 +92,15 @@ const SignupPayment = () => {
             Signup
           </button>
         </form>
-        {/* Uncomment the Paystack Button when ready to implement */}
-        {/* <div className="mt-4">
-          <PaystackButton {...paystackProps} className="w-full py-2 bg-green-600 text-white font-semibold rounded-md hover:bg-green-500 transition duration-200" />
-        </div> */}
+        {/* Link to Login */}
+        <div className="mt-4 text-center">
+          <p className="text-sm text-gray-600">
+            Already have an account?{' '}
+            <Link to="/login" className="text-blue-500 hover:underline">
+              Login here
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );
