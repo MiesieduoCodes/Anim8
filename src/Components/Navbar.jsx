@@ -77,12 +77,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/signup" className="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-600 transition duration-200">
+            <Link
+              to="/signup"
+              className="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-600 transition duration-200"
+            >
               Join Anim8
             </Link>
           </li>
         </ul>
 
+        {/* Search Button (Desktop) */}
         <button
           className="hidden md:block text-red-500 text-2xl"
           onClick={() => setShowSearchPopup(true)}
@@ -115,6 +119,7 @@ const Navbar = () => {
         </ul>
       </div>
 
+      {/* Search Popup */}
       {showSearchPopup && (
         <motion.div
           className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
@@ -145,7 +150,10 @@ const Navbar = () => {
               ))}
               {searchQuery && suggestions.length === 0 && (
                 <li className="px-4 py-2 text-gray-500">
-                  No matches found. <Link to="/request" className="text-red-500 underline">Request it?</Link>
+                  No matches found.{" "}
+                  <Link to="/request" className="text-red-500 underline">
+                    Request it?
+                  </Link>
                 </li>
               )}
             </ul>
