@@ -1,0 +1,66 @@
+/* Light and dark mode themes */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Smooth transition */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Day to night animation */
+@keyframes dayToNight {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+
+@keyframes nightToDay {
+  0% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+/* Apply transition */
+body.transitioning.light {
+  animation: nightToDay 1s forwards;
+}
+
+body.transitioning.dark {
+  animation: dayToNight 1s forwards;
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-button {
+  position: fixed; /* Stays in place when scrolling */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  background-color: #ff5722; /* Bright color for visibility */
+  color: #ffffff; /* Text color */
+  padding: 10px 15px; /* Size of the button */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it a circle */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  z-index: 1000; /* Ensures it's above other elements */
+  font-size: 16px; /* Font size for better visibility */
+}
+
+.theme-toggle-button:hover {
+  background-color: #e64a19; /* Slightly darker on hover */
+  transform: scale(1.1); /* Enlarges slightly on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
