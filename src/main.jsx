@@ -43,7 +43,7 @@ import Garden from "./Components/The Garden of Sinners";
 import Pokemon from "./Components/Pokemon";
 import Illumination from "./Components/Illumination";
 import Movie from "./Components/MovieCollection";
-
+import UsingHooks from "./UsingHook";
 // Episodes and Seasons
 import SeasonsPage from "./Components/SeasonPage";
 import EpisodesPage from "./Components/Episodes";
@@ -64,6 +64,7 @@ const generalRoutes = [
   { path: "/whatsgood", element: <WhatsGood /> },
   { path: "/talk", element: <Talk /> },
   { path: "/get", element: <GetApp /> },
+  { path: "/pay", element: <UsingHooks /> },
 ];
 
 const animationRoutes = [

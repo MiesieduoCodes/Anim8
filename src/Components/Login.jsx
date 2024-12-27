@@ -9,7 +9,7 @@ const firebaseConfig = {
     apiKey: "AIzaSyBKE0dQ32aXLOBfSwAFazOWxfMWQznaTmY",
     authDomain: "paymentslip-90abf.firebaseapp.com",
     projectId: "paymentslip-90abf",
-    storageBucket: "paymentslip-90abf.firebasestorage.app",
+    storageBucket: "paymentslip-90abf.appspot.com",
     messagingSenderId: "39407549314",
     appId: "1:39407549314:web:3edd3d343be9e8bcff2d9b",
     measurementId: "G-XJ4L5H9QLD"
@@ -26,17 +26,19 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (!termsAccepted) {
       alert('You must accept the terms and conditions');
       return;
     }
+
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
       console.log('Logged in as:', user.email);
       alert('Login successful!');
-      navigate('/dashboard');
+      navigate('/dashboard'); // Adjust the redirect as needed
     } catch (error) {
       console.error('Error during login:', error);
       alert('Login failed. Please try again.');
@@ -44,9 +46,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col min-h-screen bg-gray-100 p-4">
       <Navbar />
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm flex-grow">
         <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Login to Your Account</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -72,7 +74,7 @@ const Login = () => {
               onChange={(e) => setTermsAccepted(e.target.checked)}
               className="mr-2"
             />
-            <label htmlFor="terms" className="text-sm text-gray-600">
+            <label className="text-sm text-gray-600">
               I accept the <Link to="/terms" className="text-blue-500 hover:underline">terms and conditions</Link>.
             </label>
           </div>
