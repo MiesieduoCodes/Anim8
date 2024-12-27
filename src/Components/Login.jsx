@@ -37,11 +37,11 @@ const Login = () => {
       const user = userCredential.user;
 
       console.log('Logged in as:', user.email);
-      alert('Login successful!');
-      navigate('/dashboard'); // Adjust the redirect as needed
+      // alert('Login successful!');
+      navigate('/'); // Adjust the redirect as needed
     } catch (error) {
       console.error('Error during login:', error);
-      alert('Login failed. Please try again.');
+      // alert('Login failed. Please try again.');
     }
   };
 
