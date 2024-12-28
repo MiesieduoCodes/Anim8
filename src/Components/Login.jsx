@@ -21,7 +21,7 @@ const auth = getAuth(app);
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [termsAccepted, setTermsAccepted] = useState(false);
+  const [termsAccepted] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {

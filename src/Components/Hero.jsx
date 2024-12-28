@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
 import Navbar from './Navbar';
-import { FaWhatsapp } from "react-icons/fa";
 import Footer from './Footer';
+import SignupPage from './Signup'; // Assuming you have a SignupPage component
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBKE0dQ32aXLOBfSwAFazOWxfMWQznaTmY',
@@ -25,6 +25,7 @@ const HeroWithLogin = () => {
   const [password, setPassword] = useState('');
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [isSignup, setIsSignup] = useState(false); // State to toggle between forms
   const navigate = useNavigate();
 
   const sliderVariants = {
@@ -98,153 +99,67 @@ const HeroWithLogin = () => {
           </div>
         </div>
 
-        {/* Login Section */}
+        {/* Login or Signup Section */}
         <div className="flex items-center justify-center flex-grow bg-gray-100 p-8">
           <div className="w-full max-w-md">
-            <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Login to Your Account</h1>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
-                required
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
-              />
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
-                required
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
-              />
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="terms"
-                  checked={termsAccepted}
-                  onChange={(e) => setTermsAccepted(e.target.checked)}
-                  className="mr-2"
-                />
-                <label htmlFor="terms" className="text-sm text-gray-600">
-                  I accept the terms and conditions
-                </label>
-              </div>
-              <button
-                type="submit"
-                className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500 transition duration-200"
-              >
-                Login
-              </button>
-            </form>
-            <div className="mt-4 text-center">
-              <p className="text-sm text-gray-600">
-                Don&apos;t have an account?{' '}
-                <Link to="/signup" className="text-blue-500 hover:underline">
-                  Sign up here
-                </Link>
-              </p>
-            </div>
+            {isSignup ? (
+              <SignupPage /> // Render the SignupPage component when isSignup is true
+            ) : (
+              <>
+                <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Login to Your Account</h1>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                    required
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                  />
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Password"
+                    required
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                  />
+                  <div className="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="terms"
+                      checked={termsAccepted}
+                      onChange={(e) => setTermsAccepted(e.target.checked)}
+                      className="mr-2"
+                    />
+                    <label htmlFor="terms" className="text-sm text-gray-600">
+                      I accept the terms and conditions
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500 transition duration-200"
+                  >
+                    Login
+                  </button>
+                </form>
+                <div className="mt-4 text-center">
+                  <p className="text-sm text-gray-600">
+                    Don&apos;t have an account?{' '}
+                    <button
+                      onClick={() => setIsSignup(true)} // Switch to signup form when clicked
+                      className="text-blue-500 hover:underline"
+                    >
+                      Sign up here
+                    </button>
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
-      <div className="h-screen flex flex-col justify-center items-center bg-slate-600 p-8">
-        <div className="flex flex-col md:flex-row justify-between w-full max-w-6xl gap-4 md:gap-8">
-          {/* Left Side */}
-          <motion.div
-            className="flex-1 h-64 bg-blue-500 flex flex-col items-center justify-center text-white text-center rounded-lg shadow-lg cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 p-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={sliderVariants}
-            whileHover={{ scale: 1.1 }}
-          >
-            <h2 className="text-lg md:text-2xl font-bold mb-2">Get Comics</h2>
-            <p className="text-sm md:text-base mb-4">
-              Dive into a world of action, adventure, and imagination with our vast
-              collection of comics. Start your journey today!
-            </p>
-
-            <div className="relative group">
-              <button className="bg-white text-blue-500 font-bold py-2 px-4 rounded-full flex items-center gap-3 transition-all duration-300 group-hover:pr-6">
-                Explore Now
-                <motion.div
-                  className="opacity-0 group-hover:opacity-100 text-blue-500 text-2xl"
-                  initial={{ x: -10 }}
-                  animate={{ x: 0 }}
-                  transition={{ repeat: Infinity, repeatType: "reverse", duration: 0.6 }}
-                >
-                  →
-                </motion.div>
-              </button>
-            </div>
-          </motion.div>
-
-          {/* Center Side */}
-          <motion.div
-            className="flex-1 h-64 bg-green-500 flex flex-col items-center justify-center text-white text-center rounded-lg shadow-lg cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 p-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={sliderVariants}
-            whileHover={{ scale: 1.1 }}
-          >
-            <h2 className="text-lg md:text-2xl font-bold mb-2">Request Movies on WhatsApp</h2>
-            <p className="text-sm md:text-base mb-4">
-              Can&apos;t find your favorite movie? Send us a request via WhatsApp, and we&apos;ll
-              make it available for you. It&apos;s that easy!
-            </p>
-
-            <div className="relative group">
-              <button className="bg-white text-green-500 font-bold py-2 px-4 rounded-full flex items-center gap-3 transition-all duration-300 group-hover:pr-6">
-                Request Now
-                <motion.div
-                  className="opacity-0 group-hover:opacity-100 text-green-500 text-2xl"
-                  initial={{ x: -10 }}
-                  animate={{ x: 0 }}
-                  transition={{ repeat: Infinity, repeatType: "reverse", duration: 0.6 }}
-                >
-                  <FaWhatsapp className="text-2xl text-green-500 hover:text-green-400" />
-                </motion.div>
-              </button>
-            </div>
-          </motion.div>
-
-          {/* Right Side */}
-          <motion.div
-            className="flex-1 h-64 bg-red-500 flex flex-col items-center justify-center text-white text-center rounded-lg shadow-lg cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-300 p-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={sliderVariants}
-            whileHover={{ scale: 1.1 }}
-          >
-            <h2 className="text-lg md:text-2xl font-bold mb-2">Request Movie Collections</h2>
-            <p className="text-sm md:text-base mb-4">
-              Explore complete collections from your favorite franchises like DC, Marvel, 
-              Scooby-Doo, and Barbie. Curated just for you!
-            </p>
-
-            <div className="relative group">
-              <Link to="/movie">
-                <button className="bg-white text-red-500 font-bold py-2 px-4 rounded-full flex items-center gap-3 transition-all duration-300 group-hover:pr-6">
-                  Request Collection
-                  <motion.div
-                    className="opacity-0 group-hover:opacity-100 text-red-500 text-2xl"
-                    initial={{ x: -10 }}
-                    animate={{ x: 0 }}
-                    transition={{ repeat: Infinity, repeatType: "reverse", duration: 0.6 }}
-                  >
-                    →
-                  </motion.div>
-                </button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
+      
       <Footer />
     </div>
   );
