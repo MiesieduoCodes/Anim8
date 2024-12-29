@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
@@ -25,34 +25,6 @@ const AnimeSeries = () => {
   const moviesByGenre = groupMoviesByGenre(movies);
  
  
-  const audioRef = useRef(null);
-
-  const toggleMusic = () => {
-    setIsMusicPlaying(!isMusicPlaying);
-  };
-
-  const changeTrack = (index) => {
-    setCurrentTrackIndex(index);
-  };
-
-  useEffect(() => {
-    if (audioRef.current) {
-      if (isMusicPlaying) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
-    }
-  }, [isMusicPlaying]);
-
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.src = `path/to/your/track-${currentTrackIndex}.mp3`;
-      if (isMusicPlaying) {
-        audioRef.current.play();
-      }
-    }
-  }, [currentTrackIndex, isMusicPlaying]);
   const slides = [
     {
       image: "https://images2.alphacoders.com/471/thumb-440-471197.webp",
@@ -182,16 +154,6 @@ const AnimeSeries = () => {
       </div>
 
       <Footer className="relative z-10" />
-
-      <FloatingMusicButton
-        isMusicPlaying={isMusicPlaying}
-        toggleMusic={toggleMusic}
-        currentTrackIndex={currentTrackIndex}
-        changeTrack={changeTrack}
-        className="relative z-10"
-      />
-
-      <audio ref={audioRef} src={`path/to/your/track-${currentTrackIndex}.mp3`} />
     </div>
   );
 };
