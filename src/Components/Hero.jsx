@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import SignupPage from './Signup'; // Assuming you have a SignupPage component
+import { FaWhatsapp, FaFilm, FaMagic } from 'react-icons/fa';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBKE0dQ32aXLOBfSwAFazOWxfMWQznaTmY',
@@ -27,12 +28,6 @@ const HeroWithLogin = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isSignup, setIsSignup] = useState(false); // State to toggle between forms
   const navigate = useNavigate();
-
-  const sliderVariants = {
-    fromDown: { y: '100%', opacity: 0 },
-    toPosition: { y: '0%', opacity: 1, transition: { duration: 1, ease: 'easeOut' } },
-    fromUp: { y: '-100%', opacity: 0 },
-  };
 
   const backgrounds = [
     'https://wallpapers.com/images/high/cartoons-in-madagascar-escape-2-africa-izj1z41a3vjuyenh.webp',
@@ -159,7 +154,61 @@ const HeroWithLogin = () => {
           </div>
         </div>
       </div>
-      
+
+      {/* Cards Section */}
+      <div className="py-10 bg-gray-100">
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Explore Our Features</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-10">
+          {/* Card 1 */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-lg shadow-lg p-6"
+          >
+            <FaWhatsapp className="text-green-500 text-5xl mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Request Movies & Content</h3>
+            <p className="text-gray-600 mb-4">
+              Easily request your favorite movies and animated content directly through WhatsApp.
+            </p>
+            <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
+              Request Now
+            </button>
+          </motion.div>
+
+          {/* Card 2 */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-lg shadow-lg p-6"
+          >
+            <FaFilm className="text-blue-500 text-5xl mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Stream High-Quality Films</h3>
+            <p className="text-gray-600 mb-4">
+              Enjoy a wide range of top-rated animated films in stunning quality anytime, anywhere.
+            </p>
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+              Start Streaming
+            </button>
+          </motion.div>
+
+          {/* Card 3 */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-lg shadow-lg p-6"
+          >
+            <FaMagic className="text-purple-500 text-5xl mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Discover Magic Moments</h3>
+            <p className="text-gray-600 mb-4">
+              Dive into the magical world of animations and explore content that inspires.
+            </p>
+            <button className="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600">
+              Discover Now
+            </button>
+          </motion.div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
