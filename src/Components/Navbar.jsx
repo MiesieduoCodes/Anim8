@@ -60,8 +60,8 @@ const Navbar = () => {
     >
       <div className="flex items-center font-medium justify-between px-4 md:px-6">
         {/* Logo and Menu Button */}
-        <div className="z-50 p-4 md:w-auto w-full flex justify-between">
-          <h1 className="md:cursor-pointer text-2xl font-bold">
+        <div className="z-50 p-2 md:w-auto w-full flex justify-between">
+          <h1 className="md:cursor-pointer text-xl font-bold">
             Anim<span className="text-red-500">8</span>
           </h1>
           <div
@@ -73,22 +73,22 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-4">
           <li>
-            <Link to="/" className="py-2 px-3 font-medium">
+            <Link to="/" className="py-1 px-2 font-medium">
               Home
             </Link>
           </li>
           <NavLinks />
           <li>
-            <Link to="/talk" className="py-2 px-3">
+            <Link to="/talk" className="py-1 px-2">
               Talk To Anim8
             </Link>
           </li>
           <li>
             <Link
               to="/signup"
-              className="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-600 transition duration-200"
+              className="py-1 px-3 bg-red-500 text-white rounded hover:bg-red-600 transition duration-200"
             >
               Join Anim8
             </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* Search Button (Desktop) */}
         <button
-          className="hidden md:block text-red-500 text-2xl"
+          className="hidden md:block text-red-500 text-xl"
           onClick={() => setShowSearchPopup(true)}
         >
           <IoSearch />
@@ -105,12 +105,12 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul
-          className={`md:hidden bg-white absolute top-0 left-0 z-10 w-full h-screen py-24 pl-6 transition-transform duration-500 ${
+          className={`md:hidden bg-white absolute top-0 left-0 z-10 w-full h-screen py-16 pl-6 transition-transform duration-500 ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
           {/* Search Button (Mobile) */}
-          <li className="py-3">
+          <li className="py-2">
             <button
               className="text-red-500 text-xl"
               onClick={() => setShowSearchPopup(true)}
@@ -119,20 +119,20 @@ const Navbar = () => {
             </button>
           </li>
 
-          {/* Navigation Links */}
-          <li className="py-3">
+          {/* Navigation Links with Spacing */}
+          <li className="py-2">
             <Link to="/" className="inline-block">
               Home
             </Link>
           </li>
           <NavLinks />
-          <li className="py-3">
+          <li className="py-2">
             <Link to="/talk" className="inline-block">
               Talk To Anim8
             </Link>
           </li>
-          <li className="py-3">
-            <Link to="/signup" className="inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+          <li className="py-2 mb-2"> {/* Add margin-bottom for spacing */}
+            <Link to="/signup" className="inline-block bg-red-500 text-white px-4 py-[6px] rounded hover:bg-red-600">
               Join Anim8
             </Link>
           </li>
@@ -147,7 +147,7 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="bg-gradient-to-r from-gray-100 to-white p-6 rounded-2xl shadow-xl w-80">
+          <div className="bg-gradient-to-r from-gray-100 to-white p-6 rounded-lg shadow-xl w-[90%] max-w-md">
             <h2 className="text-xl font-bold text-center mb-4 text-gray-800">
               Search Anim8
             </h2>
@@ -156,20 +156,20 @@ const Navbar = () => {
               placeholder="Search for an anime..."
               value={searchQuery}
               onChange={handleSearchInputChange}
-              className="border border-gray-300 w-full p-2 rounded mb-2 focus:outline-none focus:ring-2 focus:ring-red-300"
+              className="border border-gray-300 w-full p-[10px] rounded mb-[10px] focus:outline-none focus:ring focus:ring-red-300"
             />
-            <ul className="bg-white border rounded shadow max-h-40 overflow-y-auto">
+            <ul className="bg-white border rounded shadow max-h-[200px] overflow-y-auto">
               {suggestions.map((movie) => (
                 <li
                   key={movie.id}
-                  className="px-3 py-2 cursor-pointer hover:bg-gray-100"
+                  className="px-[10px] py-[8px] cursor-pointer hover:bg-gray-100"
                   onClick={() => handleSuggestionClick(movie.id)}
                 >
                   {movie.title}
                 </li>
               ))}
               {searchQuery && suggestions.length === 0 && (
-                <li className="px-3 py-2 text-gray-500">
+                <li className="px-[10px] py-[8px] text-gray-500">
                   No matches found.{" "}
                   <Link to="/movie" className="text-red-500 underline">
                     Request it?
@@ -178,7 +178,7 @@ const Navbar = () => {
               )}
             </ul>
             <button
-              className="text-red-500 font-medium w-full hover:text-red-700 transition mt-3"
+              className="text-red-500 font-medium w-full hover:text-red-700 transition mt-[10px]"
               onClick={() => setShowSearchPopup(false)}
             >
               Close
