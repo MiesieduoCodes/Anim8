@@ -1,7 +1,113 @@
-import { Link, useNavigate } from "react-router-dom";
-import NavLinks from "./NavLinks";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+// Navigation data
+const links = [
+  {
+    name: "Hey Ani",
+    submenu: true,
+    sublinks: [
+      { name: "About", link: "/about" },
+      { name: "FAQs", link: "/faqs" },
+    ],
+  },
+  {
+    name: "Toonz Hub",
+    submenu: true,
+    sublinks: [
+      { name: "Pixar", link: "/pixar" },
+      { name: "DreamWorks", link: "/dreamworks" },
+      { name: "Disney", link: "/disney" },
+      { name: "Netflix", link: "/netflix" },
+      { name: "Illumination", link: "/illumination" },
+    ],
+  },
+  {
+    name: "Anime Freak",
+    submenu: true,
+    sublinks: [
+      { name: "Anime Films", link: "/anime-films" },
+      { name: "Anime Series", link: "/anime-series" },
+    ],
+  },
+  {
+    name: "Anim8 Buddy",
+    submenu: true,
+    sublinks: [
+      { name: "Trailers", link: "/trailers" },
+      { name: "Trivias", link: "/trivias" },
+      { name: "Whatsup?", link: "/whatsgood" },
+    ],
+  },
+];
+
+// NavLinks Component
+const NavLinks = () => {
+  const [heading, setHeading] = useState("");
+  const [ setSubHeading] = useState("");
+
+  return (
+    <>
+      {links.map((link, index) => (
+        <div key={index}>
+          <div className="px-3 text-left md:cursor-pointer group">
+            <h1
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
+              onClick={() => {
+                heading !== link.name ? setHeading(link.name) : setHeading("");
+                setSubHeading("");
+              }}
+            >
+              {link.name}
+              <span className="text-xl md:hidden inline">
+                <ion-icon
+                  name={`${
+                    heading === link.name ? "chevron-up" : "chevron-down"
+                  }`}
+                ></ion-icon>
+              </span>
+              <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+                <ion-icon name="chevron-down"></ion-icon>
+              </span>
+            </h1>
+            {link.submenu && (
+              <div>
+                {/* Desktop dropdown */}
+                <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
+                  <div className="py-3">
+                    <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
+                  </div>
+                  <div className="bg-white p-5 grid grid-cols-3 gap-10">
+                    {link.sublinks.map((sublink, subIndex) => (
+                      <li key={subIndex} className="text-sm text-gray-600 my-2.5">
+                        <Link to={sublink.link} className="hover:text-primary">
+                          {sublink.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Mobile menus */}
+          <div className={`${heading === link.name ? "md:hidden" : "hidden"}`}>
+            {link.sublinks.map((sublink, subIndex) => (
+              <li key={subIndex} className="py-3 pl-14">
+                <Link to={sublink.link}>{sublink.name}</Link>
+              </li>
+            ))}
+          </div>
+        </div>
+      ))}
+    </>
+  );
+};
+
+// Navbar Component
+import { useNavigate } from "react-router-dom";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import { motion } from "framer-motion";
 import { IoSearch } from "react-icons/io5";
 import movies from "../Constants/data";

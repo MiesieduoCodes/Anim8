@@ -3,6 +3,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NavLinks.css */
+
+.nav-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333; /* Default text color */
+  transition: color 0.3s ease;
+}
+
+.dropdown {
+  display: none; /* Hidden by default */
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #f0f0f0; /* Optional divider between items */
+}
+
+.dropdown-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+/* Show dropdown when active */
+.nav-item:hover .dropdown,
+.nav-item .dropdown {
+  display: block; /* Show on hover or when active */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack items vertically */
+    background-color: white; /* Background color for mobile dropdown */
+    width: 100%; /* Full width */
+    position:absolute; /* Positioning for dropdown */
+    top:-10px; /* Adjust based on your navbar height */
+    left:-15px;
+    z-index:10; /* Ensure it appears above other elements */
+    box-shadow:rga(0,0,0,0.1)0px4px8px; /* Shadow for depth */
+    border-radius:.25rem; /* Rounded corners */
+}
+}
 .loader {
   border: 8px solid #f3f3f3; /* Light grey */
   border-top: 8px solid #3498db; /* Blue */
