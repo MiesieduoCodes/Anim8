@@ -25,20 +25,20 @@ const NavLinks = () => {
       ],
     },
     {
+      name: "Anime Freak",
+      submenu: true,
+      sublinks: [
+        { name: "Anime Films", link: "/anime-films" },
+        { name: "Anime Series", link: "/anime-series" },
+      ],
+    },
+    {
       name: "Anim8 Buddy",
       submenu: true,
       sublinks: [
         { name: "Trailers", link: "/trailers" },
         { name: "Trivias", link: "/trivias" },
         { name: "Whatsup?", link: "/whatsgood" },
-      ],
-    },
-    {
-      name: "Anime Freak",
-      submenu: true,
-      sublinks: [
-        { name: "Anime Films", link: "/anime-films" },
-        { name: "Anime Series", link: "/anime-series" },
       ],
     },
   ];
@@ -86,7 +86,7 @@ const NavLinks = () => {
                   openIndex === index
                     ? "opacity-100 scale-100 visible"
                     : "opacity-0 scale-95 invisible"
-                } md:absolute md:left-0 md:top-20 md:shadow-md md:w-64 w-full`}
+                } md:absolute md:left-0 md:top-20 md:w-64 w-full`}
               >
                 <ul className="space-y-1">
                   {link.sublinks.map((sublink, subIndex) => (
