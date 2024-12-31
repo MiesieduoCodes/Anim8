@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer" // Import the FloatingMusicButton
+import Footer from "./Footer"; // Import the FloatingMusicButton
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -11,28 +11,49 @@ const Faq = () => {
 
   const faqData = [
     {
-      question: "What is Anim8?",
-      answer: "Anim8 is a platform that offers high-quality animated films and anime for animation enthusiasts. We focus on providing a seamless and enjoyable experience, with data-efficient downloads and a curated selection of films across diverse genres."
+      question: "What Is Anim8?",
+      answer:
+        "Anim8.com.ng is a pay-to-use blogsite that offers its users access to downloadable top-rated animation movies as well as anime series, movies, and comics.",
     },
     {
-      question: "How do I download animations from Anim8?",
-      answer: "You can download animations by visiting the respective movie or anime page and clicking the download button. We offer both App Store and Google Play options for downloading the Anim8 app to ensure the best experience."
+      question: "Is Anim8 A Streaming Platform?",
+      answer:
+        "Anim8.com.ng is currently not an online streaming platform as all contents can be downloaded directly to the phone storage of its users.",
     },
     {
-      question: "How often is the content updated?",
-      answer: "We regularly update our library with new releases and exclusive content to keep our users entertained. Follow our social media channels for updates on new film releases."
+      question: "What Does Anim8 Offer?",
+      answer:
+        "Anim8.com.ng currently is designed to offer top-rated animation movies, series, and movies, as well as comics in downloadable MP4 format, with all animated movies on its platform bearing a 5.0 and above rating.",
     },
     {
-      question: "Can I suggest content to be added to Anim8?",
-      answer: "Yes! We value community input. You can share your suggestions for films or anime through our contact form or social media channels, and we will consider adding them to the platform."
+      question: "What type of Animation movies can I find on Anim8?",
+      answer:
+        "Unlike other movie download sites, Anim8.com.ng offers just top-rated animation movie content with its library consisting only of top-rated animated feature movies from Disney, Pixar, Illumination, DreamWorks, and Netflix.",
     },
     {
-      question: "What are the community features?",
-      answer: "Anim8 offers community features like Instagram, Facebook, and WhatsApp integration, where users can discuss content, share their thoughts, and stay updated with our latest news."
+      question: "Does Anim8 offer Anime Contents?",
+      answer:
+        "Yes! Anim8.com.ng offers both anime series and anime movies, with all being top-rated only.",
     },
     {
-      question: "How can I contact customer support?",
-      answer: "If you need assistance, you can contact our customer support through the 'Contact' page. We are available via email, phone, and our social media channels."
+      question: "What Genre of Anime Series can I find on Anim8?",
+      answer:
+        "Currently, Anim8.com.ng offers anime series in the genres of Romance, Action, Adventure, and Mystery.",
+    },
+    {
+      question: "What era of Anime series can I find on Anim8?",
+      answer:
+        "Anim8.com.ng offers downloadable top-rated anime series produced from 2010 till present.",
+    },
+    {
+      question: "What other animated contents can I find on Anim8?",
+      answer:
+        "Anim8.com.ng offers full movie collections ranging from Scooby Doo, Barbie Adventures, Pokemon, etc., which users can get by requesting, subject to agreeing with terms and conditions policies.",
+    },
+    {
+      question: "Why Should I use Anim8?",
+      answer:
+        "Anim8.com.ng offers an easy-to-understand user interface, eliminates constant decoy and intrusive ads users experience while using other download sites, and also renders value for data usage of users in terms of downloads, as all film content is mainly top-rated with a 5.0 rating and above, giving users a clear knowledge of the best animated films to download.",
     },
   ];
 
@@ -94,9 +115,7 @@ const Faq = () => {
       </div>
 
       {/* Footer */}
-     <Footer />
-
-
+      <Footer />
     </div>
   );
 };
