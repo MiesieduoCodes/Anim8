@@ -176,7 +176,7 @@ const HeroWithLogin = () => {
         through WhatsApp.
       </p>
       <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
-        <Link to="/movie">Request Now</Link>
+        <Link to="https://chat.whatsapp.com/Fb2mLRz4Xv7HGPQoejmLSY">Request Now</Link>
       </button>
     </motion.div>
 
@@ -213,9 +213,12 @@ const HeroWithLogin = () => {
         Dive into the magical world of animations and explore content that
         inspires and excites.
       </p>
+      <Link to ="/movie">
       <button className="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">
         Discover Now
       </button>
+      </Link>
+
     </motion.div>
   </div>
 </div>
