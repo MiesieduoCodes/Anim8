@@ -1,24 +1,26 @@
 "use client";
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { auth, db } from '../Firebase'; // Adjust the path accordingly
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { doc, setDoc } from 'firebase/firestore';
-import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Updated import
+import { motion } from "framer-motion";
+import { auth, db } from "../Firebase"; // Adjust the path accordingly
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
 const SignupPage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    phoneNumber: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-    address: '',
-    city: '',
-    state: '',
-    zipCode: '',
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    address: "",
+    city: "",
+    state: "",
+    zipCode: "",
     terms: false,
   });
 
@@ -28,20 +30,23 @@ const SignupPage = () => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match!");
       return;
     }
 
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+      );
       const user = userCredential.user;
 
       await setDoc(doc(db, "users", user.uid), {
@@ -53,11 +58,11 @@ const SignupPage = () => {
         state: formData.state,
         zipCode: formData.zipCode,
         email: formData.email,
+        subscriptionPlan: selectedPlan,
       });
 
       alert("User registered successfully!");
       handlePayment(user.uid);
-
     } catch (error) {
       console.error("Error signing up:", error);
       alert("Error signing up: " + error.message);
@@ -65,41 +70,50 @@ const SignupPage = () => {
   };
 
   const config = {
-    public_key: 'FLWPUBK_TEST-3614527a79f7edf4d1a6e7dc93674123-X', // Your actual Flutterwave public key
+    public_key: "FLWPUBK_TEST-3614527a79f7edf4d1a6e7dc93674123-X",
     tx_ref: Date.now(),
-    amount: selectedPlan === 'Monthly' ? 300 : 3600,
-    currency: 'NGN',
-    payment_options: 'card,mobilemoney,ussd',
+    amount: selectedPlan === "Monthly" ? 300 : 3600,
+    currency: "NGN",
+    payment_options: "card,mobilemoney,ussd",
     customer: {
-      email: formData.email, // Ensure this is set
+      email: formData.email,
       phone_number: formData.phoneNumber,
       name: `${formData.firstName} ${formData.lastName}`,
     },
     customizations: {
-      title: 'Annimate',
+      title: "Anim8",
       description: `Payment for ${selectedPlan} subscription`,
-      logo: 'https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg',
+      logo: "https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg",
     },
   };
+
   const handleFlutterPayment = useFlutterwave(config);
 
-  const handlePayment = () => {
+  const handlePayment = (userId) => {
     if (!selectedPlan) {
-      alert('Please select a plan to proceed.');
+      alert("Please select a plan to proceed.");
       return;
     }
 
     handleFlutterPayment({
-      callback: (response) => {
-        if (response.status === 'successful') {
-          alert('Payment Successful!');
+      callback: async (response) => {
+        if (response.status === "successful") {
+          alert("Payment Successful!");
+
+          await setDoc(
+            doc(db, "users", userId),
+            { paymentStatus: "Paid" },
+            { merge: true }
+          );
+
+          navigate("/movies");
         } else {
-          alert('Payment Failed. Please try again.');
+          alert("Payment Failed. Please try again.");
         }
         closePaymentModal();
       },
       onClose: () => {
-        console.log('Payment Modal Closed');
+        console.log("Payment Modal Closed");
       },
     });
   };
@@ -110,135 +124,102 @@ const SignupPage = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white shadow-md rounded-lg p-8 w-96"
+        className="bg-white shadow-md rounded-lg p-8 w-full max-w-md"
       >
         <h2 className="text-2xl font-bold text-center mb-6">Sign Up</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex space-x-4 mb-4">
-            <motion.div>
-              <label className="block text-sm font-medium mb-1">First Name</label>
-              <input
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-                className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </motion.div>
-
-            <motion.div>
-              <label className="block text-sm font-medium mb-1">Last Name</label>
-              <input
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-                className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </motion.div>
-          </div>
-
-          <div className="flex space-x-4 mb-4">
-            <motion.div>
-              <label className="block text-sm font-medium mb-1">Phone Number</label>
-              <input
-                type="tel"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                required
-                className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </motion.div>
-
-            <motion.div>
-              <label className="block text-sm font-medium mb-1">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </motion.div>
-          </div>
-
-          <div className="flex space-x-4 mb-4">
-            <motion.div>
-              <label className="block text-sm font-medium mb-1">Password</label>
-              <input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                required
-                className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </motion.div>
-
-            <motion.div>
-              <label className="block text-sm font-medium mb-1">Confirm Password</label>
-              <input
-                type="password"
-                name="confirmPassword"
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                required
-                className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </motion.div>
-          </div>
-
-          <motion.div className="mb-4">
-            <label className="block text-sm font-medium mb-1">Address</label>
+          <div className="grid grid-cols-1 gap-4">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              value={formData.firstName}
+              onChange={handleChange} // Correctly using handleChange
+              required
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              value={formData.lastName}
+              onChange={handleChange} // Correctly using handleChange
+              required
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            />
+            <input
+              type="tel"
+              name="phoneNumber"
+              placeholder="Phone Number"
+              value={formData.phoneNumber}
+              onChange={handleChange} // Correctly using handleChange
+              required
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange} // Correctly using handleChange
+              required
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange} // Correctly using handleChange
+              required
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            />
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              value={formData.confirmPassword}
+              onChange={handleChange} // Correctly using handleChange
+              required
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            />
             <input
               type="text"
               name="address"
+              placeholder="Address"
               value={formData.address}
-              onChange={handleChange}
+              onChange={handleChange} // Correctly using handleChange
               required
-              className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
             />
-          </motion.div>
-
-          <motion.div className="mb-4">
-            <label className="block text-sm font-medium mb-1">City</label>
             <input
               type="text"
               name="city"
+              placeholder="City"
               value={formData.city}
-              onChange={handleChange}
+              onChange={handleChange} // Correctly using handleChange
               required
-              className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
             />
-          </motion.div>
-
-          <motion.div className="mb-4">
-            <label className="block text-sm font-medium mb-1">State</label>
             <input
               type="text"
               name="state"
+              placeholder="State"
               value={formData.state}
-              onChange={handleChange}
+              onChange={handleChange} // Correctly using handleChange
               required
-              className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
             />
-          </motion.div>
-
-          <motion.div className="mb-4">
-            <label className="block text-sm font-medium mb-1">Zip Code</label>
             <input
               type="text"
               name="zipCode"
+              placeholder="Zip Code"
               value={formData.zipCode}
-              onChange={handleChange}
+              onChange={handleChange} // Correctly using handleChange
               required
-              className="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
             />
-          </motion.div>
+          </div>
 
           <div className="flex items-center mb-4">
             <input
@@ -249,43 +230,49 @@ const SignupPage = () => {
               required
               className="mr-2"
             />
-            <label className="text-sm">
-              I agree to the <a href="#" className="text-indigo-600">terms and conditions</a>.
+            <label htmlFor="terms" className="text-sm">
+              I agree to the terms and conditions
             </label>
           </div>
 
+          {/* Subscription Plan */}
           <h1 className="text-xl font-bold mt-6">Select a Subscription Plan</h1>
-<div className="space-x-4 mb-4">
-  <button
-    type="button"
-    onClick={() => setSelectedPlan('Monthly')}
-    className={`px-6 py-3 ${selectedPlan === 'Monthly' ? 'bg-blue-700' : 'bg-blue-500'} text-white rounded-lg`}
-  >
-    300 NGN / Month
-  </button>
-  <button
-    type="button"
-    onClick={() => setSelectedPlan('Yearly')}
-    className={`px-6 py-3 ${selectedPlan === 'Yearly' ? 'bg-green-700' : 'bg-green-500'} text-white rounded-lg`}
-  >
-    3600 NGN / Year
-  </button>
-</div>
+          <div className="flex space-x-4 mb-4">
+            <button
+              type="button"
+              onClick={() => setSelectedPlan("Monthly")}
+              className={`flex-1 px-4 py-3 ${
+                selectedPlan === "Monthly" ? "bg-blue-700" : "bg-blue-500"
+              } text-white rounded-lg`}
+            >
+              300 NGN / Month
+            </button>
+            <button
+              type="button"
+              onClick={() => setSelectedPlan("Yearly")}
+              className={`flex-1 px-4 py-3 ${
+                selectedPlan === "Yearly" ? "bg-green-700" : "bg-green-500"
+              } text-white rounded-lg`}
+            >
+              3600 NGN / Year
+            </button>
+          </div>
 
-{selectedPlan && (
-  <div className="mt-6 text-center">
-    <h2 className="text-lg font-medium mb-4">
-      Selected Plan: <span className="text-blue-600">{selectedPlan}</span>
-    </h2>
-    <button
-      type="button"
-      onClick={handlePayment}
-      className="px-8 py-3 bg-purple-500 text-white rounded-full"
-    >
-      Pay {selectedPlan === 'Monthly' ? '300 NGN' : '3600 NGN'}
-    </button>
-  </div>
-)}
+          {selectedPlan && (
+            <div className="mt-6 text-center">
+              <h2 className="text-lg font-medium mb-4">
+                Selected Plan:{" "}
+                <span className="text-blue-600">{selectedPlan}</span>
+              </h2>
+              <button
+                type="button"
+                onClick={() => handlePayment()}
+                className="px-8 py-3 bg-purple-500 text-white rounded-full"
+              >
+                Pay {selectedPlan === "Monthly" ? "300 NGN" : "3600 NGN"}
+              </button>
+            </div>
+          )}
 
           <button
             type="submit"

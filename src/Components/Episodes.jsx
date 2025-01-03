@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import {  useEffect } from 'react';
+import { useEffect } from 'react';
+import { useUser } from './UserContext'; // Import the user context
 import Footer from './Footer';
 import Navbar from './Navbar';
 import movieData from '../Constants/data.js'; // Import the movie data
@@ -7,7 +8,8 @@ import movieData from '../Constants/data.js'; // Import the movie data
 const EpisodesPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  
+  const { user } = useUser(); // Get the user state from context
+
   const searchParams = new URLSearchParams(location.search);
   const animeTitle = searchParams.get('title');
   const seasonNumber = parseInt(searchParams.get('epinum'), 10); // Parse season number as integer
@@ -22,6 +24,16 @@ const EpisodesPage = () => {
       return;
     }
   }, [anime, season, navigate]);
+
+  const handleDownload = (episode) => {
+    if (!user) {
+      // If the user is not signed in, redirect to the signup page
+      navigate('./Signup.jsx'); // Adjust path if needed
+    } else {
+      // If the user is signed in, proceed with the download
+      window.location.href = episode.downloadLink;
+    }
+  };
 
   return (
     <div className="bg-gray-100 main-content pt-24 min-h-screen">
@@ -61,13 +73,13 @@ const EpisodesPage = () => {
                   <p className="text-gray-700 mt-2 mb-4">{episode.synopsis || "No description available."}</p>
                   
                   {/* Download Episode Button */}
-                  <a 
-                    href={episode.downloadLink || '#'}
-                    className="inline-block mt-3 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition-colors"
-                    download
+                  <button 
+                    onClick={() => handleDownload(episode)}
+                    className={`inline-block mt-3 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition-colors ${!episode.downloadLink ? 'cursor-not-allowed opacity-50' : ''}`}
+                    disabled={!episode.downloadLink}
                   >
-                    Download Episode
-                  </a>
+                    {episode.downloadLink ? 'Download Episode' : 'Download Not Available'}
+                  </button>
                 </div>
               </div>
             ))
