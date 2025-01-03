@@ -57,36 +57,35 @@ const AnimeSeries = () => {
       />
 
       <div className="container mx-auto my-10 relative z-10">
-      <Swiper
-          modules={[Autoplay]} // Enable autoplay
-          autoplay={{
-            delay: 3000, // Slide change interval in milliseconds
-            disableOnInteraction: false, // Keep autoplay active even after interaction
-          }}
-          loop
-          spaceBetween={0}
-          slidesPerView={1}
-          className="h-64 sm:h-72 md:h-80 lg:h-96"
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative h-[100vh] sm:h-72 md:h-80 lg:h-96 flex flex-col justify-end">
-                <div
-                  className="absolute inset-0 bg-cover bg-center object-center object-cover"
-                  style={{ backgroundImage: `url('${slide.image}')` }}
-                />
-     <div className="absolute inset-0 z-100 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4">
-                  <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-center">
-                    {slide.title}
-                  </h1>
-                  <p className="text-white text-sm sm:text-base md:text-xl lg:text-2xl text-center mt-2 sm:mt-3 md:mt-5">
-                    {slide.subtitle}
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+  <Swiper
+  modules={[Autoplay]} // Enable autoplay
+  autoplay={{
+    delay: 3000, // Slide change interval in milliseconds
+    disableOnInteraction: false, // Keep autoplay active even after interaction
+  }}
+  loop
+  spaceBetween={0}
+  slidesPerView={1}
+  className="h-[calc(100vh-70px)] md:h-80 lg:h-96" // Adjusted height for better view in mobile
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div
+        className="relative bg-cover bg-center h-[calc(100vh-70px)] md:h-80 lg:h-96"
+        style={{ backgroundImage: `url('${slide.image}')` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10 text-center">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            {slide.title}
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-3 sm:mt-4 md:mt-5">
+            {slide.subtitle}
+          </p>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
         {Object.keys(moviesByGenre).map((genre) => (
           <div key={genre} className="mb-8 p-8">
