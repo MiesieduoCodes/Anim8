@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProtectedRoute from "./Components/ProtectedRoute";
 import UsingHooks from "./UsingHook";
 
 // Import General Pages
@@ -33,12 +32,8 @@ import FullMetal from "./Components/FullMetalAlchemist";
 import Pokemon from "./Components/Pokemon";
 import Illumination from "./Components/Illumination";
 
-// Import the AuthProvider
-import { AuthProvider } from "./Components/AuthContext"; // Update with the correct path
-
 const App = () => {
   return (
-    <AuthProvider> {/* Wrap your app with AuthProvider */}
       <Router>
         <div className="app-container relative min-h-screen">
           {/* Main Content */}
@@ -53,55 +48,30 @@ const App = () => {
             <Route path="/toons" element={<Toons />} />
             <Route path="/pay" element={<UsingHooks />} />
 
-            {/* Protected Animation Collections */}
-            {[ 
-              { path: "/pixar", component: Pixar },
-              { path: "/dreamworks", component: DreamWorks },
-              { path: "/disney", component: Disney },
-              { path: "/netflix", component: Netflix },
-              { path: "/marvel", component: Marvel },
-              { path: "/dc", component: DC },
-              { path: "/anime-films", component: AnimeF },
-              { path: "/anime-series", component: AnimeS },
-            ].map(({ path, component }) => (
-              <Route
-                key={path}
-                path={path}
-                element={
-                  <ProtectedRoute>
-                    {component}
-                  </ProtectedRoute>
-                }
-              />
-            ))}
+            {/* Animation Collections */}
+            <Route path="/pixar" element={<Pixar />} />
+            <Route path="/dreamworks" element={<DreamWorks />} />
+            <Route path="/disney" element={<Disney />} />
+            <Route path="/netflix" element={<Netflix />} />
+            <Route path="/marvel" element={<Marvel />} />
+            <Route path="/dc" element={<DC />} />
+            <Route path="/anime-films" element={<AnimeF />} />
+            <Route path="/anime-series" element={<AnimeS />} />
 
-            {/* Protected Anime Shows and Movies */}
-            {[ 
-              { path: "/detective", component: DetectiveConan },
-              { path: "/one-piece", component: OnePiece },
-              { path: "/sword", component: Sword },
-              { path: "/lupin", component: Lupin },
-              { path: "/bleach", component: Bleach },
-              { path: "/ghost", component: Ghost },
-              { path: "/psycho", component: Psycho },
-              { path: "/fullmetal", component: FullMetal },
-              { path: "/pokemon", component: Pokemon },
-              { path: "/illumination", component: Illumination },
-            ].map(({ path, component }) => (
-              <Route
-                key={path}
-                path={path}
-                element={
-                  <ProtectedRoute>
-                    {component}
-                  </ProtectedRoute>
-                }
-              />
-            ))}
+            {/* Anime Shows and Movies */}
+            <Route path="/detective" element={<DetectiveConan />} />
+            <Route path="/one-piece" element={<OnePiece />} />
+            <Route path="/sword" element={<Sword />} />
+            <Route path="/lupin" element={<Lupin />} />
+            <Route path="/bleach" element={<Bleach />} />
+            <Route path="/ghost" element={<Ghost />} />
+            <Route path="/psycho" element={<Psycho />} />
+            <Route path="/fullmetal" element={<FullMetal />} />
+            <Route path="/pokemon" element={<Pokemon />} />
+            <Route path="/illumination" element={<Illumination />} />
           </Routes>
         </div>
       </Router>
-    </AuthProvider>
   );
 };
 
