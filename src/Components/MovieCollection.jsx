@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules"; // Import Swiper Autoplay module
 import "swiper/css";
 import "../index.css";
-import movies from "../Constants/MovieCollection";
+import movieData from "../Constants/MovieCollection"; // Adjusted to import movieData
 
 const groupMoviesByGenre = (movies) => {
   return movies.reduce((acc, movie) => {
-    const { genre } = movie;
+    const { genre = "General" } = movie; // Default genre to "General" if not provided
     if (!acc[genre]) {
       acc[genre] = [];
     }
@@ -20,7 +20,7 @@ const groupMoviesByGenre = (movies) => {
 };
 
 const AnimeSeries = () => {
-  const moviesByGenre = groupMoviesByGenre(movies);
+  const moviesByGenre = groupMoviesByGenre(movieData);
 
   const slides = [
     {
@@ -55,9 +55,9 @@ const AnimeSeries = () => {
         loop
         muted
       />
-      
+
       <div className="container mx-auto my-10 relative z-10">
-        <Swiper
+      <Swiper
           modules={[Autoplay]} // Enable autoplay
           autoplay={{
             delay: 3000, // Slide change interval in milliseconds
@@ -66,20 +66,20 @@ const AnimeSeries = () => {
           loop
           spaceBetween={0}
           slidesPerView={1}
-          className="h-64 md:h-80 lg:h-96"
+          className="h-64 sm:h-72 md:h-80 lg:h-96"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="relative h-[100vh] md:h-80 lg:h-96 flex flex-col justify-end">
+              <div className="relative h-[100vh] sm:h-72 md:h-80 lg:h-96 flex flex-col justify-end">
                 <div
                   className="absolute inset-0 bg-cover bg-center object-center object-cover"
                   style={{ backgroundImage: `url('${slide.image}')` }}
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center pt-10 md:pt-20 lg:pt-24">
-                  <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+     <div className="absolute inset-0 z-100 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4">
+                  <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-center">
                     {slide.title}
                   </h1>
-                  <p className="text-white text-lg md:text-xl lg:text-2xl text-center mt-3 md:mt-5">
+                  <p className="text-white text-sm sm:text-base md:text-xl lg:text-2xl text-center mt-2 sm:mt-3 md:mt-5">
                     {slide.subtitle}
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const AnimeSeries = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
               {moviesByGenre[genre].map((movie, index) => (
                 <motion.div
-                  key={movie.id}
+                  key={index}
                   className="relative border border-gray-200 rounded-lg overflow-hidden shadow-lg"
                   style={{
                     backgroundImage: `url(${movie.backgroundImage})`,
@@ -121,7 +121,7 @@ const AnimeSeries = () => {
                     <p className="text-white">{movie.synopsis}</p>
                     <div className="relative inline-block">
                       <Link
-                        to="whatsapp-link"
+                        to="https://chat.whatsapp.com/Fb2mLRz4Xv7HGPQoejmLSY"
                         className="mt-2 inline-block bg-red-500 text-white rounded px-4 py-2"
                       >
                         Request Movie Collection
