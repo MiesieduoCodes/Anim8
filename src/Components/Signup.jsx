@@ -101,7 +101,7 @@ const SignupPage = () => {
             { merge: true }
           );
 
-          navigate("/movies");
+          navigate("/pixar");
         } else {
           alert("Payment Failed. Please try again.");
         }
