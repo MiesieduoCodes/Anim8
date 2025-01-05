@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { auth, db } from "../Firebase";
+import Navbar  from "./Navbar";
+import Footer  from "./Footer";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
@@ -113,6 +115,7 @@ const SignupPage = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
+      <Navbar />
       {/* Background Slider */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="h-full w-full animate-slider">
@@ -208,6 +211,7 @@ const SignupPage = () => {
           </button>
         </form>
       </motion.div>
+      <Footer />
     </div>
   );
 };
