@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import UsingHooks from "./UsingHook";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { UserProvider, useUser } from './Components/UserContext';
 
 // Import General Pages
 import FAQ from "./Components/faq";
@@ -9,6 +10,7 @@ import Trivias from "./Components/Trivias";
 import Trailers from "./Components/Trailers";
 import WhatsGood from "./Components/Whatsup";
 import Toons from "./Components/ToonedIn";
+import EpisodesPage from "./Components/Episodes";
 
 // Import Animation Collections
 import Pixar from "./Components/Pixar";
@@ -19,59 +21,51 @@ import Marvel from "./Components/Marvel";
 import DC from "./Components/DC";
 import AnimeF from "./Components/AnimeFilms";
 import AnimeS from "./Components/AnimeSeries";
-
-// Import Anime Shows and Movies
-import DetectiveConan from "./Components/DetectiveConan";
-import OnePiece from "./Components/OnePiece";
-import Sword from "./Components/Sword";
-import Lupin from "./Components/Lupin";
-import Bleach from "./Components/Bleach";
-import Ghost from "./Components/GhostInAShell";
-import Psycho from "./Components/Psycho";
-import FullMetal from "./Components/FullMetalAlchemist";
-import Pokemon from "./Components/Pokemon";
 import Illumination from "./Components/Illumination";
+
+// Protected Route Component
+const ProtectedRoute = ({ children }) => {
+  const { user } = useUser();
+
+  if (!user) {
+    return <Navigate to="/signup" replace />;
+  }
+
+  return children;
+};
+
+ProtectedRoute.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 const App = () => {
   return (
+    <UserProvider>
       <Router>
         <div className="app-container relative min-h-screen">
-          {/* Main Content */}
           <Routes>
-            {/* General Pages */}
             <Route path="/faqs" element={<FAQ />} />
             <Route path="/talk" element={<Talk />} />
             <Route path="/get" element={<GetApp />} />
             <Route path="/trivias" element={<Trivias />} />
             <Route path="/trailers" element={<Trailers />} />
             <Route path="/whatsgood" element={<WhatsGood />} />
-            <Route path="/toons" element={<Toons />} />
-            <Route path="/pay" element={<UsingHooks />} />
-
-            {/* Animation Collections */}
-            <Route path="/pixar" element={<Pixar />} />
-            <Route path="/dreamworks" element={<DreamWorks />} />
-            <Route path="/disney" element={<Disney />} />
-            <Route path="/netflix" element={<Netflix />} />
-            <Route path="/marvel" element={<Marvel />} />
-            <Route path="/dc" element={<DC />} />
-            <Route path="/anime-films" element={<AnimeF />} />
+            <Route path="/toonedin" element={<Toons />} />
             <Route path="/anime-series" element={<AnimeS />} />
 
-            {/* Anime Shows and Movies */}
-            <Route path="/detective" element={<DetectiveConan />} />
-            <Route path="/one-piece" element={<OnePiece />} />
-            <Route path="/sword" element={<Sword />} />
-            <Route path="/lupin" element={<Lupin />} />
-            <Route path="/bleach" element={<Bleach />} />
-            <Route path="/ghost" element={<Ghost />} />
-            <Route path="/psycho" element={<Psycho />} />
-            <Route path="/fullmetal" element={<FullMetal />} />
-            <Route path="/pokemon" element={<Pokemon />} />
-            <Route path="/illumination" element={<Illumination />} />
+            <Route path="/pixar" element={<ProtectedRoute><Pixar /></ProtectedRoute>} />
+            <Route path="/dreamworks" element={<ProtectedRoute><DreamWorks /></ProtectedRoute>} />
+            <Route path="/disney" element={<ProtectedRoute><Disney /></ProtectedRoute>} />
+            <Route path="/netflix" element={<ProtectedRoute><Netflix /></ProtectedRoute>} />
+            <Route path="/marvel" element={<ProtectedRoute><Marvel /></ProtectedRoute>} />
+            <Route path="/dc" element={<ProtectedRoute><DC /></ProtectedRoute>} />
+            <Route path="/anime-films" element={<ProtectedRoute><AnimeF /></ProtectedRoute>} />
+            <Route path="/episodes/:id/:seasonId" element={<ProtectedRoute><EpisodesPage /></ProtectedRoute>} />
+            <Route path="/illumination" element={<ProtectedRoute><Illumination /></ProtectedRoute>} />
           </Routes>
         </div>
       </Router>
+    </UserProvider>
   );
 };
 

@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
 import marvelMovies from "../Constants/MarvelData";
-import { UserContext } from '../context/UserContext'; // Assuming you have a UserContext
+import { UserContext } from './UserContext'; // Assuming you have a UserContext
 import { motion } from 'framer-motion';
 
 const Marvel = () => {

@@ -176,7 +176,7 @@ const HeroWithLogin = () => {
         through WhatsApp.
       </p>
       <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
-        <Link to="https://chat.whatsapp.com/Fb2mLRz4Xv7HGPQoejmLSY">Request Now</Link>
+        <Link to="https://wa.me/message/WNNBQ2JD4TVKP1?text=Hi%20Anim8%2C%20I%20would%20like%20to%20request%20some%20movies">Request Now</Link>
       </button>
     </motion.div>
 
@@ -194,9 +194,11 @@ const HeroWithLogin = () => {
         Explore a wide collection of comics, graphic novels, and animated
         stories available for all ages.
       </p>
+      <Link to="https://wa.me/message/WNNBQ2JD4TVKP1?text=Hi%20Anim8%2C%20I%20would%20like%20to%20request%20some%20comics.">
       <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
         Request Comics Collection
       </button>
+      </Link>
     </motion.div>
 
     {/* Card 3 */}

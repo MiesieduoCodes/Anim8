@@ -120,7 +120,7 @@ const AnimeSeries = () => {
                     <p className="text-white">{movie.synopsis}</p>
                     <div className="relative inline-block">
                       <Link
-                        to="https://chat.whatsapp.com/Fb2mLRz4Xv7HGPQoejmLSY"
+                        to="https://wa.me/message/WNNBQ2JD4TVKP1?text=Hi%20Anim8%2C%20I%20would%20like%20to%20request%20some%20movies."
                         className="mt-2 inline-block bg-red-500 text-white rounded px-4 py-2"
                       >
                         Request Movie Collection

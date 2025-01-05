@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import 'font-awesome/css/font-awesome.min.css';
 
+// Import UserProvider
+import { UserProvider } from "./Components/UserContext";
 
 // Main Components
 import App from "./App";
@@ -44,13 +46,14 @@ import Pokemon from "./Components/Pokemon";
 import Illumination from "./Components/Illumination";
 import Movie from "./Components/MovieCollection";
 import UsingHooks from "./UsingHook";
+
 // Episodes and Seasons
 import SeasonsPage from "./Components/SeasonPage";
 import EpisodesPage from "./Components/Episodes";
 import SeasonDetails from "./Components/SeasonDetails";
 
 // Trailer Page
-import TrailerPage from "./Components/Trailers"; // Import the TrailerPage component
+import TrailerPage from "./Components/Trailers";
 
 // Grouped Routes for Better Organization
 const generalRoutes = [
@@ -91,16 +94,13 @@ const animeRoutes = [
   { path: "/pokemon", element: <Pokemon /> },
   { path: "/illumination", element: <Illumination /> },
   { path: "/movie", element: <Movie /> },
-  { path:"/signup", element: <Signup/> },
-  { path:"/login", element: <Login /> },
+  { path: "/signup", element: <Signup /> },
+  { path: "/login", element: <Login /> },
 ];
 
 const episodeRoutes = [
   { path: "/season", element: <SeasonsPage /> },
-  {
-    path: "/episodes/:id/:seasonId",
-    element: <EpisodesPage />,
-  },
+  { path: "/episodes/:id/:seasonId", element: <EpisodesPage /> },
   { path: "/season/:id", element: <SeasonDetails /> },
   { path: "/anime/:id", element: <SeasonsPage /> },
 ];
@@ -108,6 +108,7 @@ const episodeRoutes = [
 // Define the route for TrailerPage
 const trailerRoute = { path: "/trailer/:id", element: <TrailerPage /> };
 
+// Combine All Routes
 const router = createBrowserRouter([
   ...generalRoutes,
   ...animationRoutes,
@@ -117,9 +118,11 @@ const router = createBrowserRouter([
   { path: "*", element: <NotFound /> }, // Wildcard fallback for unmatched paths
 ]);
 
-// Render the application
+// Render the application with UserProvider
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </React.StrictMode>
 );

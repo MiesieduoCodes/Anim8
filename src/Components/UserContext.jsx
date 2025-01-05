@@ -4,10 +4,16 @@ import PropTypes from 'prop-types';
 // Create a context for user authentication
 const UserContext = createContext();
 
+// Custom hook to use the user context
 export const useUser = () => {
-  return useContext(UserContext);
+  const context = useContext(UserContext);
+  if (!context) {
+    throw new Error("useUser must be used within a UserProvider");
+  }
+  return context;
 };
 
+// UserProvider component to wrap the app
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null); // `null` means not logged in
 
@@ -26,3 +32,6 @@ export const UserProvider = ({ children }) => {
 UserProvider.propTypes = {
   children: PropTypes.node.isRequired, // Define 'children' as required
 };
+
+// Export the UserContext if needed elsewhere
+export { UserContext };
