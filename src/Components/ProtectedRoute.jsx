@@ -6,7 +6,7 @@ const ProtectedRoute = ({ element: Component }) => {
   const { user } = useUser(); // Access user from context
 
   // If user is authenticated, render the component; otherwise, redirect to "/Signup"
-  return user ? <Component /> : <Navigate to="./Signup.jsx" />;
+  return user ? <Component /> : <Navigate to="/signup" />;
 };
 
 // Prop types validation

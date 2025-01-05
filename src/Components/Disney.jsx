@@ -40,7 +40,7 @@ const Disney = () => {
   const handleDownload = (downloadLink) => {
     if (!user) {
       // If the user is not signed in, redirect to the signup page
-      navigate('./Signup.jsx'); // Adjust path if needed
+      navigate('/signup'); // Adjust path if needed
     } else {
       // If the user is signed in, proceed with the download
       window.location.href = downloadLink;

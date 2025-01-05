@@ -43,7 +43,7 @@ const Pixar = () => {
   const handleDownload = (downloadLink) => {
     if (!user) {
       // If user is not signed in, redirect to the signup page
-      navigate("./Signup.jsx");
+      navigate('/signup')
     } else {
       // If user is signed in, allow the download
       window.location.href = downloadLink; // Trigger the download

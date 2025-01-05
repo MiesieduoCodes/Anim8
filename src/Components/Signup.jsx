@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Updated import
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { auth, db } from "../Firebase"; // Adjust the path accordingly
+import { auth, db } from "../Firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
@@ -50,14 +50,7 @@ const SignupPage = () => {
       const user = userCredential.user;
 
       await setDoc(doc(db, "users", user.uid), {
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        phoneNumber: formData.phoneNumber,
-        address: formData.address,
-        city: formData.city,
-        state: formData.state,
-        zipCode: formData.zipCode,
-        email: formData.email,
+        ...formData,
         subscriptionPlan: selectedPlan,
       });
 
@@ -119,124 +112,73 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background Slider */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="h-full w-full animate-slider">
+          <div
+            className="absolute h-full w-full bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/cartoon1.jpg')",
+            }}
+          ></div>
+          <div
+            className="absolute h-full w-full bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/cartoon2.jpg')",
+            }}
+          ></div>
+          <div
+            className="absolute h-full w-full bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/cartoon3.jpg')",
+            }}
+          ></div>
+        </div>
+      </div>
+
+      {/* Signup Form */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-white shadow-md rounded-lg p-8 w-full max-w-md"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        className="relative z-10 mx-auto mt-10 max-w-lg bg-white bg-opacity-80 shadow-xl rounded-lg p-6"
       >
         <h2 className="text-2xl font-bold text-center mb-6">Sign Up</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Input Fields */}
           <div className="grid grid-cols-1 gap-4">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={formData.firstName}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={formData.lastName}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="tel"
-              name="phoneNumber"
-              placeholder="Phone Number"
-              value={formData.phoneNumber}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={formData.password}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="password"
-              name="confirmPassword"
-              placeholder="Confirm Password"
-              value={formData.confirmPassword}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="text"
-              name="address"
-              placeholder="Address"
-              value={formData.address}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="text"
-              name="city"
-              placeholder="City"
-              value={formData.city}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="text"
-              name="state"
-              placeholder="State"
-              value={formData.state}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="text"
-              name="zipCode"
-              placeholder="Zip Code"
-              value={formData.zipCode}
-              onChange={handleChange} // Correctly using handleChange
-              required
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-            />
-          </div>
-
-          <div className="flex items-center mb-4">
-            <input
-              type="checkbox"
-              name="terms"
-              checked={formData.terms}
-              onChange={handleChange}
-              required
-              className="mr-2"
-            />
-            <label htmlFor="terms" className="text-sm">
-              I agree to the terms and conditions
-            </label>
+            {[
+              { name: "firstName", placeholder: "First Name" },
+              { name: "lastName", placeholder: "Last Name" },
+              { name: "phoneNumber", placeholder: "Phone Number" },
+              { name: "email", placeholder: "Email" },
+              { name: "password", placeholder: "Password", type: "password" },
+              {
+                name: "confirmPassword",
+                placeholder: "Confirm Password",
+                type: "password",
+              },
+              { name: "address", placeholder: "Address" },
+              { name: "city", placeholder: "City" },
+              { name: "state", placeholder: "State" },
+              { name: "zipCode", placeholder: "Zip Code" },
+            ].map((field, idx) => (
+              <input
+                key={idx}
+                type={field.type || "text"}
+                name={field.name}
+                placeholder={field.placeholder}
+                value={formData[field.name]}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+              />
+            ))}
           </div>
 
           {/* Subscription Plan */}
-          <h1 className="text-xl font-bold mt-6">Select a Subscription Plan</h1>
+          <h3 className="text-xl font-bold mt-6">Select a Subscription Plan</h3>
           <div className="flex space-x-4 mb-4">
             <button
               type="button"
@@ -257,22 +199,6 @@ const SignupPage = () => {
               3600 NGN / Year
             </button>
           </div>
-
-          {selectedPlan && (
-            <div className="mt-6 text-center">
-              <h2 className="text-lg font-medium mb-4">
-                Selected Plan:{" "}
-                <span className="text-blue-600">{selectedPlan}</span>
-              </h2>
-              <button
-                type="button"
-                onClick={() => handlePayment()}
-                className="px-8 py-3 bg-purple-500 text-white rounded-full"
-              >
-                Pay {selectedPlan === "Monthly" ? "300 NGN" : "3600 NGN"}
-              </button>
-            </div>
-          )}
 
           <button
             type="submit"
