@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { UserContext } from "./UserContext";
