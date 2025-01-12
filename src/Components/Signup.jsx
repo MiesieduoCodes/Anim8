@@ -67,7 +67,7 @@ const SignupPage = () => {
   const config = {
     public_key: "FLWPUBK_TEST-3614527a79f7edf4d1a6e7dc93674123-X",
     tx_ref: Date.now(),
-    amount: selectedPlan === "Monthly" ? 300 : 3600,
+    amount: selectedPlan === "Monthly" ? 500 : 6000,
     currency: "NGN",
     payment_options: "card,mobilemoney,ussd",
     customer: {
@@ -190,7 +190,7 @@ const SignupPage = () => {
                 selectedPlan === "Monthly" ? "bg-blue-700" : "bg-blue-500"
               } text-white rounded-lg`}
             >
-              300 NGN / Month
+              500 NGN / Month
             </button>
             <button
               type="button"
@@ -199,7 +199,7 @@ const SignupPage = () => {
                 selectedPlan === "Yearly" ? "bg-green-700" : "bg-green-500"
               } text-white rounded-lg`}
             >
-              3600 NGN / Year
+              6000 NGN / Year
             </button>
           </div>
 
