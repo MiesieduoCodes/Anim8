@@ -114,7 +114,7 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative main-content pt-24 min-h-screen overflow-hidden">
       <Navbar />
       {/* Background Slider */}
       <div className="absolute inset-0 z-0 overflow-hidden">

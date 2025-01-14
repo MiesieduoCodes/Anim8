@@ -2,7 +2,7 @@ const collections = [
   {
     title: "Anime Collection",
     items: [
-      { title: "Demon Slayer: Mugen Train", rating: 8.7, backgroundImage: "https://demonslayer-anime.com/mugentrain/assets/img/kv.jpg" },
+      { title: "Demon Slayer: Mugen Train", rating: 8.7, backgroundImage: "https://demonslayer-anime.com/mugentrain/assets/img/kv.jpg", downloadLink: "https://facebook.com" },
       { title: "Your Name", rating: 8.4, backgroundImage: "https://wallpapercave.com/wp/wp3951268.jpg" },
       { title: "Blood C: The Last Dark", rating: 7.5, backgroundImage: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/bloodclastdark.png" },
       { title: "The Garden of Words", rating: 8.1, backgroundImage: "https://miro.medium.com/v2/resize:fit:1050/0*ZWEPy8NfPoXuQWR-." },
